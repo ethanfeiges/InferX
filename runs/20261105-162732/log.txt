@@ -1,0 +1,26 @@
+16:27:33 plain_retrieval: session 1 ready (0s idle work so far)
+16:27:33 plain_retrieval: session 2 ready (0s idle work so far)
+16:27:33 plain_retrieval: session 3 ready (0s idle work so far)
+16:27:40 plain_retrieval: q1/10 score=0.5714285714285715 recall=1.0 ttft=5.1 reply='2023, 20 January, 2023' err=None
+16:27:46 plain_retrieval: q2/10 score=0.0 recall=0.5 ttft=5.6 reply='Contemporary dance.' err=None
+16:27:54 plain_retrieval: q3/10 score=0.0 recall=1.0 ttft=6.1 reply='An ideal dance studio should have a view of the oc' err=None
+16:28:02 plain_retrieval: q4/10 score=1.0 recall=1.0 ttft=6.1 reply='29 January, 2023' err=None
+16:28:08 plain_retrieval: q5/10 score=0.5 recall=1.0 ttft=5.3 reply='2023' err=None
+16:28:15 plain_retrieval: q6/10 score=0.0 recall=1.0 ttft=7.3 reply='Contemporary dancers.' err=None
+16:28:24 plain_retrieval: q7/10 score=0.6956521739130435 recall=1.0 ttft=5.6 reply='Creating a special experience for customers is the' err=None
+16:28:33 plain_retrieval: q8/10 score=0.39999999999999997 recall=1.0 ttft=6.9 reply='Gina mentioned that creating a special shopping ex' err=None
+16:28:44 plain_retrieval: q9/10 score=0.0 recall=1.0 ttft=6.0 reply='When Jon was a kid, he had a favorite dancing memo' err=None
+16:28:52 plain_retrieval: q10/10 score=0.0 recall=1.0 ttft=6.5 reply='Gina chose the furniture and decor for her store.' err=None
+16:29:50 decoupled: session 1 ready (55s idle work so far)
+16:30:21 decoupled: session 2 ready (86s idle work so far)
+16:30:53 decoupled: session 3 ready (116s idle work so far)
+16:31:01 decoupled: q1/10 score=0.0 recall=1.0 ttft=5.3 reply='Starting a business sounds like a great idea, but ' err=None
+16:31:07 decoupled: q2/10 score=0.0 recall=0.25 ttft=6.0 reply='Contemporary dance.' err=None
+16:31:17 decoupled: q3/10 score=0.11111111111111112 recall=1.0 ttft=5.5 reply="It should look like the speaker's own style, cozy," err=None
+16:31:27 decoupled: q4/10 score=0.4444444444444444 recall=1.0 ttft=6.2 reply='2023, 20 January, 2023, 4:04 pm' err=None
+16:31:34 decoupled: q5/10 score=0.6666666666666666 recall=1.0 ttft=5.7 reply='29 January, 2023' err=None
+16:31:43 decoupled: q6/10 score=0.0 recall=0.0 ttft=6.1 reply='The dancers in the photo represent a shared experi' err=None
+16:31:52 decoupled: q7/10 score=0.6956521739130435 recall=1.0 ttft=5.8 reply='Creating a special experience for customers is the' err=None
+16:32:00 decoupled: q8/10 score=0.09090909090909091 recall=1.0 ttft=5.5 reply="Gina: I'm over the moon because I can expand my cl" err=None
+16:32:09 decoupled: q9/10 score=0.0 recall=1.0 ttft=6.2 reply="Contemporary is Jon's favorite dancing style, as i" err=None
+16:32:17 decoupled: q10/10 score=0.0 recall=1.0 ttft=5.8 reply='Gina: I chose the stylish and comfortable furnitur' err=None

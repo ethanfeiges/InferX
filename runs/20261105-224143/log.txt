@@ -1,0 +1,241 @@
+22:41:43 on_ac_power=True
+22:41:44 plain_retrieval: session 1 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 2 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 3 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 4 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 5 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 6 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 7 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 8 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 9 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 10 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 11 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 12 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 13 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 14 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 15 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 16 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 17 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 18 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 19 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 20 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 21 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 22 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 23 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 24 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 25 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 26 ready (0s idle work so far)
+22:41:44 plain_retrieval: session 27 ready (0s idle work so far)
+22:41:47 plain_retrieval: q1/53 score=0.7499999999999999 recall=1.0 ttft=2.4 reply='5 April 2025, 11:00 am' err=None
+22:41:50 plain_retrieval: q2/53 score=1.0 recall=1.0 ttft=2.4 reply='Bright Smile Dental' err=None
+22:41:53 plain_retrieval: q3/53 score=0.0 recall=1.0 ttft=2.4 reply='12/4/2025' err=None
+22:41:56 plain_retrieval: q4/53 score=0.0 recall=1.0 ttft=2.6 reply='12/4/2025, 9:30 am' err=None
+22:42:00 plain_retrieval: q5/53 score=0.33333333333333337 recall=1.0 ttft=2.6 reply='Harbor Accounting at 11:00 am on Monday, 7 April 2' err=None
+22:42:03 plain_retrieval: q6/53 score=0.25 recall=1.0 ttft=2.4 reply='Tue 1 Apr, 11:00 am' err=None
+22:42:06 plain_retrieval: q7/53 score=1.0 recall=1.0 ttft=2.5 reply='Elmwood School' err=None
+22:42:09 plain_retrieval: q8/53 score=0.25 recall=1.0 ttft=2.4 reply='Tue 25 Mar at noon' err=None
+22:42:12 plain_retrieval: q9/53 score=0.4 recall=1.0 ttft=2.4 reply='Riverside Dermatology on Tue 25 Mar at noon' err=None
+22:42:15 plain_retrieval: q10/53 score=0.30769230769230765 recall=1.0 ttft=2.4 reply='In 15 minutes after 8:00 pm on 7 March, 2025' err=None
+22:42:18 plain_retrieval: q11/53 score=1.0 recall=1.0 ttft=2.4 reply='Oak Lane Vets' err=None
+22:42:21 plain_retrieval: q12/53 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+22:42:24 plain_retrieval: q13/53 score=0.0 recall=None ttft=2.4 reply='3 March, 2025, at noon at Riverside Dermatology' err=None
+22:42:27 plain_retrieval: q14/53 score=1.0 recall=1.0 ttft=2.4 reply='$34' err=None
+22:42:29 plain_retrieval: q15/53 score=1.0 recall=1.0 ttft=2.4 reply='HomeBox' err=None
+22:42:32 plain_retrieval: q16/53 score=1.0 recall=1.0 ttft=2.4 reply='Refunded' err=None
+22:42:34 plain_retrieval: q17/53 score=1.0 recall=1.0 ttft=2.4 reply='$75' err=None
+22:42:37 plain_retrieval: q18/53 score=1.0 recall=1.0 ttft=2.4 reply='KitchenHub' err=None
+22:42:40 plain_retrieval: q19/53 score=0.5 recall=1.0 ttft=2.4 reply='Delivered on 25/3/2025' err=None
+22:42:43 plain_retrieval: q20/53 score=1.0 recall=1.0 ttft=2.4 reply='$27' err=None
+22:42:45 plain_retrieval: q21/53 score=1.0 recall=1.0 ttft=2.4 reply='FitNest' err=None
+22:42:48 plain_retrieval: q22/53 score=0.33333333333333337 recall=1.0 ttft=2.5 reply='Delivered on 7 March, 2025' err=None
+22:42:51 plain_retrieval: q23/53 score=1.0 recall=1.0 ttft=2.2 reply='$118' err=None
+22:42:53 plain_retrieval: q24/53 score=1.0 recall=1.0 ttft=2.2 reply='TrailGear' err=None
+22:42:56 plain_retrieval: q25/53 score=0.0 recall=1.0 ttft=2.5 reply='Delivered on 24/3/2025' err=None
+22:42:59 plain_retrieval: q26/53 score=1.0 recall=1.0 ttft=2.4 reply='$89' err=None
+22:43:02 plain_retrieval: q27/53 score=1.0 recall=1.0 ttft=2.4 reply='StrideShop' err=None
+22:43:04 plain_retrieval: q28/53 score=0.33333333333333337 recall=1.0 ttft=2.4 reply='Delivered by Mon 24 Mar' err=None
+22:43:07 plain_retrieval: q29/53 score=1.0 recall=None ttft=2.2 reply='Not mentioned' err=None
+22:43:09 plain_retrieval: q30/53 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+22:43:12 plain_retrieval: q31/53 score=1.0 recall=1.0 ttft=2.4 reply='$14' err=None
+22:43:15 plain_retrieval: q32/53 score=0.0 recall=1.0 ttft=2.4 reply='$14 monthly' err=None
+22:43:17 plain_retrieval: q33/53 score=1.0 recall=1.0 ttft=2.0 reply='5 Orchard Close' err=None
+22:43:19 plain_retrieval: q34/53 score=0.6666666666666666 recall=1.0 ttft=2.0 reply='Peanuts and latex' err=None
+22:43:22 plain_retrieval: q35/53 score=1.0 recall=1.0 ttft=2.1 reply='5 Orchard Close' err=None
+22:43:24 plain_retrieval: q36/53 score=0.6666666666666666 recall=1.0 ttft=1.9 reply='Peanuts and shellfish' err=None
+22:43:26 plain_retrieval: q37/53 score=0.0 recall=1.0 ttft=2.1 reply='78 Station Road' err=None
+22:43:29 plain_retrieval: q38/53 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='shellfish and peanuts' err=None
+22:43:31 plain_retrieval: q39/53 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+22:43:34 plain_retrieval: q40/53 score=0.0 recall=1.0 ttft=2.2 reply='Not mentioned' err=None
+22:43:36 plain_retrieval: q41/53 score=1.0 recall=1.0 ttft=2.2 reply='19 March 2025' err=None
+22:43:39 plain_retrieval: q42/53 score=0.0 recall=1.0 ttft=2.3 reply='Not mentioned' err=None
+22:43:42 plain_retrieval: q43/53 score=1.0 recall=1.0 ttft=2.4 reply='21 March 2025' err=None
+22:43:45 plain_retrieval: q44/53 score=0.0 recall=1.0 ttft=2.5 reply='26/3/2025' err=None
+22:43:48 plain_retrieval: q45/53 score=0.6666666666666666 recall=1.0 ttft=2.6 reply='9 April 2025' err=None
+22:43:50 plain_retrieval: q46/53 score=1.0 recall=1.0 ttft=2.4 reply='$31' err=None
+22:43:53 plain_retrieval: q47/53 score=1.0 recall=1.0 ttft=2.4 reply='$88' err=None
+22:43:55 plain_retrieval: q48/53 score=1.0 recall=1.0 ttft=2.4 reply='$84' err=None
+22:43:58 plain_retrieval: q49/53 score=1.0 recall=1.0 ttft=2.1 reply='01156 777142' err=None
+22:44:00 plain_retrieval: q50/53 score=1.0 recall=1.0 ttft=2.0 reply='Apex Freight' err=None
+22:44:03 plain_retrieval: q51/53 score=1.0 recall=1.0 ttft=1.9 reply='08106 289232' err=None
+22:44:05 plain_retrieval: q52/53 score=1.0 recall=1.0 ttft=2.1 reply='Dune Foods' err=None
+22:44:08 plain_retrieval: q53/53 score=1.0 recall=1.0 ttft=2.4 reply='vegetarian' err=None
+22:44:14 decoupled: session 1 ready (6s idle work so far)
+22:44:19 decoupled: session 2 ready (12s idle work so far)
+22:44:25 decoupled: session 3 ready (17s idle work so far)
+22:44:25 decoupled: session 4 ready (17s idle work so far)
+22:44:30 decoupled: session 5 ready (23s idle work so far)
+22:44:37 decoupled: session 6 ready (29s idle work so far)
+22:44:44 decoupled: session 7 ready (36s idle work so far)
+22:44:51 decoupled: session 8 ready (43s idle work so far)
+22:44:56 decoupled: session 9 ready (48s idle work so far)
+22:44:56 decoupled: session 10 ready (48s idle work so far)
+22:45:01 decoupled: session 11 ready (52s idle work so far)
+22:45:02 decoupled: session 12 ready (54s idle work so far)
+22:45:10 decoupled: session 13 ready (62s idle work so far)
+22:45:18 decoupled: session 14 ready (70s idle work so far)
+22:45:21 decoupled: session 15 ready (73s idle work so far)
+22:45:27 decoupled: session 16 ready (79s idle work so far)
+22:45:33 decoupled: session 17 ready (85s idle work so far)
+22:45:38 decoupled: session 18 ready (90s idle work so far)
+22:45:48 decoupled: session 19 ready (99s idle work so far)
+22:45:54 decoupled: session 20 ready (105s idle work so far)
+22:46:02 decoupled: session 21 ready (113s idle work so far)
+22:46:07 decoupled: session 22 ready (119s idle work so far)
+22:46:09 decoupled: session 23 ready (120s idle work so far)
+22:46:11 decoupled: session 24 ready (122s idle work so far)
+22:46:13 decoupled: session 25 ready (125s idle work so far)
+22:46:16 decoupled: session 26 ready (127s idle work so far)
+22:46:17 decoupled: session 27 ready (128s idle work so far)
+22:46:20 decoupled: q1/53 score=0.7499999999999999 recall=1.0 ttft=2.6 reply='5 April 2025, 11:00 am' err=None
+22:46:24 decoupled: q2/53 score=0.5 recall=1.0 ttft=2.6 reply='5 April 2025, 11:00 am at Bright Smile Dental' err=None
+22:46:27 decoupled: q3/53 score=0.0 recall=1.0 ttft=2.6 reply='12/4/2025' err=None
+22:46:30 decoupled: q4/53 score=0.0 recall=1.0 ttft=2.5 reply='12/4/2025, 9:30 am' err=None
+22:46:34 decoupled: q5/53 score=0.5 recall=1.0 ttft=2.6 reply='12/4/2025, 9:30 am at Harbor Accounting' err=None
+22:46:37 decoupled: q6/53 score=0.5 recall=1.0 ttft=2.6 reply='Tuesday, 1 April, 11:00 am' err=None
+22:46:40 decoupled: q7/53 score=0.4 recall=1.0 ttft=2.5 reply='Tue 1 Apr, 11:00 am at Elmwood School' err=None
+22:46:44 decoupled: q8/53 score=0.25 recall=1.0 ttft=2.6 reply='Tuesday, 25th March at noon' err=None
+22:46:47 decoupled: q9/53 score=0.4 recall=1.0 ttft=2.6 reply='Riverside Dermatology on Tue 25 Mar at noon' err=None
+22:46:50 decoupled: q10/53 score=0.5 recall=1.0 ttft=2.6 reply='8:15am on 19 Mar 2025' err=None
+22:46:53 decoupled: q11/53 score=1.0 recall=1.0 ttft=2.6 reply='Oak Lane Vets' err=None
+22:46:56 decoupled: q12/53 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+22:46:59 decoupled: q13/53 score=0.0 recall=None ttft=2.6 reply='5 April 2025 11:00 am' err=None
+22:47:02 decoupled: q14/53 score=1.0 recall=1.0 ttft=2.5 reply='$34' err=None
+22:47:05 decoupled: q15/53 score=1.0 recall=1.0 ttft=2.6 reply='HomeBox' err=None
+22:47:07 decoupled: q16/53 score=1.0 recall=1.0 ttft=2.6 reply='Refunded' err=None
+22:47:10 decoupled: q17/53 score=1.0 recall=1.0 ttft=2.6 reply='$75' err=None
+22:47:13 decoupled: q18/53 score=1.0 recall=1.0 ttft=2.6 reply='KitchenHub' err=None
+22:47:16 decoupled: q19/53 score=0.4 recall=1.0 ttft=2.6 reply='Delivered on 25 Mar.' err=None
+22:47:19 decoupled: q20/53 score=1.0 recall=1.0 ttft=2.6 reply='$27' err=None
+22:47:22 decoupled: q21/53 score=1.0 recall=1.0 ttft=2.5 reply='FitNest' err=None
+22:47:25 decoupled: q22/53 score=0.33333333333333337 recall=1.0 ttft=2.6 reply='Delivered on 24 March 2025' err=None
+22:47:28 decoupled: q23/53 score=1.0 recall=1.0 ttft=2.6 reply='$118' err=None
+22:47:30 decoupled: q24/53 score=1.0 recall=1.0 ttft=2.6 reply='TrailGear' err=None
+22:47:34 decoupled: q25/53 score=0.0 recall=1.0 ttft=2.6 reply='Delivered on 24/3/2025' err=None
+22:47:37 decoupled: q26/53 score=1.0 recall=1.0 ttft=2.6 reply='$89' err=None
+22:47:39 decoupled: q27/53 score=1.0 recall=1.0 ttft=2.6 reply='StrideShop' err=None
+22:47:42 decoupled: q28/53 score=0.33333333333333337 recall=1.0 ttft=2.6 reply='Delivered on Mon 24 Mar' err=None
+22:47:45 decoupled: q29/53 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+22:47:48 decoupled: q30/53 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+22:47:51 decoupled: q31/53 score=1.0 recall=1.0 ttft=2.6 reply='$14' err=None
+22:47:53 decoupled: q32/53 score=0.0 recall=1.0 ttft=2.5 reply='$14 monthly' err=None
+22:47:56 decoupled: q33/53 score=1.0 recall=1.0 ttft=2.1 reply='5 Orchard Close' err=None
+22:47:59 decoupled: q34/53 score=1.0 recall=1.0 ttft=2.6 reply='Latex' err=None
+22:48:01 decoupled: q35/53 score=1.0 recall=1.0 ttft=2.1 reply='5 Orchard Close' err=None
+22:48:03 decoupled: q36/53 score=1.0 recall=1.0 ttft=2.1 reply='peanuts' err=None
+22:48:06 decoupled: q37/53 score=1.0 recall=1.0 ttft=2.1 reply='2 Church Walk' err=None
+22:48:08 decoupled: q38/53 score=1.0 recall=1.0 ttft=2.1 reply='shellfish' err=None
+22:48:11 decoupled: q39/53 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+22:48:13 decoupled: q40/53 score=0.0 recall=1.0 ttft=2.6 reply='Old Mill' err=None
+22:48:16 decoupled: q41/53 score=1.0 recall=1.0 ttft=2.6 reply='19 March 2025' err=None
+22:48:20 decoupled: q42/53 score=0.0 recall=1.0 ttft=2.5 reply='Casa Roja on Friday, 21 March 2025' err=None
+22:48:23 decoupled: q43/53 score=1.0 recall=1.0 ttft=2.6 reply='21 March 2025' err=None
+22:48:26 decoupled: q44/53 score=0.0 recall=1.0 ttft=2.6 reply='26/3/2025' err=None
+22:48:29 decoupled: q45/53 score=0.6666666666666666 recall=1.0 ttft=2.6 reply='9 April 2025' err=None
+22:48:32 decoupled: q46/53 score=1.0 recall=1.0 ttft=2.5 reply='$31' err=None
+22:48:34 decoupled: q47/53 score=1.0 recall=1.0 ttft=2.6 reply='$88' err=None
+22:48:37 decoupled: q48/53 score=1.0 recall=1.0 ttft=2.6 reply='$84' err=None
+22:48:40 decoupled: q49/53 score=0.0 recall=1.0 ttft=1.9 reply='011 567 777 142' err=None
+22:48:42 decoupled: q50/53 score=0.0 recall=1.0 ttft=2.0 reply='Halo Labs' err=None
+22:48:45 decoupled: q51/53 score=1.0 recall=1.0 ttft=1.9 reply='08106 289232' err=None
+22:48:47 decoupled: q52/53 score=1.0 recall=1.0 ttft=1.9 reply='Dune Foods' err=None
+22:48:50 decoupled: q53/53 score=1.0 recall=1.0 ttft=2.6 reply='vegetarian' err=None
+22:48:56 trained: session 1 ready (6s idle work so far)
+22:49:01 trained: session 2 ready (12s idle work so far)
+22:49:08 trained: session 3 ready (18s idle work so far)
+22:49:09 trained: session 4 ready (19s idle work so far)
+22:49:09 trained: session 5 ready (19s idle work so far)
+22:49:15 trained: session 6 ready (25s idle work so far)
+22:49:24 trained: session 7 ready (34s idle work so far)
+22:49:28 trained: session 8 ready (38s idle work so far)
+22:49:31 trained: session 9 ready (41s idle work so far)
+22:49:35 trained: session 10 ready (44s idle work so far)
+22:49:37 trained: session 11 ready (47s idle work so far)
+22:49:37 trained: session 12 ready (47s idle work so far)
+22:49:45 trained: session 13 ready (54s idle work so far)
+22:49:47 trained: session 14 ready (57s idle work so far)
+22:49:50 trained: session 15 ready (60s idle work so far)
+22:49:56 trained: session 16 ready (65s idle work so far)
+22:49:58 trained: session 17 ready (68s idle work so far)
+22:50:04 trained: session 18 ready (73s idle work so far)
+22:50:12 trained: session 19 ready (81s idle work so far)
+22:50:15 trained: session 20 ready (84s idle work so far)
+22:50:22 trained: session 21 ready (91s idle work so far)
+22:50:25 trained: session 22 ready (94s idle work so far)
+22:50:25 trained: session 23 ready (94s idle work so far)
+22:50:25 trained: session 24 ready (94s idle work so far)
+22:50:27 trained: session 25 ready (96s idle work so far)
+22:50:29 trained: session 26 ready (98s idle work so far)
+22:50:29 trained: session 27 ready (98s idle work so far)
+22:50:33 trained: q1/53 score=0.7499999999999999 recall=1.0 ttft=2.8 reply='5 April 2025 11:00 am' err=None
+22:50:36 trained: q2/53 score=1.0 recall=1.0 ttft=2.8 reply='Bright Smile Dental' err=None
+22:50:39 trained: q3/53 score=0.0 recall=1.0 ttft=2.9 reply='12/4/2025' err=None
+22:50:43 trained: q4/53 score=0.0 recall=1.0 ttft=3.0 reply='12/4/2025, 9:30 am' err=None
+22:50:47 trained: q5/53 score=0.0 recall=0.0 ttft=2.7 reply='12/4/2025, 9:30 am' err=None
+22:50:50 trained: q6/53 score=0.5 recall=1.0 ttft=2.8 reply='Tuesday, 1 April, 11:00 am' err=None
+22:50:54 trained: q7/53 score=0.4 recall=1.0 ttft=2.8 reply='Tue 1 Apr, 11:00 am at Elmwood School' err=None
+22:50:57 trained: q8/53 score=0.5 recall=1.0 ttft=2.7 reply='Tuesday, 25 March at noon' err=None
+22:51:01 trained: q9/53 score=0.4444444444444445 recall=1.0 ttft=2.8 reply='Tuesday, 25 March at noon, Riverside Dermatology' err=None
+22:51:05 trained: q10/53 score=0.7499999999999999 recall=1.0 ttft=2.7 reply='8:15am on 19 March 2025' err=None
+22:51:08 trained: q11/53 score=1.0 recall=1.0 ttft=2.7 reply='Oak Lane Vets' err=None
+22:51:10 trained: q12/53 score=1.0 recall=None ttft=2.7 reply='Not mentioned' err=None
+22:51:14 trained: q13/53 score=0.0 recall=None ttft=2.7 reply='5 April 2025 11:00 am' err=None
+22:51:17 trained: q14/53 score=1.0 recall=1.0 ttft=2.7 reply='$34' err=None
+22:51:20 trained: q15/53 score=1.0 recall=1.0 ttft=2.8 reply='HomeBox' err=None
+22:51:23 trained: q16/53 score=1.0 recall=1.0 ttft=2.7 reply='Refunded' err=None
+22:51:26 trained: q17/53 score=1.0 recall=1.0 ttft=2.8 reply='$75' err=None
+22:51:29 trained: q18/53 score=1.0 recall=1.0 ttft=2.7 reply='KitchenHub' err=None
+22:51:32 trained: q19/53 score=0.33333333333333337 recall=1.0 ttft=2.7 reply='Delivered on 25 March 2025' err=None
+22:51:35 trained: q20/53 score=1.0 recall=1.0 ttft=2.7 reply='$27' err=None
+22:51:38 trained: q21/53 score=0.0 recall=1.0 ttft=2.7 reply='HomeBox' err=None
+22:51:42 trained: q22/53 score=0.19999999999999998 recall=1.0 ttft=2.7 reply='Delivered and paid for on 20 March 2025, total $27' err=None
+22:51:45 trained: q23/53 score=1.0 recall=1.0 ttft=2.9 reply='$118' err=None
+22:51:48 trained: q24/53 score=1.0 recall=1.0 ttft=2.7 reply='TrailGear' err=None
+22:51:51 trained: q25/53 score=0.0 recall=1.0 ttft=2.7 reply='Delivered on 24/3/2025' err=None
+22:51:54 trained: q26/53 score=1.0 recall=1.0 ttft=2.7 reply='$89' err=None
+22:51:57 trained: q27/53 score=1.0 recall=1.0 ttft=2.8 reply='StrideShop' err=None
+22:52:01 trained: q28/53 score=0.33333333333333337 recall=1.0 ttft=2.7 reply='Delivered on 25 March 2025' err=None
+22:52:03 trained: q29/53 score=1.0 recall=None ttft=2.7 reply='Not mentioned' err=None
+22:52:06 trained: q30/53 score=1.0 recall=None ttft=2.7 reply='Not mentioned' err=None
+22:52:09 trained: q31/53 score=0.0 recall=1.0 ttft=2.9 reply='$11' err=None
+22:52:12 trained: q32/53 score=0.6666666666666666 recall=1.0 ttft=2.7 reply='$5 monthly' err=None
+22:52:16 trained: q33/53 score=0.0 recall=1.0 ttft=2.9 reply='011 567 777 142' err=None
+22:52:19 trained: q34/53 score=0.6666666666666666 recall=1.0 ttft=2.4 reply='Latex and shellfish' err=None
+22:52:21 trained: q35/53 score=1.0 recall=1.0 ttft=1.9 reply='5 Orchard Close' err=None
+22:52:23 trained: q36/53 score=1.0 recall=1.0 ttft=2.1 reply='Peanuts' err=None
+22:52:26 trained: q37/53 score=1.0 recall=1.0 ttft=2.3 reply='2 Church Walk' err=None
+22:52:28 trained: q38/53 score=1.0 recall=1.0 ttft=2.4 reply='shellfish' err=None
+22:52:31 trained: q39/53 score=1.0 recall=None ttft=2.7 reply='Not mentioned' err=None
+22:52:34 trained: q40/53 score=1.0 recall=1.0 ttft=2.7 reply='Blue Door' err=None
+22:52:37 trained: q41/53 score=0.6666666666666666 recall=0.0 ttft=2.7 reply='9 March 2025' err=None
+22:52:40 trained: q42/53 score=0.0 recall=1.0 ttft=2.8 reply='Not mentioned' err=None
+22:52:43 trained: q43/53 score=0.0 recall=0.0 ttft=2.9 reply='Not mentioned' err=None
+22:52:46 trained: q44/53 score=0.0 recall=1.0 ttft=2.7 reply='26/3/2025' err=None
+22:52:50 trained: q45/53 score=1.0 recall=1.0 ttft=2.9 reply='12 April 2025' err=None
+22:52:53 trained: q46/53 score=1.0 recall=1.0 ttft=2.7 reply='$31' err=None
+22:52:56 trained: q47/53 score=1.0 recall=1.0 ttft=2.7 reply='$88' err=None
+22:52:58 trained: q48/53 score=1.0 recall=1.0 ttft=2.7 reply='$84' err=None
+22:53:02 trained: q49/53 score=0.0 recall=1.0 ttft=2.7 reply='011 567 777 142' err=None
+22:53:05 trained: q50/53 score=1.0 recall=1.0 ttft=2.7 reply='Apex Freight' err=None
+22:53:07 trained: q51/53 score=1.0 recall=1.0 ttft=1.8 reply='08106 289232' err=None
+22:53:10 trained: q52/53 score=1.0 recall=1.0 ttft=2.2 reply='Dune Foods' err=None
+22:53:13 trained: q53/53 score=1.0 recall=1.0 ttft=2.8 reply='vegetarian' err=None

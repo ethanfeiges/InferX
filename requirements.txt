@@ -1,0 +1,7 @@
+onnxruntime==1.26.0
+onnxruntime-qnn==2.5.0
+onnx
+tokenizers
+numpy
+nltk
+pytest

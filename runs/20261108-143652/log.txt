@@ -1,0 +1,79 @@
+14:36:52 on_ac_power=True
+14:36:56 trained: session 1 ready (4s idle work so far)
+14:37:03 trained: session 2 ready (10s idle work so far)
+14:37:06 trained: session 3 ready (13s idle work so far)
+14:37:07 trained: session 4 ready (14s idle work so far)
+14:37:13 trained: session 5 ready (20s idle work so far)
+14:37:17 trained: session 6 ready (24s idle work so far)
+14:37:19 trained: session 7 ready (26s idle work so far)
+14:37:29 trained: session 8 ready (36s idle work so far)
+14:37:38 trained: session 9 ready (44s idle work so far)
+14:37:44 trained: session 10 ready (51s idle work so far)
+14:37:50 trained: session 11 ready (57s idle work so far)
+14:38:02 trained: session 12 ready (68s idle work so far)
+14:38:06 trained: session 13 ready (73s idle work so far)
+14:38:09 trained: session 14 ready (75s idle work so far)
+14:38:16 trained: session 15 ready (82s idle work so far)
+14:38:20 trained: session 16 ready (87s idle work so far)
+14:38:25 trained: session 17 ready (91s idle work so far)
+14:38:30 trained: session 18 ready (96s idle work so far)
+14:38:30 trained: session 19 ready (96s idle work so far)
+14:38:31 trained: session 20 ready (97s idle work so far)
+14:38:33 trained: session 21 ready (99s idle work so far)
+14:38:33 trained: session 22 ready (99s idle work so far)
+14:38:36 trained: session 23 ready (102s idle work so far)
+14:38:36 trained: session 24 ready (102s idle work so far)
+14:38:36 trained: session 25 ready (102s idle work so far)
+14:38:36 trained: session 26 ready (102s idle work so far)
+14:38:36 trained: session 27 ready (102s idle work so far)
+14:38:42 trained: q1/51 score=1.0 recall=1.0 ttft=1.9 reply='Cancelled' err=None
+14:38:51 trained: q2/51 score=0.8571428571428571 recall=1.0 ttft=2.7 reply='25 March 2025 noon' err=None
+14:38:57 trained: q3/51 score=0.5 recall=1.0 ttft=2.1 reply='30 March at 9:30 am' err=None
+14:39:03 trained: q4/51 score=0.3636363636363636 recall=0.0 ttft=2.2 reply='Riverside Dermatology, rescheduled for 30 March at' err=None
+14:39:12 trained: q5/51 score=0.8571428571428571 recall=1.0 ttft=2.7 reply='Thursday, 3 April 2025' err=None
+14:39:18 trained: q6/51 score=0.5 recall=1.0 ttft=2.0 reply='Thursday, 9 April at 8:15am' err=None
+14:39:26 trained: q7/51 score=0.0 recall=0.0 ttft=2.2 reply='Thursday, 9 April at 8:15am' err=None
+14:39:30 trained: q8/51 score=1.0 recall=1.0 ttft=1.7 reply='Cancelled' err=None
+14:39:35 trained: q9/51 score=1.0 recall=1.0 ttft=1.9 reply='Cancelled' err=None
+14:39:40 trained: q10/51 score=1.0 recall=None ttft=2.2 reply='Not mentioned' err=None
+14:39:46 trained: q11/51 score=1.0 recall=None ttft=2.0 reply='Not mentioned' err=None
+14:39:53 trained: q12/51 score=1.0 recall=1.0 ttft=2.3 reply='$75' err=None
+14:40:00 trained: q13/51 score=1.0 recall=1.0 ttft=2.4 reply='KitchenHub' err=None
+14:40:07 trained: q14/51 score=0.0 recall=1.0 ttft=2.4 reply='Credit note issued for a backpack' err=None
+14:40:12 trained: q15/51 score=1.0 recall=1.0 ttft=2.0 reply='$19' err=None
+14:40:20 trained: q16/51 score=1.0 recall=1.0 ttft=2.4 reply='CaseCo' err=None
+14:40:25 trained: q17/51 score=0.0 recall=1.0 ttft=2.2 reply='Dispatched and delivered on March 14' err=None
+14:40:31 trained: q18/51 score=1.0 recall=1.0 ttft=2.2 reply='$118' err=None
+14:40:37 trained: q19/51 score=1.0 recall=1.0 ttft=2.3 reply='TrailGear' err=None
+14:40:42 trained: q20/51 score=0.33333333333333337 recall=1.0 ttft=2.2 reply='Delivered on Friday, 21 March' err=None
+14:40:48 trained: q21/51 score=1.0 recall=1.0 ttft=2.2 reply='$27' err=None
+14:40:53 trained: q22/51 score=1.0 recall=1.0 ttft=2.2 reply='FitNest' err=None
+14:41:01 trained: q23/51 score=0.25 recall=1.0 ttft=2.2 reply='Delivered and in safe place chosen by Maya' err=None
+14:41:08 trained: q24/51 score=1.0 recall=1.0 ttft=2.4 reply='$58' err=None
+14:41:14 trained: q25/51 score=1.0 recall=1.0 ttft=2.2 reply='TrailGear' err=None
+14:41:22 trained: q26/51 score=0.0 recall=1.0 ttft=2.2 reply='Shipped and expected arrival on 17 March 2025' err=None
+14:41:28 trained: q27/51 score=1.0 recall=None ttft=2.5 reply='Not mentioned' err=None
+14:41:34 trained: q28/51 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+14:41:41 trained: q29/51 score=0.5 recall=1.0 ttft=2.4 reply='$13 per month' err=None
+14:41:48 trained: q30/51 score=0.0 recall=1.0 ttft=2.3 reply='$13 per month' err=None
+14:41:53 trained: q31/51 score=1.0 recall=1.0 ttft=2.2 reply='2 Church Walk' err=None
+14:42:01 trained: q32/51 score=1.0 recall=1.0 ttft=2.3 reply='shellfish' err=None
+14:42:06 trained: q33/51 score=1.0 recall=1.0 ttft=2.1 reply='2 Church Walk' err=None
+14:42:12 trained: q34/51 score=1.0 recall=1.0 ttft=2.1 reply='Peanuts' err=None
+14:42:17 trained: q35/51 score=1.0 recall=1.0 ttft=2.4 reply='14 Birch Road' err=None
+14:42:25 trained: q36/51 score=1.0 recall=1.0 ttft=2.5 reply='Cats' err=None
+14:42:30 trained: q37/51 score=1.0 recall=None ttft=2.0 reply='Not mentioned' err=None
+14:42:37 trained: q38/51 score=0.0 recall=1.0 ttft=2.3 reply='Cafe Mira on 16 March 2025' err=None
+14:42:44 trained: q39/51 score=1.0 recall=0.0 ttft=2.2 reply='16 March 2025' err=None
+14:42:50 trained: q40/51 score=1.0 recall=1.0 ttft=2.2 reply='Old Mill' err=None
+14:42:55 trained: q41/51 score=0.6666666666666666 recall=0.0 ttft=2.2 reply='17 March 2025' err=None
+14:43:01 trained: q42/51 score=1.0 recall=1.0 ttft=2.3 reply='1 April 2025' err=None
+14:43:07 trained: q43/51 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='2 Apr 2025' err=None
+14:43:13 trained: q44/51 score=1.0 recall=1.0 ttft=2.2 reply='$36' err=None
+14:43:17 trained: q45/51 score=1.0 recall=1.0 ttft=2.0 reply='$150' err=None
+14:43:24 trained: q46/51 score=1.0 recall=1.0 ttft=2.3 reply='$159' err=None
+14:43:30 trained: q47/51 score=1.0 recall=1.0 ttft=2.0 reply='06368 639564' err=None
+14:43:35 trained: q48/51 score=1.0 recall=1.0 ttft=2.2 reply='Apex Freight' err=None
+14:43:41 trained: q49/51 score=1.0 recall=1.0 ttft=2.0 reply='01688 306435' err=None
+14:43:46 trained: q50/51 score=1.0 recall=1.0 ttft=2.0 reply='Halo Labs' err=None
+14:43:50 trained: q51/51 score=0.6666666666666666 recall=1.0 ttft=2.0 reply='Vegan diet' err=None

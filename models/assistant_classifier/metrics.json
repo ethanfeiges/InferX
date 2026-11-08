@@ -1,0 +1,289 @@
+{
+  "thresholds": {
+    "sensitive": 0.5,
+    "store": 0.2,
+    "replace": 0.5
+  },
+  "training_messages": 4723,
+  "training_pairs": 11003,
+  "val": {
+    "classifier": {
+      "store": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 287
+      },
+      "update": {
+        "precision": 0.953,
+        "recall": 0.943,
+        "f1": 0.948,
+        "n": 87
+      },
+      "kind_accuracy": 1.0,
+      "sensitive_kept": "0 of 52",
+      "false_sensitive": 0
+    },
+    "rules": {
+      "store": {
+        "precision": 0.632,
+        "recall": 0.819,
+        "f1": 0.713,
+        "n": 287
+      },
+      "update": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 87
+      },
+      "kind_accuracy": 0.719,
+      "sensitive_kept": "52 of 52",
+      "false_sensitive": 0
+    }
+  },
+  "tuning_set": {
+    "classifier": {
+      "store": {
+        "precision": 0.861,
+        "recall": 0.861,
+        "f1": 0.861,
+        "n": 36
+      },
+      "update": {
+        "precision": 0.7,
+        "recall": 0.636,
+        "f1": 0.667,
+        "n": 11
+      },
+      "kind_accuracy": 0.806,
+      "sensitive_kept": "0 of 4",
+      "false_sensitive": 0,
+      "errors": [
+        {
+          "id": "h1",
+          "text": "Orthodontist check-up, Tue 11 Mar 10:20 at Lakeside Orthodontics",
+          "wanted_store": true,
+          "got_store": false,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "h4",
+          "text": "Orthodontist check-up now Thu 13 Mar at 15:00",
+          "wanted_store": true,
+          "got_store": false,
+          "wanted_replaces": "h1",
+          "got_replaces": null
+        },
+        {
+          "id": "h9",
+          "text": "Thanks Alex! We received your payment of $212 for the air fryer from CookWell.",
+          "wanted_store": true,
+          "got_store": false,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "h11",
+          "text": "Parcel signed for at front door: air fryer",
+          "wanted_store": true,
+          "got_store": false,
+          "wanted_replaces": "h10",
+          "got_replaces": null
+        },
+        {
+          "id": "h16",
+          "text": "Paid $9.80 to Corner Cafe",
+          "wanted_store": true,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": "h12"
+        },
+        {
+          "id": "h18",
+          "text": "We've credited your card for the hiking boots you sent back",
+          "wanted_store": true,
+          "got_store": false,
+          "wanted_replaces": "h17",
+          "got_replaces": null
+        },
+        {
+          "id": "h31",
+          "text": "lol my cat just knocked over the plant again",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "h32",
+          "text": "Morning! How's it going?",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "h43",
+          "text": "Air fryers from $99! Our biggest spring event ends Sunday",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "h45",
+          "text": "Bring a friend for free this month. Tap for details.",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "h50",
+          "text": "Reminder set: Mum's birthday lunch tomorrow",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": "h8"
+        },
+        {
+          "id": "h51",
+          "text": "Mum's birthday lunch moved to 1:30pm at The Fig Tree",
+          "wanted_store": true,
+          "got_store": true,
+          "wanted_replaces": "h8",
+          "got_replaces": "h50"
+        },
+        {
+          "id": "h56",
+          "text": "Theo's football moved from Tuesdays to Thursdays this term",
+          "wanted_store": true,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": "h30"
+        }
+      ]
+    },
+    "rules": {
+      "store": {
+        "precision": 0.69,
+        "recall": 0.806,
+        "f1": 0.744,
+        "n": 36
+      },
+      "update": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 11
+      },
+      "kind_accuracy": 0.655,
+      "sensitive_kept": "4 of 4",
+      "false_sensitive": 0
+    }
+  },
+  "fresh_check": {
+    "classifier": {
+      "store": {
+        "precision": 0.857,
+        "recall": 1.0,
+        "f1": 0.923,
+        "n": 30
+      },
+      "update": {
+        "precision": 0.714,
+        "recall": 1.0,
+        "f1": 0.833,
+        "n": 10
+      },
+      "kind_accuracy": 0.933,
+      "sensitive_kept": "0 of 5",
+      "false_sensitive": 0,
+      "errors": [
+        {
+          "id": "c7",
+          "text": "Train to Glasgow, coach C seat 41, 3 May 06:52 from platform 4",
+          "wanted_store": true,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": "c3"
+        },
+        {
+          "id": "c10",
+          "text": "Ceramic planter is with the courier, due Tuesday",
+          "wanted_store": true,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": "c9"
+        },
+        {
+          "id": "c16",
+          "text": "Rate your Fern & Co purchase and get 10 points",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "c19",
+          "text": "shellfish puts me in A&E so skip the paella please",
+          "wanted_store": true,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": "c18"
+        },
+        {
+          "id": "c42",
+          "text": "Pollen count is high near you",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "c43",
+          "text": "Spring planters up to 40% off, this week only",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "c44",
+          "text": "Glasgow from just $12 when you book early",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": null
+        },
+        {
+          "id": "c46",
+          "text": "Balance reminder: statement ready to view",
+          "wanted_store": false,
+          "got_store": true,
+          "wanted_replaces": null,
+          "got_replaces": "c12"
+        }
+      ]
+    },
+    "rules": {
+      "store": {
+        "precision": 0.639,
+        "recall": 0.767,
+        "f1": 0.697,
+        "n": 30
+      },
+      "update": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 10
+      },
+      "kind_accuracy": 0.652,
+      "sensitive_kept": "5 of 5",
+      "false_sensitive": 0
+    }
+  }
+}

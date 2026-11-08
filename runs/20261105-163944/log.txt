@@ -1,0 +1,18 @@
+16:40:25 decoupled: session 1 ready (41s idle work so far)
+16:41:07 decoupled: session 2 ready (82s idle work so far)
+16:41:47 decoupled: session 3 ready (120s idle work so far)
+16:41:49 decoupled: q1/15 score=0.6666666666666666 recall=1.0 ttft=1.4 reply='8 May 2023' err=None
+16:41:50 decoupled: q2/15 score=0.0 recall=1.0 ttft=1.2 reply='1:56 pm on 8 May, 2023' err=None
+16:41:52 decoupled: q3/15 score=0.0 recall=1.0 ttft=1.3 reply='Not mentioned' err=None
+16:41:53 decoupled: q4/15 score=0.0 recall=1.0 ttft=1.2 reply='Not mentioned' err=None
+16:41:54 decoupled: q5/15 score=0.0 recall=1.0 ttft=1.2 reply='Not mentioned' err=None
+16:41:56 decoupled: q6/15 score=0.5454545454545454 recall=1.0 ttft=1.3 reply='14:00 pm on 25 May, 2023' err=None
+16:41:57 decoupled: q7/15 score=0.0 recall=1.0 ttft=1.2 reply='Not mentioned' err=None
+16:41:59 decoupled: q8/15 score=0.0 recall=1.0 ttft=1.2 reply='Not mentioned' err=None
+16:42:00 decoupled: q9/15 score=0.0 recall=1.0 ttft=1.4 reply='Not mentioned' err=None
+16:42:02 decoupled: q10/15 score=0.0 recall=1.0 ttft=1.4 reply='Caroline plans to go camping next month with her k' err=None
+16:42:03 decoupled: q11/15 score=0.0 recall=1.0 ttft=1.2 reply='Not mentioned' err=None
+16:42:05 decoupled: q12/15 score=0.07142857142857142 recall=0.0 ttft=1.2 reply='Melanie thinks that adopting children can bring a ' err=None
+16:42:06 decoupled: q13/15 score=1.0 recall=1.0 ttft=1.2 reply='Not mentioned' err=None
+16:42:08 decoupled: q14/15 score=1.0 recall=1.0 ttft=1.2 reply='Not mentioned' err=None
+16:42:09 decoupled: q15/15 score=1.0 recall=1.0 ttft=1.4 reply='Not mentioned.' err=None

@@ -1,0 +1,125 @@
+21:48:52 on_ac_power=False
+21:49:30 decoupled: session 1 ready (37s idle work so far)
+21:50:17 decoupled: session 2 ready (85s idle work so far)
+21:50:47 decoupled: session 3 ready (113s idle work so far)
+21:51:14 decoupled: session 4 ready (140s idle work so far)
+21:51:52 decoupled: session 5 ready (179s idle work so far)
+21:52:20 decoupled: session 6 ready (207s idle work so far)
+21:52:46 decoupled: session 7 ready (233s idle work so far)
+21:53:23 decoupled: session 8 ready (269s idle work so far)
+21:53:44 decoupled: session 9 ready (290s idle work so far)
+21:54:16 decoupled: session 10 ready (322s idle work so far)
+21:56:28 decoupled: session 11 ready (454s idle work so far)
+21:57:27 decoupled: session 12 ready (510s idle work so far)
+21:57:53 decoupled: session 13 ready (536s idle work so far)
+21:58:31 decoupled: session 14 ready (574s idle work so far)
+21:59:03 decoupled: session 15 ready (605s idle work so far)
+21:59:23 decoupled: session 16 ready (625s idle work so far)
+21:59:52 decoupled: session 17 ready (655s idle work so far)
+22:00:26 decoupled: session 18 ready (688s idle work so far)
+22:00:40 decoupled: session 19 ready (702s idle work so far)
+22:00:43 decoupled: q1/105 score=1.0 recall=1.0 ttft=2.5 reply='19 January 2023' err=None
+22:00:46 decoupled: q2/105 score=0.0 recall=1.0 ttft=2.5 reply='2023-01-20' err=None
+22:00:49 decoupled: q3/105 score=0.6666666666666666 recall=0.0 ttft=2.5 reply='Dancing' err=None
+22:00:52 decoupled: q4/105 score=0.11111111111111112 recall=0.0 ttft=2.5 reply='Passion for dance and mutual support in their ende' err=None
+22:00:55 decoupled: q5/105 score=0.19047619047619047 recall=0.5 ttft=2.3 reply='Passion for dancing and aspiration to teach others' err=None
+22:00:58 decoupled: q6/105 score=0.08333333333333333 recall=0.6666666666666666 ttft=2.6 reply='A room with a view of the ocean and yoga mats' err=None
+22:01:01 decoupled: q7/105 score=1.0 recall=1.0 ttft=2.6 reply='February 2023' err=None
+22:01:07 decoupled: q8/105 score=0.6666666666666666 recall=1.0 ttft=4.0 reply='2:32 pm on 29 January, 2023' err=None
+22:01:15 decoupled: q9/105 score=1.0 recall=1.0 ttft=7.4 reply='28 January 2023' err=None
+22:01:19 decoupled: q10/105 score=0.0 recall=1.0 ttft=3.4 reply='Paris' err=None
+22:01:22 decoupled: q11/105 score=0.8 recall=1.0 ttft=2.5 reply='8 February 2023' err=None
+22:01:25 decoupled: q12/105 score=0.0 recall=1.0 ttft=2.5 reply='Not mentioned explicitly in the memories provided.' err=None
+22:01:28 decoupled: q13/105 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='Before 16 March 2023' err=None
+22:01:31 decoupled: q14/105 score=0.2222222222222222 recall=1.0 ttft=2.5 reply='11:24 am on 25 April, 2023' err=None
+22:01:34 decoupled: q15/105 score=0.5 recall=1.0 ttft=2.4 reply='1:26 pm on 3 April, 2023' err=None
+22:01:37 decoupled: q16/105 score=1.0 recall=1.0 ttft=2.3 reply='May 2023' err=None
+22:01:40 decoupled: q17/105 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='25 April 2023' err=None
+22:01:43 decoupled: q18/105 score=0.3125 recall=0.0 ttft=2.5 reply='To take risks and grow her business after losing h' err=None
+22:01:46 decoupled: q19/105 score=1.0 recall=0.0 ttft=2.3 reply='Yes, both Jon and Gina start their businesses out ' err=None
+22:01:49 decoupled: q20/105 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='11 May 2023' err=None
+22:01:52 decoupled: q21/105 score=1.0 recall=1.0 ttft=2.5 reply='27 May 2023' err=None
+22:01:55 decoupled: q22/105 score=0.5 recall=1.0 ttft=2.3 reply='7:18 pm on 27 May, 2023' err=None
+22:01:58 decoupled: q23/105 score=0.5 recall=1.0 ttft=2.5 reply='8:29 pm on 13 June, 2023' err=None
+22:02:01 decoupled: q24/105 score=0.041666666666666664 recall=0.25 ttft=2.3 reply='Through advertising and new offers/promotions' err=None
+22:02:05 decoupled: q25/105 score=0.1212121212121212 recall=0.6666666666666666 ttft=2.5 reply='Networking events on 20 June 2023 and 21 July 2023' err=None
+22:02:08 decoupled: q26/105 score=0.0 recall=0.5 ttft=2.5 reply='Various dance styles including contemporary and hi' err=None
+22:02:11 decoupled: q27/105 score=0.4444444444444444 recall=1.0 ttft=2.5 reply='9:38 pm on 16 June, 2023' err=None
+22:02:16 decoupled: q28/105 score=1.0 recall=0.8 ttft=2.5 reply='Yes, both Jon and Gina have memories related to da' err=None
+22:02:19 decoupled: q29/105 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='Before 19 June 2023' err=None
+22:02:22 decoupled: q30/105 score=1.0 recall=1.0 ttft=2.5 reply='Paris, Rome' err=None
+22:02:25 decoupled: q31/105 score=1.0 recall=1.0 ttft=2.4 reply='20 June 2023' err=None
+22:02:28 decoupled: q32/105 score=0.0 recall=0.5 ttft=2.5 reply='Not explicitly mentioned in the memories provided.' err=None
+22:02:31 decoupled: q33/105 score=0.5 recall=1.0 ttft=2.4 reply='2:15 pm on 21 June 2023' err=None
+22:02:34 decoupled: q34/105 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='21 June 2023' err=None
+22:02:36 decoupled: q35/105 score=0.8 recall=1.0 ttft=2.4 reply='9 July 2023' err=None
+22:02:39 decoupled: q36/105 score=0.8 recall=1.0 ttft=2.3 reply='9 July 2023' err=None
+22:02:42 decoupled: q37/105 score=1.0 recall=1.0 ttft=2.5 reply='21 July, 2023' err=None
+22:02:45 decoupled: q38/105 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='6:46 pm on 23 July, 2023' err=None
+22:02:49 decoupled: q39/105 score=0.2222222222222222 recall=0.0 ttft=2.5 reply='10:04 am on 19 June, 2023' err=None
+22:02:51 decoupled: q40/105 score=0.0 recall=1.0 ttft=2.3 reply='Not specified' err=None
+22:02:54 decoupled: q41/105 score=0.0 recall=1.0 ttft=2.5 reply='Not specified in the memories' err=None
+22:02:57 decoupled: q42/105 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='Winning first place at a regionals at age fifteen' err=None
+22:03:00 decoupled: q43/105 score=0.0 recall=0.0 ttft=2.5 reply='Not specified, but contemporary dance is mentioned' err=None
+22:03:03 decoupled: q44/105 score=0.0 recall=0.0 ttft=2.3 reply='Growth and nurturing of skills and achievements' err=None
+22:03:06 decoupled: q45/105 score=0.2 recall=0.0 ttft=2.3 reply='They are expressing themselves freely through danc' err=None
+22:03:08 decoupled: q46/105 score=0.0 recall=0.0 ttft=2.5 reply='Excited and motivated' err=None
+22:03:11 decoupled: q47/105 score=1.0 recall=1.0 ttft=2.3 reply='Marley flooring' err=None
+22:03:14 decoupled: q48/105 score=0.0 recall=1.0 ttft=2.4 reply='A unique fashion piece from a wholesaler' err=None
+22:03:17 decoupled: q49/105 score=0.0 recall=1.0 ttft=2.6 reply='A unique piece of clothing' err=None
+22:03:20 decoupled: q50/105 score=0.25 recall=0.5 ttft=2.3 reply='Comfortable and inviting spot encouraging repeat v' err=None
+22:03:23 decoupled: q51/105 score=0.0 recall=0.0 ttft=2.5 reply='He expressed support and encouragement for her bus' err=None
+22:03:26 decoupled: q52/105 score=0.0 recall=1.0 ttft=2.4 reply='To create a cozy atmosphere and encourage repeat v' err=None
+22:03:29 decoupled: q53/105 score=0.5882352941176471 recall=1.0 ttft=2.4 reply='To make them feel welcome and encourage repeat vis' err=None
+22:03:32 decoupled: q54/105 score=0.0 recall=1.0 ttft=2.5 reply='Comfortable and inviting spot encouraging repeat v' err=None
+22:03:35 decoupled: q55/105 score=0.0 recall=1.0 ttft=2.3 reply='Growing and successful with marketing efforts' err=None
+22:03:38 decoupled: q56/105 score=0.3333333333333333 recall=1.0 ttft=2.5 reply="Freedom and dancing without concern for others' op" err=None
+22:03:41 decoupled: q57/105 score=0.16666666666666666 recall=0.0 ttft=2.5 reply='Dancing out challenges and staying positive and bu' err=None
+22:03:44 decoupled: q58/105 score=0.08695652173913043 recall=0.0 ttft=2.3 reply='Stay resilient, focus on big goals, remind yoursel' err=None
+22:03:47 decoupled: q59/105 score=0.5 recall=1.0 ttft=2.5 reply='To start his own business' err=None
+22:03:51 decoupled: q60/105 score=0.15384615384615383 recall=1.0 ttft=2.5 reply='To show her creativity, share her love for dance a' err=None
+22:03:54 decoupled: q61/105 score=0.0 recall=1.0 ttft=2.3 reply='Energized and motivated' err=None
+22:03:56 decoupled: q62/105 score=0.5 recall=1.0 ttft=2.3 reply='A glass globe trophy' err=None
+22:04:00 decoupled: q63/105 score=0.4827586206896552 recall=1.0 ttft=2.3 reply='By recalling her successes and progress, having a ' err=None
+22:04:03 decoupled: q64/105 score=1.0 recall=1.0 ttft=2.5 reply='Fashion internship' err=None
+22:04:05 decoupled: q65/105 score=0.0 recall=1.0 ttft=2.3 reply='Not mentioned' err=None
+22:04:08 decoupled: q66/105 score=1.0 recall=1.0 ttft=2.3 reply='The Lean Startup' err=None
+22:04:11 decoupled: q67/105 score=1.0 recall=1.0 ttft=2.5 reply='One-on-one mentoring and training' err=None
+22:04:14 decoupled: q68/105 score=0.631578947368421 recall=1.0 ttft=2.3 reply='For organization and motivation, tracking goals an' err=None
+22:04:17 decoupled: q69/105 score=0.4 recall=1.0 ttft=2.5 reply='Quit or give up' err=None
+22:04:19 decoupled: q70/105 score=1.0 recall=1.0 ttft=2.5 reply='To clear his mind' err=None
+22:04:22 decoupled: q71/105 score=1.0 recall=0.0 ttft=2.4 reply='A dance studio' err=None
+22:04:25 decoupled: q72/105 score=0.0 recall=1.0 ttft=2.5 reply='Not mentioned directly, but implied as a success a' err=None
+22:04:28 decoupled: q73/105 score=0.6666666666666666 recall=0.0 ttft=2.5 reply='Excited and motivated' err=None
+22:04:31 decoupled: q74/105 score=0.0 recall=0.0 ttft=2.3 reply='Expressiveness and personal joy' err=None
+22:04:34 decoupled: q75/105 score=0.0 recall=0.0 ttft=2.4 reply='Attend with Gina and make it unforgettable' err=None
+22:04:37 decoupled: q76/105 score=0.0 recall=0.0 ttft=2.5 reply='Gina plans to attend the grand opening on 20 June ' err=None
+22:04:40 decoupled: q77/105 score=0.5 recall=1.0 ttft=2.4 reply='Positive anticipation and excitement' err=None
+22:04:43 decoupled: q78/105 score=0.5 recall=1.0 ttft=2.4 reply='Camouflage print hoodie' err=None
+22:04:46 decoupled: q79/105 score=0.5454545454545454 recall=1.0 ttft=2.4 reply='His positivity, determination, and ability to danc' err=None
+22:04:49 decoupled: q80/105 score=0.0 recall=1.0 ttft=2.5 reply='Securing a temporary job at a dance studio' err=None
+22:04:52 decoupled: q81/105 score=0.4 recall=0.0 ttft=2.5 reply='Pursuing investors and refining his business plan' err=None
+22:04:55 decoupled: q82/105 score=0.5555555555555556 recall=1.0 ttft=2.5 reply='Creating content and managing social media account' err=None
+22:04:58 decoupled: q83/105 score=1.0 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+22:05:00 decoupled: q84/105 score=0.0 recall=0.0 ttft=2.5 reply='Contemporary dance' err=None
+22:05:03 decoupled: q85/105 score=0.0 recall=0.0 ttft=2.3 reply='Contemporary and hip-hop' err=None
+22:05:06 decoupled: q86/105 score=0.0 recall=0.0 ttft=2.5 reply="Positive and inspired by others' performances" err=None
+22:05:09 decoupled: q87/105 score=0.0 recall=1.0 ttft=2.4 reply='Marley flooring' err=None
+22:05:12 decoupled: q88/105 score=0.0 recall=0.0 ttft=2.5 reply='A photo of a room with a mirror and a wooden floor' err=None
+22:05:14 decoupled: q89/105 score=0.0 recall=0.0 ttft=2.4 reply='A unique piece combining clothing and dance' err=None
+22:05:17 decoupled: q90/105 score=0.0 recall=0.0 ttft=2.5 reply='Comfort and welcome' err=None
+22:05:20 decoupled: q91/105 score=0.0 recall=0.0 ttft=2.3 reply='To create a special experience for customers and e' err=None
+22:05:23 decoupled: q92/105 score=0.0 recall=1.0 ttft=2.4 reply='Great, with positive customer feedback and support' err=None
+22:05:26 decoupled: q93/105 score=0.0 recall=1.0 ttft=2.3 reply='Freedom and expressing oneself through dance' err=None
+22:05:29 decoupled: q94/105 score=0.0 recall=1.0 ttft=2.5 reply='For her business needs' err=None
+22:05:32 decoupled: q95/105 score=0.0 recall=0.0 ttft=2.3 reply='To create a place for people to dance and express ' err=None
+22:05:34 decoupled: q96/105 score=0.0 recall=1.0 ttft=2.3 reply='A glass globe trophy' err=None
+22:05:37 decoupled: q97/105 score=1.0 recall=0.0 ttft=2.4 reply='Not mentioned' err=None
+22:05:39 decoupled: q98/105 score=1.0 recall=1.0 ttft=2.4 reply='Not mentioned' err=None
+22:05:42 decoupled: q99/105 score=1.0 recall=0.0 ttft=2.5 reply='Not mentioned' err=None
+22:05:45 decoupled: q100/105 score=0.0 recall=0.0 ttft=2.5 reply='A photo of a book with a yellow and green cover' err=None
+22:05:48 decoupled: q101/105 score=0.0 recall=0.0 ttft=2.4 reply='For note-taking and inspiration purposes' err=None
+22:05:51 decoupled: q102/105 score=0.0 recall=1.0 ttft=2.5 reply='To clear his mind' err=None
+22:05:54 decoupled: q103/105 score=0.0 recall=0.0 ttft=2.3 reply='A photo of a book with a yellow and green cover' err=None
+22:05:57 decoupled: q104/105 score=0.0 recall=0.0 ttft=2.5 reply='Part-time position in the fashion department of an' err=None
+22:06:00 decoupled: q105/105 score=0.0 recall=0.0 ttft=2.5 reply="Expanding her online store's customer base and col" err=None

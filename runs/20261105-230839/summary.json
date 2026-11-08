@@ -1,0 +1,114 @@
+{
+  "decoupled": {
+    "system": "decoupled",
+    "questions_planned": 55,
+    "questions_answered": 55,
+    "errors": 0,
+    "score": 0.706,
+    "score_excluding_adversarial": 0.676,
+    "evidence_recall": 1.0,
+    "not_mentioned_rate": 0.127,
+    "by_category": {
+      "2": {
+        "n": 12,
+        "score": 0.551,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 38,
+        "score": 0.716,
+        "evidence_recall": 1.0
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.52,
+    "total_s_mean": 2.857,
+    "retrieval_ms_mean": 10.6,
+    "prompt_tokens_mean": 1223.055,
+    "cloud_calls": 0,
+    "ingest_s": 1.1,
+    "idle_s": 145.4,
+    "idle": {
+      "processed": 78.0,
+      "add": 61.0,
+      "update": 1.0,
+      "ignore": 1.0,
+      "none": 0.0,
+      "rejected": 15.0,
+      "ambiguous": 7.0,
+      "llm_calls": 85.0,
+      "errors": 0.0,
+      "llm_s": 144.9,
+      "dates_removed": 2.0
+    },
+    "store": {
+      "recall": 119,
+      "facts_active": 61,
+      "facts_superseded": 1,
+      "core": 2,
+      "queued": 0,
+      "outdated": 0
+    },
+    "llm_calls_total": 140
+  },
+  "trained": {
+    "system": "trained",
+    "questions_planned": 55,
+    "questions_answered": 55,
+    "errors": 0,
+    "score": 0.706,
+    "score_excluding_adversarial": 0.677,
+    "evidence_recall": 1.0,
+    "not_mentioned_rate": 0.109,
+    "by_category": {
+      "2": {
+        "n": 12,
+        "score": 0.599,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 38,
+        "score": 0.702,
+        "evidence_recall": 1.0
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.68,
+    "total_s_mean": 3.073,
+    "retrieval_ms_mean": 11.7,
+    "prompt_tokens_mean": 1310.764,
+    "cloud_calls": 0,
+    "ingest_s": 1.5,
+    "idle_s": 98.8,
+    "idle": {
+      "processed": 58.0,
+      "add": 58.0,
+      "update": 18.0,
+      "none": 0.0,
+      "rejected": 1.0,
+      "core": 7.0,
+      "llm_calls": 58.0,
+      "errors": 0.0,
+      "llm_s": 98.4,
+      "dates_removed": 2.0,
+      "secrets_dropped": 16.0
+    },
+    "store": {
+      "recall": 103,
+      "facts_active": 39,
+      "facts_superseded": 18,
+      "core": 7,
+      "queued": 0,
+      "outdated": 18
+    },
+    "llm_calls_total": 113
+  }
+}

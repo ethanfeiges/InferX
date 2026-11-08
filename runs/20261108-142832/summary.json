@@ -1,0 +1,59 @@
+{
+  "trained": {
+    "system": "trained",
+    "questions_planned": 56,
+    "questions_answered": 56,
+    "errors": 0,
+    "score": 0.727,
+    "score_excluding_adversarial": 0.7,
+    "evidence_recall": 0.843,
+    "not_mentioned_rate": 0.107,
+    "by_category": {
+      "2": {
+        "n": 13,
+        "score": 0.659,
+        "evidence_recall": 0.846
+      },
+      "4": {
+        "n": 38,
+        "score": 0.714,
+        "evidence_recall": 0.842
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.68,
+    "total_s_mean": 2.955,
+    "retrieval_ms_mean": 11.8,
+    "prompt_tokens_mean": 1244.714,
+    "cloud_calls": 12,
+    "cloud_bytes": 38431,
+    "ingest_s": 1.8,
+    "idle_s": 100.1,
+    "idle": {
+      "processed": 58.0,
+      "add": 58.0,
+      "update": 19.0,
+      "none": 0.0,
+      "rejected": 0.0,
+      "core": 7.0,
+      "llm_calls": 58.0,
+      "errors": 0.0,
+      "llm_s": 99.7,
+      "dates_removed": 8.0,
+      "secrets_dropped": 11.0
+    },
+    "store": {
+      "recall": 108,
+      "facts_active": 39,
+      "facts_superseded": 19,
+      "core": 7,
+      "queued": 0,
+      "outdated": 19
+    },
+    "llm_calls_total": 170
+  }
+}

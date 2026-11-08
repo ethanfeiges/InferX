@@ -1,0 +1,167 @@
+23:18:14 on_ac_power=True
+23:18:21 decoupled: session 1 ready (6s idle work so far)
+23:18:27 decoupled: session 2 ready (13s idle work so far)
+23:18:33 decoupled: session 3 ready (19s idle work so far)
+23:18:37 decoupled: session 4 ready (22s idle work so far)
+23:18:41 decoupled: session 5 ready (27s idle work so far)
+23:18:50 decoupled: session 6 ready (36s idle work so far)
+23:18:53 decoupled: session 7 ready (38s idle work so far)
+23:19:02 decoupled: session 8 ready (48s idle work so far)
+23:19:09 decoupled: session 9 ready (55s idle work so far)
+23:19:15 decoupled: session 10 ready (60s idle work so far)
+23:19:19 decoupled: session 11 ready (65s idle work so far)
+23:19:25 decoupled: session 12 ready (70s idle work so far)
+23:19:37 decoupled: session 13 ready (82s idle work so far)
+23:19:41 decoupled: session 14 ready (86s idle work so far)
+23:19:42 decoupled: session 15 ready (88s idle work so far)
+23:19:52 decoupled: session 16 ready (97s idle work so far)
+23:19:59 decoupled: session 17 ready (104s idle work so far)
+23:20:06 decoupled: session 18 ready (111s idle work so far)
+23:20:06 decoupled: session 19 ready (111s idle work so far)
+23:20:10 decoupled: session 20 ready (115s idle work so far)
+23:20:20 decoupled: session 21 ready (125s idle work so far)
+23:20:26 decoupled: session 22 ready (131s idle work so far)
+23:20:32 decoupled: session 23 ready (137s idle work so far)
+23:20:36 decoupled: session 24 ready (141s idle work so far)
+23:20:40 decoupled: session 25 ready (145s idle work so far)
+23:20:40 decoupled: session 26 ready (145s idle work so far)
+23:20:40 decoupled: session 27 ready (145s idle work so far)
+23:20:43 decoupled: q1/56 score=0.3333333333333333 recall=1.0 ttft=2.4 reply='16 March 2025' err=None
+23:20:45 decoupled: q2/56 score=0.6666666666666666 recall=1.0 ttft=1.9 reply='7 April 2025 at 8:15 am' err=None
+23:20:49 decoupled: q3/56 score=0.3636363636363636 recall=1.0 ttft=2.2 reply='Riverside Dermatology, starting at 7pm on 1 April ' err=None
+23:20:51 decoupled: q4/56 score=0.3333333333333333 recall=1.0 ttft=2.2 reply='24 March 2025' err=None
+23:20:54 decoupled: q5/56 score=0.5714285714285715 recall=1.0 ttft=2.0 reply='April 5 at noon' err=None
+23:20:57 decoupled: q6/56 score=0.3636363636363636 recall=1.0 ttft=2.4 reply='Elmwood School on Thursday, 3 April, at 4:45 pm' err=None
+23:21:00 decoupled: q7/56 score=0.5714285714285715 recall=1.0 ttft=2.4 reply='March 17 at 7pm' err=None
+23:21:03 decoupled: q8/56 score=0.5 recall=1.0 ttft=2.2 reply='Harbor Accounting, March 17 at 7pm' err=None
+23:21:06 decoupled: q9/56 score=1.0 recall=1.0 ttft=2.5 reply='April 7, 2025' err=None
+23:21:08 decoupled: q10/56 score=0.28571428571428575 recall=1.0 ttft=2.1 reply='April 7 at noon' err=None
+23:21:11 decoupled: q11/56 score=0.5454545454545454 recall=1.0 ttft=2.4 reply='Oak Lane Vets on April 7 at noon' err=None
+23:21:14 decoupled: q12/56 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='15 March 2025' err=None
+23:21:17 decoupled: q13/56 score=0.28571428571428575 recall=1.0 ttft=2.2 reply='Sat 29 Mar, 16:45' err=None
+23:21:20 decoupled: q14/56 score=0.0 recall=1.0 ttft=2.3 reply='Sat 29 Mar, 16:45' err=None
+23:21:22 decoupled: q15/56 score=1.0 recall=None ttft=2.3 reply='Not mentioned' err=None
+23:21:24 decoupled: q16/56 score=1.0 recall=None ttft=2.0 reply='Not mentioned' err=None
+23:21:27 decoupled: q17/56 score=1.0 recall=1.0 ttft=2.5 reply='$19' err=None
+23:21:30 decoupled: q18/56 score=1.0 recall=1.0 ttft=2.5 reply='CaseCo' err=None
+23:21:33 decoupled: q19/56 score=0.33333333333333337 recall=1.0 ttft=2.5 reply='Delivered on 12 March 2025' err=None
+23:21:36 decoupled: q20/56 score=1.0 recall=1.0 ttft=2.5 reply='$44' err=None
+23:21:38 decoupled: q21/56 score=1.0 recall=1.0 ttft=2.5 reply='KitchenHub' err=None
+23:21:42 decoupled: q22/56 score=0.33333333333333337 recall=1.0 ttft=2.5 reply='Delivered on Wednesday, 19 March.' err=None
+23:21:44 decoupled: q23/56 score=1.0 recall=1.0 ttft=2.5 reply='$75' err=None
+23:21:47 decoupled: q24/56 score=1.0 recall=1.0 ttft=2.5 reply='KitchenHub' err=None
+23:21:50 decoupled: q25/56 score=0.0 recall=1.0 ttft=2.4 reply='Scheduled for delivery on 19 March' err=None
+23:21:53 decoupled: q26/56 score=1.0 recall=1.0 ttft=2.5 reply='$27' err=None
+23:21:55 decoupled: q27/56 score=1.0 recall=1.0 ttft=2.5 reply='FitNest' err=None
+23:21:58 decoupled: q28/56 score=0.5 recall=1.0 ttft=2.5 reply='Shipped and awaiting feedback' err=None
+23:22:01 decoupled: q29/56 score=1.0 recall=1.0 ttft=2.5 reply='$89' err=None
+23:22:04 decoupled: q30/56 score=1.0 recall=1.0 ttft=2.5 reply='StrideShop' err=None
+23:22:06 decoupled: q31/56 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='Refund issued' err=None
+23:22:09 decoupled: q32/56 score=1.0 recall=None ttft=2.5 reply='Not mentioned' err=None
+23:22:11 decoupled: q33/56 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+23:22:14 decoupled: q34/56 score=0.5 recall=1.0 ttft=2.5 reply='$13 per month' err=None
+23:22:17 decoupled: q35/56 score=1.0 recall=1.0 ttft=2.5 reply='$10' err=None
+23:22:19 decoupled: q36/56 score=1.0 recall=1.0 ttft=1.8 reply='60 Lake View' err=None
+23:22:21 decoupled: q37/56 score=1.0 recall=1.0 ttft=2.0 reply='Cats' err=None
+23:22:23 decoupled: q38/56 score=1.0 recall=1.0 ttft=1.7 reply='60 Lake View' err=None
+23:22:25 decoupled: q39/56 score=0.6666666666666666 recall=1.0 ttft=2.0 reply='Latex sensitivity' err=None
+23:22:28 decoupled: q40/56 score=0.0 recall=1.0 ttft=2.0 reply='5 Orchard Close' err=None
+23:22:30 decoupled: q41/56 score=1.0 recall=1.0 ttft=2.3 reply='shellfish' err=None
+23:22:33 decoupled: q42/56 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+23:22:36 decoupled: q43/56 score=1.0 recall=1.0 ttft=2.5 reply='Green Table' err=None
+23:22:39 decoupled: q44/56 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='15 March 2025' err=None
+23:22:42 decoupled: q45/56 score=0.0 recall=1.0 ttft=2.5 reply='Casa Roja on Sunday, 30th March 2025' err=None
+23:22:45 decoupled: q46/56 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='30th March 2025' err=None
+23:22:48 decoupled: q47/56 score=1.0 recall=1.0 ttft=2.3 reply='8 April 2025' err=None
+23:22:50 decoupled: q48/56 score=1.0 recall=1.0 ttft=2.1 reply='31 March 2025' err=None
+23:22:53 decoupled: q49/56 score=1.0 recall=1.0 ttft=2.5 reply='$114' err=None
+23:22:56 decoupled: q50/56 score=1.0 recall=1.0 ttft=2.5 reply='$21' err=None
+23:22:58 decoupled: q51/56 score=1.0 recall=1.0 ttft=2.6 reply='$123' err=None
+23:23:01 decoupled: q52/56 score=1.0 recall=1.0 ttft=1.8 reply='05160 550299' err=None
+23:23:03 decoupled: q53/56 score=1.0 recall=1.0 ttft=1.9 reply='Apex Freight' err=None
+23:23:05 decoupled: q54/56 score=1.0 recall=1.0 ttft=1.7 reply='03651 408732' err=None
+23:23:07 decoupled: q55/56 score=0.0 recall=1.0 ttft=1.7 reply='60 Lake View' err=None
+23:23:10 decoupled: q56/56 score=1.0 recall=1.0 ttft=2.5 reply='Vegan' err=None
+23:23:15 trained: session 1 ready (5s idle work so far)
+23:23:20 trained: session 2 ready (10s idle work so far)
+23:23:23 trained: session 3 ready (12s idle work so far)
+23:23:23 trained: session 4 ready (12s idle work so far)
+23:23:24 trained: session 5 ready (14s idle work so far)
+23:23:27 trained: session 6 ready (17s idle work so far)
+23:23:30 trained: session 7 ready (19s idle work so far)
+23:23:36 trained: session 8 ready (25s idle work so far)
+23:23:44 trained: session 9 ready (33s idle work so far)
+23:23:50 trained: session 10 ready (40s idle work so far)
+23:23:55 trained: session 11 ready (44s idle work so far)
+23:23:59 trained: session 12 ready (48s idle work so far)
+23:24:11 trained: session 13 ready (60s idle work so far)
+23:24:16 trained: session 14 ready (64s idle work so far)
+23:24:19 trained: session 15 ready (68s idle work so far)
+23:24:26 trained: session 16 ready (75s idle work so far)
+23:24:33 trained: session 17 ready (81s idle work so far)
+23:24:38 trained: session 18 ready (87s idle work so far)
+23:24:39 trained: session 19 ready (88s idle work so far)
+23:24:42 trained: session 20 ready (91s idle work so far)
+23:24:47 trained: session 21 ready (95s idle work so far)
+23:24:49 trained: session 22 ready (97s idle work so far)
+23:24:50 trained: session 23 ready (98s idle work so far)
+23:24:54 trained: session 24 ready (102s idle work so far)
+23:24:55 trained: session 25 ready (103s idle work so far)
+23:24:55 trained: session 26 ready (103s idle work so far)
+23:24:55 trained: session 27 ready (103s idle work so far)
+23:24:58 trained: q1/56 score=1.0 recall=1.0 ttft=2.7 reply='1 April 2025' err=None
+23:25:02 trained: q2/56 score=0.6666666666666666 recall=1.0 ttft=2.9 reply='7 April 2025 at 8:15 am' err=None
+23:25:05 trained: q3/56 score=0.0 recall=1.0 ttft=2.7 reply='09:30 on 8 April 2025 at Oak Lane Vets' err=None
+23:25:09 trained: q4/56 score=0.6666666666666666 recall=1.0 ttft=2.9 reply='April 5, 2025' err=None
+23:25:12 trained: q5/56 score=0.5714285714285715 recall=1.0 ttft=2.9 reply='April 5 at noon' err=None
+23:25:16 trained: q6/56 score=0.4444444444444445 recall=1.0 ttft=2.9 reply='Elmwood School, Thursday 3 April, 4:45 pm.' err=None
+23:25:19 trained: q7/56 score=0.5714285714285715 recall=1.0 ttft=2.7 reply='March 17 at 7pm' err=None
+23:25:22 trained: q8/56 score=0.4444444444444445 recall=1.0 ttft=2.7 reply='Harbor Accounting on March 17 at 7pm' err=None
+23:25:25 trained: q9/56 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='April 7 noon' err=None
+23:25:29 trained: q10/56 score=0.3333333333333333 recall=1.0 ttft=2.8 reply='April 7 noon' err=None
+23:25:32 trained: q11/56 score=0.5 recall=1.0 ttft=2.9 reply='Oak Lane Vets on 8 April 2025 at 09:30' err=None
+23:25:36 trained: q12/56 score=0.0 recall=1.0 ttft=2.9 reply='23/3/2025' err=None
+23:25:39 trained: q13/56 score=0.28571428571428575 recall=1.0 ttft=2.9 reply='Sat 29 Mar, 16:45' err=None
+23:25:43 trained: q14/56 score=0.0 recall=1.0 ttft=2.9 reply='Sat 29 Mar, 16:45' err=None
+23:25:46 trained: q15/56 score=1.0 recall=None ttft=2.7 reply='Not mentioned' err=None
+23:25:49 trained: q16/56 score=1.0 recall=None ttft=2.8 reply='Not mentioned' err=None
+23:25:51 trained: q17/56 score=1.0 recall=1.0 ttft=2.6 reply='$19' err=None
+23:25:54 trained: q18/56 score=1.0 recall=1.0 ttft=2.7 reply='CaseCo' err=None
+23:25:58 trained: q19/56 score=0.33333333333333337 recall=1.0 ttft=2.7 reply='Delivered on 12 March 2025' err=None
+23:26:01 trained: q20/56 score=1.0 recall=1.0 ttft=2.8 reply='$44' err=None
+23:26:04 trained: q21/56 score=1.0 recall=1.0 ttft=2.9 reply='KitchenHub' err=None
+23:26:07 trained: q22/56 score=0.0 recall=1.0 ttft=2.8 reply='Shipped, arriving Wednesday 19 March.' err=None
+23:26:10 trained: q23/56 score=1.0 recall=1.0 ttft=2.9 reply='$75' err=None
+23:26:13 trained: q24/56 score=1.0 recall=1.0 ttft=2.8 reply='KitchenHub' err=None
+23:26:17 trained: q25/56 score=0.0 recall=1.0 ttft=2.7 reply='Delivered and paid for on 17 March 2025, $75' err=None
+23:26:20 trained: q26/56 score=1.0 recall=1.0 ttft=2.7 reply='$27' err=None
+23:26:23 trained: q27/56 score=1.0 recall=1.0 ttft=2.8 reply='FitNest' err=None
+23:26:27 trained: q28/56 score=0.2222222222222222 recall=1.0 ttft=2.7 reply='Shipped on 11 March 2025, arrival date Wednesday' err=None
+23:26:30 trained: q29/56 score=1.0 recall=1.0 ttft=2.7 reply='$89' err=None
+23:26:33 trained: q30/56 score=1.0 recall=1.0 ttft=2.9 reply='StrideShop' err=None
+23:26:36 trained: q31/56 score=0.0 recall=1.0 ttft=2.7 reply='Delivered on 12 March 2025' err=None
+23:26:39 trained: q32/56 score=1.0 recall=None ttft=2.8 reply='Not mentioned' err=None
+23:26:42 trained: q33/56 score=1.0 recall=None ttft=2.7 reply='Not mentioned' err=None
+23:26:45 trained: q34/56 score=1.0 recall=1.0 ttft=2.9 reply='$13' err=None
+23:26:48 trained: q35/56 score=1.0 recall=1.0 ttft=2.7 reply='$10' err=None
+23:26:51 trained: q36/56 score=1.0 recall=1.0 ttft=2.8 reply='60 Lake View' err=None
+23:26:54 trained: q37/56 score=1.0 recall=1.0 ttft=2.7 reply='Cats' err=None
+23:26:57 trained: q38/56 score=1.0 recall=1.0 ttft=2.7 reply='60 Lake View' err=None
+23:27:00 trained: q39/56 score=0.6666666666666666 recall=1.0 ttft=2.7 reply='Latex sensitivity' err=None
+23:27:03 trained: q40/56 score=0.0 recall=1.0 ttft=2.7 reply='Not mentioned' err=None
+23:27:06 trained: q41/56 score=1.0 recall=1.0 ttft=2.8 reply='shellfish' err=None
+23:27:09 trained: q42/56 score=1.0 recall=None ttft=2.8 reply='Not mentioned' err=None
+23:27:11 trained: q43/56 score=1.0 recall=1.0 ttft=2.7 reply='Green Table' err=None
+23:27:14 trained: q44/56 score=0.0 recall=1.0 ttft=2.9 reply='Not mentioned' err=None
+23:27:17 trained: q45/56 score=0.6666666666666666 recall=1.0 ttft=2.8 reply="Luigi's restaurant" err=None
+23:27:21 trained: q46/56 score=0.6666666666666666 recall=1.0 ttft=2.9 reply='24 March 2025' err=None
+23:27:24 trained: q47/56 score=1.0 recall=1.0 ttft=2.7 reply='8 April 2025' err=None
+23:27:27 trained: q48/56 score=1.0 recall=1.0 ttft=2.9 reply='31 March 2025' err=None
+23:27:30 trained: q49/56 score=1.0 recall=1.0 ttft=2.8 reply='$114' err=None
+23:27:33 trained: q50/56 score=1.0 recall=1.0 ttft=2.7 reply='$21' err=None
+23:27:36 trained: q51/56 score=1.0 recall=1.0 ttft=2.7 reply='$123' err=None
+23:27:40 trained: q52/56 score=1.0 recall=1.0 ttft=2.8 reply='05160 550299' err=None
+23:27:43 trained: q53/56 score=1.0 recall=1.0 ttft=2.9 reply='Apex Freight' err=None
+23:27:46 trained: q54/56 score=1.0 recall=1.0 ttft=2.8 reply='03651 408732' err=None
+23:27:49 trained: q55/56 score=0.0 recall=1.0 ttft=2.7 reply='60 Lake View' err=None
+23:27:52 trained: q56/56 score=0.6666666666666666 recall=1.0 ttft=2.7 reply='Vegan diet' err=None

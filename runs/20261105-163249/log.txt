@@ -1,0 +1,36 @@
+16:32:51 plain_retrieval: session 1 ready (0s idle work so far)
+16:32:52 plain_retrieval: session 2 ready (0s idle work so far)
+16:32:54 plain_retrieval: session 3 ready (0s idle work so far)
+16:33:03 plain_retrieval: q1/15 score=0.4444444444444444 recall=1.0 ttft=6.9 reply='1:56 pm on 8 May, 2023' err=None
+16:33:09 plain_retrieval: q2/15 score=0.0 recall=1.0 ttft=5.5 reply='1 May 2023' err=None
+16:33:15 plain_retrieval: q3/15 score=0.0 recall=1.0 ttft=5.3 reply='Not mentioned' err=None
+16:33:24 plain_retrieval: q4/15 score=0.25 recall=1.0 ttft=6.8 reply='Caroline researched adoption agencies to find fami' err=None
+16:33:31 plain_retrieval: q5/15 score=0.0 recall=1.0 ttft=6.4 reply='Not mentioned' err=None
+16:33:39 plain_retrieval: q6/15 score=0.0 recall=1.0 ttft=6.9 reply='2023-05-25' err=None
+16:33:47 plain_retrieval: q7/15 score=0.0 recall=1.0 ttft=6.9 reply='Not mentioned' err=None
+16:33:55 plain_retrieval: q8/15 score=0.25 recall=1.0 ttft=7.3 reply='7 May 2023' err=None
+16:34:03 plain_retrieval: q9/15 score=0.0 recall=1.0 ttft=7.3 reply='Not mentioned' err=None
+16:34:12 plain_retrieval: q10/15 score=0.0 recall=1.0 ttft=6.4 reply='Caroline plans to continue her education and explo' err=None
+16:34:24 plain_retrieval: q11/15 score=0.07692307692307693 recall=1.0 ttft=7.3 reply='Caroline is excited about the adoption process, sp' err=None
+16:34:36 plain_retrieval: q12/15 score=0.1111111111111111 recall=0.0 ttft=7.5 reply='Melanie thinks that adopting children is a wonderf' err=None
+16:34:42 plain_retrieval: q13/15 score=1.0 recall=1.0 ttft=6.3 reply='Not mentioned' err=None
+16:34:51 plain_retrieval: q14/15 score=1.0 recall=1.0 ttft=8.6 reply='Not mentioned' err=None
+16:35:02 plain_retrieval: q15/15 score=1.0 recall=0.0 ttft=10.5 reply='Not mentioned' err=None
+16:35:32 decoupled: session 1 ready (28s idle work so far)
+16:36:04 decoupled: session 2 ready (59s idle work so far)
+16:36:57 decoupled: session 3 ready (110s idle work so far)
+16:37:04 decoupled: q1/15 score=0.6666666666666666 recall=1.0 ttft=6.3 reply='8 May 2023' err=None
+16:37:10 decoupled: q2/15 score=0.0 recall=1.0 ttft=5.1 reply='Not mentioned' err=None
+16:37:15 decoupled: q3/15 score=0.0 recall=1.0 ttft=5.5 reply='Not mentioned' err=None
+16:37:23 decoupled: q4/15 score=0.1818181818181818 recall=1.0 ttft=5.7 reply='The research Caroline conducted was on the adoptio' err=None
+16:37:29 decoupled: q5/15 score=0.0 recall=0.0 ttft=5.6 reply='Not mentioned' err=None
+16:37:37 decoupled: q6/15 score=0.5454545454545454 recall=1.0 ttft=6.1 reply='1:14 pm on 25 May, 2023' err=None
+16:37:43 decoupled: q7/15 score=0.0 recall=0.5 ttft=5.3 reply='Not mentioned' err=None
+16:37:51 decoupled: q8/15 score=0.5454545454545454 recall=1.0 ttft=6.1 reply='7:55 pm on 9 June, 2023' err=None
+16:37:57 decoupled: q9/15 score=0.0 recall=1.0 ttft=5.7 reply='Not mentioned' err=None
+16:38:05 decoupled: q10/15 score=0.0 recall=1.0 ttft=6.4 reply='The speaker plans to take a camping trip next mont' err=None
+16:38:11 decoupled: q11/15 score=0.0 recall=0.0 ttft=5.5 reply='Not mentioned' err=None
+16:38:22 decoupled: q12/15 score=0.16666666666666666 recall=0.0 ttft=6.5 reply='Melanie thinks that adopting a child is a signific' err=None
+16:38:32 decoupled: q13/15 score=0.0 recall=1.0 ttft=6.7 reply='Adoption agencies typically support individuals fr' err=None
+16:38:41 decoupled: q14/15 score=0.0 recall=1.0 ttft=6.5 reply='To help LGBTQ+ individuals adopt children, as per ' err=None
+16:38:47 decoupled: q15/15 score=1.0 recall=0.0 ttft=6.2 reply='Not mentioned' err=None

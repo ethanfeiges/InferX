@@ -1,0 +1,108 @@
+{
+  "plain_retrieval": {
+    "system": "plain_retrieval",
+    "questions_planned": 10,
+    "questions_answered": 10,
+    "errors": 0,
+    "score": 0.317,
+    "score_excluding_adversarial": 0.396,
+    "evidence_recall": 0.95,
+    "not_mentioned_rate": 0.0,
+    "by_category": {
+      "1": {
+        "n": 2,
+        "score": 0.0,
+        "evidence_recall": 0.75
+      },
+      "2": {
+        "n": 3,
+        "score": 0.69,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 3,
+        "score": 0.365,
+        "evidence_recall": 1.0
+      },
+      "5": {
+        "n": 2,
+        "score": 0.0,
+        "evidence_recall": 1.0
+      }
+    },
+    "ttft_s_median": 6.05,
+    "total_s_mean": 7.898,
+    "retrieval_ms_mean": 13.6,
+    "prompt_tokens_mean": 1197.4,
+    "cloud_calls": 0,
+    "ingest_s": 0.3,
+    "idle_s": 0.0,
+    "idle": {},
+    "store": {
+      "recall": 58,
+      "facts_active": 0,
+      "facts_superseded": 0,
+      "core": 0,
+      "queued": 0
+    },
+    "llm_calls_total": 10
+  },
+  "decoupled": {
+    "system": "decoupled",
+    "questions_planned": 10,
+    "questions_answered": 10,
+    "errors": 0,
+    "score": 0.201,
+    "score_excluding_adversarial": 0.251,
+    "evidence_recall": 0.825,
+    "not_mentioned_rate": 0.0,
+    "by_category": {
+      "1": {
+        "n": 2,
+        "score": 0.056,
+        "evidence_recall": 0.625
+      },
+      "2": {
+        "n": 3,
+        "score": 0.37,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 3,
+        "score": 0.262,
+        "evidence_recall": 0.667
+      },
+      "5": {
+        "n": 2,
+        "score": 0.0,
+        "evidence_recall": 1.0
+      }
+    },
+    "ttft_s_median": 5.82,
+    "total_s_mean": 8.315,
+    "retrieval_ms_mean": 91.8,
+    "prompt_tokens_mean": 1218.7,
+    "cloud_calls": 0,
+    "ingest_s": 4.2,
+    "idle_s": 116.1,
+    "idle": {
+      "processed": 38.0,
+      "add": 38.0,
+      "update": 0.0,
+      "ignore": 0.0,
+      "none": 0.0,
+      "ambiguous": 0.0,
+      "llm_calls": 38.0,
+      "errors": 0.0,
+      "llm_s": 115.7
+    },
+    "store": {
+      "recall": 58,
+      "facts_active": 38,
+      "facts_superseded": 0,
+      "core": 0,
+      "queued": 0
+    },
+    "llm_calls_total": 48
+  }
+}

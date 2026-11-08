@@ -1,0 +1,219 @@
+21:25:25 on_ac_power=False
+21:25:42 decoupled: session 1 ready (17s idle work so far)
+21:26:01 decoupled: session 2 ready (35s idle work so far)
+21:26:37 decoupled: session 3 ready (72s idle work so far)
+21:27:00 decoupled: session 4 ready (94s idle work so far)
+21:27:26 decoupled: session 5 ready (120s idle work so far)
+21:27:51 decoupled: session 6 ready (145s idle work so far)
+21:28:24 decoupled: session 7 ready (177s idle work so far)
+21:29:17 decoupled: session 8 ready (231s idle work so far)
+21:29:37 decoupled: session 9 ready (250s idle work so far)
+21:30:19 decoupled: session 10 ready (292s idle work so far)
+21:30:49 decoupled: session 11 ready (323s idle work so far)
+21:31:15 decoupled: session 12 ready (348s idle work so far)
+21:31:43 decoupled: session 13 ready (376s idle work so far)
+21:32:37 decoupled: session 14 ready (430s idle work so far)
+21:33:13 decoupled: session 15 ready (465s idle work so far)
+21:33:52 decoupled: session 16 ready (504s idle work so far)
+21:34:31 decoupled: session 17 ready (544s idle work so far)
+21:35:02 decoupled: session 18 ready (574s idle work so far)
+21:35:26 decoupled: session 19 ready (598s idle work so far)
+21:35:36 decoupled: q1/199 score=0.6666666666666666 recall=1.0 ttft=9.6 reply='8 May 2023' err=None
+21:35:47 decoupled: q2/199 score=0.0 recall=0.0 ttft=9.5 reply='8 May 2023' err=None
+21:35:50 decoupled: q3/199 score=0.28571428571428575 recall=1.0 ttft=2.8 reply='Counseling and mental health work' err=None
+21:35:53 decoupled: q4/199 score=0.8 recall=1.0 ttft=2.3 reply='LGBTQ+ adoption agencies' err=None
+21:35:57 decoupled: q5/199 score=0.0 recall=0.0 ttft=2.6 reply='Not explicitly mentioned, but she is an advocate f' err=None
+21:36:00 decoupled: q6/199 score=0.5 recall=1.0 ttft=2.3 reply='20 May 2023' err=None
+21:36:03 decoupled: q7/199 score=1.0 recall=1.0 ttft=2.5 reply='June 2023' err=None
+21:36:06 decoupled: q8/199 score=0.0 recall=0.5 ttft=2.5 reply='Not mentioned explicitly, but implies a close, sup' err=None
+21:36:09 decoupled: q9/199 score=0.5454545454545454 recall=1.0 ttft=2.5 reply='7:55 pm on 9 June 2023' err=None
+21:36:18 decoupled: q10/199 score=0.14285714285714288 recall=1.0 ttft=2.5 reply='9 June 2023, 7:55 pm, 20 July 2023, 8:56 pm, 28 Au' err=None
+21:36:20 decoupled: q11/199 score=1.0 recall=1.0 ttft=2.5 reply='4 years' err=None
+21:36:23 decoupled: q12/199 score=0.0 recall=0.5 ttft=2.5 reply='Her home country' err=None
+21:36:26 decoupled: q13/199 score=1.0 recall=1.0 ttft=2.4 reply='10 years ago' err=None
+21:36:29 decoupled: q14/199 score=0.5454545454545454 recall=1.0 ttft=2.5 reply='Counseling and mental health work' err=None
+21:36:31 decoupled: q15/199 score=0.0 recall=0.5 ttft=2.5 reply='Not mentioned' err=None
+21:36:34 decoupled: q16/199 score=0.0 recall=0.0 ttft=2.5 reply='Family outings and creating art' err=None
+21:36:37 decoupled: q17/199 score=1.0 recall=1.0 ttft=2.5 reply='2 July 2023' err=None
+21:36:40 decoupled: q18/199 score=1.0 recall=1.0 ttft=2.5 reply='July 2023' err=None
+21:36:43 decoupled: q19/199 score=0.26666666666666666 recall=1.0 ttft=2.5 reply='In the mountains and at the beach' err=None
+21:36:46 decoupled: q20/199 score=0.0 recall=0.0 ttft=2.5 reply='Playing games and eating good food together' err=None
+21:36:48 decoupled: q21/199 score=1.0 recall=1.0 ttft=2.3 reply='5 July 2023' err=None
+21:36:51 decoupled: q22/199 score=0.7499999999999999 recall=1.0 ttft=2.3 reply='6 July 2023' err=None
+21:36:54 decoupled: q23/199 score=0.0 recall=1.0 ttft=2.5 reply='Not specifically mentioned' err=None
+21:36:57 decoupled: q24/199 score=0.5 recall=1.0 ttft=2.3 reply='"Charlotte\'s Web"' err=None
+21:36:59 decoupled: q25/199 score=0.5 recall=0.5 ttft=2.5 reply='Running' err=None
+21:37:02 decoupled: q26/199 score=1.0 recall=1.0 ttft=2.5 reply='10 July 2023' err=None
+21:37:05 decoupled: q27/199 score=0.0 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+21:37:08 decoupled: q28/199 score=0.0 recall=1.0 ttft=2.3 reply='Not directly mentioned, but her interest in poetry' err=None
+21:37:11 decoupled: q29/199 score=0.7499999999999999 recall=1.0 ttft=2.5 reply='15 July 2023' err=None
+21:37:14 decoupled: q30/199 score=0.7499999999999999 recall=1.0 ttft=2.5 reply='15 July 2023' err=None
+21:37:17 decoupled: q31/199 score=0.15384615384615383 recall=None ttft=2.3 reply='Not explicitly mentioned, but implied through her ' err=None
+21:37:20 decoupled: q32/199 score=0.7499999999999999 recall=1.0 ttft=2.5 reply='27 June 2023' err=None
+21:37:25 decoupled: q33/199 score=0.37777777777777777 recall=0.75 ttft=2.3 reply='Pride events, LGBTQ+ pride parade, LGBTQ+ conferen' err=None
+21:37:28 decoupled: q34/199 score=0.25 recall=1.0 ttft=2.4 reply='11 August 2023' err=None
+21:37:32 decoupled: q35/199 score=0.0 recall=0.0 ttft=2.4 reply='Talent show organizing, LGBTQ+ youth center volunt' err=None
+21:37:36 decoupled: q36/199 score=0.16666666666666666 recall=1.0 ttft=2.5 reply='10:37 am on 27 June, 2023' err=None
+21:37:39 decoupled: q37/199 score=1.0 recall=1.0 ttft=2.5 reply='The weekend before 17 July 2023' err=None
+21:37:42 decoupled: q38/199 score=0.4 recall=0.0 ttft=2.4 reply='A sunset with a pink sky' err=None
+21:37:46 decoupled: q39/199 score=0.1111111111111111 recall=0.3333333333333333 ttft=2.6 reply='Camping trips, beach visits, playing games, eating' err=None
+21:37:50 decoupled: q40/199 score=0.1 recall=0.75 ttft=2.5 reply='Through activism, art, mentorship, and attending e' err=None
+21:37:52 decoupled: q41/199 score=0.0 recall=1.0 ttft=2.4 reply='Four times' err=None
+21:37:55 decoupled: q42/199 score=0.8000000000000002 recall=1.0 ttft=2.5 reply='Last Tuesday, 20 July 2023' err=None
+21:37:58 decoupled: q43/199 score=0.0 recall=0.5 ttft=2.5 reply='Not mentioned' err=None
+21:38:01 decoupled: q44/199 score=0.4 recall=0.6666666666666666 ttft=2.3 reply='Abstract painting and self-portraits' err=None
+21:38:04 decoupled: q45/199 score=0.8 recall=1.0 ttft=2.5 reply='13 August 2023' err=None
+21:38:07 decoupled: q46/199 score=0.5 recall=1.0 ttft=2.5 reply='11 August 2023' err=None
+21:38:10 decoupled: q47/199 score=0.47058823529411764 recall=None ttft=2.5 reply='Yes, Melanie shows support, appreciation, and prid' err=None
+21:38:13 decoupled: q48/199 score=0.16666666666666666 recall=0.5 ttft=2.3 reply='Mel and close friends' err=None
+21:38:15 decoupled: q49/199 score=0.2 recall=0.6666666666666666 ttft=2.3 reply='Cup with a dog face' err=None
+21:38:19 decoupled: q50/199 score=0.0 recall=1.0 ttft=2.3 reply='8 May 2023 and 15 July 2023' err=None
+21:38:21 decoupled: q51/199 score=0.0 recall=0.0 ttft=2.3 reply='Not explicitly mentioned in the memories provided.' err=None
+21:38:25 decoupled: q52/199 score=0.0 recall=0.6666666666666666 ttft=2.4 reply='A sunflower painting on 23 August 2023' err=None
+21:38:27 decoupled: q53/199 score=0.4444444444444444 recall=1.0 ttft=2.5 reply='Bailey and Luna' err=None
+21:38:31 decoupled: q54/199 score=0.5454545454545454 recall=1.0 ttft=2.5 reply='3:31 pm on 23 August, 2023' err=None
+21:38:34 decoupled: q55/199 score=0.5454545454545454 recall=1.0 ttft=2.5 reply='3:31 pm on 23 August 2023' err=None
+21:38:37 decoupled: q56/199 score=0.6666666666666666 recall=0.0 ttft=2.5 reply='Flowers and sunsets' err=None
+21:38:42 decoupled: q57/199 score=0.4 recall=1.0 ttft=2.3 reply='Rainbow flag mural, eagle, necklace with a cross a' err=None
+21:38:45 decoupled: q58/199 score=0.5 recall=1.0 ttft=2.5 reply='17 August 2023' err=None
+21:38:48 decoupled: q59/199 score=0.4444444444444444 recall=1.0 ttft=2.5 reply='3:31 pm on 23 August 2023' err=None
+21:38:51 decoupled: q60/199 score=0.28571428571428575 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+21:38:53 decoupled: q61/199 score=0.5 recall=1.0 ttft=2.5 reply='Clarinet and guitar' err=None
+21:38:56 decoupled: q62/199 score=0.0 recall=0.5 ttft=2.5 reply='Not specified in memories' err=None
+21:38:59 decoupled: q63/199 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='28 August 2023' err=None
+21:39:02 decoupled: q64/199 score=1.0 recall=1.0 ttft=2.5 reply='September 2023' err=None
+21:39:05 decoupled: q65/199 score=0.0 recall=1.0 ttft=2.5 reply='Not specifically mentioned' err=None
+21:39:08 decoupled: q66/199 score=0.0 recall=1.0 ttft=2.5 reply='Embracing imperfections, finding courage, and auth' err=None
+21:39:11 decoupled: q67/199 score=0.0 recall=0.5 ttft=2.5 reply='Explore nature together' err=None
+21:39:14 decoupled: q68/199 score=1.0 recall=1.0 ttft=2.3 reply='The weekend before 13 September 2023' err=None
+21:39:17 decoupled: q69/199 score=0.0 recall=1.0 ttft=2.5 reply='Not mentioned specifically in the memories provide' err=None
+21:39:20 decoupled: q70/199 score=0.0 recall=0.0 ttft=2.5 reply='Compassionate and supportive' err=None
+21:39:24 decoupled: q71/199 score=0.7333333333333334 recall=0.5 ttft=2.5 reply='LGBT pride event, transgender poetry reading, prid' err=None
+21:39:27 decoupled: q72/199 score=0.0 recall=0.5 ttft=2.5 reply='"Charlotte\'s Web"' err=None
+21:39:29 decoupled: q73/199 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='In 2022' err=None
+21:39:32 decoupled: q74/199 score=0.0 recall=1.0 ttft=2.4 reply='Not mentioned' err=None
+21:39:35 decoupled: q75/199 score=0.7499999999999999 recall=1.0 ttft=2.5 reply='20 October 2023' err=None
+21:39:38 decoupled: q76/199 score=0.0 recall=0.5 ttft=2.3 reply='Not mentioned explicitly, but implied to be more t' err=None
+21:39:41 decoupled: q77/199 score=0.5 recall=1.0 ttft=2.5 reply='1:51 pm on 15 July, 2023' err=None
+21:39:44 decoupled: q78/199 score=0.0 recall=0.5 ttft=2.5 reply='Not mentioned' err=None
+21:39:47 decoupled: q79/199 score=0.2 recall=1.0 ttft=2.3 reply='Wooden figurines and pink sneakers' err=None
+21:39:50 decoupled: q80/199 score=0.5 recall=1.0 ttft=2.5 reply='20 October 2023' err=None
+21:39:53 decoupled: q81/199 score=1.0 recall=1.0 ttft=2.5 reply='21 October 2023' err=None
+21:39:55 decoupled: q82/199 score=0.0 recall=0.5 ttft=2.5 reply='Not mentioned' err=None
+21:39:58 decoupled: q83/199 score=1.0 recall=1.0 ttft=2.5 reply='Mental health' err=None
+21:40:01 decoupled: q84/199 score=0.36363636363636365 recall=1.0 ttft=2.5 reply='The importance of self-care and its impact on fami' err=None
+21:40:05 decoupled: q85/199 score=0.15384615384615383 recall=0.0 ttft=2.5 reply='Through engaging in activities beneficial for ment' err=None
+21:40:08 decoupled: q86/199 score=0.0 recall=0.0 ttft=2.5 reply='Organizing a talent show for children' err=None
+21:40:10 decoupled: q87/199 score=1.0 recall=1.0 ttft=2.5 reply='LGBTQ+ individuals' err=None
+21:40:14 decoupled: q88/199 score=0.7142857142857143 recall=1.0 ttft=2.5 reply='Inclusivity for LGBTQ+ individuals and supportive ' err=None
+21:40:17 decoupled: q89/199 score=0.0 recall=1.0 ttft=2.3 reply='Reading to her future children and opening their m' err=None
+21:40:20 decoupled: q90/199 score=0.09523809523809525 recall=0.0 ttft=2.5 reply='She sees it as a beautiful, loving choice for buil' err=None
+21:40:23 decoupled: q91/199 score=0.0 recall=0.0 ttft=2.5 reply='Not mentioned directly in the memories provided.' err=None
+21:40:26 decoupled: q92/199 score=0.4615384615384615 recall=1.0 ttft=2.3 reply='Love, faith, and strength, reminding her of her ro' err=None
+21:40:29 decoupled: q93/199 score=1.0 recall=1.0 ttft=2.5 reply='Sweden' err=None
+21:40:32 decoupled: q94/199 score=0.4 recall=1.0 ttft=2.4 reply='A necklace with a cross and a heart.' err=None
+21:40:35 decoupled: q95/199 score=0.3333333333333333 recall=1.0 ttft=2.5 reply="Caroline's 18th birthday and self-expression." err=None
+21:40:38 decoupled: q96/199 score=0.30769230769230765 recall=1.0 ttft=2.5 reply='Roasted marshmallows and told stories around a cam' err=None
+21:40:42 decoupled: q97/199 score=0.0 recall=1.0 ttft=2.5 reply='LGBTQ+ counseling workshops and mentorship program' err=None
+21:40:45 decoupled: q98/199 score=1.0 recall=1.0 ttft=2.5 reply='LGBTQ+ counseling workshops' err=None
+21:40:47 decoupled: q99/199 score=0.0 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+21:40:51 decoupled: q100/199 score=0.09090909090909091 recall=1.0 ttft=2.5 reply='Support for LGBTQ+ adoption issues and personal ex' err=None
+21:40:54 decoupled: q101/199 score=0.25 recall=0.0 ttft=2.5 reply='A safe and loving home with universal rights to lo' err=None
+21:40:57 decoupled: q102/199 score=0.2222222222222222 recall=1.0 ttft=2.3 reply='Yes, Melanie made the black and white bowl in the ' err=None
+21:41:00 decoupled: q103/199 score=0.8750000000000001 recall=1.0 ttft=2.5 reply='Classics, stories from different cultures, educati' err=None
+21:41:03 decoupled: q104/199 score=1.0 recall=1.0 ttft=2.6 reply='"Charlotte\'s Web"' err=None
+21:41:06 decoupled: q105/199 score=0.5 recall=1.0 ttft=2.4 reply='"Becoming Nicole" by Amy Ellis Nutt' err=None
+21:41:09 decoupled: q106/199 score=0.0 recall=0.0 ttft=2.5 reply='Inspiration and hope for her own path' err=None
+21:41:12 decoupled: q107/199 score=1.0 recall=0.0 ttft=2.3 reply='Running' err=None
+21:41:15 decoupled: q108/199 score=0.4000000000000001 recall=1.0 ttft=2.5 reply='To de-stress and improve mental well-being.' err=None
+21:41:17 decoupled: q109/199 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='Mental health improvement' err=None
+21:41:20 decoupled: q110/199 score=0.0 recall=1.0 ttft=2.5 reply='A cup with a dog face on it' err=None
+21:41:23 decoupled: q111/199 score=1.0 recall=1.0 ttft=2.3 reply='A cup with a dog face on it' err=None
+21:41:26 decoupled: q112/199 score=1.0 recall=1.0 ttft=2.5 reply='Painting' err=None
+21:41:29 decoupled: q113/199 score=0.888888888888889 recall=1.0 ttft=2.5 reply='A nature-inspired sunset with a palm tree' err=None
+21:41:32 decoupled: q114/199 score=0.0 recall=1.0 ttft=2.6 reply='A guinea pig sign photo' err=None
+21:41:35 decoupled: q115/199 score=1.0 recall=1.0 ttft=2.3 reply='Warmth and happiness' err=None
+21:41:38 decoupled: q116/199 score=0.09090909090909093 recall=1.0 ttft=2.5 reply='Growth, beauty, wedding memories, warmth, happines' err=None
+21:41:41 decoupled: q117/199 score=0.0 recall=0.0 ttft=2.5 reply='A tree with a bright sun in the background' err=None
+21:41:44 decoupled: q118/199 score=1.0 recall=1.0 ttft=2.5 reply='Once or twice a year' err=None
+21:41:47 decoupled: q119/199 score=0.0 recall=0.0 ttft=2.3 reply='A photo of a car dashboard with a white cloth and ' err=None
+21:41:50 decoupled: q120/199 score=0.8571428571428571 recall=1.0 ttft=2.5 reply='Awe of the universe' err=None
+21:41:53 decoupled: q121/199 score=0.4 recall=1.0 ttft=2.5 reply="Her daughter's birthday" err=None
+21:41:56 decoupled: q122/199 score=0.0 recall=0.0 ttft=2.5 reply='Not specified in the memories' err=None
+21:41:59 decoupled: q123/199 score=0.11111111111111112 recall=1.0 ttft=2.5 reply='To express her emotions and derive joy from workin' err=None
+21:42:01 decoupled: q124/199 score=0.8 recall=1.0 ttft=2.4 reply='Oscar, the guinea pig' err=None
+21:42:04 decoupled: q125/199 score=0.0 recall=1.0 ttft=2.5 reply='Luna and Oliver' err=None
+21:42:07 decoupled: q126/199 score=1.0 recall=1.0 ttft=2.5 reply="In Melanie's slipper" err=None
+21:42:10 decoupled: q127/199 score=0.0 recall=0.0 ttft=2.5 reply='Not mentioned' err=None
+21:42:13 decoupled: q128/199 score=0.5454545454545454 recall=0.0 ttft=2.3 reply='A large stained glass window showing time changing' err=None
+21:42:15 decoupled: q129/199 score=0.0 recall=0.0 ttft=2.5 reply='Not mentioned' err=None
+21:42:18 decoupled: q130/199 score=1.0 recall=1.0 ttft=2.3 reply='"Brave" by Sara Bareilles' err=None
+21:42:21 decoupled: q131/199 score=1.0 recall=1.0 ttft=2.5 reply='Bach and Mozart' err=None
+21:42:23 decoupled: q132/199 score=1.0 recall=1.0 ttft=2.3 reply='Ed Sheeran' err=None
+21:42:26 decoupled: q133/199 score=0.0 recall=0.0 ttft=2.3 reply='Not mentioned specifically in the memories provide' err=None
+21:42:29 decoupled: q134/199 score=0.0 recall=1.0 ttft=2.5 reply='A photo of a car dashboard with a white cloth and ' err=None
+21:42:32 decoupled: q135/199 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='Research adoption agencies and gather necessary do' err=None
+21:42:35 decoupled: q136/199 score=0.5 recall=1.0 ttft=2.3 reply='Taking a break from pottery for self-expression an' err=None
+21:42:39 decoupled: q137/199 score=0.0 recall=0.0 ttft=2.6 reply='Creating art and seeking inspiration from Caroline' err=None
+21:42:41 decoupled: q138/199 score=0.0 recall=0.0 ttft=2.5 reply='Not mentioned' err=None
+21:42:44 decoupled: q139/199 score=0.0 recall=0.0 ttft=2.5 reply='Not mentioned' err=None
+21:42:47 decoupled: q140/199 score=0.4705882352941177 recall=0.0 ttft=2.5 reply='Transgender experiences and stories shared through' err=None
+21:42:49 decoupled: q141/199 score=1.0 recall=1.0 ttft=2.3 reply='Trans lives matter' err=None
+21:42:52 decoupled: q142/199 score=0.25 recall=1.0 ttft=2.5 reply='Freedom and authentic womanhood' err=None
+21:42:55 decoupled: q143/199 score=0.16666666666666666 recall=1.0 ttft=2.3 reply='Learning and growth together, spreading love and t' err=None
+21:42:58 decoupled: q144/199 score=0.5 recall=1.0 ttft=2.5 reply='He had a car accident.' err=None
+21:43:02 decoupled: q145/199 score=0.09090909090909091 recall=1.0 ttft=2.5 reply='The children were described as tough, and Melanie ' err=None
+21:43:05 decoupled: q146/199 score=0.0 recall=1.0 ttft=2.5 reply='Relieved and appreciative of their strength and re' err=None
+21:43:08 decoupled: q147/199 score=0.16666666666666666 recall=1.0 ttft=2.3 reply='Tough and resilient, with reassurance from their m' err=None
+21:43:11 decoupled: q148/199 score=0.21052631578947364 recall=1.0 ttft=2.4 reply='Reflecting on the fleeting nature of life and her ' err=None
+21:43:14 decoupled: q149/199 score=0.18181818181818182 recall=1.0 ttft=2.5 reply='Cherishing family moments and happiness at the Gra' err=None
+21:43:17 decoupled: q150/199 score=0.0 recall=0.0 ttft=2.5 reply='Love and support' err=None
+21:43:20 decoupled: q151/199 score=0.0 recall=0.0 ttft=2.4 reply='With love and gratitude' err=None
+21:43:23 decoupled: q152/199 score=0.0 recall=1.0 ttft=2.5 reply='Completed a task with her family that the kids enj' err=None
+21:43:26 decoupled: q153/199 score=0.0 recall=0.0 ttft=2.3 reply='The importance of mental health awareness and her ' err=None
+21:43:29 decoupled: q154/199 score=0.0 recall=0.0 ttft=2.5 reply='Planning activities with Caroline' err=None
+21:43:31 decoupled: q155/199 score=0.0 recall=0.0 ttft=2.3 reply='Children in need of a family' err=None
+21:43:34 decoupled: q156/199 score=0.0 recall=1.0 ttft=2.5 reply='Inclusivity and support for LGBTQ+ folks' err=None
+21:43:37 decoupled: q157/199 score=0.0 recall=0.0 ttft=2.3 reply='Inclusivity and support' err=None
+21:43:40 decoupled: q158/199 score=0.0 recall=1.0 ttft=2.4 reply='Love, faith, and strength' err=None
+21:43:42 decoupled: q159/199 score=0.0 recall=1.0 ttft=2.5 reply='Sweden' err=None
+21:43:45 decoupled: q160/199 score=0.0 recall=1.0 ttft=2.5 reply='A necklace representing love, faith, and strength.' err=None
+21:43:49 decoupled: q161/199 score=0.0 recall=1.0 ttft=2.5 reply='A hand-painted bowl made by a friend for her 18th ' err=None
+21:43:52 decoupled: q162/199 score=0.0 recall=1.0 ttft=2.5 reply='Art and self-expression' err=None
+21:43:55 decoupled: q163/199 score=0.0 recall=1.0 ttft=2.5 reply='Roasted marshmallows and shared stories around the' err=None
+21:43:58 decoupled: q164/199 score=0.0 recall=1.0 ttft=2.3 reply='Support for her family and mental health through r' err=None
+21:44:01 decoupled: q165/199 score=0.0 recall=1.0 ttft=2.5 reply='An LGBTQ+ counseling workshop' err=None
+21:44:04 decoupled: q166/199 score=0.0 recall=1.0 ttft=2.5 reply='Family courage and love' err=None
+21:44:06 decoupled: q167/199 score=0.0 recall=0.0 ttft=2.4 reply='A supportive and inclusive community' err=None
+21:44:09 decoupled: q168/199 score=1.0 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+21:44:12 decoupled: q169/199 score=0.0 recall=1.0 ttft=2.5 reply='Running' err=None
+21:44:15 decoupled: q170/199 score=0.0 recall=1.0 ttft=2.5 reply='To boost her mood and clear her mind' err=None
+21:44:18 decoupled: q171/199 score=0.0 recall=0.0 ttft=2.3 reply='Boosting mood and de-stressing' err=None
+21:44:20 decoupled: q172/199 score=0.0 recall=1.0 ttft=2.5 reply='Inspired and emotional moments' err=None
+21:44:23 decoupled: q173/199 score=0.0 recall=0.0 ttft=2.5 reply='Capturing the serenity of a sunset at the beach' err=None
+21:44:26 decoupled: q174/199 score=0.0 recall=0.0 ttft=2.3 reply='A photo of a building with a large eagle painted o' err=None
+21:44:29 decoupled: q175/199 score=0.0 recall=1.0 ttft=2.4 reply='Once or twice a year' err=None
+21:44:32 decoupled: q176/199 score=0.0 recall=0.0 ttft=2.5 reply='A photo of a family sitting around a campfire on t' err=None
+21:44:35 decoupled: q177/199 score=1.0 recall=0.0 ttft=2.3 reply='Not mentioned' err=None
+21:44:38 decoupled: q178/199 score=0.0 recall=0.0 ttft=2.5 reply='To symbolize her journey and reject rigid thinking' err=None
+21:44:40 decoupled: q179/199 score=1.0 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+21:44:43 decoupled: q180/199 score=0.0 recall=1.0 ttft=2.5 reply="In Melanie's slipper" err=None
+21:44:46 decoupled: q181/199 score=0.0 recall=0.0 ttft=2.4 reply='Playing games and eating good food together' err=None
+21:44:49 decoupled: q182/199 score=0.0 recall=0.0 ttft=2.3 reply='A bowl with a black and white flower design.' err=None
+21:44:52 decoupled: q183/199 score=1.0 recall=0.0 ttft=2.3 reply='Not mentioned' err=None
+21:44:55 decoupled: q184/199 score=0.0 recall=1.0 ttft=2.5 reply='"Brave" by Sara Bareilles' err=None
+21:44:57 decoupled: q185/199 score=0.0 recall=1.0 ttft=2.3 reply='Acoustic guitar' err=None
+21:45:00 decoupled: q186/199 score=0.0 recall=1.0 ttft=2.5 reply='Bach and Mozart' err=None
+21:45:03 decoupled: q187/199 score=0.0 recall=0.0 ttft=2.4 reply='Not specifically mentioned, but she enjoys playing' err=None
+21:45:06 decoupled: q188/199 score=1.0 recall=1.0 ttft=2.3 reply='Not mentioned' err=None
+21:45:09 decoupled: q189/199 score=0.0 recall=0.0 ttft=2.5 reply="An accident involving children's well-being" err=None
+21:45:11 decoupled: q190/199 score=0.0 recall=0.0 ttft=2.5 reply='Research and emotional preparation' err=None
+21:45:14 decoupled: q191/199 score=0.0 recall=1.0 ttft=2.5 reply='Transgender poetry reading celebrating identities' err=None
+21:45:17 decoupled: q192/199 score=0.0 recall=1.0 ttft=2.3 reply='Had a car accident, but was unharmed.' err=None
+21:45:20 decoupled: q193/199 score=0.0 recall=0.5 ttft=2.5 reply='Resiliently, with no harm done' err=None
+21:45:23 decoupled: q194/199 score=0.0 recall=1.0 ttft=2.5 reply='Concerned and grateful for their well-being and su' err=None
+21:45:26 decoupled: q195/199 score=0.0 recall=0.0 ttft=2.5 reply='They were resilient and unharmed.' err=None
+21:45:29 decoupled: q196/199 score=0.0 recall=1.0 ttft=2.5 reply="Concerned for the children's well-being" err=None
+21:45:33 decoupled: q197/199 score=0.0 recall=1.0 ttft=2.5 reply='She expressed appreciation for the peaceful and ca' err=None
+21:45:36 decoupled: q198/199 score=0.0 recall=0.0 ttft=2.5 reply='Picnic with friends the week before 6 July 2023.' err=None
+21:45:39 decoupled: q199/199 score=0.0 recall=0.0 ttft=2.3 reply='Cherishing moments with her son and valuing family' err=None

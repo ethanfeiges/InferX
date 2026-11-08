@@ -1,0 +1,24 @@
+# Python environments and caches
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.model-test/
+
+# Downloaded files (see README for where each comes from)
+data/locomo/
+models/minilm/*.onnx
+models/minilm_fp32/*.onnx
+third_party/sqlite-vec/*.zip
+third_party/sqlite-vec/*.obj
+third_party/sqlite-vec/*.exp
+third_party/sqlite-vec/*.dll
+third_party/sqlite-vec/sqlite/
+third_party/sqlite-vec/src/
+
+# Memory databases from runs (the answers and scores in each run's .jsonl and summary.json are kept)
+runs/**/*.sqlite
+runs/**/*.sqlite-*
+# Packet captures
+*.etl
+*.pcapng

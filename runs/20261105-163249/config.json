@@ -1,0 +1,21 @@
+{
+  "url": "http://127.0.0.1:60289/v1/",
+  "model": "qwen2.5-1.5b-instruct-qnn-npu:3",
+  "tokenizer": "C:\\Users\\Lab User\\.foundry\\cache\\models\\Microsoft\\qwen2.5-1.5b-instruct-qnn-npu-3\\v3\\tokenizer.json",
+  "conversation": 0,
+  "limit": 15,
+  "sessions": 3,
+  "retrieved_tokens": 1200,
+  "seed": 1,
+  "systems": "plain_retrieval,decoupled",
+  "budget": {
+    "system": 200,
+    "core": 300,
+    "retrieved": 1200,
+    "recent": 0,
+    "reply": 800
+  },
+  "questions": 15,
+  "messages": 58,
+  "sessions_used": 3
+}

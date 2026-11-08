@@ -1,0 +1,33 @@
+14:12:28 on_ac_power=False
+14:12:28 plain_retrieval: session 1 ready (0s idle work so far)
+14:12:28 plain_retrieval: session 2 ready (0s idle work so far)
+14:12:28 plain_retrieval: session 3 ready (0s idle work so far)
+14:12:28 plain_retrieval: session 4 ready (0s idle work so far)
+14:12:39 plain_retrieval: q1/4 score=0.8 recall=1.0 ttft=3.9 reply='28 March' err=None
+14:12:50 plain_retrieval: q2/4 score=1.0 recall=1.0 ttft=3.9 reply='TrailGear' err=None
+14:13:02 plain_retrieval: q3/4 score=1.0 recall=1.0 ttft=3.9 reply='10 March 2025' err=None
+14:13:13 plain_retrieval: q4/4 score=1.0 recall=1.0 ttft=3.9 reply='$101' err=None
+14:13:13 full_context: session 1 ready (0s idle work so far)
+14:13:13 full_context: session 2 ready (0s idle work so far)
+14:13:13 full_context: session 3 ready (0s idle work so far)
+14:13:13 full_context: session 4 ready (0s idle work so far)
+14:13:26 full_context: q1/4 score=0.8571428571428571 recall=1.0 ttft=3.8 reply='Friday, 28 March 2025' err=None
+14:13:37 full_context: q2/4 score=1.0 recall=1.0 ttft=3.8 reply='TrailGear' err=None
+14:13:48 full_context: q3/4 score=1.0 recall=1.0 ttft=3.9 reply='10 March 2025' err=None
+14:13:59 full_context: q4/4 score=1.0 recall=1.0 ttft=3.9 reply='$101' err=None
+14:14:00 local_memory: session 1 ready (0s idle work so far)
+14:14:00 local_memory: session 2 ready (0s idle work so far)
+14:14:00 local_memory: session 3 ready (0s idle work so far)
+14:14:01 local_memory: session 4 ready (0s idle work so far)
+14:14:06 local_memory: q1/4 score=0.8 recall=1.0 ttft=3.9 reply='28 March' err=None
+14:14:10 local_memory: q2/4 score=1.0 recall=1.0 ttft=3.9 reply='TrailGear' err=None
+14:14:16 local_memory: q3/4 score=1.0 recall=1.0 ttft=3.9 reply='10 March 2025' err=None
+14:14:20 local_memory: q4/4 score=1.0 recall=1.0 ttft=3.9 reply='$101' err=None
+14:14:25 trained: session 1 ready (5s idle work so far)
+14:14:36 trained: session 2 ready (14s idle work so far)
+14:14:47 trained: session 3 ready (25s idle work so far)
+14:15:21 trained: session 4 ready (58s idle work so far)
+14:15:24 trained: q1/4 score=0.8571428571428571 recall=1.0 ttft=1.0 reply='Friday, 28 March, 2025' err=None
+14:15:26 trained: q2/4 score=1.0 recall=1.0 ttft=0.9 reply='TrailGear' err=None
+14:15:29 trained: q3/4 score=1.0 recall=1.0 ttft=0.9 reply='10 March 2025' err=None
+14:15:31 trained: q4/4 score=1.0 recall=1.0 ttft=0.9 reply='$101' err=None

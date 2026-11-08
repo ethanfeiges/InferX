@@ -1,0 +1,264 @@
+13:56:21 on_ac_power=False
+13:56:22 plain_retrieval: session 1 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 2 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 3 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 4 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 5 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 6 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 7 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 8 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 9 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 10 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 11 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 12 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 13 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 14 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 15 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 16 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 17 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 18 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 19 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 20 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 21 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 22 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 23 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 24 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 25 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 26 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 27 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 28 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 29 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 30 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 31 ready (0s idle work so far)
+13:56:22 plain_retrieval: session 32 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 33 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 34 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 35 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 36 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 37 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 38 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 39 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 40 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 41 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 42 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 43 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 44 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 45 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 46 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 47 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 48 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 49 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 50 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 51 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 52 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 53 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 54 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 55 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 56 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 57 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 58 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 59 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 60 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 61 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 62 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 63 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 64 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 65 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 66 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 67 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 68 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 69 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 70 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 71 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 72 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 73 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 74 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 75 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 76 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 77 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 78 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 79 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 80 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 81 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 82 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 83 ready (0s idle work so far)
+13:56:23 plain_retrieval: session 84 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 85 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 86 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 87 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 88 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 89 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 90 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 91 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 92 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 93 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 94 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 95 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 96 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 97 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 98 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 99 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 100 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 101 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 102 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 103 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 104 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 105 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 106 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 107 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 108 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 109 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 110 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 111 ready (0s idle work so far)
+13:56:24 plain_retrieval: session 112 ready (0s idle work so far)
+13:56:27 plain_retrieval: q1/84 score=0.6666666666666666 recall=1.0 ttft=2.2 reply='4:45 pm on 10 April 2025' err=None
+13:56:30 plain_retrieval: q2/84 score=1.0 recall=1.0 ttft=2.3 reply='Harbor Accounting' err=None
+13:56:32 plain_retrieval: q3/84 score=0.3333333333333333 recall=1.0 ttft=2.2 reply='10 May, 2025' err=None
+13:56:36 plain_retrieval: q4/84 score=0.0 recall=1.0 ttft=2.4 reply='16/6/2025 at 16:45' err=None
+13:56:38 plain_retrieval: q5/84 score=1.0 recall=1.0 ttft=2.4 reply='Northside Physio' err=None
+13:56:41 plain_retrieval: q6/84 score=0.0 recall=1.0 ttft=2.3 reply='25/5/2025 09:30' err=None
+13:56:44 plain_retrieval: q7/84 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='May 31, 7pm' err=None
+13:56:47 plain_retrieval: q8/84 score=0.0 recall=1.0 ttft=2.2 reply='May 31, 7pm' err=None
+13:56:49 plain_retrieval: q9/84 score=0.6666666666666666 recall=1.0 ttft=2.2 reply='Jun 13, 2025' err=None
+13:56:53 plain_retrieval: q10/84 score=0.4444444444444444 recall=1.0 ttft=2.2 reply='Jun 16, 2025, at 4:45 pm' err=None
+13:56:55 plain_retrieval: q11/84 score=1.0 recall=1.0 ttft=2.2 reply='Oak Lane Vets' err=None
+13:56:58 plain_retrieval: q12/84 score=0.25 recall=1.0 ttft=2.4 reply='Apr 3 at 2:15 pm' err=None
+13:57:00 plain_retrieval: q13/84 score=1.0 recall=1.0 ttft=2.2 reply='Elmwood School' err=None
+13:57:03 plain_retrieval: q14/84 score=1.0 recall=1.0 ttft=2.1 reply='23 June 2025' err=None
+13:57:06 plain_retrieval: q15/84 score=0.7499999999999999 recall=1.0 ttft=2.3 reply='25 June 2025 at 7pm' err=None
+13:57:09 plain_retrieval: q16/84 score=0.0 recall=1.0 ttft=2.2 reply='25 June 2025 at 7pm' err=None
+13:57:11 plain_retrieval: q17/84 score=1.0 recall=None ttft=2.2 reply='Not mentioned' err=None
+13:57:14 plain_retrieval: q18/84 score=1.0 recall=None ttft=2.3 reply='Not mentioned' err=None
+13:57:16 plain_retrieval: q19/84 score=1.0 recall=1.0 ttft=2.3 reply='$19' err=None
+13:57:18 plain_retrieval: q20/84 score=1.0 recall=1.0 ttft=2.2 reply='CaseCo' err=None
+13:57:21 plain_retrieval: q21/84 score=0.6666666666666666 recall=1.0 ttft=2.2 reply='Returned and refunded' err=None
+13:57:23 plain_retrieval: q22/84 score=1.0 recall=1.0 ttft=2.1 reply='$58' err=None
+13:57:26 plain_retrieval: q23/84 score=1.0 recall=1.0 ttft=2.3 reply='TrailGear' err=None
+13:57:28 plain_retrieval: q24/84 score=0.0 recall=1.0 ttft=2.1 reply='Arrived on 16 June 2025' err=None
+13:57:31 plain_retrieval: q25/84 score=1.0 recall=1.0 ttft=2.1 reply='$118' err=None
+13:57:33 plain_retrieval: q26/84 score=1.0 recall=1.0 ttft=2.2 reply='TrailGear' err=None
+13:57:36 plain_retrieval: q27/84 score=0.0 recall=1.0 ttft=2.1 reply='Arrived on 26 March 2025' err=None
+13:57:38 plain_retrieval: q28/84 score=1.0 recall=1.0 ttft=2.2 reply='$27' err=None
+13:57:40 plain_retrieval: q29/84 score=0.0 recall=1.0 ttft=2.1 reply='HomeBox' err=None
+13:57:43 plain_retrieval: q30/84 score=0.0 recall=1.0 ttft=2.2 reply='Delivered by 16 March 2025, awaiting review' err=None
+13:57:46 plain_retrieval: q31/84 score=1.0 recall=1.0 ttft=2.1 reply='$34' err=None
+13:57:48 plain_retrieval: q32/84 score=1.0 recall=1.0 ttft=2.1 reply='HomeBox' err=None
+13:57:51 plain_retrieval: q33/84 score=0.4 recall=1.0 ttft=2.2 reply='Delivered and paid for $34' err=None
+13:57:53 plain_retrieval: q34/84 score=1.0 recall=1.0 ttft=2.1 reply='$44' err=None
+13:57:55 plain_retrieval: q35/84 score=0.0 recall=1.0 ttft=2.1 reply='HomeBox' err=None
+13:57:58 plain_retrieval: q36/84 score=0.33333333333333337 recall=1.0 ttft=2.1 reply='Delivered on 17 May, 2025' err=None
+13:58:00 plain_retrieval: q37/84 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+13:58:02 plain_retrieval: q38/84 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+13:58:05 plain_retrieval: q39/84 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$10 a month' err=None
+13:58:07 plain_retrieval: q40/84 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$11 a month' err=None
+13:58:09 plain_retrieval: q41/84 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$4 a month' err=None
+13:58:12 plain_retrieval: q42/84 score=0.5 recall=1.0 ttft=2.1 reply='$12 per month' err=None
+13:58:14 plain_retrieval: q43/84 score=1.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+13:58:16 plain_retrieval: q44/84 score=0.0 recall=1.0 ttft=1.6 reply='Shellfish' err=None
+13:58:18 plain_retrieval: q45/84 score=1.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+13:58:19 plain_retrieval: q46/84 score=0.0 recall=1.0 ttft=1.6 reply='shellfish' err=None
+13:58:21 plain_retrieval: q47/84 score=1.0 recall=1.0 ttft=1.6 reply='14 Birch Road' err=None
+13:58:23 plain_retrieval: q48/84 score=1.0 recall=1.0 ttft=1.7 reply='Peanuts' err=None
+13:58:25 plain_retrieval: q49/84 score=1.0 recall=1.0 ttft=1.6 reply='14 birch road' err=None
+13:58:27 plain_retrieval: q50/84 score=1.0 recall=1.0 ttft=1.5 reply='Shellfish' err=None
+13:58:29 plain_retrieval: q51/84 score=1.0 recall=1.0 ttft=1.7 reply='60 Lake View' err=None
+13:58:31 plain_retrieval: q52/84 score=0.0 recall=1.0 ttft=1.6 reply='Shellfish and peanuts' err=None
+13:58:33 plain_retrieval: q53/84 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+13:58:35 plain_retrieval: q54/84 score=1.0 recall=1.0 ttft=2.2 reply='Old Mill' err=None
+13:58:37 plain_retrieval: q55/84 score=0.0 recall=1.0 ttft=1.9 reply='Not mentioned' err=None
+13:58:40 plain_retrieval: q56/84 score=0.0 recall=1.0 ttft=1.8 reply='Café Mira on 29/5/2025' err=None
+13:58:42 plain_retrieval: q57/84 score=0.3333333333333333 recall=1.0 ttft=1.8 reply='11 June 2025' err=None
+13:58:44 plain_retrieval: q58/84 score=0.0 recall=1.0 ttft=1.8 reply='Blue Door' err=None
+13:58:46 plain_retrieval: q59/84 score=1.0 recall=1.0 ttft=1.8 reply='11 June 2025' err=None
+13:58:49 plain_retrieval: q60/84 score=0.0 recall=1.0 ttft=1.9 reply='Cafe Mira on 29/5/2025' err=None
+13:58:51 plain_retrieval: q61/84 score=0.0 recall=1.0 ttft=1.9 reply='29/5/2025' err=None
+13:58:54 plain_retrieval: q62/84 score=1.0 recall=1.0 ttft=2.4 reply='3 May 2025' err=None
+13:58:57 plain_retrieval: q63/84 score=0.6666666666666666 recall=1.0 ttft=2.4 reply='11 May 2025' err=None
+13:59:00 plain_retrieval: q64/84 score=1.0 recall=1.0 ttft=2.4 reply='6 July 2025' err=None
+13:59:03 plain_retrieval: q65/84 score=0.28571428571428575 recall=1.0 ttft=2.4 reply='Sun 6 Apr, 2025' err=None
+13:59:06 plain_retrieval: q66/84 score=0.0 recall=1.0 ttft=2.4 reply='2/4/2025' err=None
+13:59:09 plain_retrieval: q67/84 score=0.0 recall=1.0 ttft=2.4 reply='19/6/2025' err=None
+13:59:11 plain_retrieval: q68/84 score=1.0 recall=1.0 ttft=2.1 reply='$140' err=None
+13:59:13 plain_retrieval: q69/84 score=1.0 recall=1.0 ttft=2.1 reply='$114' err=None
+13:59:16 plain_retrieval: q70/84 score=1.0 recall=1.0 ttft=2.1 reply='$56' err=None
+13:59:18 plain_retrieval: q71/84 score=1.0 recall=1.0 ttft=2.1 reply='$110' err=None
+13:59:20 plain_retrieval: q72/84 score=1.0 recall=1.0 ttft=2.1 reply='$97' err=None
+13:59:22 plain_retrieval: q73/84 score=1.0 recall=1.0 ttft=2.1 reply='$27' err=None
+13:59:25 plain_retrieval: q74/84 score=1.0 recall=1.0 ttft=1.7 reply='03272 505284' err=None
+13:59:27 plain_retrieval: q75/84 score=0.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+13:59:29 plain_retrieval: q76/84 score=1.0 recall=1.0 ttft=1.7 reply='03984 940839' err=None
+13:59:31 plain_retrieval: q77/84 score=0.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+13:59:33 plain_retrieval: q78/84 score=0.0 recall=1.0 ttft=1.7 reply='03272 505284' err=None
+13:59:35 plain_retrieval: q79/84 score=0.0 recall=1.0 ttft=1.7 reply='2 Church Walk' err=None
+13:59:37 plain_retrieval: q80/84 score=1.0 recall=1.0 ttft=1.5 reply='07711 891089' err=None
+13:59:40 plain_retrieval: q81/84 score=0.25 recall=1.0 ttft=1.5 reply='Not mentioned explicitly, but potentially at Apex ' err=None
+13:59:43 plain_retrieval: q82/84 score=0.0 recall=1.0 ttft=1.7 reply='03272 505284' err=None
+13:59:44 plain_retrieval: q83/84 score=0.0 recall=1.0 ttft=1.7 reply='60 Lake View' err=None
+13:59:47 plain_retrieval: q84/84 score=1.0 recall=1.0 ttft=2.1 reply='Pescatarian' err=None
+13:59:56 decoupled: session 1 ready (9s idle work so far)
+13:59:57 decoupled: session 2 ready (10s idle work so far)
+14:00:04 decoupled: session 3 ready (17s idle work so far)
+14:00:04 decoupled: session 4 ready (17s idle work so far)
+14:00:08 decoupled: session 5 ready (21s idle work so far)
+14:00:21 decoupled: session 6 ready (34s idle work so far)
+14:00:25 decoupled: session 7 ready (38s idle work so far)
+14:00:30 decoupled: session 8 ready (42s idle work so far)
+14:00:35 decoupled: session 9 ready (48s idle work so far)
+14:00:42 decoupled: session 10 ready (55s idle work so far)
+14:00:48 decoupled: session 11 ready (60s idle work so far)
+14:00:54 decoupled: session 12 ready (67s idle work so far)
+14:01:05 decoupled: session 13 ready (78s idle work so far)
+14:01:19 decoupled: session 14 ready (91s idle work so far)
+14:01:39 decoupled: session 15 ready (112s idle work so far)
+14:01:51 decoupled: session 16 ready (123s idle work so far)
+14:01:56 decoupled: session 17 ready (128s idle work so far)
+14:01:59 decoupled: session 18 ready (131s idle work so far)
+14:02:00 decoupled: session 19 ready (132s idle work so far)
+14:02:07 decoupled: session 20 ready (139s idle work so far)
+14:02:10 decoupled: session 21 ready (142s idle work so far)
+14:02:15 decoupled: session 22 ready (147s idle work so far)
+14:02:17 decoupled: session 23 ready (148s idle work so far)
+14:02:21 decoupled: session 24 ready (153s idle work so far)
+14:02:23 decoupled: session 25 ready (154s idle work so far)
+14:02:26 decoupled: session 26 ready (158s idle work so far)
+14:02:32 decoupled: session 27 ready (164s idle work so far)
+14:02:35 decoupled: session 28 ready (167s idle work so far)
+14:02:43 decoupled: session 29 ready (174s idle work so far)
+14:02:45 decoupled: session 30 ready (177s idle work so far)
+14:02:48 decoupled: session 31 ready (180s idle work so far)
+14:02:56 decoupled: session 32 ready (187s idle work so far)
+14:02:59 decoupled: session 33 ready (190s idle work so far)
+14:03:00 decoupled: session 34 ready (192s idle work so far)
+14:03:03 decoupled: session 35 ready (194s idle work so far)
+14:03:03 decoupled: session 36 ready (194s idle work so far)
+14:03:04 decoupled: session 37 ready (195s idle work so far)
+14:03:05 decoupled: session 38 ready (197s idle work so far)
+14:03:09 decoupled: session 39 ready (200s idle work so far)
+14:03:10 decoupled: session 40 ready (201s idle work so far)
+14:03:10 decoupled: session 41 ready (201s idle work so far)
+14:03:20 decoupled: session 42 ready (211s idle work so far)
+14:03:24 decoupled: session 43 ready (215s idle work so far)
+14:03:31 decoupled: session 44 ready (222s idle work so far)
+14:03:34 decoupled: session 45 ready (225s idle work so far)
+14:03:40 decoupled: session 46 ready (231s idle work so far)
+14:03:46 decoupled: session 47 ready (237s idle work so far)
+14:03:49 decoupled: session 48 ready (240s idle work so far)
+14:03:51 decoupled: session 49 ready (242s idle work so far)
+14:03:54 decoupled: session 50 ready (245s idle work so far)
+14:03:56 decoupled: session 51 ready (247s idle work so far)
+14:03:57 decoupled: session 52 ready (248s idle work so far)
+14:04:08 decoupled: session 53 ready (259s idle work so far)
+14:04:16 decoupled: session 54 ready (266s idle work so far)
+14:04:17 decoupled: session 55 ready (268s idle work so far)
+14:04:17 decoupled: session 56 ready (268s idle work so far)
+14:04:21 decoupled: session 57 ready (272s idle work so far)
+14:04:32 decoupled: session 58 ready (283s idle work so far)
+14:04:36 decoupled: session 59 ready (287s idle work so far)
+14:04:44 decoupled: session 60 ready (294s idle work so far)
+14:04:48 decoupled: session 61 ready (299s idle work so far)
+14:04:55 decoupled: session 62 ready (306s idle work so far)
+14:05:11 decoupled: session 63 ready (322s idle work so far)
+14:05:14 decoupled: session 64 ready (324s idle work so far)
+14:05:14 decoupled: session 65 ready (324s idle work so far)
+14:05:17 decoupled: session 66 ready (327s idle work so far)
+14:05:17 decoupled: session 67 ready (327s idle work so far)
