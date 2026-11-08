@@ -1,0 +1,12 @@
+# Extra packages for .venv-mem0 (on top of requirements.txt). Install mem0ai and qdrant-client
+# separately with --no-deps, because grpcio has no Windows ARM64 wheel. See README.
+SQLAlchemy==2.1.8
+backoff==2.2.1
+httpx==0.28.1
+openai==3.46.0
+portalocker==4.4.2
+posthog==7.86.0
+protobuf==6.33.6
+pydantic==2.14.3
+pytz==2026.6
+requests==2.34.2

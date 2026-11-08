@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 
 from inferx.assistant_score import correct, out_of_date  # noqa: E402
 
-SYSTEMS = ["plain_retrieval", "decoupled", "trained"]
+SYSTEMS = ["plain_retrieval", "full_context", "local_memory", "mem0_2025_local", "decoupled", "trained"]
 
 
 def interval(differences):
@@ -61,13 +61,17 @@ for system in SYSTEMS:
     changed = [row for row in group_rows if row["stale_answer"]]
     print(f"  about something that changed: {len(changed)}, correct {sum(r['correct'] for r in changed):.0f}, "
           f"out-of-date replies {sum(r['stale'] for r in changed)}")
+    calls = [r for r in group_rows if r.get("cloud_bytes")]
+    if any("cloud_bytes" in r for r in group_rows):
+        print(f"  cloud calls: {len(calls)} of {len(group_rows)} questions, {sum(r['cloud_bytes'] for r in calls)} bytes")
     totals = defaultdict(float)
     for stats in idle_by_user[system].values():
         for key, value in stats.items():
             totals[key] += value
     print("  idle:", {key: round(value, 1) for key, value in totals.items()})
 
-for a, b in (("trained", "plain_retrieval"), ("trained", "decoupled"), ("decoupled", "plain_retrieval")):
+PAIRS = [("trained", other) for other in SYSTEMS if other != "trained"] + [("decoupled", "plain_retrieval")]
+for a, b in PAIRS:
     if rows[a] and rows[b]:
         assert all(x["question"] == y["question"] for x, y in zip(rows[a], rows[b]))
         print(f"\n{a} minus {b}: correct", interval([x["correct"] - y["correct"] for x, y in zip(rows[a], rows[b])]))

@@ -142,3 +142,187 @@
 16:15:04 plain_retrieval: q30/81 score=0.25 recall=1.0 ttft=2.2 reply='Delivered to a neighbour on 24 March 2025' err=None
 16:15:11 plain_retrieval: q31/81 score=1.0 recall=1.0 ttft=2.3 reply='$75' err=None
 16:15:19 plain_retrieval: q32/81 score=1.0 recall=1.0 ttft=2.2 reply='KitchenHub' err=None
+16:15:27 plain_retrieval: q33/81 score=0.0 recall=1.0 ttft=2.3 reply='Delivered and paid for on 12 June, 2025' err=None
+16:15:33 plain_retrieval: q34/81 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+16:15:39 plain_retrieval: q35/81 score=1.0 recall=None ttft=2.3 reply='Not mentioned' err=None
+16:15:46 plain_retrieval: q36/81 score=0.6666666666666666 recall=1.0 ttft=2.2 reply='$7 monthly' err=None
+16:15:53 plain_retrieval: q37/81 score=0.5 recall=1.0 ttft=2.3 reply='$14 per month' err=None
+16:16:00 plain_retrieval: q38/81 score=1.0 recall=1.0 ttft=2.3 reply='$12' err=None
+16:16:07 plain_retrieval: q39/81 score=0.5 recall=1.0 ttft=2.2 reply='$11 per month' err=None
+16:16:13 plain_retrieval: q40/81 score=0.0 recall=1.0 ttft=1.8 reply='7 Orchard Close' err=None
+16:16:18 plain_retrieval: q41/81 score=1.0 recall=1.0 ttft=1.8 reply='Peanuts' err=None
+16:16:22 plain_retrieval: q42/81 score=1.0 recall=1.0 ttft=1.7 reply='60 Lake View' err=None
+16:16:28 plain_retrieval: q43/81 score=0.0 recall=1.0 ttft=1.7 reply='Peanuts' err=None
+16:16:33 plain_retrieval: q44/81 score=1.0 recall=1.0 ttft=1.8 reply='9 Mill Lane' err=None
+16:16:38 plain_retrieval: q45/81 score=0.0 recall=1.0 ttft=1.8 reply='Peanuts' err=None
+16:16:43 plain_retrieval: q46/81 score=1.0 recall=1.0 ttft=1.8 reply='9 Mill Lane' err=None
+16:16:52 plain_retrieval: q47/81 score=0.6666666666666666 recall=1.0 ttft=1.8 reply='Peanuts and latex' err=None
+16:17:01 plain_retrieval: q48/81 score=0.0 recall=1.0 ttft=4.1 reply='2 church walk' err=None
+16:17:07 plain_retrieval: q49/81 score=1.0 recall=1.0 ttft=1.7 reply='Peanuts' err=None
+16:17:12 plain_retrieval: q50/81 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+16:17:17 plain_retrieval: q51/81 score=0.0 recall=1.0 ttft=2.1 reply='Wed 4 June at the fancy Cafe Mira' err=None
+16:17:23 plain_retrieval: q52/81 score=0.3333333333333333 recall=1.0 ttft=2.1 reply='2 May 2025' err=None
+16:17:28 plain_retrieval: q53/81 score=0.0 recall=1.0 ttft=2.1 reply='Not mentioned' err=None
+16:17:35 plain_retrieval: q54/81 score=0.0 recall=1.0 ttft=2.1 reply='Not mentioned' err=None
+16:17:41 plain_retrieval: q55/81 score=0.0 recall=1.0 ttft=2.1 reply='Not mentioned' err=None
+16:17:46 plain_retrieval: q56/81 score=0.0 recall=1.0 ttft=1.9 reply='Not mentioned' err=None
+16:17:51 plain_retrieval: q57/81 score=0.0 recall=1.0 ttft=1.9 reply='Cafe Mira on April 16, 2025' err=None
+16:17:56 plain_retrieval: q58/81 score=0.0 recall=1.0 ttft=1.8 reply='Not mentioned' err=None
+16:18:02 plain_retrieval: q59/81 score=0.0 recall=1.0 ttft=2.6 reply='9/4/2025' err=None
+16:18:09 plain_retrieval: q60/81 score=0.3333333333333333 recall=1.0 ttft=2.6 reply='Apr 8, 2025' err=None
+16:18:15 plain_retrieval: q61/81 score=0.6666666666666666 recall=1.0 ttft=2.4 reply='17 April 2025' err=None
+16:18:21 plain_retrieval: q62/81 score=0.0 recall=1.0 ttft=2.6 reply='28/5/2025' err=None
+16:18:27 plain_retrieval: q63/81 score=0.6666666666666666 recall=1.0 ttft=2.4 reply='27 May, 2025' err=None
+16:18:34 plain_retrieval: q64/81 score=0.0 recall=1.0 ttft=2.6 reply='11/5/2025' err=None
+16:18:39 plain_retrieval: q65/81 score=1.0 recall=1.0 ttft=2.4 reply='$32' err=None
+16:18:44 plain_retrieval: q66/81 score=1.0 recall=1.0 ttft=2.2 reply='$87' err=None
+16:18:49 plain_retrieval: q67/81 score=1.0 recall=1.0 ttft=2.2 reply='$147' err=None
+16:18:54 plain_retrieval: q68/81 score=1.0 recall=1.0 ttft=2.3 reply='$115' err=None
+16:19:00 plain_retrieval: q69/81 score=1.0 recall=1.0 ttft=2.4 reply='$25' err=None
+16:19:06 plain_retrieval: q70/81 score=1.0 recall=1.0 ttft=2.4 reply='$156' err=None
+16:19:12 plain_retrieval: q71/81 score=1.0 recall=1.0 ttft=1.8 reply='02910 810313' err=None
+16:19:19 plain_retrieval: q72/81 score=0.6666666666666666 recall=1.0 ttft=1.8 reply='Apex Freight as teacher' err=None
+16:19:24 plain_retrieval: q73/81 score=1.0 recall=1.0 ttft=1.8 reply='07072 484288' err=None
+16:19:28 plain_retrieval: q74/81 score=1.0 recall=1.0 ttft=1.6 reply='Riverside Hospital' err=None
+16:19:34 plain_retrieval: q75/81 score=1.0 recall=1.0 ttft=1.8 reply='02073 646257' err=None
+16:19:39 plain_retrieval: q76/81 score=0.5 recall=1.0 ttft=1.8 reply='Northwind as translator' err=None
+16:19:44 plain_retrieval: q77/81 score=1.0 recall=1.0 ttft=1.9 reply='09467 308561' err=None
+16:19:50 plain_retrieval: q78/81 score=0.0 recall=1.0 ttft=1.8 reply='9 mill lane' err=None
+16:19:54 plain_retrieval: q79/81 score=1.0 recall=1.0 ttft=1.9 reply='05097 147502' err=None
+16:19:59 plain_retrieval: q80/81 score=0.6666666666666666 recall=1.0 ttft=1.8 reply='Halo Labs as pilot' err=None
+16:20:15 plain_retrieval: q81/81 score=1.0 recall=1.0 ttft=3.9 reply='Vegan' err=None
+16:20:15 full_context: session 1 ready (0s idle work so far)
+16:20:15 full_context: session 2 ready (0s idle work so far)
+16:20:15 full_context: session 3 ready (0s idle work so far)
+16:20:15 full_context: session 4 ready (0s idle work so far)
+16:20:15 full_context: session 5 ready (0s idle work so far)
+16:20:15 full_context: session 6 ready (0s idle work so far)
+16:20:15 full_context: session 7 ready (0s idle work so far)
+16:20:15 full_context: session 8 ready (0s idle work so far)
+16:20:15 full_context: session 9 ready (0s idle work so far)
+16:20:15 full_context: session 10 ready (0s idle work so far)
+16:20:15 full_context: session 11 ready (0s idle work so far)
+16:20:15 full_context: session 12 ready (0s idle work so far)
+16:20:15 full_context: session 13 ready (0s idle work so far)
+16:20:15 full_context: session 14 ready (0s idle work so far)
+16:20:15 full_context: session 15 ready (0s idle work so far)
+16:20:15 full_context: session 16 ready (0s idle work so far)
+16:20:15 full_context: session 17 ready (0s idle work so far)
+16:20:15 full_context: session 18 ready (0s idle work so far)
+16:20:15 full_context: session 19 ready (0s idle work so far)
+16:20:15 full_context: session 20 ready (0s idle work so far)
+16:20:15 full_context: session 21 ready (0s idle work so far)
+16:20:15 full_context: session 22 ready (0s idle work so far)
+16:20:15 full_context: session 23 ready (0s idle work so far)
+16:20:15 full_context: session 24 ready (0s idle work so far)
+16:20:15 full_context: session 25 ready (0s idle work so far)
+16:20:15 full_context: session 26 ready (0s idle work so far)
+16:20:15 full_context: session 27 ready (0s idle work so far)
+16:20:15 full_context: session 28 ready (0s idle work so far)
+16:20:15 full_context: session 29 ready (0s idle work so far)
+16:20:15 full_context: session 30 ready (0s idle work so far)
+16:20:15 full_context: session 31 ready (0s idle work so far)
+16:20:15 full_context: session 32 ready (0s idle work so far)
+16:20:15 full_context: session 33 ready (0s idle work so far)
+16:20:15 full_context: session 34 ready (0s idle work so far)
+16:20:15 full_context: session 35 ready (0s idle work so far)
+16:20:15 full_context: session 36 ready (0s idle work so far)
+16:20:15 full_context: session 37 ready (0s idle work so far)
+16:20:15 full_context: session 38 ready (0s idle work so far)
+16:20:15 full_context: session 39 ready (0s idle work so far)
+16:20:15 full_context: session 40 ready (0s idle work so far)
+16:20:15 full_context: session 41 ready (0s idle work so far)
+16:20:15 full_context: session 42 ready (0s idle work so far)
+16:20:15 full_context: session 43 ready (0s idle work so far)
+16:20:15 full_context: session 44 ready (0s idle work so far)
+16:20:15 full_context: session 45 ready (0s idle work so far)
+16:20:15 full_context: session 46 ready (0s idle work so far)
+16:20:15 full_context: session 47 ready (0s idle work so far)
+16:20:15 full_context: session 48 ready (0s idle work so far)
+16:20:15 full_context: session 49 ready (0s idle work so far)
+16:20:15 full_context: session 50 ready (0s idle work so far)
+16:20:15 full_context: session 51 ready (0s idle work so far)
+16:20:15 full_context: session 52 ready (0s idle work so far)
+16:20:15 full_context: session 53 ready (0s idle work so far)
+16:20:15 full_context: session 54 ready (0s idle work so far)
+16:20:15 full_context: session 55 ready (0s idle work so far)
+16:20:15 full_context: session 56 ready (0s idle work so far)
+16:20:15 full_context: session 57 ready (0s idle work so far)
+16:20:15 full_context: session 58 ready (0s idle work so far)
+16:20:15 full_context: session 59 ready (0s idle work so far)
+16:20:15 full_context: session 60 ready (0s idle work so far)
+16:20:15 full_context: session 61 ready (0s idle work so far)
+16:20:15 full_context: session 62 ready (0s idle work so far)
+16:20:15 full_context: session 63 ready (0s idle work so far)
+16:20:15 full_context: session 64 ready (0s idle work so far)
+16:20:15 full_context: session 65 ready (0s idle work so far)
+16:20:15 full_context: session 66 ready (0s idle work so far)
+16:20:15 full_context: session 67 ready (0s idle work so far)
+16:20:15 full_context: session 68 ready (0s idle work so far)
+16:20:15 full_context: session 69 ready (0s idle work so far)
+16:20:15 full_context: session 70 ready (0s idle work so far)
+16:20:15 full_context: session 71 ready (0s idle work so far)
+16:20:15 full_context: session 72 ready (0s idle work so far)
+16:20:15 full_context: session 73 ready (0s idle work so far)
+16:20:15 full_context: session 74 ready (0s idle work so far)
+16:20:15 full_context: session 75 ready (0s idle work so far)
+16:20:15 full_context: session 76 ready (0s idle work so far)
+16:20:15 full_context: session 77 ready (0s idle work so far)
+16:20:15 full_context: session 78 ready (0s idle work so far)
+16:20:15 full_context: session 79 ready (0s idle work so far)
+16:20:15 full_context: session 80 ready (0s idle work so far)
+16:20:15 full_context: session 81 ready (0s idle work so far)
+16:20:15 full_context: session 82 ready (0s idle work so far)
+16:20:15 full_context: session 83 ready (0s idle work so far)
+16:20:15 full_context: session 84 ready (0s idle work so far)
+16:20:15 full_context: session 85 ready (0s idle work so far)
+16:20:15 full_context: session 86 ready (0s idle work so far)
+16:20:15 full_context: session 87 ready (0s idle work so far)
+16:20:15 full_context: session 88 ready (0s idle work so far)
+16:20:15 full_context: session 89 ready (0s idle work so far)
+16:20:15 full_context: session 90 ready (0s idle work so far)
+16:20:15 full_context: session 91 ready (0s idle work so far)
+16:20:15 full_context: session 92 ready (0s idle work so far)
+16:20:15 full_context: session 93 ready (0s idle work so far)
+16:20:15 full_context: session 94 ready (0s idle work so far)
+16:20:15 full_context: session 95 ready (0s idle work so far)
+16:20:15 full_context: session 96 ready (0s idle work so far)
+16:20:15 full_context: session 97 ready (0s idle work so far)
+16:20:15 full_context: session 98 ready (0s idle work so far)
+16:20:15 full_context: session 99 ready (0s idle work so far)
+16:20:15 full_context: session 100 ready (0s idle work so far)
+16:20:15 full_context: session 101 ready (0s idle work so far)
+16:20:15 full_context: session 102 ready (0s idle work so far)
+16:20:15 full_context: session 103 ready (0s idle work so far)
+16:20:15 full_context: session 104 ready (0s idle work so far)
+16:20:15 full_context: session 105 ready (0s idle work so far)
+16:20:15 full_context: session 106 ready (0s idle work so far)
+16:20:15 full_context: session 107 ready (0s idle work so far)
+16:20:15 full_context: session 108 ready (0s idle work so far)
+16:20:15 full_context: session 109 ready (0s idle work so far)
+16:20:15 full_context: session 110 ready (0s idle work so far)
+16:20:15 full_context: session 111 ready (0s idle work so far)
+16:20:48 full_context: q1/81 score=0.0 recall=0.0 ttft=21.8 reply='Not mentioned in the provided memories.' err=None
+16:21:08 full_context: q2/81 score=0.3333333333333333 recall=0.0 ttft=8.3 reply='20 June 2025' err=None
+16:21:30 full_context: q3/81 score=0.0 recall=0.0 ttft=8.3 reply='The provided memories do not contain specific info' err=None
+16:21:49 full_context: q4/81 score=0.0 recall=0.0 ttft=8.2 reply='Not mentioned in the provided memories.' err=None
+16:22:10 full_context: q5/81 score=0.0 recall=0.0 ttft=8.2 reply='Not mentioned in the provided memories. There is n' err=None
+16:22:30 full_context: q6/81 score=0.0 recall=0.0 ttft=8.3 reply='Not mentioned in the provided memories. There is n' err=None
+16:22:51 full_context: q7/81 score=0.0 recall=0.0 ttft=8.3 reply='The provided memories do not contain any informati' err=None
+16:23:14 full_context: q8/81 score=0.06666666666666667 recall=0.0 ttft=8.3 reply='The provided memories do not contain specific info' err=None
+16:23:54 full_context: q9/81 score=0.0 recall=0.0 ttft=8.5 reply='Not mentioned in the provided memories.' err=None
+16:24:21 full_context: q10/81 score=0.0 recall=0.0 ttft=13.7 reply='The memories provided do not contain specific info' err=None
+16:24:41 full_context: q11/81 score=0.3333333333333333 recall=0.0 ttft=8.3 reply='3 June 2025' err=None
+16:25:02 full_context: q12/81 score=0.0 recall=0.0 ttft=8.3 reply='The provided memories do not contain any informati' err=None
+16:25:36 full_context: q13/81 score=0.0 recall=0.0 ttft=8.3 reply='The memories provided do not contain specific info' err=None
+16:26:23 full_context: q14/81 score=0.0 recall=None ttft=29.7 reply='The provided memories do not contain specific info' err=None
+16:26:55 full_context: q15/81 score=1.0 recall=None ttft=8.2 reply='Not mentioned in the provided memories.' err=None
+16:27:16 full_context: q16/81 score=0.0 recall=0.0 ttft=8.1 reply='The provided memories do not contain specific info' err=None
+16:27:36 full_context: q17/81 score=0.0 recall=0.0 ttft=8.1 reply='The provided memories do not explicitly mention Gr' err=None
+16:27:57 full_context: q18/81 score=0.0 recall=0.0 ttft=8.1 reply='Not mentioned in the provided memories. There is n' err=None
+16:28:21 full_context: q19/81 score=0.0 recall=0.0 ttft=8.3 reply='The memory does not directly mention the amount Gr' err=None
+16:28:43 full_context: q20/81 score=0.0 recall=0.0 ttft=8.5 reply='The memories provided do not contain specific info' err=None
+16:29:05 full_context: q21/81 score=0.0 recall=0.0 ttft=8.9 reply='Not mentioned in the provided memories.' err=None
+16:29:28 full_context: q22/81 score=0.0 recall=0.0 ttft=9.1 reply='The provided memories do not contain specific info' err=None
+16:29:52 full_context: q23/81 score=0.0 recall=0.0 ttft=8.9 reply='The memory does not directly mention which store G' err=None
+16:30:19 full_context: q24/81 score=0.0 recall=0.0 ttft=9.0 reply="Grace's orders: SafeInsure bill of $32 paid.\nThe s" err=None
