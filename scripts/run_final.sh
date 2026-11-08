@@ -16,7 +16,7 @@ TOKENIZER="$HOME/.foundry/cache/models/Microsoft/phi-3.5-mini-instruct-qnn-npu-3
 SYSTEMS="plain_retrieval,full_context,local_memory,decoupled,trained"
 run() {  # python, data, conversation, systems
   "$1" scripts/run_locomo.py --url "$URL" --model "$MODEL" --tokenizer "$TOKENIZER" --data "$2" \
-    --conversation "$3" --cloud gate --cloud-url "$CLOUD" --systems "$4" < /dev/null
+    --conversation "$3" --cloud gate --cloud-url "$CLOUD" --systems "$4" --npu-controller < /dev/null
 }
 for user in $(seq 0 9); do
   run .venv/Scripts/python data/assistant/test.json "$user" "$SYSTEMS"

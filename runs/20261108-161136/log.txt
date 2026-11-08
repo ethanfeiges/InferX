@@ -326,3 +326,18 @@
 16:29:28 full_context: q22/81 score=0.0 recall=0.0 ttft=9.1 reply='The provided memories do not contain specific info' err=None
 16:29:52 full_context: q23/81 score=0.0 recall=0.0 ttft=8.9 reply='The memory does not directly mention which store G' err=None
 16:30:19 full_context: q24/81 score=0.0 recall=0.0 ttft=9.0 reply="Grace's orders: SafeInsure bill of $32 paid.\nThe s" err=None
+16:30:44 full_context: q25/81 score=0.0 recall=0.0 ttft=9.1 reply='The provided memories do not contain specific info' err=None
+16:31:08 full_context: q26/81 score=0.0 recall=0.0 ttft=9.0 reply='The memories provided do not contain a specific me' err=None
+16:31:29 full_context: q27/81 score=0.0 recall=0.0 ttft=9.0 reply='Not mentioned in the provided memories.' err=None
+16:31:54 full_context: q28/81 score=0.0 recall=0.0 ttft=9.3 reply='Grace paid $75 for the toaster, as mentioned in th' err=None
+16:32:17 full_context: q29/81 score=0.0 recall=0.0 ttft=9.2 reply='The memories provided do not explicitly mention Gr' err=None
+16:33:26 full_context: q30/81 score=0.0 recall=0.0 ttft=9.2 reply="Grace's orders: Card credited for blender you retu" err=None
+16:34:50 full_context: q31/81 score=0.0 recall=1.0 ttft=37.0 reply='Grace paid $32 for the blender, as indicated in th' err=None
+16:35:19 full_context: q32/81 score=0.0 recall=1.0 ttft=16.2 reply='TrailGear deals mentioned on 10 June, 2025, indica' err=None
+16:35:40 full_context: q33/81 score=0.0 recall=1.0 ttft=8.5 reply="Grace's orders: Card credited for blender you retu" err=None
+16:36:01 full_context: q34/81 score=1.0 recall=None ttft=8.9 reply='Not mentioned in the provided memories. There is n' err=None
+16:36:23 full_context: q35/81 score=0.0 recall=None ttft=8.8 reply='The provided memories do not contain specific info' err=None
+16:36:47 full_context: q36/81 score=0.0 recall=0.0 ttft=8.9 reply='The provided memories do not contain specific info' err=None
+16:37:10 full_context: q37/81 score=0.0 recall=0.0 ttft=9.0 reply='The provided memories do not contain specific info' err=None
+16:37:34 full_context: q38/81 score=0.0 recall=0.0 ttft=9.0 reply='The provided memories do not contain specific info' err=None
+16:37:58 full_context: q39/81 score=0.0 recall=0.0 ttft=9.1 reply='The provided memories do not contain specific info' err=None

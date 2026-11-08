@@ -15,7 +15,7 @@ Speed and energy are not goals of the thesis. Timings stay in the run files only
 |---|---|
 | `inferx/store.py`: core, recall and archival memory in SQLite with sqlite-vec, plus outdated facts and their replacements | Built |
 | `inferx/memory_classifier.py`: trained controller (MiniLM embeddings and 4 small decision heads) | Built |
-| `inferx/npu_classifier.py`: controller on the NPU (QNN, fp16, CPU fallback disabled) | Built, checked against the CPU |
+| `inferx/npu_classifier.py`: controller on the NPU (QNN, fp16, CPU fallback disabled) | Built, checked against the CPU. Validation runs so far used the CPU copy; `--npu-controller` runs it on the NPU, and the final comparison uses it |
 | `inferx/cloud.py`: cloud rule (the main LLM asks the cloud only when its memories don't answer) | Built, tested against a local stand-in |
 | `inferx/systems.py`: plain retrieval, full context, local memory, rules (`decoupled`) and trained systems | Built |
 | `inferx/mem0_port.py`: mem0 2025 algorithm on the local model | Built, validation running |
@@ -104,7 +104,9 @@ Simulated assistant data, classifier training and one validation user:
 .venv\Scripts\python scripts\compare_assistant_runs.py runs\<run> [runs\<run> ...]
 ```
 
-For mem0, run the same command with `.venv-mem0\Scripts\python` and `--systems mem0_2025_local`.
+Add `--npu-controller` to run the trained controller's MiniLM and decision heads on the NPU
+(retrieval embeddings stay on the CPU). For mem0, run the same command with
+`.venv-mem0\Scripts\python` and `--systems mem0_2025_local`.
 Leave out `--data` to run LoCoMo instead.
 
 Each run writes `runs/<timestamp>/`: `config.json`, `summary.json`, one `.jsonl` per system with

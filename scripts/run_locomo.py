@@ -141,6 +141,19 @@ def summarize(results, timings, idle, system, planned):
     }
 
 
+def load_controller(on_npu: bool, embed):
+    """The trained controller, on the CPU or with MiniLM and its decision heads on the NPU.
+
+    Retrieval embeddings stay on the shared CPU embedder either way, so only memory decisions move.
+    """
+    heads = ROOT / "models/assistant_classifier/heads.npz"
+    if not on_npu:
+        return MemoryClassifier.load(heads, embed)
+    from inferx.npu_classifier import NpuEmbedder, move_to_npu
+    return move_to_npu(MemoryClassifier.load(heads, NpuEmbedder(ROOT / "models/minilm_fp32")),
+                       ROOT / "models/assistant_classifier/npu")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", required=True)
@@ -159,6 +172,8 @@ def main():
                         help="gate applies the cloud rule to every system; local_memory always uses the cloud")
     parser.add_argument("--cloud-url", default="http://127.0.0.1:8765/v1",
                         help="the local stand-in by default; a remote provider is refused")
+    parser.add_argument("--npu-controller", action="store_true",
+                        help="run the trained controller (MiniLM and its decision heads) on the NPU")
     args = parser.parse_args()
 
     run_dir = ROOT / "runs" / time.strftime("%Y%m%d-%H%M%S")
@@ -198,8 +213,7 @@ def main():
         # Only in .venv-mem0, which has mem0 installed.
         "mem0_2025_local": lambda llm, embed, budget: __import__("inferx.mem0_port", fromlist=["Mem0V1Port"]).Mem0V1Port(
             llm, embed, budget),
-        "trained": lambda llm, embed, budget: TrainedMemory(
-            llm, embed, MemoryClassifier.load(ROOT / "models/assistant_classifier/heads.npz", embed), budget),
+        "trained": lambda llm, embed, budget: TrainedMemory(llm, embed, load_controller(args.npu_controller, embed), budget),
     }
     for name in args.systems.split(","):
         llm = LocalLLM(args.url, args.model, args.tokenizer)
