@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:49242/v1/",
+  "model": "phi-3.5-mini-instruct-qnn-npu:3",
+  "tokenizer": "C:/Users/Lab User/.foundry/cache/models/Microsoft/phi-3.5-mini-instruct-qnn-npu-3/v3/tokenizer.json",
+  "data": "data/assistant/val.json",
+  "conversation": 2,
+  "limit": null,
+  "sessions": null,
+  "retrieved_tokens": 1200,
+  "seed": 0,
+  "systems": "mem0_2025_local",
+  "cloud": "gate",
+  "cloud_url": "http://127.0.0.1:8765/v1",
+  "npu_controller": false,
+  "budget": {
+    "system": 200,
+    "core": 300,
+    "retrieved": 1200,
+    "recent": 0,
+    "reply": 800
+  },
+  "questions": 51,
+  "messages": 119,
+  "sessions_used": 27
+}

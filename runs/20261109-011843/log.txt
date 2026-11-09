@@ -1,0 +1,81 @@
+01:18:43 on_ac_power=True
+01:20:43 mem0_2025_local: session 1 ready (0s idle work so far)
+01:21:50 mem0_2025_local: session 2 ready (0s idle work so far)
+01:23:21 mem0_2025_local: session 3 ready (0s idle work so far)
+01:24:35 mem0_2025_local: session 4 ready (0s idle work so far)
+01:26:53 mem0_2025_local: session 5 ready (0s idle work so far)
+01:28:22 mem0_2025_local: session 6 ready (0s idle work so far)
+01:31:25 mem0_2025_local: session 7 ready (0s idle work so far)
+01:34:34 mem0_2025_local: session 8 ready (0s idle work so far)
+01:37:26 mem0_2025_local: session 9 ready (0s idle work so far)
+01:39:30 mem0_2025_local: session 10 ready (0s idle work so far)
+01:41:16 mem0_2025_local: session 11 ready (0s idle work so far)
+01:42:41 mem0_2025_local: session 12 ready (0s idle work so far)
+01:44:28 mem0_2025_local: session 13 ready (0s idle work so far)
+01:47:22 mem0_2025_local: session 14 ready (0s idle work so far)
+01:49:03 mem0_2025_local: session 15 ready (0s idle work so far)
+01:50:44 mem0_2025_local: session 16 ready (0s idle work so far)
+01:53:30 mem0_2025_local: session 17 ready (0s idle work so far)
+01:54:44 mem0_2025_local: session 18 ready (0s idle work so far)
+01:57:07 mem0_2025_local: session 19 ready (0s idle work so far)
+01:59:57 mem0_2025_local: session 20 ready (0s idle work so far)
+02:03:00 mem0_2025_local: session 21 ready (0s idle work so far)
+02:06:56 mem0_2025_local: session 22 ready (0s idle work so far)
+02:08:09 mem0_2025_local: session 23 ready (0s idle work so far)
+02:09:12 mem0_2025_local: session 24 ready (0s idle work so far)
+02:11:03 mem0_2025_local: session 25 ready (0s idle work so far)
+02:12:51 mem0_2025_local: session 26 ready (0s idle work so far)
+02:14:19 mem0_2025_local: session 27 ready (0s idle work so far)
+02:14:23 mem0_2025_local: q1/53 score=0.2222222222222222 recall=0.0 ttft=1.2 reply='9:00 pm on 23 March 2025' err=None
+02:14:28 mem0_2025_local: q2/53 score=0.0 recall=0.0 ttft=1.0 reply='Riverside Dermatology' err=None
+02:14:31 mem0_2025_local: q3/53 score=0.3333333333333333 recall=0.0 ttft=1.1 reply='22 March 2025' err=None
+02:14:35 mem0_2025_local: q4/53 score=0.25 recall=1.0 ttft=1.2 reply='22 March 2025, 9:00 pm' err=None
+02:14:38 mem0_2025_local: q5/53 score=0.0 recall=0.0 ttft=1.2 reply='Not mentioned in the memories provided.' err=None
+02:14:43 mem0_2025_local: q6/53 score=0.25 recall=1.0 ttft=1.0 reply='22 March 2025, 8:00 pm' err=None
+02:14:46 mem0_2025_local: q7/53 score=0.0 recall=1.0 ttft=1.2 reply='Not specified in the memories provided.' err=None
+02:14:49 mem0_2025_local: q8/53 score=0.7499999999999999 recall=1.0 ttft=1.0 reply='25 March 2025, at noon' err=None
+02:14:54 mem0_2025_local: q9/53 score=1.0 recall=1.0 ttft=0.9 reply='Riverside Dermatology' err=None
+02:14:57 mem0_2025_local: q10/53 score=0.0 recall=0.0 ttft=1.2 reply='Not mentioned' err=None
+02:15:00 mem0_2025_local: q11/53 score=0.0 recall=0.0 ttft=1.0 reply='Riverside Dermatology' err=None
+02:15:03 mem0_2025_local: q12/53 score=1.0 recall=None ttft=1.2 reply='Not mentioned' err=None
+02:15:06 mem0_2025_local: q13/53 score=1.0 recall=None ttft=1.0 reply='Not mentioned' err=None
+02:15:08 mem0_2025_local: q14/53 score=0.0 recall=0.0 ttft=0.8 reply='Not mentioned' err=None
+02:15:11 mem0_2025_local: q15/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+02:15:15 mem0_2025_local: q16/53 score=0.0 recall=1.0 ttft=1.0 reply='Not mentioned' err=None
+02:15:18 mem0_2025_local: q17/53 score=1.0 recall=1.0 ttft=0.8 reply='$75' err=None
+02:15:21 mem0_2025_local: q18/53 score=1.0 recall=1.0 ttft=0.9 reply='KitchenHub' err=None
+02:15:24 mem0_2025_local: q19/53 score=0.0 recall=1.0 ttft=1.0 reply='Inquiry about package delivery status' err=None
+02:15:28 mem0_2025_local: q20/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+02:15:31 mem0_2025_local: q21/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+02:15:34 mem0_2025_local: q22/53 score=0.0 recall=1.0 ttft=1.0 reply='Not mentioned' err=None
+02:15:37 mem0_2025_local: q23/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+02:15:40 mem0_2025_local: q24/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+02:15:43 mem0_2025_local: q25/53 score=0.0 recall=0.0 ttft=1.0 reply='Not mentioned' err=None
+02:15:46 mem0_2025_local: q26/53 score=1.0 recall=1.0 ttft=0.8 reply='$89' err=None
+02:15:50 mem0_2025_local: q27/53 score=1.0 recall=1.0 ttft=0.8 reply='StrideShop' err=None
+02:15:54 mem0_2025_local: q28/53 score=0.0 recall=1.0 ttft=0.9 reply='Ordered at 8:00 pm on 6 March 2025' err=None
+02:15:57 mem0_2025_local: q29/53 score=1.0 recall=None ttft=0.9 reply='Not mentioned' err=None
+02:15:59 mem0_2025_local: q30/53 score=1.0 recall=None ttft=0.9 reply='Not mentioned' err=None
+02:16:03 mem0_2025_local: q31/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+02:16:08 mem0_2025_local: q32/53 score=0.0 recall=0.0 ttft=0.9 reply='$3 per month' err=None
+02:16:12 mem0_2025_local: q33/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+02:16:13 mem0_2025_local: q34/53 score=0.0 recall=1.0 ttft=0.7 reply='Not mentioned' err=None
+02:16:17 mem0_2025_local: q35/53 score=1.0 recall=1.0 ttft=1.2 reply='5 Orchard Close' err=None
+02:16:19 mem0_2025_local: q36/53 score=0.6666666666666666 recall=1.0 ttft=0.8 reply='Shellfish and peanuts' err=None
+02:16:23 mem0_2025_local: q37/53 score=0.0 recall=0.0 ttft=1.1 reply='5 Orchard Close' err=None
+02:16:27 mem0_2025_local: q38/53 score=0.6666666666666666 recall=1.0 ttft=0.7 reply='Peanuts and shellfish' err=None
+02:16:30 mem0_2025_local: q39/53 score=0.0 recall=None ttft=1.0 reply='5 Orchard Close' err=None
+02:16:34 mem0_2025_local: q40/53 score=0.0 recall=0.0 ttft=1.0 reply='The Old Mill on 19 March 2025' err=None
+02:16:38 mem0_2025_local: q41/53 score=1.0 recall=1.0 ttft=1.0 reply='19 March 2025' err=None
+02:16:42 mem0_2025_local: q42/53 score=0.0 recall=1.0 ttft=0.9 reply='The Old Mill on 19 March 2025' err=None
+02:16:46 mem0_2025_local: q43/53 score=0.0 recall=0.0 ttft=1.0 reply='Not mentioned' err=None
+02:16:50 mem0_2025_local: q44/53 score=0.6666666666666666 recall=0.0 ttft=1.0 reply='22 March 2025' err=None
+02:16:55 mem0_2025_local: q45/53 score=0.0 recall=0.0 ttft=1.1 reply='Not mentioned' err=None
+02:16:58 mem0_2025_local: q46/53 score=1.0 recall=1.0 ttft=0.9 reply='$31' err=None
+02:17:02 mem0_2025_local: q47/53 score=0.0 recall=0.0 ttft=0.9 reply='$31' err=None
+02:17:05 mem0_2025_local: q48/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+02:17:09 mem0_2025_local: q49/53 score=0.0 recall=1.0 ttft=1.0 reply='Not mentioned' err=None
+02:17:13 mem0_2025_local: q50/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+02:17:19 mem0_2025_local: q51/53 score=0.0 recall=0.0 ttft=1.2 reply='01156 777142' err=None
+02:17:22 mem0_2025_local: q52/53 score=0.0 recall=0.0 ttft=1.0 reply='Not mentioned' err=None
+02:17:26 mem0_2025_local: q53/53 score=0.6666666666666666 recall=1.0 ttft=0.8 reply='Going vegetarian' err=None

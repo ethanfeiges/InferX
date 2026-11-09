@@ -1,0 +1,84 @@
+23:21:17 on_ac_power=True
+23:22:17 mem0_2025_local: session 1 ready (0s idle work so far)
+23:24:32 mem0_2025_local: session 2 ready (0s idle work so far)
+23:28:01 mem0_2025_local: session 3 ready (0s idle work so far)
+23:29:55 mem0_2025_local: session 4 ready (0s idle work so far)
+23:31:07 mem0_2025_local: session 5 ready (0s idle work so far)
+23:33:14 mem0_2025_local: session 6 ready (0s idle work so far)
+23:35:43 mem0_2025_local: session 7 ready (0s idle work so far)
+23:38:04 mem0_2025_local: session 8 ready (0s idle work so far)
+23:40:44 mem0_2025_local: session 9 ready (0s idle work so far)
+23:44:07 mem0_2025_local: session 10 ready (0s idle work so far)
+23:45:35 mem0_2025_local: session 11 ready (0s idle work so far)
+23:47:54 mem0_2025_local: session 12 ready (0s idle work so far)
+23:51:56 mem0_2025_local: session 13 ready (0s idle work so far)
+23:54:44 mem0_2025_local: session 14 ready (0s idle work so far)
+23:56:10 mem0_2025_local: session 15 ready (0s idle work so far)
+23:59:09 mem0_2025_local: session 16 ready (0s idle work so far)
+00:01:52 mem0_2025_local: session 17 ready (0s idle work so far)
+00:03:21 mem0_2025_local: session 18 ready (0s idle work so far)
+00:03:44 mem0_2025_local: session 19 ready (0s idle work so far)
+00:05:27 mem0_2025_local: session 20 ready (0s idle work so far)
+00:07:10 mem0_2025_local: session 21 ready (0s idle work so far)
+00:09:38 mem0_2025_local: session 22 ready (0s idle work so far)
+00:11:30 mem0_2025_local: session 23 ready (0s idle work so far)
+00:12:41 mem0_2025_local: session 24 ready (0s idle work so far)
+00:14:08 mem0_2025_local: session 25 ready (0s idle work so far)
+00:16:01 mem0_2025_local: session 26 ready (0s idle work so far)
+00:16:32 mem0_2025_local: session 27 ready (0s idle work so far)
+00:16:35 mem0_2025_local: q1/56 score=0.6666666666666666 recall=1.0 ttft=1.1 reply='7 April 2025' err=None
+00:16:38 mem0_2025_local: q2/56 score=0.7499999999999999 recall=1.0 ttft=0.9 reply='7 April 2025 at 8:15am' err=None
+00:16:42 mem0_2025_local: q3/56 score=0.0 recall=1.0 ttft=0.8 reply='7 April 2025 at 8:15am' err=None
+00:16:46 mem0_2025_local: q4/56 score=0.3333333333333333 recall=0.0 ttft=1.0 reply='24 March 2025' err=None
+00:16:50 mem0_2025_local: q5/56 score=0.2222222222222222 recall=0.0 ttft=1.0 reply='8:00 pm on 24 March 2025' err=None
+00:16:54 mem0_2025_local: q6/56 score=0.0 recall=0.0 ttft=1.1 reply='Not specified in the memories provided.' err=None
+00:16:58 mem0_2025_local: q7/56 score=0.5 recall=1.0 ttft=1.0 reply='9 March 2025, 8:00 pm' err=None
+00:17:04 mem0_2025_local: q8/56 score=0.4 recall=1.0 ttft=1.0 reply='Harbor Accounting at 7pm on March 9, 2025' err=None
+00:17:08 mem0_2025_local: q9/56 score=0.3333333333333333 recall=0.0 ttft=1.0 reply='23 March 2025' err=None
+00:17:13 mem0_2025_local: q10/56 score=0.2222222222222222 recall=0.0 ttft=1.0 reply='8:00 pm on 23 March 2025' err=None
+00:17:17 mem0_2025_local: q11/56 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned in the memories provided.' err=None
+00:17:22 mem0_2025_local: q12/56 score=0.6666666666666666 recall=0.0 ttft=1.1 reply='15 March 2025' err=None
+00:17:26 mem0_2025_local: q13/56 score=0.4444444444444444 recall=0.0 ttft=1.0 reply='15 March 2025 at 8:00 pm' err=None
+00:17:31 mem0_2025_local: q14/56 score=0.0 recall=0.0 ttft=0.9 reply='15 March 2025, 8:00 pm' err=None
+00:17:34 mem0_2025_local: q15/56 score=1.0 recall=None ttft=1.1 reply='Not mentioned' err=None
+00:17:38 mem0_2025_local: q16/56 score=1.0 recall=None ttft=1.0 reply='Not mentioned' err=None
+00:17:42 mem0_2025_local: q17/56 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+00:17:45 mem0_2025_local: q18/56 score=0.0 recall=0.0 ttft=0.8 reply='Not mentioned' err=None
+00:17:48 mem0_2025_local: q19/56 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+00:17:52 mem0_2025_local: q20/56 score=0.0 recall=0.0 ttft=0.8 reply='$27' err=None
+00:17:54 mem0_2025_local: q21/56 score=1.0 recall=0.0 ttft=0.7 reply='KitchenHub' err=None
+00:17:58 mem0_2025_local: q22/56 score=0.0 recall=1.0 ttft=1.0 reply='Received at 8:00 pm on 12 March 2025' err=None
+00:18:01 mem0_2025_local: q23/56 score=0.0 recall=1.0 ttft=0.8 reply='$123' err=None
+00:18:04 mem0_2025_local: q24/56 score=0.0 recall=1.0 ttft=0.8 reply='Not mentioned' err=None
+00:18:08 mem0_2025_local: q25/56 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned in the provided memories' err=None
+00:18:11 mem0_2025_local: q26/56 score=0.0 recall=1.0 ttft=0.7 reply='Not mentioned' err=None
+00:18:14 mem0_2025_local: q27/56 score=0.0 recall=1.0 ttft=0.8 reply='Not mentioned' err=None
+00:18:18 mem0_2025_local: q28/56 score=0.0 recall=1.0 ttft=1.0 reply='Not mentioned in the memories provided.' err=None
+00:18:20 mem0_2025_local: q29/56 score=0.0 recall=1.0 ttft=0.7 reply='Not mentioned' err=None
+00:18:22 mem0_2025_local: q30/56 score=0.0 recall=0.0 ttft=0.7 reply='Not mentioned' err=None
+00:18:26 mem0_2025_local: q31/56 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+00:18:30 mem0_2025_local: q32/56 score=1.0 recall=None ttft=0.8 reply='Not mentioned' err=None
+00:18:33 mem0_2025_local: q33/56 score=1.0 recall=None ttft=0.7 reply='Not mentioned' err=None
+00:18:36 mem0_2025_local: q34/56 score=1.0 recall=1.0 ttft=0.7 reply='$13' err=None
+00:18:38 mem0_2025_local: q35/56 score=0.0 recall=1.0 ttft=0.8 reply='$9' err=None
+00:18:41 mem0_2025_local: q36/56 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+00:18:44 mem0_2025_local: q37/56 score=0.0 recall=1.0 ttft=0.7 reply='Latex allergy' err=None
+00:18:47 mem0_2025_local: q38/56 score=1.0 recall=1.0 ttft=0.9 reply='60 Lake View' err=None
+00:18:49 mem0_2025_local: q39/56 score=0.6666666666666666 recall=1.0 ttft=0.6 reply='Latex allergy' err=None
+00:18:52 mem0_2025_local: q40/56 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+00:18:56 mem0_2025_local: q41/56 score=0.0 recall=0.0 ttft=0.8 reply='Latex' err=None
+00:18:59 mem0_2025_local: q42/56 score=0.0 recall=None ttft=0.8 reply='5 Orchard Close' err=None
+00:19:03 mem0_2025_local: q43/56 score=0.0 recall=1.0 ttft=0.9 reply='Casa Roja on Sunday (30th March)' err=None
+00:19:06 mem0_2025_local: q44/56 score=0.0 recall=0.0 ttft=1.0 reply='Not mentioned' err=None
+00:19:09 mem0_2025_local: q45/56 score=0.0 recall=1.0 ttft=0.8 reply='Casa Roja on Sunday (30th March)' err=None
+00:19:12 mem0_2025_local: q46/56 score=0.6666666666666666 recall=1.0 ttft=1.0 reply='30th March 2025' err=None
+00:19:15 mem0_2025_local: q47/56 score=0.6666666666666666 recall=1.0 ttft=0.9 reply='April 5, 2025' err=None
+00:19:18 mem0_2025_local: q48/56 score=0.6666666666666666 recall=0.0 ttft=0.9 reply='28 March 2025' err=None
+00:19:20 mem0_2025_local: q49/56 score=0.0 recall=0.0 ttft=0.8 reply='Not mentioned' err=None
+00:19:23 mem0_2025_local: q50/56 score=1.0 recall=1.0 ttft=0.9 reply='$21' err=None
+00:19:27 mem0_2025_local: q51/56 score=1.0 recall=1.0 ttft=0.8 reply='$123' err=None
+00:19:30 mem0_2025_local: q52/56 score=1.0 recall=1.0 ttft=1.0 reply='05160 550299' err=None
+00:19:33 mem0_2025_local: q53/56 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+00:19:37 mem0_2025_local: q54/56 score=0.0 recall=1.0 ttft=0.9 reply='05160 550299' err=None
+00:19:40 mem0_2025_local: q55/56 score=0.0 recall=1.0 ttft=0.8 reply='Apex Freight' err=None
+00:19:43 mem0_2025_local: q56/56 score=0.4 recall=1.0 ttft=0.8 reply='Switching to a vegan diet' err=None

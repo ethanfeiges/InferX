@@ -1,0 +1,81 @@
+02:17:27 on_ac_power=True
+02:19:34 mem0_2025_local: session 1 ready (0s idle work so far)
+02:22:21 mem0_2025_local: session 2 ready (0s idle work so far)
+02:24:55 mem0_2025_local: session 3 ready (0s idle work so far)
+02:28:03 mem0_2025_local: session 4 ready (0s idle work so far)
+02:30:01 mem0_2025_local: session 5 ready (0s idle work so far)
+02:33:32 mem0_2025_local: session 6 ready (0s idle work so far)
+02:34:44 mem0_2025_local: session 7 ready (0s idle work so far)
+02:37:28 mem0_2025_local: session 8 ready (0s idle work so far)
+02:38:36 mem0_2025_local: session 9 ready (0s idle work so far)
+02:40:47 mem0_2025_local: session 10 ready (0s idle work so far)
+02:43:32 mem0_2025_local: session 11 ready (0s idle work so far)
+02:46:41 mem0_2025_local: session 12 ready (0s idle work so far)
+02:48:34 mem0_2025_local: session 13 ready (0s idle work so far)
+02:51:48 mem0_2025_local: session 14 ready (0s idle work so far)
+02:52:44 mem0_2025_local: session 15 ready (0s idle work so far)
+02:53:53 mem0_2025_local: session 16 ready (0s idle work so far)
+02:54:45 mem0_2025_local: session 17 ready (0s idle work so far)
+02:55:28 mem0_2025_local: session 18 ready (0s idle work so far)
+02:58:41 mem0_2025_local: session 19 ready (0s idle work so far)
+02:59:52 mem0_2025_local: session 20 ready (0s idle work so far)
+03:00:14 mem0_2025_local: session 21 ready (0s idle work so far)
+03:01:59 mem0_2025_local: session 22 ready (0s idle work so far)
+03:04:00 mem0_2025_local: session 23 ready (0s idle work so far)
+03:07:34 mem0_2025_local: session 24 ready (0s idle work so far)
+03:08:34 mem0_2025_local: session 25 ready (0s idle work so far)
+03:09:17 mem0_2025_local: session 26 ready (0s idle work so far)
+03:10:25 mem0_2025_local: session 27 ready (0s idle work so far)
+03:10:30 mem0_2025_local: q1/53 score=0.6666666666666666 recall=0.0 ttft=1.1 reply='12 March 2025' err=None
+03:10:34 mem0_2025_local: q2/53 score=0.4444444444444444 recall=0.0 ttft=1.0 reply='8:00 pm on 12 March 2025' err=None
+03:10:37 mem0_2025_local: q3/53 score=0.0 recall=0.0 ttft=0.9 reply='Riverside Hospital' err=None
+03:10:42 mem0_2025_local: q4/53 score=0.4444444444444444 recall=0.0 ttft=1.2 reply='9:00 pm on 6 March 2025' err=None
+03:10:47 mem0_2025_local: q5/53 score=0.0 recall=0.0 ttft=1.1 reply='Not specified in the provided memories' err=None
+03:10:49 mem0_2025_local: q6/53 score=0.0 recall=0.0 ttft=1.0 reply='Not mentioned' err=None
+03:10:53 mem0_2025_local: q7/53 score=0.2222222222222222 recall=0.0 ttft=1.2 reply='8:00 pm on 22 March 2025' err=None
+03:10:58 mem0_2025_local: q8/53 score=0.0 recall=0.0 ttft=1.0 reply='Not specified by address, only time mentioned' err=None
+03:11:02 mem0_2025_local: q9/53 score=1.0 recall=1.0 ttft=1.0 reply='March 30, 2025' err=None
+03:11:07 mem0_2025_local: q10/53 score=0.2222222222222222 recall=0.0 ttft=1.0 reply='8:00 pm on 30 March 2025' err=None
+03:11:11 mem0_2025_local: q11/53 score=0.0 recall=1.0 ttft=0.8 reply='Not specified in the memories provided.' err=None
+03:11:14 mem0_2025_local: q12/53 score=1.0 recall=None ttft=1.2 reply='Not mentioned' err=None
+03:11:18 mem0_2025_local: q13/53 score=0.0 recall=None ttft=1.2 reply='8:00 pm on 22 March 2025' err=None
+03:11:22 mem0_2025_local: q14/53 score=0.0 recall=1.0 ttft=0.7 reply='Not directly mentioned, but likely less than $34 a' err=None
+03:11:27 mem0_2025_local: q15/53 score=0.14285714285714288 recall=1.0 ttft=0.7 reply='Not directly mentioned, but likely TrailGear or St' err=None
+03:11:32 mem0_2025_local: q16/53 score=0.0 recall=1.0 ttft=0.9 reply='Not explicitly mentioned, but interest in outdoor ' err=None
+03:11:35 mem0_2025_local: q17/53 score=0.0 recall=1.0 ttft=0.7 reply='Not mentioned' err=None
+03:11:39 mem0_2025_local: q18/53 score=0.0 recall=1.0 ttft=0.7 reply='Not mentioned' err=None
+03:11:42 mem0_2025_local: q19/53 score=0.0 recall=0.0 ttft=1.2 reply='Not mentioned' err=None
+03:11:45 mem0_2025_local: q20/53 score=0.0 recall=0.0 ttft=0.8 reply='$34' err=None
+03:11:48 mem0_2025_local: q21/53 score=0.0 recall=0.0 ttft=0.7 reply='StrideShop' err=None
+03:11:53 mem0_2025_local: q22/53 score=0.18181818181818182 recall=1.0 ttft=1.0 reply='Shipped on 12 March 2025, payment made before ship' err=None
+03:11:55 mem0_2025_local: q23/53 score=0.0 recall=1.0 ttft=0.8 reply='Not mentioned' err=None
+03:11:57 mem0_2025_local: q24/53 score=0.0 recall=1.0 ttft=0.7 reply='Not mentioned' err=None
+03:12:01 mem0_2025_local: q25/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+03:12:04 mem0_2025_local: q26/53 score=0.0 recall=1.0 ttft=0.7 reply='$34' err=None
+03:12:08 mem0_2025_local: q27/53 score=1.0 recall=1.0 ttft=0.7 reply='TrailGear' err=None
+03:12:12 mem0_2025_local: q28/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned, but several related activities and ' err=None
+03:12:16 mem0_2025_local: q29/53 score=1.0 recall=None ttft=0.7 reply='Not mentioned' err=None
+03:12:19 mem0_2025_local: q30/53 score=1.0 recall=None ttft=0.7 reply='Not mentioned' err=None
+03:12:22 mem0_2025_local: q31/53 score=1.0 recall=1.0 ttft=0.8 reply='$5' err=None
+03:12:26 mem0_2025_local: q32/53 score=0.0 recall=0.0 ttft=0.8 reply='$5' err=None
+03:12:30 mem0_2025_local: q33/53 score=0.0 recall=0.0 ttft=1.0 reply='Not mentioned' err=None
+03:12:32 mem0_2025_local: q34/53 score=0.0 recall=0.0 ttft=0.7 reply='Not mentioned' err=None
+03:12:36 mem0_2025_local: q35/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+03:12:37 mem0_2025_local: q36/53 score=0.0 recall=1.0 ttft=0.8 reply='Not mentioned' err=None
+03:12:41 mem0_2025_local: q37/53 score=1.0 recall=1.0 ttft=1.1 reply='78 Station Road' err=None
+03:12:44 mem0_2025_local: q38/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+03:12:48 mem0_2025_local: q39/53 score=0.0 recall=None ttft=0.9 reply='14 Birch Road' err=None
+03:12:52 mem0_2025_local: q40/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+03:12:55 mem0_2025_local: q41/53 score=0.0 recall=0.0 ttft=1.0 reply='Not mentioned' err=None
+03:12:58 mem0_2025_local: q42/53 score=0.3636363636363636 recall=1.0 ttft=0.9 reply='8:00 pm on 19 March 2025 at Casa Roja' err=None
+03:13:03 mem0_2025_local: q43/53 score=0.3333333333333333 recall=1.0 ttft=1.0 reply='19 March 2025' err=None
+03:13:06 mem0_2025_local: q44/53 score=0.0 recall=1.0 ttft=1.0 reply='28/3/2025' err=None
+03:13:09 mem0_2025_local: q45/53 score=0.0 recall=1.0 ttft=1.1 reply='Not mentioned' err=None
+03:13:12 mem0_2025_local: q46/53 score=0.0 recall=1.0 ttft=0.9 reply='$34' err=None
+03:13:14 mem0_2025_local: q47/53 score=0.0 recall=0.0 ttft=0.8 reply='Not mentioned' err=None
+03:13:17 mem0_2025_local: q48/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+03:13:19 mem0_2025_local: q49/53 score=0.0 recall=1.0 ttft=0.8 reply='Not mentioned' err=None
+03:13:22 mem0_2025_local: q50/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+03:13:25 mem0_2025_local: q51/53 score=0.0 recall=0.0 ttft=0.9 reply='Not mentioned' err=None
+03:13:29 mem0_2025_local: q52/53 score=0.0 recall=1.0 ttft=0.9 reply='Not mentioned' err=None
+03:13:32 mem0_2025_local: q53/53 score=1.0 recall=1.0 ttft=0.8 reply='Vegetarian' err=None

@@ -18,7 +18,7 @@ Speed and energy are not goals of the thesis. Timings stay in the run files only
 | `inferx/npu_classifier.py`: controller on the NPU (QNN, fp16, CPU fallback disabled) | Built, checked against the CPU. Validation runs so far used the CPU copy; `--npu-controller` runs it on the NPU (smoke-tested alongside Foundry), and the final comparison uses it |
 | `inferx/cloud.py`: cloud rule (the main LLM asks the cloud only when its memories don't answer) | Built, tested against a local stand-in |
 | `inferx/systems.py`: plain retrieval, full context, local memory, rules (`decoupled`) and trained systems | Built |
-| `inferx/mem0_port.py`: mem0 2025 algorithm on the local model | Built, validation running on the short users |
+| `inferx/mem0_port.py`: mem0 2025 algorithm on the local model | Built, validated on the short users |
 | `inferx/assistant_sim.py`, `inferx/assistant_score.py`: simulated assistant data and scoring | Built |
 | `inferx/locomo.py`: LoCoMo loading and official-style scoring | Built |
 | `inferx/scheduler.py`: when deferred work runs | Stub; idle is simulated at the end of each session |
@@ -192,10 +192,19 @@ Results: `models/assistant_classifier/npu/check.json` and `check_all_npu.json`.
 - **mem0 2026** (mem0ai 2.2.1) can't run on this model: its extraction prompt alone is about 9,500
   tokens, and phi's NPU build fails above about 3,500 to 4,000. A memory system designed for cloud
   models doesn't fit an on-device one.
-- **mem0 2025** (`mem0_2025_local`), the earlier algorithm with its own prompts, runs on phi. Its first
-  validation runs scored 18.3%, but that was a bug in the port: phi often keeps writing invented
-  examples after its JSON answer, and the parser failed on the extra text, so most messages saved
-  nothing. The parser now reads only the first JSON object, and the runs are being repeated.
+- **mem0 2025** (`mem0_2025_local`), the earlier algorithm with its own prompts, runs on phi. On
+  the 5 short users it got **29.9%** correct (trained 82.5%, plain retrieval 76.9%), 14 of 72
+  questions about something that changed, and 15 replies giving the old value. Trained minus mem0:
+  +52.6 points (95% interval +45.9 to +59.0). Runs `20261108-221614` to `20261109-021727`.
+- Replaying 25 messages shows the port works as intended (update IDs are valid and edits apply).
+  The losses come from mem0's prompts on a small model:
+  - Facts lose who and what they are about: "Event location: Warmline Services" is saved apart
+    from the boiler inspection, and a friend's new address becomes "Current address is 78 Station Road".
+  - The update step loses memories: the backpack purchase, a dentist appointment,
+    a dinner plan and a friend's allergy were all replaced by other
+    facts or never added within the first 25 messages.
+  - Nothing filters secrets: a one-time password was saved.
+  - The first runs (18.3%) used a broken parser and are left out; see the method notes.
 - Cloud mem0 and Letta need a cloud API key and permission to send data out.
 
 ### Network
