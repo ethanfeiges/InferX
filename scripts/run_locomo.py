@@ -28,7 +28,7 @@ from inferx.embed import Embedder  # noqa: E402
 from inferx.llm import LocalLLM  # noqa: E402
 from inferx.locomo import evidence_recall, load, score, sessions  # noqa: E402
 from inferx.memory_classifier import MemoryClassifier  # noqa: E402
-from inferx.cloud import CloudClient, CloudPolicy  # noqa: E402
+from inferx.cloud import CloudClient, CloudPolicy, user_env  # noqa: E402
 from inferx.systems import DecoupledMemory, FullContext, LocalMemory, PlainRetrieval, TrainedMemory  # noqa: E402
 
 DEFAULT_MODEL = "qwen2.5-1.5b-instruct-qnn-npu:3"
@@ -134,6 +134,9 @@ def summarize(results, timings, idle, system, planned):
         "prompt_tokens_mean": mean([r["prompt_tokens"] for r in answered]),
         "cloud_calls": sum(r["cloud_calls"] for r in results),
         "cloud_bytes": sum(r.get("cloud_bytes", 0) for r in results),
+        "memory_cloud_requests": sum(r.get("memory_cloud_requests", 0) for r in results) + int(idle.get("requests", 0)),
+        "memory_cloud_bytes": sum(r.get("memory_cloud_bytes", 0) for r in results)
+                              + int(idle.get("bytes_sent", 0) + idle.get("bytes_received", 0)),
         "ingest_s": round(timings["ingest_s"], 1),
         "idle_s": round(timings["idle_s"], 1),
         "idle": {key: round(value, 1) for key, value in idle.items()},
@@ -171,7 +174,11 @@ def main():
     parser.add_argument("--cloud", choices=["off", "gate"], default="off",
                         help="gate applies the cloud rule to every system; local_memory always uses the cloud")
     parser.add_argument("--cloud-url", default="http://127.0.0.1:8765/v1",
-                        help="the local stand-in by default; a remote provider is refused")
+                        help="the local stand-in by default; a remote provider needs --allow-remote")
+    parser.add_argument("--cloud-model", default="cloud", help="model name at the cloud provider")
+    parser.add_argument("--allow-remote", action="store_true",
+                        help="allow requests off this laptop: a remote --cloud-url and the mem0_cloud system. "
+                             "The cloud key is read from INFERX_CLOUD_API_KEY, mem0's from MEM0_API_KEY")
     parser.add_argument("--npu-controller", action="store_true",
                         help="run the trained controller (MiniLM and its decision heads) on the NPU")
     args = parser.parse_args()
@@ -213,15 +220,21 @@ def main():
         # Only in .venv-mem0, which has mem0 installed.
         "mem0_2025_local": lambda llm, embed, budget: __import__("inferx.mem0_port", fromlist=["Mem0V1Port"]).Mem0V1Port(
             llm, embed, budget),
+        "mem0_cloud": lambda llm, embed, budget: __import__("inferx.mem0_port", fromlist=["Mem0Cloud"]).Mem0Cloud(
+            llm, embed, budget, allow_remote=args.allow_remote, run_id=f"inferx-{run_dir.name}-{args.conversation}"),
         "trained": lambda llm, embed, budget: TrainedMemory(llm, embed, load_controller(args.npu_controller, embed), budget),
     }
+    def cloud_client():
+        return CloudClient(args.cloud_url, args.cloud_model, user_env("INFERX_CLOUD_API_KEY"),
+                           allow_remote=args.allow_remote)
+
     for name in args.systems.split(","):
         llm = LocalLLM(args.url, args.model, args.tokenizer)
         system = factories[name](llm, embed, budget)
         if name == "local_memory":
-            system.cloud = CloudPolicy(CloudClient(args.cloud_url), "always")
+            system.cloud = CloudPolicy(cloud_client(), "always")
         elif args.cloud == "gate":
-            system.cloud = CloudPolicy(CloudClient(args.cloud_url), "gate")
+            system.cloud = CloudPolicy(cloud_client(), "gate")
         with (run_dir / f"{name}.jsonl").open("w", encoding="utf-8") as out:
             results, timings, idle = run_system(system, data, questions, out, log)
         summaries[name] = summarize(results, timings, idle, system, len(questions))

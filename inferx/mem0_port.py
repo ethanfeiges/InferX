@@ -48,6 +48,7 @@ from mem0 import Memory  # noqa: E402
 from mem0.utils import factory  # noqa: E402
 from mem0.vector_stores.base import VectorStoreBase  # noqa: E402
 
+from .cloud import user_env  # noqa: E402
 from .context import Budget, fit  # noqa: E402
 from .interface import Answer, MemorySystem, Message  # noqa: E402
 from .llm import LOOPBACK, LocalLLM  # noqa: E402
@@ -288,3 +289,113 @@ class Mem0V1Port(MemorySystem):
         points = self.vectors.search(question, self.embed(question), top_k=self.k)
         hits = [Hit("archival", 0, point.payload["data"], point.payload.get("source", ""), point.score) for point in points]
         return _answer_with(self.llm, question, [], hits, [], self.budget, time.perf_counter() - start, self.cloud)
+
+
+def _message_timestamp(date: str) -> int | None:
+    from datetime import datetime
+    for layout in ("%I:%M %p on %d %B, %Y", "%I:%M %p on %d %B %Y"):
+        try:
+            return int(datetime.strptime(date, layout).timestamp())
+        except ValueError:
+            pass
+    return None
+
+
+class Mem0Cloud(MemorySystem):
+    """mem0's hosted platform: every memory decision is made in mem0's cloud, as mem0 ships it.
+
+    Each message goes to mem0 when it arrives; questions search mem0, and phi answers from the
+    results with the same answer step as every other system. Every request to mem0 is counted,
+    with its size, as memory-work cloud traffic. Refuses to start unless remote calls are allowed.
+    """
+
+    name = "mem0_cloud"
+
+    def __init__(self, llm: LocalLLM, embed, budget: Budget = Budget(), k: int = 30, *,
+                 allow_remote: bool = False, run_id: str | None = None, http=None,
+                 settle_s: float = 15.0, settle_max_s: float = 900.0):
+        if not allow_remote:
+            raise ValueError("mem0_cloud sends every message to mem0's servers; pass --allow-remote")
+        import httpx
+        from mem0.client.main import MemoryClient
+        self.llm, self.embed, self.budget, self.k = llm, embed, budget, k
+        self.store = MemoryStore()  # raw messages, kept only for the run's saved database
+        self.traffic = {"requests": 0, "bytes_sent": 0, "bytes_received": 0}
+
+        def sent(request):
+            self.traffic["requests"] += 1
+            self.traffic["bytes_sent"] += len(request.content or b"")
+
+        def received(response):
+            response.read()
+            self.traffic["bytes_received"] += len(response.content or b"")
+
+        http = http or httpx.Client(timeout=300)
+        http.event_hooks = {"request": [sent], "response": [received]}
+        self.client = MemoryClient(api_key=user_env("MEM0_API_KEY"), client=http)
+        self.filters = {"user_id": run_id or f"inferx-{uuid.uuid4().hex[:12]}"}
+        self.settle_s, self.settle_max_s, self.settled = settle_s, settle_max_s, False
+        self.failures_in_a_row = 0
+        self.stats = self._fresh()
+
+    @staticmethod
+    def _fresh() -> dict:
+        return {"messages": 0, "errors": 0, "add_s": 0.0}
+
+    def ingest(self, message: Message) -> None:
+        self.store.add_message(message, np.zeros(384, dtype=np.float32))
+        self.stats["messages"] += 1
+        self.settled = False
+        start = time.perf_counter()
+        try:
+            # mem0's add needs the user ID as a top-level field (its SDK docs say filters, which mem0 rejects);
+            # search and get_all take it in filters.
+            self.client.add([{"role": "user", "content": message.rendered}], user_id=self.filters["user_id"],
+                            timestamp=_message_timestamp(message.date), metadata={"source": message.id})
+            self.failures_in_a_row = 0
+        except Exception as error:
+            self.stats["errors"] += 1
+            self.failures_in_a_row += 1
+            if self.failures_in_a_row >= 3:
+                raise RuntimeError(f"mem0 rejected 3 messages in a row: {error}") from error
+        self.stats["add_s"] += time.perf_counter() - start
+
+    def on_idle(self) -> dict:
+        # the run script adds these up across sessions, so report traffic since the last call
+        stats, self.stats = {**self.stats, **self.traffic}, self._fresh()
+        self.traffic = {key: 0 for key in self.traffic}
+        return stats
+
+    def _count(self) -> int:
+        result = self.client.get_all(filters=self.filters)
+        if isinstance(result, dict):
+            return int(result.get("count") or len(result.get("results") or []))
+        return len(result or [])
+
+    def settle(self) -> None:
+        """mem0 processes added messages in the background; wait until its memory count stops changing."""
+        if self.settled:
+            return
+        deadline, last, steady = time.monotonic() + self.settle_max_s, -1, 0
+        while time.monotonic() < deadline and steady < 3:
+            count = self._count()
+            steady, last = (steady + 1, last) if count == last else (0, count)
+            if steady < 3:
+                time.sleep(self.settle_s)
+        self.settled = True
+
+    def answer(self, question: str) -> Answer:
+        from .systems import _answer_with
+        before = dict(self.traffic)
+        self.settle()
+        start = time.perf_counter()
+        results = self.client.search(question, filters=self.filters, top_k=self.k).get("results", [])
+        retrieval_s = time.perf_counter() - start
+        hits = [Hit("archival", 0, item["memory"], str((item.get("metadata") or {}).get("source", "")),
+                    float(item.get("score") or 0.0)) for item in results if item.get("memory")]
+        answer = _answer_with(self.llm, question, [], hits, [], self.budget, retrieval_s, self.cloud)
+        answer.memory_cloud_requests = self.traffic["requests"] - before["requests"]
+        answer.memory_cloud_bytes = (self.traffic["bytes_sent"] - before["bytes_sent"]
+                                     + self.traffic["bytes_received"] - before["bytes_received"])
+        self.traffic = before  # recorded on the answer, so on_idle doesn't count it again
+        return answer

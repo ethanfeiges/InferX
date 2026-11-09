@@ -31,6 +31,8 @@ class Answer:
     sources: list[str] = field(default_factory=list)
     cloud_calls: int = 0
     cloud_bytes: int = 0
+    memory_cloud_requests: int = 0  # memory work done in the cloud (cloud baselines only)
+    memory_cloud_bytes: int = 0
     sufficient: bool | None = None
     cloud_reply: str | None = None
     error: str | None = None

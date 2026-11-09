@@ -10,6 +10,8 @@ explicitly, so no request can leave the device by accident.
 from __future__ import annotations
 
 import json
+import os
+import sys
 import urllib.request
 from dataclasses import dataclass
 from urllib.parse import urlparse
@@ -84,3 +86,21 @@ class CloudPolicy:
         except LLMError:
             return None
         return reply.text.strip().upper().startswith("YES")
+
+
+def user_env(name: str) -> str | None:
+    """An environment variable, also read from the user's saved Windows settings.
+
+    A variable saved with setx or the Windows settings window only reaches programs started
+    afterwards, so this reads it from the registry too. The value is never printed or logged.
+    """
+    value = os.environ.get(name)
+    if value or sys.platform != "win32":
+        return value
+    import winreg
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment") as key:
+            return str(winreg.QueryValueEx(key, name)[0]) or None
+    except OSError:
+        return None
+

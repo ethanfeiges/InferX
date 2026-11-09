@@ -24,7 +24,8 @@ Speed and energy are not goals of the thesis. Timings stay in the run files only
 | `inferx/scheduler.py`: when deferred work runs | Stub; idle is simulated at the end of each session |
 | Long-history comparison (3 validation users, 112 days each) | Done |
 | Final comparison on held-out data with a packet capture (`scripts/run_final.sh`) | Written, not run |
-| Cloud mem0 and Letta baselines | Need a cloud API key and permission to send data out |
+| `inferx/mem0_port.py`: cloud mem0 baseline (`mem0_cloud`, mem0's hosted platform) | Built, tested on 1 validation user |
+| Letta baseline, and a real cloud LLM for the cloud rule | Need a cloud LLM key (`INFERX_CLOUD_API_KEY`) |
 | Test messages written by someone other than the developer | Needed |
 | Galaxy S25 | Not started |
 
@@ -103,6 +104,12 @@ Simulated assistant data, classifier training and one validation user:
 .venv\Scripts\python scripts\run_locomo.py --url <URL> --model phi-3.5-mini-instruct-qnn-npu:3 --tokenizer <TOKENIZER> --data data\assistant\val.json --conversation 0 --cloud gate --systems plain_retrieval,full_context,local_memory,decoupled,trained
 .venv\Scripts\python scripts\compare_assistant_runs.py runs\<run> [runs\<run> ...]
 ```
+
+Requests off the laptop need `--allow-remote`; without it, a remote `--cloud-url` and the
+`mem0_cloud` system are refused. Keys are read from environment variables saved by the user,
+never from the repository: `MEM0_API_KEY` for `mem0_cloud` and `INFERX_CLOUD_API_KEY` for a real
+cloud LLM (with `--cloud-url` and `--cloud-model`). `mem0_cloud` stores each run's memories in the
+mem0 account under the user ID `inferx-<run>-<user>`.
 
 Add `--npu-controller` to run the trained controller's MiniLM and decision heads on the NPU
 (retrieval embeddings stay on the CPU). For mem0, run the same command with
@@ -205,7 +212,24 @@ Results: `models/assistant_classifier/npu/check.json` and `check_all_npu.json`.
     facts or never added within the first 25 messages.
   - Nothing filters secrets: a one-time password was saved.
   - The first runs (18.3%) used a broken parser and are left out; see the method notes.
-- Cloud mem0 and Letta need a cloud API key and permission to send data out.
+- **mem0 cloud** (`mem0_cloud`, mem0's hosted platform, which does its memory work on its own
+  cloud models) on validation user 0, run `20261109-134956`:
+
+  | User 0 (55 questions) | Plain retrieval | mem0 2025 on phi | mem0 cloud | Trained |
+  |---|---|---|---|---|
+  | Correct | 78.2% | 36.4% | 78.2% | **83.6%** |
+  | About something that changed (15) | 10 | 4 | 10 | **13** |
+  | Replies giving the old value | 5 | 5 | 2 | **0** |
+  | One-time codes kept (11 sent) | all, as raw messages | n/a | **11 of 11** | **0** |
+
+  - With cloud models doing the memory work, mem0 matches plain retrieval, so its losses on phi
+    come from running its prompts on a small model.
+  - Every message went to mem0's servers: 233 requests and about 2.8 MB, including 25 KB of
+    messages sent. mem0 saved all 11 one-time codes as memories ("User received a bank verification
+    code ..."). The trained controller drops them on the device before anything is saved.
+  - One user is too few for a clear accuracy difference (trained minus mem0 cloud +5.5 points,
+    interval -9.1 to +20.0).
+- Letta still needs a cloud LLM key.
 
 ### Network
 
@@ -235,8 +259,8 @@ means it is no longer clean, so the final comparison uses conversations 2 to 9.
 - Intervals are 95% bootstrap intervals over questions.
 - `data/assistant/handwritten*.json` were written by the developer while building the system, so
   they are not independent. Messages written by someone else are still needed.
-- Runs `20261108-135534`, `20261108-135621`, `20261108-141228` and `20261108-221518` were stopped or
-  smoke tests, and mem0 runs `20261108-185536` to `213205` used the broken parser. All are left out
+- Runs `20261108-135534`, `20261108-135621`, `20261108-141228`, `20261108-221518` and `20261109-134852` were
+  stopped or smoke tests (`134852` sent mem0 its user ID in the wrong field, so mem0 saved nothing), and mem0 runs `20261108-185536` to `213205` used the broken parser. All are left out
   of comparisons.
 - Foundry's `completion_tokens` over-reports, so `inferx/llm.py` counts output chunks itself.
 - `scripts/` also holds the NPU and Foundry diagnostics used to debug the earlier driver failure.

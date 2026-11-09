@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 
 from inferx.assistant_score import correct, out_of_date  # noqa: E402
 
-SYSTEMS = ["plain_retrieval", "full_context", "local_memory", "mem0_2025_local", "decoupled", "trained"]
+SYSTEMS = ["plain_retrieval", "full_context", "local_memory", "mem0_2025_local", "mem0_cloud", "decoupled", "trained"]
 
 
 def interval(differences):
@@ -68,6 +68,11 @@ for system in SYSTEMS:
     for stats in idle_by_user[system].values():
         for key, value in stats.items():
             totals[key] += value
+    if "requests" in totals:  # a cloud memory baseline: memory work itself goes to the cloud
+        asked = sum(r.get("memory_cloud_requests", 0) for r in group_rows)
+        size = sum(r.get("memory_cloud_bytes", 0) for r in group_rows) + totals["bytes_sent"] + totals["bytes_received"]
+        print(f"  memory work in the cloud: {totals['requests'] + asked:.0f} requests, {size:.0f} bytes "
+              f"({totals['bytes_sent']:.0f} bytes of messages sent)")
     print("  idle:", {key: round(value, 1) for key, value in totals.items()})
 
 PAIRS = [("trained", other) for other in SYSTEMS if other != "trained"] + [("decoupled", "plain_retrieval")]
