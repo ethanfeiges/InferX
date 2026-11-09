@@ -18,11 +18,11 @@ Speed and energy are not goals of the thesis. Timings stay in the run files only
 | `inferx/npu_classifier.py`: controller on the NPU (QNN, fp16, CPU fallback disabled) | Built, checked against the CPU. Validation runs so far used the CPU copy; `--npu-controller` runs it on the NPU, and the final comparison uses it |
 | `inferx/cloud.py`: cloud rule (the main LLM asks the cloud only when its memories don't answer) | Built, tested against a local stand-in |
 | `inferx/systems.py`: plain retrieval, full context, local memory, rules (`decoupled`) and trained systems | Built |
-| `inferx/mem0_port.py`: mem0 2025 algorithm on the local model | Built, validation running |
+| `inferx/mem0_port.py`: mem0 2025 algorithm on the local model | Built, validation running on the short users |
 | `inferx/assistant_sim.py`, `inferx/assistant_score.py`: simulated assistant data and scoring | Built |
 | `inferx/locomo.py`: LoCoMo loading and official-style scoring | Built |
 | `inferx/scheduler.py`: when deferred work runs | Stub; idle is simulated at the end of each session |
-| Long-history comparison (3 users, 112 days each) | Running |
+| Long-history comparison (3 validation users, 112 days each) | Done |
 | Final comparison on held-out data with a packet capture (`scripts/run_final.sh`) | Written, not run |
 | Cloud mem0 and Letta baselines | Need a cloud API key and permission to send data out |
 | Test messages written by someone other than the developer | Needed |
@@ -146,19 +146,30 @@ Caveats:
 - History questions got worse (8 of 12 before the changes, 5 of 12 after).
 - Plain retrieval and rules were run before the cloud rule existed, so they have no cloud counts here.
 
-### Personal assistant, long history (user 0 of 3, 112 days, 84 questions, cloud rule on)
+### Personal assistant, long history (3 users, 112 days each, 248 questions, cloud rule on)
 
 | | Plain retrieval | Full context | Local memory | Rules | Trained |
 |---|---|---|---|---|---|
-| Correct overall | 66.7% | 9.5% | 66.7% | 69.0% | **73.8%** |
-| About something that changed (29) | 15 | 4 | 15 | 17 | **19** |
-| Replies giving the old value | 5 | 1 | 5 | 7 | **0** |
-| Questions sent to the cloud | 29 | 39 | 84 | 50 | **15** |
-| Bytes sent to the cloud | 77 KB | 274 KB | 228 KB | 149 KB | **50 KB** |
+| Correct overall | 69.4% | 8.9% | 69.4% | 68.5% | **75.8%** |
+| User 0 / 1 / 2 | 66.7 / 63.8 / 64.1 | 9.5 / 12.7 / 7.0 | 66.7 / 63.8 / 64.1 | 69.0 / 62.9 / 71.3 | **73.8 / 64.2 / 72.0** |
+| About something that changed (83) | 43 | 7 | 43 | 44 | **56** |
+| Replies giving the old value | 21 | 1 | 21 | 23 | **4** |
+| Details that never changed (116) | 75.9% | 10.3% | 75.9% | 78.4% | **86.2%** |
+| History questions (9) | **77.8%** | 0.0% | **77.8%** | 44.4% | 44.4% |
+| No-answer questions declined (15) | **14** | 3 | **14** | **14** | 12 |
+| Questions sent to the cloud | 87 | 142 | 248 | 115 | **45** |
+| Bytes sent to the cloud | 232 KB | 1,005 KB | 673 KB | 342 KB | **150 KB** |
 
-Run `20261108-145846`. One user is too few for a clear difference (trained minus plain retrieval
-+7.1 points, interval -4.8 to +19.0). Users 1 and 2 are running.
+Runs `20261108-145846`, `20261108-161136` and `20261108-174426`. These users were not used to
+design the changes, so they are a fairer check than the short users.
 
+- Trained minus plain retrieval: +6.5 points overall (95% interval 0.0 to +12.9), and +15.7 on
+  questions about something that changed (+3.6 to +27.7). Trained minus rules: +7.3 (+0.8 to +14.1).
+- The gain is uneven: about +7 points on users 0 and 2, and a tie on user 1.
+- Trained sends about half as many questions to the cloud as plain retrieval (45 vs 87), because
+  its memories answer more questions.
+- Weaker spots: history questions (4 of 9 vs 7 of 9 for plain retrieval) and declining questions
+  with no answer (12 of 15 vs 14 of 15).
 - **Full context** fits only the last few days of a 112-day history into phi's window, which is
   why it scores so low.
 - **Local memory** answers like plain retrieval but sends every question to the cloud, so it is the
@@ -182,7 +193,7 @@ Results: `models/assistant_classifier/npu/check.json` and `check_all_npu.json`.
   tokens, and phi's NPU build fails above about 3,500 to 4,000. A memory system designed for cloud
   models doesn't fit an on-device one.
 - **mem0 2025** (`mem0_2025_local`), the earlier algorithm with its own prompts, runs on phi. Its
-  validation runs are queued.
+  validation runs on the 5 short users are running.
 - Cloud mem0 and Letta need a cloud API key and permission to send data out.
 
 ### Network

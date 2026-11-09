@@ -43,5 +43,209 @@
       "outdated": 0
     },
     "llm_calls_total": 162
+  },
+  "full_context": {
+    "system": "full_context",
+    "questions_planned": 81,
+    "questions_answered": 81,
+    "errors": 0,
+    "score": 0.127,
+    "score_excluding_adversarial": 0.096,
+    "evidence_recall": 0.145,
+    "not_mentioned_rate": 0.333,
+    "by_category": {
+      "2": {
+        "n": 17,
+        "score": 0.118,
+        "evidence_recall": 0.0
+      },
+      "4": {
+        "n": 59,
+        "score": 0.09,
+        "evidence_recall": 0.186
+      },
+      "5": {
+        "n": 5,
+        "score": 0.6,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 8.76,
+    "total_s_mean": 17.422,
+    "retrieval_ms_mean": 0.0,
+    "prompt_tokens_mean": 3042.049,
+    "cloud_calls": 54,
+    "cloud_bytes": 386226,
+    "ingest_s": 0.0,
+    "idle_s": 0.0,
+    "idle": {},
+    "store": {
+      "recall": 551,
+      "facts_active": 0,
+      "facts_superseded": 0,
+      "core": 0,
+      "queued": 0,
+      "outdated": 0
+    },
+    "llm_calls_total": 162
+  },
+  "local_memory": {
+    "system": "local_memory",
+    "questions_planned": 81,
+    "questions_answered": 81,
+    "errors": 0,
+    "score": 0.638,
+    "score_excluding_adversarial": 0.614,
+    "evidence_recall": 1.0,
+    "not_mentioned_rate": 0.136,
+    "by_category": {
+      "2": {
+        "n": 17,
+        "score": 0.408,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 59,
+        "score": 0.674,
+        "evidence_recall": 1.0
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.15,
+    "total_s_mean": 2.442,
+    "retrieval_ms_mean": 8.0,
+    "prompt_tokens_mean": 1081.469,
+    "cloud_calls": 81,
+    "cloud_bytes": 218301,
+    "ingest_s": 2.7,
+    "idle_s": 0.0,
+    "idle": {},
+    "store": {
+      "recall": 551,
+      "facts_active": 0,
+      "facts_superseded": 0,
+      "core": 0,
+      "queued": 0,
+      "outdated": 0
+    },
+    "llm_calls_total": 81
+  },
+  "decoupled": {
+    "system": "decoupled",
+    "questions_planned": 81,
+    "questions_answered": 81,
+    "errors": 0,
+    "score": 0.629,
+    "score_excluding_adversarial": 0.604,
+    "evidence_recall": 1.0,
+    "not_mentioned_rate": 0.148,
+    "by_category": {
+      "2": {
+        "n": 17,
+        "score": 0.413,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 59,
+        "score": 0.659,
+        "evidence_recall": 1.0
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.49,
+    "total_s_mean": 2.765,
+    "retrieval_ms_mean": 12.9,
+    "prompt_tokens_mean": 1213.333,
+    "cloud_calls": 41,
+    "cloud_bytes": 122460,
+    "ingest_s": 5.3,
+    "idle_s": 568.0,
+    "idle": {
+      "processed": 288.0,
+      "add": 135.0,
+      "update": 1.0,
+      "ignore": 30.0,
+      "none": 0.0,
+      "rejected": 122.0,
+      "ambiguous": 19.0,
+      "llm_calls": 307.0,
+      "errors": 0.0,
+      "llm_s": 564.1,
+      "dates_removed": 6.0
+    },
+    "store": {
+      "recall": 551,
+      "facts_active": 135,
+      "facts_superseded": 1,
+      "core": 1,
+      "queued": 0,
+      "outdated": 0
+    },
+    "llm_calls_total": 469
+  },
+  "trained": {
+    "system": "trained",
+    "questions_planned": 81,
+    "questions_answered": 81,
+    "errors": 0,
+    "score": 0.642,
+    "score_excluding_adversarial": 0.632,
+    "evidence_recall": 0.855,
+    "not_mentioned_rate": 0.099,
+    "by_category": {
+      "2": {
+        "n": 17,
+        "score": 0.563,
+        "evidence_recall": 0.824
+      },
+      "4": {
+        "n": 59,
+        "score": 0.652,
+        "evidence_recall": 0.864
+      },
+      "5": {
+        "n": 5,
+        "score": 0.8,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.64,
+    "total_s_mean": 3.037,
+    "retrieval_ms_mean": 15.1,
+    "prompt_tokens_mean": 1307.358,
+    "cloud_calls": 17,
+    "cloud_bytes": 55396,
+    "ingest_s": 6.2,
+    "idle_s": 166.4,
+    "idle": {
+      "processed": 98.0,
+      "add": 98.0,
+      "update": 33.0,
+      "none": 0.0,
+      "rejected": 1.0,
+      "core": 9.0,
+      "llm_calls": 98.0,
+      "errors": 0.0,
+      "llm_s": 164.3,
+      "dates_removed": 5.0,
+      "secrets_dropped": 74.0
+    },
+    "store": {
+      "recall": 477,
+      "facts_active": 64,
+      "facts_superseded": 33,
+      "core": 9,
+      "queued": 0,
+      "outdated": 33
+    },
+    "llm_calls_total": 260
   }
 }

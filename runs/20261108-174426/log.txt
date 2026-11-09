@@ -1,0 +1,976 @@
+17:44:26 on_ac_power=True
+17:44:26 plain_retrieval: session 1 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 2 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 3 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 4 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 5 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 6 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 7 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 8 ready (0s idle work so far)
+17:44:26 plain_retrieval: session 9 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 10 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 11 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 12 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 13 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 14 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 15 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 16 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 17 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 18 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 19 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 20 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 21 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 22 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 23 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 24 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 25 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 26 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 27 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 28 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 29 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 30 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 31 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 32 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 33 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 34 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 35 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 36 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 37 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 38 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 39 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 40 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 41 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 42 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 43 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 44 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 45 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 46 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 47 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 48 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 49 ready (0s idle work so far)
+17:44:27 plain_retrieval: session 50 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 51 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 52 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 53 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 54 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 55 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 56 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 57 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 58 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 59 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 60 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 61 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 62 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 63 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 64 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 65 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 66 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 67 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 68 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 69 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 70 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 71 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 72 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 73 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 74 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 75 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 76 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 77 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 78 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 79 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 80 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 81 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 82 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 83 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 84 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 85 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 86 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 87 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 88 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 89 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 90 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 91 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 92 ready (0s idle work so far)
+17:44:28 plain_retrieval: session 93 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 94 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 95 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 96 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 97 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 98 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 99 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 100 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 101 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 102 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 103 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 104 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 105 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 106 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 107 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 108 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 109 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 110 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 111 ready (0s idle work so far)
+17:44:29 plain_retrieval: session 112 ready (0s idle work so far)
+17:44:34 plain_retrieval: q1/83 score=0.25 recall=1.0 ttft=2.2 reply='Jun 5 at 11:00 am' err=None
+17:44:40 plain_retrieval: q2/83 score=0.4444444444444445 recall=1.0 ttft=2.2 reply='Jun 5 at 11:00 am, Harbor Accounting' err=None
+17:44:46 plain_retrieval: q3/83 score=1.0 recall=1.0 ttft=2.5 reply='12 June 2025' err=None
+17:44:53 plain_retrieval: q4/83 score=0.5 recall=1.0 ttft=2.5 reply='12 June 2025, 4:45 pm' err=None
+17:44:59 plain_retrieval: q5/83 score=0.0 recall=1.0 ttft=2.5 reply='14 June 2025, 8:15am' err=None
+17:45:07 plain_retrieval: q6/83 score=1.0 recall=1.0 ttft=2.3 reply='22 March 2025' err=None
+17:45:14 plain_retrieval: q7/83 score=0.5 recall=1.0 ttft=2.3 reply='Sunday 23 March, 4:45 pm' err=None
+17:45:20 plain_retrieval: q8/83 score=0.0 recall=1.0 ttft=2.3 reply='Sunday 23 March, 4:45 pm' err=None
+17:45:25 plain_retrieval: q9/83 score=0.3333333333333333 recall=1.0 ttft=2.3 reply='Jun 16, noon' err=None
+17:45:33 plain_retrieval: q10/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='Oak Lane Vets, Jun 16, noon' err=None
+17:45:40 plain_retrieval: q11/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='30 April 2025' err=None
+17:45:46 plain_retrieval: q12/83 score=0.28571428571428575 recall=1.0 ttft=2.5 reply='Wed 30 Apr 8:15am' err=None
+17:45:53 plain_retrieval: q13/83 score=0.0 recall=1.0 ttft=2.4 reply='Wed 30 Apr 8:15am' err=None
+17:46:00 plain_retrieval: q14/83 score=0.5714285714285715 recall=1.0 ttft=2.3 reply='27 May at 7pm' err=None
+17:46:06 plain_retrieval: q15/83 score=1.0 recall=1.0 ttft=2.5 reply='Elmwood School' err=None
+17:46:12 plain_retrieval: q16/83 score=0.0 recall=None ttft=2.1 reply='Jun 16, 12:00pm' err=None
+17:46:17 plain_retrieval: q17/83 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+17:46:23 plain_retrieval: q18/83 score=1.0 recall=1.0 ttft=2.1 reply='$118' err=None
+17:46:29 plain_retrieval: q19/83 score=1.0 recall=1.0 ttft=2.1 reply='TrailGear' err=None
+17:46:34 plain_retrieval: q20/83 score=0.0 recall=1.0 ttft=2.1 reply='Arrived on 15 March 2025' err=None
+17:46:40 plain_retrieval: q21/83 score=1.0 recall=1.0 ttft=2.2 reply='$75' err=None
+17:46:46 plain_retrieval: q22/83 score=1.0 recall=1.0 ttft=2.3 reply='KitchenHub' err=None
+17:46:52 plain_retrieval: q23/83 score=0.0 recall=1.0 ttft=2.3 reply='Shipped and arriving on Monday 28 April 2025' err=None
+17:46:59 plain_retrieval: q24/83 score=1.0 recall=1.0 ttft=2.1 reply='$44' err=None
+17:47:04 plain_retrieval: q25/83 score=1.0 recall=1.0 ttft=2.1 reply='KitchenHub' err=None
+17:47:10 plain_retrieval: q26/83 score=0.0 recall=1.0 ttft=2.2 reply='Delivered on Thursday, 20 March 2025, with a cost ' err=None
+17:47:15 plain_retrieval: q27/83 score=1.0 recall=1.0 ttft=2.1 reply='$19' err=None
+17:47:22 plain_retrieval: q28/83 score=1.0 recall=1.0 ttft=2.2 reply='CaseCo' err=None
+17:47:28 plain_retrieval: q29/83 score=0.0 recall=1.0 ttft=2.1 reply='Left at door, out for delivery by Thursday 8 May' err=None
+17:47:34 plain_retrieval: q30/83 score=1.0 recall=1.0 ttft=2.1 reply='$34' err=None
+17:47:41 plain_retrieval: q31/83 score=0.0 recall=1.0 ttft=2.2 reply='KitchenHub' err=None
+17:47:47 plain_retrieval: q32/83 score=0.33333333333333337 recall=1.0 ttft=2.1 reply='Delivered by May 18, 2025' err=None
+17:47:53 plain_retrieval: q33/83 score=1.0 recall=1.0 ttft=2.1 reply='$89' err=None
+17:47:59 plain_retrieval: q34/83 score=1.0 recall=1.0 ttft=2.3 reply='StrideShop' err=None
+17:48:04 plain_retrieval: q35/83 score=0.2222222222222222 recall=1.0 ttft=2.1 reply='Wed 7 May - shipped, arriving on 7 May' err=None
+17:48:11 plain_retrieval: q36/83 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+17:48:17 plain_retrieval: q37/83 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+17:48:24 plain_retrieval: q38/83 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$5 monthly' err=None
+17:48:30 plain_retrieval: q39/83 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$13 monthly' err=None
+17:48:37 plain_retrieval: q40/83 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$14 monthly' err=None
+17:48:43 plain_retrieval: q41/83 score=0.5 recall=1.0 ttft=2.1 reply='$8 per month' err=None
+17:48:48 plain_retrieval: q42/83 score=1.0 recall=1.0 ttft=1.6 reply='5 Orchard Close' err=None
+17:48:52 plain_retrieval: q43/83 score=1.0 recall=1.0 ttft=1.6 reply='Cats' err=None
+17:48:57 plain_retrieval: q44/83 score=1.0 recall=1.0 ttft=1.8 reply='5 Orchard Close' err=None
+17:49:02 plain_retrieval: q45/83 score=1.0 recall=1.0 ttft=1.7 reply='Latex' err=None
+17:49:07 plain_retrieval: q46/83 score=0.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+17:49:12 plain_retrieval: q47/83 score=1.0 recall=1.0 ttft=1.6 reply='shellfish' err=None
+17:49:17 plain_retrieval: q48/83 score=1.0 recall=1.0 ttft=1.7 reply='9 Mill Lane' err=None
+17:49:22 plain_retrieval: q49/83 score=1.0 recall=1.0 ttft=1.7 reply='Peanuts' err=None
+17:49:28 plain_retrieval: q50/83 score=0.0 recall=1.0 ttft=1.8 reply='60 Lake View' err=None
+17:49:33 plain_retrieval: q51/83 score=0.0 recall=1.0 ttft=1.7 reply='Shellfish' err=None
+17:49:39 plain_retrieval: q52/83 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+17:49:44 plain_retrieval: q53/83 score=1.0 recall=1.0 ttft=2.2 reply='Green Table' err=None
+17:49:51 plain_retrieval: q54/83 score=0.6666666666666666 recall=1.0 ttft=2.0 reply='12 May 2025' err=None
+17:49:57 plain_retrieval: q55/83 score=1.0 recall=1.0 ttft=2.1 reply='Casa Roja' err=None
+17:50:04 plain_retrieval: q56/83 score=0.0 recall=1.0 ttft=2.0 reply='Not mentioned' err=None
+17:50:10 plain_retrieval: q57/83 score=1.0 recall=1.0 ttft=2.2 reply="Luigi's" err=None
+17:50:17 plain_retrieval: q58/83 score=1.0 recall=1.0 ttft=2.0 reply='7 June, 2025' err=None
+17:50:23 plain_retrieval: q59/83 score=0.0 recall=1.0 ttft=1.9 reply='Not mentioned' err=None
+17:50:28 plain_retrieval: q60/83 score=0.0 recall=1.0 ttft=1.9 reply='Not mentioned in the memories provided.' err=None
+17:50:35 plain_retrieval: q61/83 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='19 June 2025' err=None
+17:50:43 plain_retrieval: q62/83 score=0.5714285714285715 recall=1.0 ttft=2.5 reply='Sunday 27 April, 2025' err=None
+17:50:49 plain_retrieval: q63/83 score=1.0 recall=1.0 ttft=2.5 reply='8 June 2025' err=None
+17:50:55 plain_retrieval: q64/83 score=0.6666666666666666 recall=1.0 ttft=2.4 reply='28 April 2025' err=None
+17:51:01 plain_retrieval: q65/83 score=1.0 recall=1.0 ttft=2.5 reply='23 May 2025' err=None
+17:51:08 plain_retrieval: q66/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='22 June 2025' err=None
+17:51:14 plain_retrieval: q67/83 score=1.0 recall=1.0 ttft=2.3 reply='$175' err=None
+17:51:19 plain_retrieval: q68/83 score=1.0 recall=1.0 ttft=2.1 reply='$53' err=None
+17:51:25 plain_retrieval: q69/83 score=1.0 recall=1.0 ttft=2.3 reply='$132' err=None
+17:51:30 plain_retrieval: q70/83 score=1.0 recall=1.0 ttft=2.1 reply='$156' err=None
+17:51:35 plain_retrieval: q71/83 score=1.0 recall=1.0 ttft=2.1 reply='$41' err=None
+17:51:39 plain_retrieval: q72/83 score=1.0 recall=1.0 ttft=2.2 reply='$178' err=None
+17:51:44 plain_retrieval: q73/83 score=1.0 recall=1.0 ttft=1.6 reply='01219 273218' err=None
+17:51:48 plain_retrieval: q74/83 score=0.0 recall=1.0 ttft=1.4 reply='Apex Freight' err=None
+17:51:53 plain_retrieval: q75/83 score=1.0 recall=1.0 ttft=1.8 reply='08065 829225' err=None
+17:52:00 plain_retrieval: q76/83 score=0.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+17:52:06 plain_retrieval: q77/83 score=1.0 recall=1.0 ttft=1.7 reply='03994 193976' err=None
+17:52:11 plain_retrieval: q78/83 score=0.0 recall=1.0 ttft=1.7 reply='9 Mill Lane' err=None
+17:52:17 plain_retrieval: q79/83 score=0.0 recall=1.0 ttft=1.7 reply='06209 725095' err=None
+17:52:22 plain_retrieval: q80/83 score=0.6666666666666666 recall=1.0 ttft=1.7 reply='paramedic at apex freight' err=None
+17:52:28 plain_retrieval: q81/83 score=1.0 recall=1.0 ttft=1.8 reply='06209 725095' err=None
+17:52:33 plain_retrieval: q82/83 score=0.0 recall=1.0 ttft=1.9 reply='60 Lake View' err=None
+17:52:39 plain_retrieval: q83/83 score=1.0 recall=1.0 ttft=2.3 reply='Vegan' err=None
+17:52:39 full_context: session 1 ready (0s idle work so far)
+17:52:39 full_context: session 2 ready (0s idle work so far)
+17:52:39 full_context: session 3 ready (0s idle work so far)
+17:52:39 full_context: session 4 ready (0s idle work so far)
+17:52:39 full_context: session 5 ready (0s idle work so far)
+17:52:39 full_context: session 6 ready (0s idle work so far)
+17:52:39 full_context: session 7 ready (0s idle work so far)
+17:52:39 full_context: session 8 ready (0s idle work so far)
+17:52:39 full_context: session 9 ready (0s idle work so far)
+17:52:39 full_context: session 10 ready (0s idle work so far)
+17:52:39 full_context: session 11 ready (0s idle work so far)
+17:52:39 full_context: session 12 ready (0s idle work so far)
+17:52:39 full_context: session 13 ready (0s idle work so far)
+17:52:39 full_context: session 14 ready (0s idle work so far)
+17:52:39 full_context: session 15 ready (0s idle work so far)
+17:52:39 full_context: session 16 ready (0s idle work so far)
+17:52:39 full_context: session 17 ready (0s idle work so far)
+17:52:39 full_context: session 18 ready (0s idle work so far)
+17:52:39 full_context: session 19 ready (0s idle work so far)
+17:52:39 full_context: session 20 ready (0s idle work so far)
+17:52:39 full_context: session 21 ready (0s idle work so far)
+17:52:39 full_context: session 22 ready (0s idle work so far)
+17:52:39 full_context: session 23 ready (0s idle work so far)
+17:52:39 full_context: session 24 ready (0s idle work so far)
+17:52:39 full_context: session 25 ready (0s idle work so far)
+17:52:39 full_context: session 26 ready (0s idle work so far)
+17:52:39 full_context: session 27 ready (0s idle work so far)
+17:52:39 full_context: session 28 ready (0s idle work so far)
+17:52:39 full_context: session 29 ready (0s idle work so far)
+17:52:39 full_context: session 30 ready (0s idle work so far)
+17:52:39 full_context: session 31 ready (0s idle work so far)
+17:52:39 full_context: session 32 ready (0s idle work so far)
+17:52:39 full_context: session 33 ready (0s idle work so far)
+17:52:39 full_context: session 34 ready (0s idle work so far)
+17:52:39 full_context: session 35 ready (0s idle work so far)
+17:52:39 full_context: session 36 ready (0s idle work so far)
+17:52:39 full_context: session 37 ready (0s idle work so far)
+17:52:39 full_context: session 38 ready (0s idle work so far)
+17:52:39 full_context: session 39 ready (0s idle work so far)
+17:52:39 full_context: session 40 ready (0s idle work so far)
+17:52:39 full_context: session 41 ready (0s idle work so far)
+17:52:39 full_context: session 42 ready (0s idle work so far)
+17:52:39 full_context: session 43 ready (0s idle work so far)
+17:52:39 full_context: session 44 ready (0s idle work so far)
+17:52:39 full_context: session 45 ready (0s idle work so far)
+17:52:39 full_context: session 46 ready (0s idle work so far)
+17:52:39 full_context: session 47 ready (0s idle work so far)
+17:52:39 full_context: session 48 ready (0s idle work so far)
+17:52:39 full_context: session 49 ready (0s idle work so far)
+17:52:39 full_context: session 50 ready (0s idle work so far)
+17:52:39 full_context: session 51 ready (0s idle work so far)
+17:52:39 full_context: session 52 ready (0s idle work so far)
+17:52:39 full_context: session 53 ready (0s idle work so far)
+17:52:39 full_context: session 54 ready (0s idle work so far)
+17:52:39 full_context: session 55 ready (0s idle work so far)
+17:52:39 full_context: session 56 ready (0s idle work so far)
+17:52:39 full_context: session 57 ready (0s idle work so far)
+17:52:39 full_context: session 58 ready (0s idle work so far)
+17:52:39 full_context: session 59 ready (0s idle work so far)
+17:52:39 full_context: session 60 ready (0s idle work so far)
+17:52:39 full_context: session 61 ready (0s idle work so far)
+17:52:39 full_context: session 62 ready (0s idle work so far)
+17:52:39 full_context: session 63 ready (0s idle work so far)
+17:52:39 full_context: session 64 ready (0s idle work so far)
+17:52:39 full_context: session 65 ready (0s idle work so far)
+17:52:39 full_context: session 66 ready (0s idle work so far)
+17:52:39 full_context: session 67 ready (0s idle work so far)
+17:52:39 full_context: session 68 ready (0s idle work so far)
+17:52:39 full_context: session 69 ready (0s idle work so far)
+17:52:39 full_context: session 70 ready (0s idle work so far)
+17:52:39 full_context: session 71 ready (0s idle work so far)
+17:52:39 full_context: session 72 ready (0s idle work so far)
+17:52:39 full_context: session 73 ready (0s idle work so far)
+17:52:39 full_context: session 74 ready (0s idle work so far)
+17:52:39 full_context: session 75 ready (0s idle work so far)
+17:52:39 full_context: session 76 ready (0s idle work so far)
+17:52:39 full_context: session 77 ready (0s idle work so far)
+17:52:39 full_context: session 78 ready (0s idle work so far)
+17:52:39 full_context: session 79 ready (0s idle work so far)
+17:52:39 full_context: session 80 ready (0s idle work so far)
+17:52:39 full_context: session 81 ready (0s idle work so far)
+17:52:39 full_context: session 82 ready (0s idle work so far)
+17:52:39 full_context: session 83 ready (0s idle work so far)
+17:52:39 full_context: session 84 ready (0s idle work so far)
+17:52:39 full_context: session 85 ready (0s idle work so far)
+17:52:39 full_context: session 86 ready (0s idle work so far)
+17:52:39 full_context: session 87 ready (0s idle work so far)
+17:52:39 full_context: session 88 ready (0s idle work so far)
+17:52:39 full_context: session 89 ready (0s idle work so far)
+17:52:39 full_context: session 90 ready (0s idle work so far)
+17:52:39 full_context: session 91 ready (0s idle work so far)
+17:52:39 full_context: session 92 ready (0s idle work so far)
+17:52:39 full_context: session 93 ready (0s idle work so far)
+17:52:39 full_context: session 94 ready (0s idle work so far)
+17:52:39 full_context: session 95 ready (0s idle work so far)
+17:52:39 full_context: session 96 ready (0s idle work so far)
+17:52:39 full_context: session 97 ready (0s idle work so far)
+17:52:39 full_context: session 98 ready (0s idle work so far)
+17:52:39 full_context: session 99 ready (0s idle work so far)
+17:52:39 full_context: session 100 ready (0s idle work so far)
+17:52:39 full_context: session 101 ready (0s idle work so far)
+17:52:39 full_context: session 102 ready (0s idle work so far)
+17:52:39 full_context: session 103 ready (0s idle work so far)
+17:52:39 full_context: session 104 ready (0s idle work so far)
+17:52:39 full_context: session 105 ready (0s idle work so far)
+17:52:39 full_context: session 106 ready (0s idle work so far)
+17:52:39 full_context: session 107 ready (0s idle work so far)
+17:52:39 full_context: session 108 ready (0s idle work so far)
+17:52:39 full_context: session 109 ready (0s idle work so far)
+17:52:39 full_context: session 110 ready (0s idle work so far)
+17:52:39 full_context: session 111 ready (0s idle work so far)
+17:52:39 full_context: session 112 ready (0s idle work so far)
+17:53:00 full_context: q1/83 score=0.0 recall=0.0 ttft=8.5 reply='The provided memories do not contain specific info' err=None
+17:53:21 full_context: q2/83 score=0.0 recall=0.0 ttft=8.4 reply='The memories provided do not contain specific info' err=None
+17:53:40 full_context: q3/83 score=0.6666666666666666 recall=0.0 ttft=8.4 reply='3 June 2025' err=None
+17:54:02 full_context: q4/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+17:54:24 full_context: q5/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's physiotherapy session location is not ment" err=None
+17:54:44 full_context: q6/83 score=0.3333333333333333 recall=0.0 ttft=8.5 reply='June 1, 2025' err=None
+17:55:07 full_context: q7/83 score=0.03636363636363637 recall=0.0 ttft=8.4 reply="Grace's orders: Was your package on time? Answer o" err=None
+17:55:31 full_context: q8/83 score=0.0 recall=0.0 ttft=8.4 reply='Grace\'s orders on 5 June, 2025 mentioned "Grace\'s ' err=None
+17:55:51 full_context: q9/83 score=0.14285714285714288 recall=0.0 ttft=8.4 reply="Grace's vet visit starts in 1 hours on 31 May, 202" err=None
+17:56:12 full_context: q10/83 score=0.08 recall=0.0 ttft=8.4 reply="Grace's vet visit starts in 1 hours on 31 May, 202" err=None
+17:56:34 full_context: q11/83 score=0.0 recall=0.0 ttft=8.3 reply='The provided memories do not contain specific info' err=None
+17:56:55 full_context: q12/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain any informati' err=None
+17:57:16 full_context: q13/83 score=0.06896551724137931 recall=0.0 ttft=8.4 reply='The memories provided do not contain specific info' err=None
+17:57:37 full_context: q14/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+17:57:58 full_context: q15/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's parent-teacher meeting location is not men" err=None
+17:58:22 full_context: q16/83 score=0.0 recall=None ttft=8.4 reply="Grace's orders: How was your order? Leave a review" err=None
+17:58:43 full_context: q17/83 score=0.0 recall=None ttft=8.4 reply='The provided memories do not contain specific info' err=None
+17:59:05 full_context: q18/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+17:59:24 full_context: q19/83 score=0.0 recall=0.0 ttft=8.4 reply='HomeBox' err=None
+17:59:44 full_context: q20/83 score=0.0 recall=0.0 ttft=8.3 reply='How was your order? Leave a review and earn points' err=None
+18:00:06 full_context: q21/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:00:25 full_context: q22/83 score=0.0 recall=0.0 ttft=8.4 reply='HomeBox' err=None
+18:00:45 full_context: q23/83 score=0.0 recall=0.0 ttft=8.4 reply='How was your order? Leave a review and earn points' err=None
+18:01:07 full_context: q24/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:01:26 full_context: q25/83 score=0.0 recall=0.0 ttft=8.5 reply='HomeBox' err=None
+18:01:46 full_context: q26/83 score=0.0 recall=0.0 ttft=8.4 reply='How was your order? Leave a review and earn points' err=None
+18:02:08 full_context: q27/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:02:27 full_context: q28/83 score=0.0 recall=0.0 ttft=8.4 reply='HomeBox' err=None
+18:02:49 full_context: q29/83 score=0.0 recall=0.0 ttft=8.5 reply="Grace's orders: Thanks, Metro Council got your $15" err=None
+18:03:10 full_context: q30/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:03:29 full_context: q31/83 score=1.0 recall=0.0 ttft=8.4 reply='HomeBox' err=None
+18:03:49 full_context: q32/83 score=0.0 recall=0.0 ttft=8.7 reply='How was your order? Leave a review and earn points' err=None
+18:04:11 full_context: q33/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:04:31 full_context: q34/83 score=0.0 recall=0.0 ttft=8.4 reply='TrailGear' err=None
+18:04:54 full_context: q35/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's orders: How was your order? Leave a review" err=None
+18:05:15 full_context: q36/83 score=0.0 recall=None ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:05:39 full_context: q37/83 score=0.0 recall=None ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:06:00 full_context: q38/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's CloudBox storage subscription is now $13 m" err=None
+18:06:19 full_context: q39/83 score=0.5 recall=1.0 ttft=8.4 reply='$13 per month' err=None
+18:06:40 full_context: q40/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's MusicNow subscription is now $13 monthly, " err=None
+18:07:01 full_context: q41/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's NewsDaily subscription is now $13 monthly," err=None
+18:07:20 full_context: q42/83 score=0.0 recall=0.0 ttft=8.4 reply='Not mentioned in the provided memories.' err=None
+18:07:42 full_context: q43/83 score=0.0 recall=0.0 ttft=8.4 reply='The memories provided do not mention anything abou' err=None
+18:08:02 full_context: q44/83 score=0.0 recall=0.0 ttft=8.3 reply='The provided memories do not contain information a' err=None
+18:08:23 full_context: q45/83 score=0.0 recall=1.0 ttft=8.4 reply="Vegan (implied from Grace's orders on 16 June, 202" err=None
+18:08:44 full_context: q46/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain information a' err=None
+18:09:04 full_context: q47/83 score=0.0 recall=0.0 ttft=8.4 reply='The memories provided do not contain any informati' err=None
+18:09:25 full_context: q48/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain information a' err=None
+18:09:45 full_context: q49/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not mention anything abou' err=None
+18:10:06 full_context: q50/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain information a' err=None
+18:10:27 full_context: q51/83 score=0.0 recall=0.0 ttft=8.4 reply='The memories provided do not contain any informati' err=None
+18:10:48 full_context: q52/83 score=0.0 recall=None ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:11:08 full_context: q53/83 score=0.0 recall=0.0 ttft=8.4 reply='The memories do not provide a specific location fo' err=None
+18:11:30 full_context: q54/83 score=0.125 recall=0.0 ttft=8.4 reply='30 May 2025, as mentioned in the memory "[8:00 pm ' err=None
+18:11:55 full_context: q55/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's dinner with Ivan does not have a specific " err=None
+18:12:15 full_context: q56/83 score=0.3333333333333333 recall=0.0 ttft=8.4 reply='22 June, 2025' err=None
+18:12:38 full_context: q57/83 score=0.0 recall=1.0 ttft=8.4 reply="Grace's dinner with Mei is not explicitly mentione" err=None
+18:12:58 full_context: q58/83 score=0.6666666666666666 recall=0.0 ttft=8.4 reply='22 June, 2025' err=None
+18:13:21 full_context: q59/83 score=0.0 recall=0.0 ttft=8.4 reply="Grace's dinner with Omar took place at Paul's plac" err=None
+18:13:43 full_context: q60/83 score=0.07407407407407407 recall=0.0 ttft=8.4 reply='18 June, 2025. This is inferred from the memories ' err=None
+18:14:04 full_context: q61/83 score=0.2 recall=1.0 ttft=8.4 reply="Grace's trip to Prague is scheduled for 3 June 202" err=None
+18:14:27 full_context: q62/83 score=0.05555555555555555 recall=0.0 ttft=8.4 reply='June 2, 2025. This is inferred from the "Grace\'s o' err=None
+18:14:50 full_context: q63/83 score=0.10810810810810811 recall=0.0 ttft=8.4 reply='3 June 2025. This is indicated by the memory "[8:0' err=None
+18:15:14 full_context: q64/83 score=0.04545454545454545 recall=0.0 ttft=8.4 reply='3 June 2025\n\nExplanation: The memory mentioning Gr' err=None
+18:15:36 full_context: q65/83 score=0.05555555555555555 recall=0.0 ttft=8.4 reply='3 June 2025. This is indicated by the memory "[8:0' err=None
+18:15:58 full_context: q66/83 score=0.06666666666666667 recall=0.0 ttft=8.4 reply="Grace's trip to Vienna is mentioned in the context" err=None
+18:16:19 full_context: q67/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:16:39 full_context: q68/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:17:01 full_context: q69/83 score=0.0 recall=0.0 ttft=8.5 reply='The provided memories do not contain specific info' err=None
+18:17:21 full_context: q70/83 score=0.2857142857142857 recall=1.0 ttft=8.4 reply="Grace's Metro Council bill was $156." err=None
+18:17:42 full_context: q71/83 score=0.0 recall=0.0 ttft=8.4 reply='The provided memories do not contain specific info' err=None
+18:18:03 full_context: q72/83 score=0.0 recall=0.0 ttft=8.3 reply='The provided memories do not contain specific info' err=None
+18:18:23 full_context: q73/83 score=0.0 recall=0.0 ttft=8.4 reply='Not mentioned in the provided memories. There is n' err=None
+18:18:42 full_context: q74/83 score=0.0 recall=0.0 ttft=8.5 reply='BrewHouse deals' err=None
+18:19:02 full_context: q75/83 score=0.0 recall=0.0 ttft=8.3 reply='Not mentioned in the provided memories. There is n' err=None
+18:19:21 full_context: q76/83 score=0.0 recall=0.0 ttft=8.3 reply='HomeBox' err=None
+18:19:41 full_context: q77/83 score=0.0 recall=0.0 ttft=8.4 reply='Not mentioned in the provided memories. There is n' err=None
+18:20:00 full_context: q78/83 score=0.0 recall=0.0 ttft=8.4 reply='HomeBox' err=None
+18:20:20 full_context: q79/83 score=0.0 recall=0.0 ttft=8.4 reply='Not mentioned in the provided memories. There is n' err=None
+18:20:44 full_context: q80/83 score=0.0 recall=0.0 ttft=8.5 reply='The memories do not provide specific information a' err=None
+18:21:05 full_context: q81/83 score=0.0 recall=0.0 ttft=8.4 reply="The provided memories do not contain Lucia's phone" err=None
+18:21:27 full_context: q82/83 score=0.0 recall=0.0 ttft=8.4 reply='Lucia works at CaseCo, as indicated by the deals m' err=None
+18:21:46 full_context: q83/83 score=1.0 recall=1.0 ttft=8.3 reply='vegan' err=None
+18:21:46 local_memory: session 1 ready (0s idle work so far)
+18:21:46 local_memory: session 2 ready (0s idle work so far)
+18:21:46 local_memory: session 3 ready (0s idle work so far)
+18:21:46 local_memory: session 4 ready (0s idle work so far)
+18:21:47 local_memory: session 5 ready (0s idle work so far)
+18:21:47 local_memory: session 6 ready (0s idle work so far)
+18:21:47 local_memory: session 7 ready (0s idle work so far)
+18:21:47 local_memory: session 8 ready (0s idle work so far)
+18:21:47 local_memory: session 9 ready (0s idle work so far)
+18:21:47 local_memory: session 10 ready (0s idle work so far)
+18:21:47 local_memory: session 11 ready (0s idle work so far)
+18:21:47 local_memory: session 12 ready (0s idle work so far)
+18:21:47 local_memory: session 13 ready (0s idle work so far)
+18:21:47 local_memory: session 14 ready (0s idle work so far)
+18:21:47 local_memory: session 15 ready (0s idle work so far)
+18:21:47 local_memory: session 16 ready (0s idle work so far)
+18:21:47 local_memory: session 17 ready (0s idle work so far)
+18:21:47 local_memory: session 18 ready (0s idle work so far)
+18:21:47 local_memory: session 19 ready (0s idle work so far)
+18:21:47 local_memory: session 20 ready (0s idle work so far)
+18:21:47 local_memory: session 21 ready (0s idle work so far)
+18:21:47 local_memory: session 22 ready (0s idle work so far)
+18:21:47 local_memory: session 23 ready (0s idle work so far)
+18:21:47 local_memory: session 24 ready (0s idle work so far)
+18:21:47 local_memory: session 25 ready (0s idle work so far)
+18:21:47 local_memory: session 26 ready (0s idle work so far)
+18:21:47 local_memory: session 27 ready (0s idle work so far)
+18:21:47 local_memory: session 28 ready (0s idle work so far)
+18:21:47 local_memory: session 29 ready (0s idle work so far)
+18:21:47 local_memory: session 30 ready (0s idle work so far)
+18:21:47 local_memory: session 31 ready (0s idle work so far)
+18:21:47 local_memory: session 32 ready (0s idle work so far)
+18:21:47 local_memory: session 33 ready (0s idle work so far)
+18:21:47 local_memory: session 34 ready (0s idle work so far)
+18:21:47 local_memory: session 35 ready (0s idle work so far)
+18:21:47 local_memory: session 36 ready (0s idle work so far)
+18:21:47 local_memory: session 37 ready (0s idle work so far)
+18:21:47 local_memory: session 38 ready (0s idle work so far)
+18:21:47 local_memory: session 39 ready (0s idle work so far)
+18:21:47 local_memory: session 40 ready (0s idle work so far)
+18:21:47 local_memory: session 41 ready (0s idle work so far)
+18:21:47 local_memory: session 42 ready (0s idle work so far)
+18:21:47 local_memory: session 43 ready (0s idle work so far)
+18:21:48 local_memory: session 44 ready (0s idle work so far)
+18:21:48 local_memory: session 45 ready (0s idle work so far)
+18:21:48 local_memory: session 46 ready (0s idle work so far)
+18:21:48 local_memory: session 47 ready (0s idle work so far)
+18:21:48 local_memory: session 48 ready (0s idle work so far)
+18:21:48 local_memory: session 49 ready (0s idle work so far)
+18:21:48 local_memory: session 50 ready (0s idle work so far)
+18:21:48 local_memory: session 51 ready (0s idle work so far)
+18:21:48 local_memory: session 52 ready (0s idle work so far)
+18:21:48 local_memory: session 53 ready (0s idle work so far)
+18:21:48 local_memory: session 54 ready (0s idle work so far)
+18:21:48 local_memory: session 55 ready (0s idle work so far)
+18:21:48 local_memory: session 56 ready (0s idle work so far)
+18:21:48 local_memory: session 57 ready (0s idle work so far)
+18:21:48 local_memory: session 58 ready (0s idle work so far)
+18:21:48 local_memory: session 59 ready (0s idle work so far)
+18:21:48 local_memory: session 60 ready (0s idle work so far)
+18:21:48 local_memory: session 61 ready (0s idle work so far)
+18:21:48 local_memory: session 62 ready (0s idle work so far)
+18:21:48 local_memory: session 63 ready (0s idle work so far)
+18:21:48 local_memory: session 64 ready (0s idle work so far)
+18:21:48 local_memory: session 65 ready (0s idle work so far)
+18:21:48 local_memory: session 66 ready (0s idle work so far)
+18:21:48 local_memory: session 67 ready (0s idle work so far)
+18:21:48 local_memory: session 68 ready (0s idle work so far)
+18:21:48 local_memory: session 69 ready (0s idle work so far)
+18:21:48 local_memory: session 70 ready (0s idle work so far)
+18:21:48 local_memory: session 71 ready (0s idle work so far)
+18:21:48 local_memory: session 72 ready (0s idle work so far)
+18:21:48 local_memory: session 73 ready (0s idle work so far)
+18:21:48 local_memory: session 74 ready (0s idle work so far)
+18:21:48 local_memory: session 75 ready (0s idle work so far)
+18:21:48 local_memory: session 76 ready (0s idle work so far)
+18:21:48 local_memory: session 77 ready (0s idle work so far)
+18:21:48 local_memory: session 78 ready (0s idle work so far)
+18:21:48 local_memory: session 79 ready (0s idle work so far)
+18:21:48 local_memory: session 80 ready (0s idle work so far)
+18:21:48 local_memory: session 81 ready (0s idle work so far)
+18:21:48 local_memory: session 82 ready (0s idle work so far)
+18:21:48 local_memory: session 83 ready (0s idle work so far)
+18:21:48 local_memory: session 84 ready (0s idle work so far)
+18:21:48 local_memory: session 85 ready (0s idle work so far)
+18:21:48 local_memory: session 86 ready (0s idle work so far)
+18:21:48 local_memory: session 87 ready (0s idle work so far)
+18:21:48 local_memory: session 88 ready (0s idle work so far)
+18:21:49 local_memory: session 89 ready (0s idle work so far)
+18:21:49 local_memory: session 90 ready (0s idle work so far)
+18:21:49 local_memory: session 91 ready (0s idle work so far)
+18:21:49 local_memory: session 92 ready (0s idle work so far)
+18:21:49 local_memory: session 93 ready (0s idle work so far)
+18:21:49 local_memory: session 94 ready (0s idle work so far)
+18:21:49 local_memory: session 95 ready (0s idle work so far)
+18:21:49 local_memory: session 96 ready (0s idle work so far)
+18:21:49 local_memory: session 97 ready (0s idle work so far)
+18:21:49 local_memory: session 98 ready (0s idle work so far)
+18:21:49 local_memory: session 99 ready (0s idle work so far)
+18:21:49 local_memory: session 100 ready (0s idle work so far)
+18:21:49 local_memory: session 101 ready (0s idle work so far)
+18:21:49 local_memory: session 102 ready (0s idle work so far)
+18:21:49 local_memory: session 103 ready (0s idle work so far)
+18:21:49 local_memory: session 104 ready (0s idle work so far)
+18:21:49 local_memory: session 105 ready (0s idle work so far)
+18:21:49 local_memory: session 106 ready (0s idle work so far)
+18:21:49 local_memory: session 107 ready (0s idle work so far)
+18:21:49 local_memory: session 108 ready (0s idle work so far)
+18:21:49 local_memory: session 109 ready (0s idle work so far)
+18:21:49 local_memory: session 110 ready (0s idle work so far)
+18:21:49 local_memory: session 111 ready (0s idle work so far)
+18:21:49 local_memory: session 112 ready (0s idle work so far)
+18:21:52 local_memory: q1/83 score=0.25 recall=1.0 ttft=2.2 reply='Jun 5 at 11:00 am' err=None
+18:21:55 local_memory: q2/83 score=0.4444444444444445 recall=1.0 ttft=2.1 reply='Jun 5 at 11:00 am, Harbor Accounting' err=None
+18:21:58 local_memory: q3/83 score=1.0 recall=1.0 ttft=2.5 reply='12 June 2025' err=None
+18:22:01 local_memory: q4/83 score=0.5 recall=1.0 ttft=2.5 reply='12 June 2025, 4:45 pm' err=None
+18:22:04 local_memory: q5/83 score=0.0 recall=1.0 ttft=2.4 reply='14 June 2025, 8:15am' err=None
+18:22:07 local_memory: q6/83 score=1.0 recall=1.0 ttft=2.3 reply='22 March 2025' err=None
+18:22:10 local_memory: q7/83 score=0.5 recall=1.0 ttft=2.3 reply='Sunday 23 March, 4:45 pm' err=None
+18:22:13 local_memory: q8/83 score=0.0 recall=1.0 ttft=2.3 reply='Sunday 23 March, 4:45 pm' err=None
+18:22:15 local_memory: q9/83 score=0.3333333333333333 recall=1.0 ttft=2.3 reply='Jun 16, noon' err=None
+18:22:18 local_memory: q10/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='Oak Lane Vets, Jun 16, noon' err=None
+18:22:21 local_memory: q11/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='30 April 2025' err=None
+18:22:24 local_memory: q12/83 score=0.28571428571428575 recall=1.0 ttft=2.5 reply='Wed 30 Apr 8:15am' err=None
+18:22:27 local_memory: q13/83 score=0.0 recall=1.0 ttft=2.5 reply='Wed 30 Apr 8:15am' err=None
+18:22:30 local_memory: q14/83 score=0.5714285714285715 recall=1.0 ttft=2.3 reply='27 May at 7pm' err=None
+18:22:33 local_memory: q15/83 score=1.0 recall=1.0 ttft=2.5 reply='Elmwood School' err=None
+18:22:35 local_memory: q16/83 score=0.0 recall=None ttft=2.2 reply='Jun 16, 12:00pm' err=None
+18:22:38 local_memory: q17/83 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+18:22:40 local_memory: q18/83 score=1.0 recall=1.0 ttft=2.1 reply='$118' err=None
+18:22:42 local_memory: q19/83 score=1.0 recall=1.0 ttft=2.1 reply='TrailGear' err=None
+18:22:45 local_memory: q20/83 score=0.0 recall=1.0 ttft=2.1 reply='Arrived on 15 March 2025' err=None
+18:22:48 local_memory: q21/83 score=1.0 recall=1.0 ttft=2.2 reply='$75' err=None
+18:22:50 local_memory: q22/83 score=1.0 recall=1.0 ttft=2.3 reply='KitchenHub' err=None
+18:22:55 local_memory: q23/83 score=0.0 recall=1.0 ttft=2.3 reply='Shipped and arriving on Monday 28 April 2025' err=None
+18:22:57 local_memory: q24/83 score=1.0 recall=1.0 ttft=2.2 reply='$44' err=None
+18:23:00 local_memory: q25/83 score=1.0 recall=1.0 ttft=2.1 reply='KitchenHub' err=None
+18:23:03 local_memory: q26/83 score=0.0 recall=1.0 ttft=2.1 reply='Delivered on Thursday, 20 March 2025, with a cost ' err=None
+18:23:05 local_memory: q27/83 score=1.0 recall=1.0 ttft=2.1 reply='$19' err=None
+18:23:08 local_memory: q28/83 score=1.0 recall=1.0 ttft=2.1 reply='CaseCo' err=None
+18:23:10 local_memory: q29/83 score=0.0 recall=1.0 ttft=2.1 reply='Left at door, out for delivery by Thursday 8 May' err=None
+18:23:13 local_memory: q30/83 score=1.0 recall=1.0 ttft=2.2 reply='$34' err=None
+18:23:15 local_memory: q31/83 score=0.0 recall=1.0 ttft=2.1 reply='KitchenHub' err=None
+18:23:18 local_memory: q32/83 score=0.33333333333333337 recall=1.0 ttft=2.1 reply='Delivered by May 18, 2025' err=None
+18:23:20 local_memory: q33/83 score=1.0 recall=1.0 ttft=2.1 reply='$89' err=None
+18:23:23 local_memory: q34/83 score=1.0 recall=1.0 ttft=2.3 reply='StrideShop' err=None
+18:23:26 local_memory: q35/83 score=0.2222222222222222 recall=1.0 ttft=2.1 reply='Wed 7 May - shipped, arriving on 7 May' err=None
+18:23:28 local_memory: q36/83 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+18:23:30 local_memory: q37/83 score=1.0 recall=None ttft=2.1 reply='Not mentioned' err=None
+18:23:33 local_memory: q38/83 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$5 monthly' err=None
+18:23:35 local_memory: q39/83 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$13 monthly' err=None
+18:23:37 local_memory: q40/83 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='$14 monthly' err=None
+18:23:40 local_memory: q41/83 score=0.5 recall=1.0 ttft=2.1 reply='$8 per month' err=None
+18:23:42 local_memory: q42/83 score=1.0 recall=1.0 ttft=1.6 reply='5 Orchard Close' err=None
+18:23:43 local_memory: q43/83 score=1.0 recall=1.0 ttft=1.6 reply='Cats' err=None
+18:23:45 local_memory: q44/83 score=1.0 recall=1.0 ttft=1.8 reply='5 Orchard Close' err=None
+18:23:47 local_memory: q45/83 score=1.0 recall=1.0 ttft=1.7 reply='Latex' err=None
+18:23:49 local_memory: q46/83 score=0.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+18:23:51 local_memory: q47/83 score=1.0 recall=1.0 ttft=1.6 reply='shellfish' err=None
+18:23:53 local_memory: q48/83 score=1.0 recall=1.0 ttft=1.7 reply='9 Mill Lane' err=None
+18:23:55 local_memory: q49/83 score=1.0 recall=1.0 ttft=1.7 reply='Peanuts' err=None
+18:23:57 local_memory: q50/83 score=0.0 recall=1.0 ttft=1.8 reply='60 Lake View' err=None
+18:23:59 local_memory: q51/83 score=0.0 recall=1.0 ttft=1.7 reply='Shellfish' err=None
+18:24:01 local_memory: q52/83 score=1.0 recall=None ttft=2.3 reply='Not mentioned' err=None
+18:24:03 local_memory: q53/83 score=1.0 recall=1.0 ttft=2.1 reply='Green Table' err=None
+18:24:06 local_memory: q54/83 score=0.6666666666666666 recall=1.0 ttft=2.0 reply='12 May 2025' err=None
+18:24:08 local_memory: q55/83 score=1.0 recall=1.0 ttft=2.2 reply='Casa Roja' err=None
+18:24:10 local_memory: q56/83 score=0.0 recall=1.0 ttft=2.0 reply='Not mentioned' err=None
+18:24:13 local_memory: q57/83 score=1.0 recall=1.0 ttft=2.1 reply="Luigi's" err=None
+18:24:15 local_memory: q58/83 score=1.0 recall=1.0 ttft=2.0 reply='7 June, 2025' err=None
+18:24:17 local_memory: q59/83 score=0.0 recall=1.0 ttft=1.8 reply='Not mentioned' err=None
+18:24:19 local_memory: q60/83 score=0.0 recall=1.0 ttft=1.8 reply='Not mentioned in the memories provided.' err=None
+18:24:22 local_memory: q61/83 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='19 June 2025' err=None
+18:24:25 local_memory: q62/83 score=0.5714285714285715 recall=1.0 ttft=2.5 reply='Sunday 27 April, 2025' err=None
+18:24:28 local_memory: q63/83 score=1.0 recall=1.0 ttft=2.5 reply='8 June 2025' err=None
+18:24:31 local_memory: q64/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='28 April 2025' err=None
+18:24:34 local_memory: q65/83 score=1.0 recall=1.0 ttft=2.5 reply='23 May 2025' err=None
+18:24:37 local_memory: q66/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='22 June 2025' err=None
+18:24:39 local_memory: q67/83 score=1.0 recall=1.0 ttft=2.3 reply='$175' err=None
+18:24:42 local_memory: q68/83 score=1.0 recall=1.0 ttft=2.1 reply='$53' err=None
+18:24:44 local_memory: q69/83 score=1.0 recall=1.0 ttft=2.3 reply='$132' err=None
+18:24:47 local_memory: q70/83 score=1.0 recall=1.0 ttft=2.1 reply='$156' err=None
+18:24:49 local_memory: q71/83 score=1.0 recall=1.0 ttft=2.1 reply='$41' err=None
+18:24:51 local_memory: q72/83 score=1.0 recall=1.0 ttft=2.2 reply='$178' err=None
+18:24:54 local_memory: q73/83 score=1.0 recall=1.0 ttft=1.6 reply='01219 273218' err=None
+18:24:55 local_memory: q74/83 score=0.0 recall=1.0 ttft=1.4 reply='Apex Freight' err=None
+18:24:58 local_memory: q75/83 score=1.0 recall=1.0 ttft=1.8 reply='08065 829225' err=None
+18:25:00 local_memory: q76/83 score=0.0 recall=1.0 ttft=1.7 reply='5 Orchard Close' err=None
+18:25:02 local_memory: q77/83 score=1.0 recall=1.0 ttft=1.7 reply='03994 193976' err=None
+18:25:04 local_memory: q78/83 score=0.0 recall=1.0 ttft=1.7 reply='9 Mill Lane' err=None
+18:25:06 local_memory: q79/83 score=0.0 recall=1.0 ttft=1.7 reply='06209 725095' err=None
+18:25:08 local_memory: q80/83 score=0.6666666666666666 recall=1.0 ttft=1.7 reply='paramedic at apex freight' err=None
+18:25:11 local_memory: q81/83 score=1.0 recall=1.0 ttft=1.9 reply='06209 725095' err=None
+18:25:13 local_memory: q82/83 score=0.0 recall=1.0 ttft=1.8 reply='60 Lake View' err=None
+18:25:15 local_memory: q83/83 score=1.0 recall=1.0 ttft=2.3 reply='Vegan' err=None
+18:25:16 decoupled: session 1 ready (0s idle work so far)
+18:25:22 decoupled: session 2 ready (6s idle work so far)
+18:25:30 decoupled: session 3 ready (14s idle work so far)
+18:25:35 decoupled: session 4 ready (19s idle work so far)
+18:25:41 decoupled: session 5 ready (25s idle work so far)
+18:25:42 decoupled: session 6 ready (26s idle work so far)
+18:25:52 decoupled: session 7 ready (37s idle work so far)
+18:25:56 decoupled: session 8 ready (40s idle work so far)
+18:25:57 decoupled: session 9 ready (41s idle work so far)
+18:26:03 decoupled: session 10 ready (47s idle work so far)
+18:26:08 decoupled: session 11 ready (52s idle work so far)
+18:26:08 decoupled: session 12 ready (52s idle work so far)
+18:26:14 decoupled: session 13 ready (58s idle work so far)
+18:26:21 decoupled: session 14 ready (65s idle work so far)
+18:26:27 decoupled: session 15 ready (71s idle work so far)
+18:26:30 decoupled: session 16 ready (74s idle work so far)
+18:26:43 decoupled: session 17 ready (87s idle work so far)
+18:26:47 decoupled: session 18 ready (90s idle work so far)
+18:26:48 decoupled: session 19 ready (91s idle work so far)
+18:26:49 decoupled: session 20 ready (92s idle work so far)
+18:26:58 decoupled: session 21 ready (101s idle work so far)
+18:27:02 decoupled: session 22 ready (106s idle work so far)
+18:27:05 decoupled: session 23 ready (108s idle work so far)
+18:27:07 decoupled: session 24 ready (110s idle work so far)
+18:27:11 decoupled: session 25 ready (114s idle work so far)
+18:27:16 decoupled: session 26 ready (119s idle work so far)
+18:27:23 decoupled: session 27 ready (127s idle work so far)
+18:27:32 decoupled: session 28 ready (136s idle work so far)
+18:27:42 decoupled: session 29 ready (145s idle work so far)
+18:27:48 decoupled: session 30 ready (151s idle work so far)
+18:27:50 decoupled: session 31 ready (153s idle work so far)
+18:27:50 decoupled: session 32 ready (153s idle work so far)
+18:27:55 decoupled: session 33 ready (158s idle work so far)
+18:27:56 decoupled: session 34 ready (159s idle work so far)
+18:28:07 decoupled: session 35 ready (170s idle work so far)
+18:28:15 decoupled: session 36 ready (178s idle work so far)
+18:28:20 decoupled: session 37 ready (183s idle work so far)
+18:28:28 decoupled: session 38 ready (190s idle work so far)
+18:28:34 decoupled: session 39 ready (196s idle work so far)
+18:28:42 decoupled: session 40 ready (204s idle work so far)
+18:28:46 decoupled: session 41 ready (208s idle work so far)
+18:28:50 decoupled: session 42 ready (212s idle work so far)
+18:28:50 decoupled: session 43 ready (212s idle work so far)
+18:28:54 decoupled: session 44 ready (217s idle work so far)
+18:29:04 decoupled: session 45 ready (227s idle work so far)
+18:29:05 decoupled: session 46 ready (228s idle work so far)
+18:29:09 decoupled: session 47 ready (231s idle work so far)
+18:29:09 decoupled: session 48 ready (231s idle work so far)
+18:29:12 decoupled: session 49 ready (234s idle work so far)
+18:29:15 decoupled: session 50 ready (238s idle work so far)
+18:29:19 decoupled: session 51 ready (241s idle work so far)
+18:29:25 decoupled: session 52 ready (247s idle work so far)
+18:29:35 decoupled: session 53 ready (257s idle work so far)
+18:29:45 decoupled: session 54 ready (267s idle work so far)
+18:29:49 decoupled: session 55 ready (271s idle work so far)
+18:29:55 decoupled: session 56 ready (277s idle work so far)
+18:30:04 decoupled: session 57 ready (286s idle work so far)
+18:30:09 decoupled: session 58 ready (291s idle work so far)
+18:30:16 decoupled: session 59 ready (298s idle work so far)
+18:30:21 decoupled: session 60 ready (302s idle work so far)
+18:30:27 decoupled: session 61 ready (309s idle work so far)
+18:30:29 decoupled: session 62 ready (311s idle work so far)
+18:30:32 decoupled: session 63 ready (314s idle work so far)
+18:30:36 decoupled: session 64 ready (317s idle work so far)
+18:30:38 decoupled: session 65 ready (320s idle work so far)
+18:30:45 decoupled: session 66 ready (326s idle work so far)
+18:30:51 decoupled: session 67 ready (332s idle work so far)
+18:31:01 decoupled: session 68 ready (342s idle work so far)
+18:31:07 decoupled: session 69 ready (348s idle work so far)
+18:31:15 decoupled: session 70 ready (356s idle work so far)
+18:31:22 decoupled: session 71 ready (364s idle work so far)
+18:31:24 decoupled: session 72 ready (365s idle work so far)
+18:31:25 decoupled: session 73 ready (366s idle work so far)
+18:31:33 decoupled: session 74 ready (374s idle work so far)
+18:31:39 decoupled: session 75 ready (380s idle work so far)
+18:31:47 decoupled: session 76 ready (388s idle work so far)
+18:31:54 decoupled: session 77 ready (395s idle work so far)
+18:31:54 decoupled: session 78 ready (395s idle work so far)
+18:31:59 decoupled: session 79 ready (400s idle work so far)
+18:32:01 decoupled: session 80 ready (402s idle work so far)
+18:32:11 decoupled: session 81 ready (411s idle work so far)
+18:32:13 decoupled: session 82 ready (414s idle work so far)
+18:32:18 decoupled: session 83 ready (419s idle work so far)
+18:32:24 decoupled: session 84 ready (425s idle work so far)
+18:32:31 decoupled: session 85 ready (432s idle work so far)
+18:32:43 decoupled: session 86 ready (444s idle work so far)
+18:32:50 decoupled: session 87 ready (450s idle work so far)
+18:32:51 decoupled: session 88 ready (451s idle work so far)
+18:33:07 decoupled: session 89 ready (467s idle work so far)
+18:33:15 decoupled: session 90 ready (476s idle work so far)
+18:33:17 decoupled: session 91 ready (477s idle work so far)
+18:33:20 decoupled: session 92 ready (480s idle work so far)
+18:33:20 decoupled: session 93 ready (480s idle work so far)
+18:33:24 decoupled: session 94 ready (484s idle work so far)
+18:33:28 decoupled: session 95 ready (488s idle work so far)
+18:33:29 decoupled: session 96 ready (489s idle work so far)
+18:33:35 decoupled: session 97 ready (495s idle work so far)
+18:33:40 decoupled: session 98 ready (500s idle work so far)
+18:33:41 decoupled: session 99 ready (501s idle work so far)
+18:33:43 decoupled: session 100 ready (503s idle work so far)
+18:33:46 decoupled: session 101 ready (506s idle work so far)
+18:33:49 decoupled: session 102 ready (509s idle work so far)
+18:33:54 decoupled: session 103 ready (513s idle work so far)
+18:33:54 decoupled: session 104 ready (513s idle work so far)
+18:33:55 decoupled: session 105 ready (515s idle work so far)
+18:34:02 decoupled: session 106 ready (522s idle work so far)
+18:34:06 decoupled: session 107 ready (525s idle work so far)
+18:34:06 decoupled: session 108 ready (525s idle work so far)
+18:34:14 decoupled: session 109 ready (533s idle work so far)
+18:34:14 decoupled: session 110 ready (533s idle work so far)
+18:34:14 decoupled: session 111 ready (533s idle work so far)
+18:34:15 decoupled: session 112 ready (534s idle work so far)
+18:34:20 decoupled: q1/83 score=0.5 recall=1.0 ttft=2.4 reply='June 5 at 11:00 am' err=None
+18:34:27 decoupled: q2/83 score=1.0 recall=1.0 ttft=2.5 reply='Harbor Accounting' err=None
+18:34:35 decoupled: q3/83 score=1.0 recall=1.0 ttft=2.3 reply='12 June 2025' err=None
+18:34:41 decoupled: q4/83 score=0.6666666666666666 recall=1.0 ttft=2.4 reply='14 June 2025 at 8:15 am' err=None
+18:34:49 decoupled: q5/83 score=0.3636363636363636 recall=1.0 ttft=2.5 reply='Northside Physio on 14 June 2025 at 8:15 am' err=None
+18:34:55 decoupled: q6/83 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='23 March 2025' err=None
+18:35:01 decoupled: q7/83 score=0.4444444444444444 recall=1.0 ttft=2.3 reply='Sunday, 23 March, at 4:45 pm' err=None
+18:35:07 decoupled: q8/83 score=1.0 recall=1.0 ttft=2.4 reply='Warmline Services' err=None
+18:35:13 decoupled: q9/83 score=0.5714285714285715 recall=1.0 ttft=2.3 reply='June 16 at noon' err=None
+18:35:19 decoupled: q10/83 score=0.5454545454545454 recall=1.0 ttft=2.5 reply='Oak Lane Vets on June 16 at noon' err=None
+18:35:26 decoupled: q11/83 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='13 April 2025' err=None
+18:35:33 decoupled: q12/83 score=0.4 recall=1.0 ttft=2.5 reply='Wednesday, 13 April 2025, at 8:15 AM' err=None
+18:35:41 decoupled: q13/83 score=0.0 recall=1.0 ttft=2.5 reply='Wednesday, 13 April 2025, at 8:15 AM' err=None
+18:35:48 decoupled: q14/83 score=0.5 recall=1.0 ttft=2.3 reply='Tuesday, 27 May, at 7pm' err=None
+18:35:54 decoupled: q15/83 score=1.0 recall=1.0 ttft=2.3 reply='Elmwood School' err=None
+18:36:01 decoupled: q16/83 score=0.0 recall=None ttft=2.5 reply='Wednesday, 8:15 AM' err=None
+18:36:08 decoupled: q17/83 score=1.0 recall=None ttft=2.5 reply='Not mentioned' err=None
+18:36:15 decoupled: q18/83 score=1.0 recall=1.0 ttft=2.5 reply='$118' err=None
+18:36:21 decoupled: q19/83 score=1.0 recall=1.0 ttft=2.5 reply='TrailGear' err=None
+18:36:27 decoupled: q20/83 score=0.0 recall=1.0 ttft=2.5 reply='Shipped and expected to arrive' err=None
+18:36:33 decoupled: q21/83 score=1.0 recall=1.0 ttft=2.4 reply='$75' err=None
+18:36:39 decoupled: q22/83 score=1.0 recall=1.0 ttft=2.5 reply='KitchenHub' err=None
+18:36:45 decoupled: q23/83 score=0.0 recall=1.0 ttft=2.3 reply='Shipped and arriving on Monday, 28 April 2025' err=None
+18:36:52 decoupled: q24/83 score=1.0 recall=1.0 ttft=2.5 reply='$44' err=None
+18:36:59 decoupled: q25/83 score=1.0 recall=1.0 ttft=2.5 reply='KitchenHub' err=None
+18:37:06 decoupled: q26/83 score=0.16666666666666669 recall=1.0 ttft=2.5 reply='Shipped on 16 March 2025, arriving on Thursday, 20' err=None
+18:37:11 decoupled: q27/83 score=1.0 recall=1.0 ttft=2.3 reply='$19' err=None
+18:37:18 decoupled: q28/83 score=1.0 recall=1.0 ttft=2.5 reply='CaseCo' err=None
+18:37:25 decoupled: q29/83 score=0.0 recall=1.0 ttft=2.5 reply='Left at door, no update on delivery status' err=None
+18:37:32 decoupled: q30/83 score=1.0 recall=1.0 ttft=2.3 reply='$34' err=None
+18:37:39 decoupled: q31/83 score=1.0 recall=1.0 ttft=2.5 reply='HomeBox' err=None
+18:37:46 decoupled: q32/83 score=0.33333333333333337 recall=1.0 ttft=2.5 reply='Delivered on May 18, 2025' err=None
+18:37:52 decoupled: q33/83 score=1.0 recall=1.0 ttft=2.5 reply='$89' err=None
+18:37:59 decoupled: q34/83 score=1.0 recall=1.0 ttft=2.5 reply='StrideShop' err=None
+18:38:06 decoupled: q35/83 score=0.0 recall=1.0 ttft=2.5 reply='Expected arrival date of Wednesday, 7 May.' err=None
+18:38:12 decoupled: q36/83 score=1.0 recall=None ttft=2.5 reply='Not mentioned' err=None
+18:38:19 decoupled: q37/83 score=1.0 recall=None ttft=2.3 reply='Not mentioned' err=None
+18:38:25 decoupled: q38/83 score=1.0 recall=1.0 ttft=2.3 reply='$5' err=None
+18:38:31 decoupled: q39/83 score=1.0 recall=1.0 ttft=2.5 reply='$13' err=None
+18:38:38 decoupled: q40/83 score=1.0 recall=1.0 ttft=2.5 reply='$14' err=None
+18:38:44 decoupled: q41/83 score=1.0 recall=1.0 ttft=2.5 reply='$8' err=None
+18:38:50 decoupled: q42/83 score=1.0 recall=1.0 ttft=2.3 reply='5 Orchard Close' err=None
+18:38:57 decoupled: q43/83 score=0.0 recall=1.0 ttft=2.3 reply='Shellfish and peanuts' err=None
+18:39:04 decoupled: q44/83 score=1.0 recall=1.0 ttft=2.5 reply='5 Orchard Close' err=None
+18:39:10 decoupled: q45/83 score=1.0 recall=1.0 ttft=2.5 reply='Latex' err=None
+18:39:15 decoupled: q46/83 score=1.0 recall=1.0 ttft=2.1 reply='9 Mill Lane' err=None
+18:39:22 decoupled: q47/83 score=1.0 recall=1.0 ttft=2.1 reply='Shellfish' err=None
+18:39:28 decoupled: q48/83 score=1.0 recall=1.0 ttft=2.5 reply='9 Mill Lane' err=None
+18:39:35 decoupled: q49/83 score=1.0 recall=1.0 ttft=2.5 reply='Peanuts' err=None
+18:39:41 decoupled: q50/83 score=0.0 recall=1.0 ttft=2.5 reply='60 Lake View' err=None
+18:39:48 decoupled: q51/83 score=0.0 recall=1.0 ttft=2.5 reply='Shellfish' err=None
+18:39:54 decoupled: q52/83 score=1.0 recall=None ttft=2.5 reply='Not mentioned' err=None
+18:39:59 decoupled: q53/83 score=1.0 recall=1.0 ttft=2.3 reply='Green Table' err=None
+18:40:04 decoupled: q54/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='12 May 2025' err=None
+18:40:11 decoupled: q55/83 score=1.0 recall=1.0 ttft=2.3 reply='Casa Roja' err=None
+18:40:16 decoupled: q56/83 score=1.0 recall=1.0 ttft=2.3 reply='17 May 2025' err=None
+18:40:21 decoupled: q57/83 score=0.0 recall=1.0 ttft=2.3 reply='Old Mill' err=None
+18:40:29 decoupled: q58/83 score=1.0 recall=1.0 ttft=2.4 reply='7 June 2025' err=None
+18:40:35 decoupled: q59/83 score=0.0 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+18:40:42 decoupled: q60/83 score=0.3333333333333333 recall=1.0 ttft=2.5 reply='17 May 2025' err=None
+18:40:47 decoupled: q61/83 score=0.6666666666666666 recall=1.0 ttft=2.3 reply='19 June 2025' err=None
+18:40:54 decoupled: q62/83 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='27 April, 2025' err=None
+18:41:00 decoupled: q63/83 score=1.0 recall=1.0 ttft=2.1 reply='8 June 2025' err=None
+18:41:07 decoupled: q64/83 score=0.6666666666666666 recall=1.0 ttft=2.1 reply='10 April 2025' err=None
+18:41:13 decoupled: q65/83 score=0.3333333333333333 recall=1.0 ttft=2.3 reply='20 May 2023' err=None
+18:41:20 decoupled: q66/83 score=0.6666666666666666 recall=1.0 ttft=2.0 reply='22 June, 2025' err=None
+18:41:26 decoupled: q67/83 score=1.0 recall=1.0 ttft=2.5 reply='$175' err=None
+18:41:33 decoupled: q68/83 score=1.0 recall=1.0 ttft=2.5 reply='$53' err=None
+18:41:40 decoupled: q69/83 score=1.0 recall=1.0 ttft=2.5 reply='$132' err=None
+18:41:47 decoupled: q70/83 score=1.0 recall=1.0 ttft=2.5 reply='$156' err=None
+18:41:53 decoupled: q71/83 score=1.0 recall=1.0 ttft=2.5 reply='$41' err=None
+18:42:00 decoupled: q72/83 score=1.0 recall=1.0 ttft=2.5 reply='$178' err=None
+18:42:06 decoupled: q73/83 score=1.0 recall=1.0 ttft=2.5 reply='01219 273218' err=None
+18:42:13 decoupled: q74/83 score=0.0 recall=1.0 ttft=2.5 reply='Apex Freight' err=None
+18:42:20 decoupled: q75/83 score=1.0 recall=1.0 ttft=2.3 reply='08065 829225' err=None
+18:42:28 decoupled: q76/83 score=1.0 recall=1.0 ttft=2.3 reply='Dune Foods' err=None
+18:42:34 decoupled: q77/83 score=1.0 recall=1.0 ttft=2.3 reply='03994 193976' err=None
+18:42:41 decoupled: q78/83 score=0.6666666666666666 recall=1.0 ttft=2.2 reply='Halo Labs as a paramedic' err=None
+18:42:49 decoupled: q79/83 score=0.0 recall=1.0 ttft=2.5 reply="Not mentioned directly, but Lucia's updated number" err=None
+18:42:55 decoupled: q80/83 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='paramedic at apex freight' err=None
+18:43:02 decoupled: q81/83 score=1.0 recall=1.0 ttft=2.5 reply='06209 725095' err=None
+18:43:09 decoupled: q82/83 score=0.0 recall=1.0 ttft=2.3 reply='14 Birch Road' err=None
+18:43:15 decoupled: q83/83 score=1.0 recall=1.0 ttft=2.5 reply='Vegan' err=None
+18:43:15 trained: session 1 ready (0s idle work so far)
+18:43:18 trained: session 2 ready (3s idle work so far)
+18:43:18 trained: session 3 ready (3s idle work so far)
+18:43:18 trained: session 4 ready (3s idle work so far)
+18:43:18 trained: session 5 ready (3s idle work so far)
+18:43:18 trained: session 6 ready (3s idle work so far)
+18:43:20 trained: session 7 ready (5s idle work so far)
+18:43:23 trained: session 8 ready (7s idle work so far)
+18:43:23 trained: session 9 ready (7s idle work so far)
+18:43:24 trained: session 10 ready (8s idle work so far)
+18:43:26 trained: session 11 ready (10s idle work so far)
+18:43:26 trained: session 12 ready (10s idle work so far)
+18:43:28 trained: session 13 ready (12s idle work so far)
+18:43:32 trained: session 14 ready (16s idle work so far)
+18:43:34 trained: session 15 ready (18s idle work so far)
+18:43:34 trained: session 16 ready (18s idle work so far)
+18:43:36 trained: session 17 ready (19s idle work so far)
+18:43:36 trained: session 18 ready (19s idle work so far)
+18:43:37 trained: session 19 ready (21s idle work so far)
+18:43:38 trained: session 20 ready (22s idle work so far)
+18:43:43 trained: session 21 ready (26s idle work so far)
+18:43:44 trained: session 22 ready (27s idle work so far)
+18:43:44 trained: session 23 ready (27s idle work so far)
+18:43:44 trained: session 24 ready (27s idle work so far)
+18:43:44 trained: session 25 ready (27s idle work so far)
+18:43:45 trained: session 26 ready (29s idle work so far)
+18:43:48 trained: session 27 ready (32s idle work so far)
+18:43:50 trained: session 28 ready (34s idle work so far)
+18:43:52 trained: session 29 ready (35s idle work so far)
+18:43:52 trained: session 30 ready (35s idle work so far)
+18:43:52 trained: session 31 ready (35s idle work so far)
+18:43:52 trained: session 32 ready (35s idle work so far)
+18:43:54 trained: session 33 ready (37s idle work so far)
+18:43:55 trained: session 34 ready (38s idle work so far)
+18:43:55 trained: session 35 ready (38s idle work so far)
+18:43:56 trained: session 36 ready (39s idle work so far)
+18:43:56 trained: session 37 ready (39s idle work so far)
+18:44:00 trained: session 38 ready (42s idle work so far)
+18:44:04 trained: session 39 ready (46s idle work so far)
+18:44:06 trained: session 40 ready (48s idle work so far)
+18:44:06 trained: session 41 ready (48s idle work so far)
+18:44:06 trained: session 42 ready (48s idle work so far)
+18:44:06 trained: session 43 ready (48s idle work so far)
+18:44:07 trained: session 44 ready (49s idle work so far)
+18:44:08 trained: session 45 ready (50s idle work so far)
+18:44:09 trained: session 46 ready (51s idle work so far)
+18:44:14 trained: session 47 ready (56s idle work so far)
+18:44:14 trained: session 48 ready (56s idle work so far)
+18:44:16 trained: session 49 ready (58s idle work so far)
+18:44:16 trained: session 50 ready (58s idle work so far)
+18:44:16 trained: session 51 ready (58s idle work so far)
+18:44:18 trained: session 52 ready (60s idle work so far)
+18:44:19 trained: session 53 ready (61s idle work so far)
+18:44:21 trained: session 54 ready (63s idle work so far)
+18:44:24 trained: session 55 ready (65s idle work so far)
+18:44:27 trained: session 56 ready (68s idle work so far)
+18:44:31 trained: session 57 ready (73s idle work so far)
+18:44:31 trained: session 58 ready (73s idle work so far)
+18:44:31 trained: session 59 ready (73s idle work so far)
+18:44:32 trained: session 60 ready (74s idle work so far)
+18:44:35 trained: session 61 ready (76s idle work so far)
+18:44:36 trained: session 62 ready (77s idle work so far)
+18:44:36 trained: session 63 ready (77s idle work so far)
+18:44:36 trained: session 64 ready (77s idle work so far)
+18:44:38 trained: session 65 ready (79s idle work so far)
+18:44:41 trained: session 66 ready (82s idle work so far)
+18:44:46 trained: session 67 ready (87s idle work so far)
+18:44:50 trained: session 68 ready (91s idle work so far)
+18:44:54 trained: session 69 ready (95s idle work so far)
+18:44:58 trained: session 70 ready (99s idle work so far)
+18:45:02 trained: session 71 ready (102s idle work so far)
+18:45:03 trained: session 72 ready (103s idle work so far)
+18:45:03 trained: session 73 ready (103s idle work so far)
+18:45:03 trained: session 74 ready (103s idle work so far)
+18:45:06 trained: session 75 ready (106s idle work so far)
+18:45:08 trained: session 76 ready (108s idle work so far)
+18:45:09 trained: session 77 ready (110s idle work so far)
+18:45:09 trained: session 78 ready (110s idle work so far)
+18:45:10 trained: session 79 ready (111s idle work so far)
+18:45:15 trained: session 80 ready (115s idle work so far)
+18:45:19 trained: session 81 ready (119s idle work so far)
+18:45:22 trained: session 82 ready (122s idle work so far)
+18:45:24 trained: session 83 ready (124s idle work so far)
+18:45:29 trained: session 84 ready (129s idle work so far)
+18:45:31 trained: session 85 ready (131s idle work so far)
+18:45:45 trained: session 86 ready (144s idle work so far)
+18:45:47 trained: session 87 ready (146s idle work so far)
+18:45:47 trained: session 88 ready (146s idle work so far)
+18:45:49 trained: session 89 ready (149s idle work so far)
+18:45:51 trained: session 90 ready (151s idle work so far)
+18:45:51 trained: session 91 ready (151s idle work so far)
+18:45:51 trained: session 92 ready (151s idle work so far)
+18:45:51 trained: session 93 ready (151s idle work so far)
+18:45:53 trained: session 94 ready (152s idle work so far)
+18:45:53 trained: session 95 ready (152s idle work so far)
+18:45:53 trained: session 96 ready (152s idle work so far)
+18:45:53 trained: session 97 ready (152s idle work so far)
+18:45:53 trained: session 98 ready (152s idle work so far)
+18:45:54 trained: session 99 ready (153s idle work so far)
+18:45:55 trained: session 100 ready (154s idle work so far)
+18:45:55 trained: session 101 ready (154s idle work so far)
+18:45:55 trained: session 102 ready (154s idle work so far)
+18:45:55 trained: session 103 ready (154s idle work so far)
+18:45:55 trained: session 104 ready (154s idle work so far)
+18:45:55 trained: session 105 ready (154s idle work so far)
+18:45:58 trained: session 106 ready (157s idle work so far)
+18:45:58 trained: session 107 ready (157s idle work so far)
+18:45:59 trained: session 108 ready (158s idle work so far)
+18:45:59 trained: session 109 ready (158s idle work so far)
+18:45:59 trained: session 110 ready (158s idle work so far)
+18:45:59 trained: session 111 ready (158s idle work so far)
+18:45:59 trained: session 112 ready (158s idle work so far)
+18:46:07 trained: q1/83 score=0.6666666666666666 recall=1.0 ttft=2.6 reply='June 5, 2025, at 11:00 am' err=None
+18:46:13 trained: q2/83 score=1.0 recall=1.0 ttft=2.6 reply='Harbor Accounting' err=None
+18:46:20 trained: q3/83 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='14 June 2025' err=None
+18:46:27 trained: q4/83 score=0.4444444444444444 recall=1.0 ttft=2.5 reply='June 16, 2025, at 12:00 noon' err=None
+18:46:36 trained: q5/83 score=0.4 recall=0.0 ttft=2.8 reply='Northside Physio, 14 June 2025 at 8:15 am' err=None
+18:46:42 trained: q6/83 score=1.0 recall=1.0 ttft=2.7 reply='22 March 2025' err=None
+18:46:50 trained: q7/83 score=0.4444444444444444 recall=1.0 ttft=2.9 reply='Sunday, 23 March at 4:45 pm' err=None
+18:46:56 trained: q8/83 score=0.3636363636363636 recall=0.0 ttft=2.6 reply='Sunday, 23 March, at 4:45 pm at Warmline Services' err=None
+18:47:05 trained: q9/83 score=0.7499999999999999 recall=1.0 ttft=2.6 reply='June 16, 2025, at noon' err=None
+18:47:12 trained: q10/83 score=1.0 recall=1.0 ttft=2.8 reply='Oak Lane Vets' err=None
+18:47:19 trained: q11/83 score=0.28571428571428575 recall=1.0 ttft=2.8 reply='Wed 30 Apr 2025' err=None
+18:47:26 trained: q12/83 score=0.25 recall=1.0 ttft=2.6 reply='Wed 30 Apr at 8:15am' err=None
+18:47:33 trained: q13/83 score=0.5 recall=0.0 ttft=2.6 reply='Bright Smile Dental on Wed 30 Apr at 8:15am' err=None
+18:47:40 trained: q14/83 score=0.5714285714285715 recall=1.0 ttft=2.5 reply='27 May at 7pm' err=None
+18:47:47 trained: q15/83 score=1.0 recall=1.0 ttft=2.5 reply='Elmwood School' err=None
+18:47:55 trained: q16/83 score=0.0 recall=None ttft=2.8 reply='June 16, 2025, at noon' err=None
+18:48:02 trained: q17/83 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+18:48:08 trained: q18/83 score=1.0 recall=1.0 ttft=2.6 reply='$118' err=None
+18:48:14 trained: q19/83 score=1.0 recall=1.0 ttft=2.6 reply='TrailGear' err=None
+18:48:20 trained: q20/83 score=0.0 recall=1.0 ttft=2.6 reply='Shipped and expected to arrive on 15 March 2025' err=None
+18:48:27 trained: q21/83 score=1.0 recall=1.0 ttft=2.8 reply='$75' err=None
+18:48:33 trained: q22/83 score=1.0 recall=1.0 ttft=2.7 reply='KitchenHub' err=None
+18:48:41 trained: q23/83 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='Delivered and reviewed' err=None
+18:48:47 trained: q24/83 score=1.0 recall=1.0 ttft=2.6 reply='$44' err=None
+18:48:54 trained: q25/83 score=1.0 recall=1.0 ttft=2.6 reply='KitchenHub' err=None
+18:49:02 trained: q26/83 score=0.0 recall=0.0 ttft=2.8 reply='Review and earn points' err=None
+18:49:09 trained: q27/83 score=0.0 recall=1.0 ttft=2.8 reply='Not mentioned' err=None
+18:49:16 trained: q28/83 score=1.0 recall=1.0 ttft=2.6 reply='CaseCo' err=None
+18:49:25 trained: q29/83 score=0.0 recall=1.0 ttft=2.8 reply='Out for delivery, expected by Thursday, 8 May 2025' err=None
+18:49:31 trained: q30/83 score=1.0 recall=1.0 ttft=2.8 reply='$34' err=None
+18:49:37 trained: q31/83 score=1.0 recall=1.0 ttft=2.6 reply='HomeBox' err=None
+18:49:44 trained: q32/83 score=0.0 recall=1.0 ttft=2.6 reply='Expected delivery on May 18, 2025' err=None
+18:49:50 trained: q33/83 score=1.0 recall=1.0 ttft=2.8 reply='$89' err=None
+18:49:57 trained: q34/83 score=1.0 recall=1.0 ttft=2.8 reply='StrideShop' err=None
+18:50:05 trained: q35/83 score=0.0 recall=1.0 ttft=2.8 reply='Expected arrival date of Wednesday, 7 May 2025' err=None
+18:50:12 trained: q36/83 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+18:50:18 trained: q37/83 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+18:50:25 trained: q38/83 score=0.0 recall=1.0 ttft=2.8 reply='$14 per month' err=None
+18:50:33 trained: q39/83 score=1.0 recall=1.0 ttft=2.6 reply='$13' err=None
+18:50:40 trained: q40/83 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='$14 monthly' err=None
+18:50:47 trained: q41/83 score=0.5 recall=1.0 ttft=2.8 reply='$8 per month' err=None
+18:50:54 trained: q42/83 score=1.0 recall=1.0 ttft=2.8 reply='5 Orchard Close' err=None
+18:51:01 trained: q43/83 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='Cats and shellfish' err=None
+18:51:06 trained: q44/83 score=1.0 recall=1.0 ttft=2.6 reply='5 Orchard Close' err=None
+18:51:15 trained: q45/83 score=1.0 recall=1.0 ttft=2.6 reply='Latex' err=None
+18:51:20 trained: q46/83 score=1.0 recall=1.0 ttft=2.6 reply='9 Mill Lane' err=None
+18:51:28 trained: q47/83 score=1.0 recall=1.0 ttft=2.6 reply='Shellfish' err=None
+18:51:35 trained: q48/83 score=1.0 recall=1.0 ttft=2.8 reply='9 Mill Lane' err=None
+18:51:43 trained: q49/83 score=0.6666666666666666 recall=1.0 ttft=2.7 reply='Peanuts and cats' err=None
+18:51:49 trained: q50/83 score=0.0 recall=1.0 ttft=2.6 reply='9 Mill Lane' err=None
+18:51:55 trained: q51/83 score=0.0 recall=1.0 ttft=2.8 reply='Shellfish' err=None
+18:52:03 trained: q52/83 score=0.0 recall=None ttft=2.6 reply='9 Mill Lane' err=None
+18:52:09 trained: q53/83 score=0.5714285714285715 recall=1.0 ttft=2.6 reply='Green Table on 17 May' err=None
+18:52:16 trained: q54/83 score=1.0 recall=0.0 ttft=2.8 reply='17 May 2025' err=None
+18:52:24 trained: q55/83 score=1.0 recall=1.0 ttft=2.8 reply='Casa Roja' err=None
+18:52:30 trained: q56/83 score=0.6666666666666666 recall=0.0 ttft=2.6 reply='11 May 2025' err=None
+18:52:37 trained: q57/83 score=0.0 recall=1.0 ttft=2.9 reply='Old Mill on 7 June' err=None
+18:52:45 trained: q58/83 score=1.0 recall=1.0 ttft=2.6 reply='7 June 2025' err=None
+18:52:53 trained: q59/83 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='Green Table on 25/3/2025' err=None
+18:53:00 trained: q60/83 score=0.6666666666666666 recall=0.0 ttft=2.8 reply='19 March 2025' err=None
+18:53:07 trained: q61/83 score=1.0 recall=1.0 ttft=2.2 reply='22 June 2025' err=None
+18:53:12 trained: q62/83 score=0.0 recall=1.0 ttft=2.3 reply='2025-05-28' err=None
+18:53:19 trained: q63/83 score=1.0 recall=1.0 ttft=2.3 reply='8 June 2025' err=None
+18:53:25 trained: q64/83 score=1.0 recall=1.0 ttft=2.0 reply='11 April 2025' err=None
+18:53:31 trained: q65/83 score=1.0 recall=1.0 ttft=2.3 reply='23 May 2025' err=None
+18:53:37 trained: q66/83 score=1.0 recall=1.0 ttft=2.3 reply='25 June 2025' err=None
+18:53:43 trained: q67/83 score=1.0 recall=1.0 ttft=2.1 reply='$175' err=None
+18:53:49 trained: q68/83 score=1.0 recall=1.0 ttft=2.5 reply='$53' err=None
+18:53:57 trained: q69/83 score=1.0 recall=1.0 ttft=2.6 reply='$132' err=None
+18:54:04 trained: q70/83 score=1.0 recall=1.0 ttft=2.7 reply='$156' err=None
+18:54:10 trained: q71/83 score=1.0 recall=1.0 ttft=2.3 reply='$41' err=None
+18:54:17 trained: q72/83 score=1.0 recall=1.0 ttft=2.6 reply='$178' err=None
+18:54:24 trained: q73/83 score=1.0 recall=1.0 ttft=2.6 reply='01219 273218' err=None
+18:54:30 trained: q74/83 score=1.0 recall=1.0 ttft=2.6 reply='Civic Bank' err=None
+18:54:37 trained: q75/83 score=1.0 recall=1.0 ttft=2.6 reply='08065 829225' err=None
+18:54:45 trained: q76/83 score=1.0 recall=1.0 ttft=2.6 reply='Dune Foods' err=None
+18:54:52 trained: q77/83 score=1.0 recall=1.0 ttft=2.8 reply='03994 193976' err=None
+18:54:58 trained: q78/83 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='Halo Labs as a paramedic' err=None
+18:55:06 trained: q79/83 score=1.0 recall=1.0 ttft=2.8 reply='05739 482641' err=None
+18:55:12 trained: q80/83 score=1.0 recall=0.0 ttft=2.6 reply='Apex Freight' err=None
+18:55:19 trained: q81/83 score=1.0 recall=1.0 ttft=2.8 reply='06209 725095' err=None
+18:55:25 trained: q82/83 score=0.0 recall=0.0 ttft=2.5 reply='Apex Freight and Dune Foods' err=None
+18:55:32 trained: q83/83 score=1.0 recall=1.0 ttft=2.8 reply='Vegan' err=None
