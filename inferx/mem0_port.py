@@ -190,17 +190,25 @@ class Mem0Port(MemorySystem):
 
 
 def _json_object(text: str) -> dict:
-    """Read the first JSON object in a reply, as mem0 does, tolerating code fences and extra words."""
+    """Read the first JSON object in a reply, tolerating code fences and extra words.
+
+    phi often keeps writing after its answer, inventing further "Input: ... Output: {...}" examples,
+    so only the first complete object is read.
+    """
     import json
     import re
     cleaned = re.sub(r"```(?:json)?", "", text)
-    start, end = cleaned.find("{"), cleaned.rfind("}")
-    if start < 0 or end <= start:
-        return {}
-    try:
-        return json.loads(cleaned[start:end + 1], strict=False)
-    except ValueError:
-        return {}
+    decoder = json.JSONDecoder(strict=False)
+    start = cleaned.find("{")
+    while start >= 0:
+        try:
+            value, _ = decoder.raw_decode(cleaned, start)
+            if isinstance(value, dict):
+                return value
+        except ValueError:
+            pass
+        start = cleaned.find("{", start + 1)
+    return {}
 
 
 class Mem0V1Port(MemorySystem):

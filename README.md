@@ -15,7 +15,7 @@ Speed and energy are not goals of the thesis. Timings stay in the run files only
 |---|---|
 | `inferx/store.py`: core, recall and archival memory in SQLite with sqlite-vec, plus outdated facts and their replacements | Built |
 | `inferx/memory_classifier.py`: trained controller (MiniLM embeddings and 4 small decision heads) | Built |
-| `inferx/npu_classifier.py`: controller on the NPU (QNN, fp16, CPU fallback disabled) | Built, checked against the CPU. Validation runs so far used the CPU copy; `--npu-controller` runs it on the NPU, and the final comparison uses it |
+| `inferx/npu_classifier.py`: controller on the NPU (QNN, fp16, CPU fallback disabled) | Built, checked against the CPU. Validation runs so far used the CPU copy; `--npu-controller` runs it on the NPU (smoke-tested alongside Foundry), and the final comparison uses it |
 | `inferx/cloud.py`: cloud rule (the main LLM asks the cloud only when its memories don't answer) | Built, tested against a local stand-in |
 | `inferx/systems.py`: plain retrieval, full context, local memory, rules (`decoupled`) and trained systems | Built |
 | `inferx/mem0_port.py`: mem0 2025 algorithm on the local model | Built, validation running on the short users |
@@ -192,8 +192,10 @@ Results: `models/assistant_classifier/npu/check.json` and `check_all_npu.json`.
 - **mem0 2026** (mem0ai 2.2.1) can't run on this model: its extraction prompt alone is about 9,500
   tokens, and phi's NPU build fails above about 3,500 to 4,000. A memory system designed for cloud
   models doesn't fit an on-device one.
-- **mem0 2025** (`mem0_2025_local`), the earlier algorithm with its own prompts, runs on phi. Its
-  validation runs on the 5 short users are running.
+- **mem0 2025** (`mem0_2025_local`), the earlier algorithm with its own prompts, runs on phi. Its first
+  validation runs scored 18.3%, but that was a bug in the port: phi often keeps writing invented
+  examples after its JSON answer, and the parser failed on the extra text, so most messages saved
+  nothing. The parser now reads only the first JSON object, and the runs are being repeated.
 - Cloud mem0 and Letta need a cloud API key and permission to send data out.
 
 ### Network
@@ -224,7 +226,8 @@ means it is no longer clean, so the final comparison uses conversations 2 to 9.
 - Intervals are 95% bootstrap intervals over questions.
 - `data/assistant/handwritten*.json` were written by the developer while building the system, so
   they are not independent. Messages written by someone else are still needed.
-- Runs `20261108-135534`, `20261108-135621` and `20261108-141228` were stopped or smoke tests and
-  are left out of comparisons.
+- Runs `20261108-135534`, `20261108-135621`, `20261108-141228` and `20261108-221518` were stopped or
+  smoke tests, and mem0 runs `20261108-185536` to `213205` used the broken parser. All are left out
+  of comparisons.
 - Foundry's `completion_tokens` over-reports, so `inferx/llm.py` counts output chunks itself.
 - `scripts/` also holds the NPU and Foundry diagnostics used to debug the earlier driver failure.
