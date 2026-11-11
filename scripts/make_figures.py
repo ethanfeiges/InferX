@@ -1,7 +1,7 @@
 """Draw the README figures from the validation results.
 
 The numbers come from scripts/compare_assistant_runs.py on the runs named beside each figure.
-Trained and rules were run before the date-rule fix (commit f8d6568); reruns are pending.
+Trained and rules use the runs after the date-rule fix (commit f8d6568).
 
 Usage: python scripts/make_figures.py   (writes docs/figures/*.png)
 """
@@ -40,12 +40,13 @@ def bars(ax, labels, values, highlight, unit="", total=None, title=""):
 
 
 def long_history():
-    # Runs 20261108-145846, 161136, 174426: 3 users, 112 days, 248 questions, cloud rule on.
-    systems = ["Trained", "Plain retrieval", "Local memory", "Rules", "Full context"]
-    correct = [75.8, 69.4, 69.4, 68.5, 8.9]
-    changed_ok = [56, 43, 43, 44, 7]
-    stale = [4, 21, 21, 23, 1]
-    cloud = [45, 87, 248, 115, 142]
+    # Runs 20261108-145846, 161136, 174426 (plain, full context, local memory) and 20261111-133302, 144201,
+    # 151422 (rules, trained): 3 users, 112 days, 248 questions, cloud rule on.
+    systems = ["Trained", "Rules", "Plain retrieval", "Local memory", "Full context"]
+    correct = [79.4, 69.8, 69.4, 69.4, 8.9]
+    changed_ok = [60, 42, 43, 43, 7]
+    stale = [4, 28, 21, 21, 1]
+    cloud = [48, 115, 87, 248, 142]
     fig, axes = plt.subplots(1, 2, figsize=(9.5, 3.2), gridspec_kw={"wspace": 0.12})
     bars(axes[0], systems, correct, "Trained", "%", 100, "Answers correct (%)")
     bars(axes[1], systems, cloud, "Trained", "", 248, "Questions sent to the cloud (of 248)")
@@ -60,7 +61,7 @@ def long_history():
 def changed_facts():
     # Same runs: questions about something that changed (83).
     systems = ["Trained", "Rules", "Plain retrieval", "Full context"]
-    ok, stale = [56, 44, 43, 7], [4, 23, 21, 1]
+    ok, stale = [60, 42, 43, 7], [4, 28, 21, 1]
     y = range(len(systems))[::-1]
     fig, ax = plt.subplots(figsize=(6.5, 2.8))
     ax.barh([v + 0.17 for v in y], ok, height=0.32, color=BLUE, label="Current value (correct)")
@@ -80,22 +81,22 @@ def changed_facts():
 
 
 def mem0():
-    # Short validation users 0 and 1 (111 questions): the users mem0 cloud has finished.
+    # All 5 short validation users (268 questions). Trained: runs 20261111-111329 to 122157.
     systems = ["Trained", "Plain retrieval", "mem0 cloud", "mem0 2025 on phi"]
     fig, ax = plt.subplots(figsize=(6.5, 2.6))
-    bars(ax, systems, [84.7, 78.4, 74.8, 31.5], "Trained", "%", 100,
-         "Answers correct (%), short users 0 and 1")
+    bars(ax, systems, [84.3, 76.9, 73.9, 29.9], "Trained", "%", 100,
+         "Answers correct (%), 5 short users, 268 questions")
     fig.savefig(OUT / "mem0.png", dpi=160, bbox_inches="tight")
     plt.close(fig)
 
 
 def fact_audit():
     # All 288 facts phi wrote for the trained system on the 3 long users, checked by hand.
-    kinds = ["Correct", "Date wrongly removed by the date rule (bug, fixed)", "Two people merged",
+    kinds = ["Correct", "Date wrongly removed (bug, fixed: now 1 of 105)", "Two people merged",
              "Meaning reversed or garbled", "Wrong date or time", "Wrong item treated as an update"]
     counts = [254, 17, 6, 5, 3, 3]
     fig, ax = plt.subplots(figsize=(6.5, 2.9))
-    bars(ax, kinds, counts, "Correct", "", 288, "What phi's 288 rewritten facts look like (long users)")
+    bars(ax, kinds, counts, "Correct", "", 288, "Hand check of phi's 288 facts, before the date fix (long users)")
     fig.savefig(OUT / "fact_audit.png", dpi=160, bbox_inches="tight")
     plt.close(fig)
 

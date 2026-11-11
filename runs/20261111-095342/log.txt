@@ -1,0 +1,79 @@
+09:53:42 on_ac_power=False
+09:53:44 mem0_cloud: session 1 ready (0s idle work so far)
+09:53:44 mem0_cloud: session 2 ready (0s idle work so far)
+09:53:46 mem0_cloud: session 3 ready (0s idle work so far)
+09:53:47 mem0_cloud: session 4 ready (0s idle work so far)
+09:53:48 mem0_cloud: session 5 ready (0s idle work so far)
+09:53:50 mem0_cloud: session 6 ready (0s idle work so far)
+09:53:51 mem0_cloud: session 7 ready (0s idle work so far)
+09:53:53 mem0_cloud: session 8 ready (0s idle work so far)
+09:53:55 mem0_cloud: session 9 ready (0s idle work so far)
+09:53:56 mem0_cloud: session 10 ready (0s idle work so far)
+09:53:58 mem0_cloud: session 11 ready (0s idle work so far)
+09:54:02 mem0_cloud: session 12 ready (0s idle work so far)
+09:54:03 mem0_cloud: session 13 ready (0s idle work so far)
+09:54:04 mem0_cloud: session 14 ready (0s idle work so far)
+09:54:07 mem0_cloud: session 15 ready (0s idle work so far)
+09:54:09 mem0_cloud: session 16 ready (0s idle work so far)
+09:54:10 mem0_cloud: session 17 ready (0s idle work so far)
+09:54:13 mem0_cloud: session 18 ready (0s idle work so far)
+09:54:14 mem0_cloud: session 19 ready (0s idle work so far)
+09:54:14 mem0_cloud: session 20 ready (0s idle work so far)
+09:54:15 mem0_cloud: session 21 ready (0s idle work so far)
+09:54:17 mem0_cloud: session 22 ready (0s idle work so far)
+09:54:18 mem0_cloud: session 23 ready (0s idle work so far)
+09:54:20 mem0_cloud: session 24 ready (0s idle work so far)
+09:54:21 mem0_cloud: session 25 ready (0s idle work so far)
+09:54:21 mem0_cloud: session 26 ready (0s idle work so far)
+09:54:22 mem0_cloud: session 27 ready (0s idle work so far)
+10:08:59 mem0_cloud: q1/51 score=1.0 recall=1.0 ttft=2.4 reply='Cancelled' err=None
+10:09:07 mem0_cloud: q2/51 score=0.6666666666666666 recall=1.0 ttft=2.6 reply='March 3, 2025' err=None
+10:09:14 mem0_cloud: q3/51 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='March 30, 2025, at 9:30 pm' err=None
+10:09:22 mem0_cloud: q4/51 score=1.0 recall=1.0 ttft=2.6 reply='Riverside Dermatology' err=None
+10:09:30 mem0_cloud: q5/51 score=1.0 recall=1.0 ttft=2.6 reply='April 3, 2025' err=None
+10:09:38 mem0_cloud: q6/51 score=0.6666666666666666 recall=1.0 ttft=2.7 reply='April 9, 2025 at 8:15\u202fam' err=None
+10:09:45 mem0_cloud: q7/51 score=1.0 recall=1.0 ttft=2.5 reply='Warmline Services' err=None
+10:09:54 mem0_cloud: q8/51 score=1.0 recall=1.0 ttft=3.0 reply='Cancelled' err=None
+10:10:03 mem0_cloud: q9/51 score=1.0 recall=1.0 ttft=3.0 reply='Cancelled' err=None
+10:10:11 mem0_cloud: q10/51 score=1.0 recall=None ttft=3.0 reply='Not mentioned' err=None
+10:10:21 mem0_cloud: q11/51 score=1.0 recall=None ttft=3.1 reply='Not mentioned' err=None
+10:10:28 mem0_cloud: q12/51 score=1.0 recall=1.0 ttft=2.9 reply='$75' err=None
+10:10:52 mem0_cloud: q13/51 score=1.0 recall=1.0 ttft=4.4 reply='KitchenHub' err=None
+10:11:22 mem0_cloud: q14/51 score=0.0 recall=1.0 ttft=11.7 reply='Scheduled for delivery on March 18, 2025' err=None
+10:11:47 mem0_cloud: q15/51 score=1.0 recall=1.0 ttft=10.6 reply='$19' err=None
+10:12:23 mem0_cloud: q16/51 score=1.0 recall=1.0 ttft=11.8 reply='CaseCo' err=None
+10:12:54 mem0_cloud: q17/51 score=0.0 recall=1.0 ttft=12.2 reply='Scheduled for delivery on March 17, 2025' err=None
+10:13:23 mem0_cloud: q18/51 score=1.0 recall=1.0 ttft=11.2 reply='$118' err=None
+10:13:52 mem0_cloud: q19/51 score=1.0 recall=1.0 ttft=12.5 reply='TrailGear' err=None
+10:14:28 mem0_cloud: q20/51 score=0.19999999999999998 recall=1.0 ttft=13.3 reply='Expected to be delivered on Friday, March 21, 2025' err=None
+10:14:51 mem0_cloud: q21/51 score=1.0 recall=1.0 ttft=12.0 reply='$27' err=None
+10:14:57 mem0_cloud: q22/51 score=1.0 recall=1.0 ttft=2.5 reply='FitNest' err=None
+10:15:05 mem0_cloud: q23/51 score=0.0 recall=1.0 ttft=2.6 reply='Expected to arrive on March 14, 2025' err=None
+10:15:11 mem0_cloud: q24/51 score=1.0 recall=1.0 ttft=2.5 reply='$58' err=None
+10:15:39 mem0_cloud: q25/51 score=1.0 recall=1.0 ttft=5.1 reply='TrailGear' err=None
+10:16:12 mem0_cloud: q26/51 score=0.0 recall=1.0 ttft=12.3 reply='Scheduled to ship and expected to arrive by March ' err=None
+10:16:46 mem0_cloud: q27/51 score=1.0 recall=None ttft=14.2 reply='Not mentioned' err=None
+10:17:00 mem0_cloud: q28/51 score=1.0 recall=None ttft=9.3 reply='Not mentioned' err=None
+10:17:09 mem0_cloud: q29/51 score=0.0 recall=1.0 ttft=2.9 reply='$11 per month' err=None
+10:17:29 mem0_cloud: q30/51 score=0.0 recall=1.0 ttft=4.9 reply='$11' err=None
+10:17:50 mem0_cloud: q31/51 score=1.0 recall=1.0 ttft=9.6 reply='2 Church Walk' err=None
+10:18:11 mem0_cloud: q32/51 score=1.0 recall=1.0 ttft=6.5 reply='shellfish' err=None
+10:18:35 mem0_cloud: q33/51 score=1.0 recall=1.0 ttft=7.7 reply='2 Church Walk' err=None
+10:19:01 mem0_cloud: q34/51 score=0.0 recall=0.0 ttft=8.8 reply='Not mentioned' err=None
+10:19:25 mem0_cloud: q35/51 score=1.0 recall=1.0 ttft=10.3 reply='14 Birch Road' err=None
+10:19:45 mem0_cloud: q36/51 score=1.0 recall=1.0 ttft=7.5 reply='Cats' err=None
+10:20:12 mem0_cloud: q37/51 score=1.0 recall=None ttft=11.7 reply='Not mentioned' err=None
+10:20:42 mem0_cloud: q38/51 score=0.0 recall=1.0 ttft=9.6 reply='Not mentioned' err=None
+10:21:08 mem0_cloud: q39/51 score=0.0 recall=1.0 ttft=10.3 reply='Not mentioned' err=None
+10:21:34 mem0_cloud: q40/51 score=0.0 recall=1.0 ttft=11.9 reply='Casa Roja' err=None
+10:22:06 mem0_cloud: q41/51 score=0.0 recall=1.0 ttft=11.8 reply='Not mentioned' err=None
+10:22:35 mem0_cloud: q42/51 score=0.6666666666666666 recall=1.0 ttft=10.8 reply='April 2, 2025' err=None
+10:23:06 mem0_cloud: q43/51 score=1.0 recall=1.0 ttft=10.7 reply='April 2, 2025' err=None
+10:23:34 mem0_cloud: q44/51 score=1.0 recall=1.0 ttft=12.2 reply='$36' err=None
+10:23:56 mem0_cloud: q45/51 score=1.0 recall=1.0 ttft=9.8 reply='$150' err=None
+10:24:21 mem0_cloud: q46/51 score=1.0 recall=1.0 ttft=10.2 reply='$159' err=None
+10:24:45 mem0_cloud: q47/51 score=0.0 recall=1.0 ttft=8.0 reply='01688 306435' err=None
+10:25:08 mem0_cloud: q48/51 score=1.0 recall=1.0 ttft=8.4 reply='Apex Freight' err=None
+10:25:31 mem0_cloud: q49/51 score=1.0 recall=1.0 ttft=9.4 reply='01688 306435' err=None
+10:25:54 mem0_cloud: q50/51 score=1.0 recall=1.0 ttft=7.2 reply='Halo Labs' err=None
+10:26:16 mem0_cloud: q51/51 score=1.0 recall=1.0 ttft=9.4 reply='Vegan' err=None

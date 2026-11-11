@@ -1,0 +1,56 @@
+{
+  "mem0_cloud": {
+    "system": "mem0_cloud",
+    "questions_planned": 53,
+    "questions_answered": 53,
+    "errors": 0,
+    "score": 0.615,
+    "score_excluding_adversarial": 0.575,
+    "evidence_recall": 0.979,
+    "not_mentioned_rate": 0.226,
+    "by_category": {
+      "2": {
+        "n": 10,
+        "score": 0.604,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 38,
+        "score": 0.567,
+        "evidence_recall": 0.974
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 1.83,
+    "total_s_mean": 4.262,
+    "retrieval_ms_mean": 471.9,
+    "prompt_tokens_mean": 907.83,
+    "cloud_calls": 24,
+    "cloud_bytes": 62620,
+    "memory_cloud_requests": 228,
+    "memory_cloud_bytes": 2556778,
+    "ingest_s": 38.8,
+    "idle_s": 0.0,
+    "idle": {
+      "messages": 117.0,
+      "errors": 0.0,
+      "add_s": 38.8,
+      "requests": 118.0,
+      "bytes_sent": 24563.0,
+      "bytes_received": 8358.0
+    },
+    "store": {
+      "recall": 117,
+      "facts_active": 0,
+      "facts_superseded": 0,
+      "core": 0,
+      "queued": 0,
+      "outdated": 0
+    },
+    "llm_calls_total": 106
+  }
+}

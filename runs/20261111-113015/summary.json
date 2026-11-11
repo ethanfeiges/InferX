@@ -1,0 +1,120 @@
+{
+  "decoupled": {
+    "system": "decoupled",
+    "questions_planned": 56,
+    "questions_answered": 56,
+    "errors": 0,
+    "score": 0.74,
+    "score_excluding_adversarial": 0.714,
+    "evidence_recall": 1.0,
+    "not_mentioned_rate": 0.089,
+    "by_category": {
+      "2": {
+        "n": 13,
+        "score": 0.666,
+        "evidence_recall": 1.0
+      },
+      "4": {
+        "n": 38,
+        "score": 0.731,
+        "evidence_recall": 1.0
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.34,
+    "total_s_mean": 2.658,
+    "retrieval_ms_mean": 12.4,
+    "prompt_tokens_mean": 1164.571,
+    "cloud_calls": 19,
+    "cloud_bytes": 54679,
+    "memory_cloud_requests": 0,
+    "memory_cloud_bytes": 0,
+    "ingest_s": 1.1,
+    "idle_s": 144.4,
+    "idle": {
+      "processed": 76.0,
+      "add": 62.0,
+      "update": 0.0,
+      "ignore": 0.0,
+      "none": 0.0,
+      "rejected": 14.0,
+      "ambiguous": 4.0,
+      "llm_calls": 80.0,
+      "errors": 0.0,
+      "llm_s": 142.8,
+      "dates_removed": 0.0
+    },
+    "store": {
+      "recall": 119,
+      "facts_active": 62,
+      "facts_superseded": 0,
+      "core": 0,
+      "queued": 0,
+      "outdated": 0
+    },
+    "llm_calls_total": 192
+  },
+  "trained": {
+    "system": "trained",
+    "questions_planned": 56,
+    "questions_answered": 56,
+    "errors": 0,
+    "score": 0.74,
+    "score_excluding_adversarial": 0.714,
+    "evidence_recall": 0.843,
+    "not_mentioned_rate": 0.107,
+    "by_category": {
+      "2": {
+        "n": 13,
+        "score": 0.694,
+        "evidence_recall": 0.846
+      },
+      "4": {
+        "n": 38,
+        "score": 0.721,
+        "evidence_recall": 0.842
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.62,
+    "total_s_mean": 2.905,
+    "retrieval_ms_mean": 12.7,
+    "prompt_tokens_mean": 1259.214,
+    "cloud_calls": 11,
+    "cloud_bytes": 35262,
+    "memory_cloud_requests": 0,
+    "memory_cloud_bytes": 0,
+    "ingest_s": 1.5,
+    "idle_s": 97.5,
+    "idle": {
+      "processed": 58.0,
+      "add": 58.0,
+      "update": 19.0,
+      "none": 0.0,
+      "rejected": 0.0,
+      "core": 7.0,
+      "llm_calls": 58.0,
+      "errors": 0.0,
+      "llm_s": 96.1,
+      "dates_removed": 0.0,
+      "secrets_dropped": 11.0
+    },
+    "store": {
+      "recall": 108,
+      "facts_active": 39,
+      "facts_superseded": 19,
+      "core": 7,
+      "queued": 0,
+      "outdated": 19
+    },
+    "llm_calls_total": 170
+  }
+}

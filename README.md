@@ -12,14 +12,11 @@ Speed and energy are not goals of the thesis.
 
 On 3 simulated users with 4 months of history each (validation data, not the final test):
 
-- **More correct answers:** 75.8% for trained against 69.4% for plain retrieval (+6.5 points,
-  95% interval 0.0 to +12.9).
+- **More correct answers:** 79.4% for trained against 69.4% for plain retrieval (+10.1 points,
+  95% interval +3.2 to +16.5).
 - **Far fewer out-of-date answers:** 4 replies gave an old value, against 21 for plain retrieval.
-- **Half the cloud use:** 45 of 248 questions sent to the cloud, against 87.
-- **Secrets never saved:** all one-time codes were dropped. mem0's cloud service kept 19 of 22.
-
-> Trained and rules were run before a date-handling bug was fixed (see [Fact quality](#fact-quality)).
-> Reruns are in progress; these numbers will be updated.
+- **Under half the cloud use:** 48 of 248 questions sent to the cloud, against 87.
+- **Secrets never saved:** all one-time codes were dropped. mem0's cloud service kept about 42 of 52.
 
 ## How it works
 
@@ -72,23 +69,28 @@ versions and phi often picks the old one. Trained hides the outdated version.
 
 | | Plain | Full context | Local memory | Rules | Trained |
 |---|---|---|---|---|---|
-| Correct | 69.4% | 8.9% | 69.4% | 68.5% | **75.8%** |
-| Changed detail answered correctly (83) | 43 | 7 | 43 | 44 | **56** |
-| Old value given | 21 | 1 | 21 | 23 | **4** |
-| History questions (9) | **7** | 0 | **7** | 4 | 4 |
-| No-answer questions declined (15) | **14** | 3 | **14** | **14** | 12 |
-| Sent to the cloud | 87 | 142 | 248 | 115 | **45** |
+| Correct | 69.4% | 8.9% | 69.4% | 69.8% | **79.4%** |
+| Changed detail answered correctly (83) | 43 | 7 | 43 | 42 | **60** |
+| Old value given | 21 | 1 | 21 | 28 | **4** |
+| History questions (9) | **7** | 0 | **7** | **7** | 5 |
+| No-answer questions declined (15) | **14** | 3 | **14** | **14** | 13 |
+| Sent to the cloud | 87 | 142 | 248 | 115 | **48** |
 
-- The gain is uneven: about +7 points on users 0 and 2, a tie on user 1.
+- The gain is uneven: +14 and +12 points on users 0 and 2, +4 on user 1.
 - Full context scores low because only the last few days fit into phi's input.
-- Runs `20261108-145846`, `161136`, `174426`.
+- Runs `20261108-145846`, `161136`, `174426` (plain, full context, local memory) and
+  `20261111-133302`, `144201`, `151422` (rules and trained, after the date fix).
 
 ### Short users (5 users, 268 questions)
 
-| | Plain | Rules | Trained | mem0 on phi |
-|---|---|---|---|---|
-| Correct | 76.9% | 73.9% | **82.5%** | 29.9% |
-| Old value given (72 changed) | 18 | 23 | **2** | 15 |
+| | Plain | Rules | Trained | mem0 on phi | mem0 cloud |
+|---|---|---|---|---|---|
+| Correct | 76.9% | 77.2% | **84.3%** | 29.9% | 73.9% |
+| Changed detail answered correctly (72) | 44 | 45 | **60** | 14 | 41 |
+| Old value given | 18 | 23 | **1** | 15 | 14 |
+
+Trained minus plain retrieval: +7.5 points (+1.9 to +13.1). Rules and trained: runs
+`20261111-111329` to `122157`.
 
 These favour trained: its fixes were designed by reading errors on these same users.
 
@@ -96,8 +98,8 @@ These favour trained: its fixes were designed by reading errors on these same us
 
 ![mem0 comparison](docs/figures/mem0.png)
 
-**On mem0's cloud models, mem0 works** (74.8%, close to plain retrieval). **On phi it fails**
-(31.5%). mem0 asks the LLM to make every memory decision, and a small model does this badly:
+**On mem0's cloud models, mem0 works** (73.9%, close to plain retrieval's 76.9%; trained is
++10.4 points ahead, +4.5 to +16.4). **On phi it fails** (29.9%). mem0 asks the LLM to make every memory decision, and a small model does this badly:
 
 1. **It keeps only what phi writes down.** Raw messages are discarded, so any mistake is permanent.
 2. **phi's facts lose their subject:** "Event location: Warmline Services" is saved apart from the
@@ -107,8 +109,8 @@ These favour trained: its fixes were designed by reading errors on these same us
 4. **Nothing checks phi:** no rules on what may replace what, and secrets are saved.
 
 mem0's 2026 version can't run on phi at all: its prompt is too long (~9,500 tokens).
-**mem0 cloud also kept 19 of 22 one-time codes** sent to it; trained kept none.
-mem0 cloud covers users 0 and 1 so far; users 2 to 4 are running.
+**mem0 cloud also kept about 42 of 52 one-time codes** sent to it (a keyword count of its memories, so
+approximate); trained kept none. Its memory work took 1,151 requests and 13.8 MB.
 
 ### Making the controller generalize (no-LLM checks)
 
@@ -131,20 +133,21 @@ Three additions, in the `trained_plus` system (`--plus-options` switches each of
 
 ![Fact audit](docs/figures/fact_audit.png)
 
-All 288 facts phi wrote for the long users were checked against their messages. **88% are
-correct.** Most errors came from a bug in the date rule (correct dates written as "21/4/2025" or
-"Apr 10" were deleted), now fixed in commit `f8d6568`. The rest: the controller linking two
-different people or items (9), and phi garbling a meaning or time (8). The raw message stays
-searchable, so most answers were still right.
+All 288 facts phi wrote for the long users were checked by hand against their messages. **88%
+were correct.** Half the errors came from a bug in the date rule (correct dates written as
+"21/4/2025" or "Apr 10" were deleted), fixed in commit `f8d6568`. After the fix, 104 of the 105
+facts whose message gave a date keep it (89 before), so about 94% of facts are now correct
+(estimated, not re-checked by hand). The rest: the controller linking two different people or
+items (9), and phi garbling a meaning or time (8).
 
 ### Cloud check: does phi know when it needs help?
 
 | Trained, long users | Answer was right | Answer was wrong |
 |---|---|---|
-| phi said "my memories answer it" (203) | 164 | **39 (never sent to the cloud)** |
-| phi said "they don't" (45) | 24 (sent needlessly) | 21 |
+| phi said "my memories answer it" (200) | 169 | **31 (never sent to the cloud)** |
+| phi said "they don't" (48) | 28 (sent needlessly) | 20 |
 
-The check catches only 21 of 60 wrong answers. Nothing checks the cloud's reply.
+The check catches only 20 of 51 wrong answers. Nothing checks the cloud's reply.
 
 ### Other checks
 
@@ -161,7 +164,7 @@ The check catches only 21 of 60 wrong answers. Nothing checks the cloud's reply.
 
 - **"Secret" means one-time codes only.** Passwords, card numbers or health details were never in
   the training data and would probably be saved.
-- **History questions** are weaker (4 of 9 vs 7 of 9), because outdated versions are hidden.
+- **History questions** are weaker (5 of 9 vs 7 of 9), because outdated versions are hidden.
 - **The controller misses some updates** (4 of 7 on hand-written check messages).
 - **Simulated data:** test messages written by someone else are still needed.
 
@@ -171,8 +174,9 @@ The check catches only 21 of 60 wrong answers. Nothing checks the cloud's reply.
 |---|---|
 | Memory store, trained controller, rules, cloud rule, all baselines | Built |
 | Controller on the NPU | Built, checked; used in the final run |
-| Long-history comparison | Done (trained and rules rerunning after the date fix) |
-| mem0 on phi, mem0 cloud | Done; mem0 cloud users 2 to 4 running |
+| Long-history comparison | Done |
+| mem0 on phi, mem0 cloud | Done |
+| `trained_plus` (generalization additions) | Built; validation runs in progress |
 | Letta, and a real cloud LLM for the cloud rule | Need a cloud LLM key (`INFERX_CLOUD_API_KEY`) |
 | Messages written by someone else | Needed |
 | Final comparison with packet capture (`scripts/run_final.sh`) | Written, not run |
