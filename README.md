@@ -48,6 +48,41 @@ Speed and energy are not goals of the thesis. Timings stay in the run files only
    says whether those memories answer the question; only a "no" sends the question to the cloud.
    Memory work never calls the cloud.
 
+## Systems compared
+
+Every system uses the same main LLM (phi), the same answer prompt and the same cloud rule. Only
+how memory is written and searched differs. The name in brackets is the `--systems` name.
+
+The three in most tables:
+
+- **Plain retrieval** (`plain_retrieval`), the standard baseline: saves every message as it
+  arrives, with no memory decisions at all. A question searches all saved messages by meaning
+  (MiniLM embeddings) and the top matches go into the prompt. Nothing is ever replaced, so an old
+  and a new version of a changed detail are both found, and phi has to guess which is current.
+  One-time codes and passwords are kept like any other message.
+- **Rules** (`decoupled`), the proposed design with a hand-written controller instead of a
+  trained one. Keyword rules pick which messages are worth remembering and pull out a few core
+  facts (name, allergy). In idle time phi rewrites each kept message as a fact. A new fact is
+  compared with its most similar saved fact: very similar with the same numbers is ignored as a
+  duplicate, very similar with different numbers replaces it, a middle zone is sent to phi to
+  judge, and anything else is added. Raw messages stay searchable too.
+- **Trained** (`trained`), the proposed design: the same pipeline, but a small trained controller
+  (MiniLM plus four decision heads, see "How it works") makes every memory decision: worth
+  remembering, kind of memory, secret, and whether it replaces a saved memory. Secrets are dropped
+  before saving, updates are merged by phi, and outdated versions are shown only for history
+  questions. Phi only writes facts and answers.
+
+Other baselines:
+
+- **Full context** (`full_context`): no memory store. The most recent messages that fit phi's
+  input (about 3,000 tokens) go into every prompt, so older history is simply cut off.
+- **Local memory** (`local_memory`): stores like plain retrieval, but every question goes to the
+  cloud with the retrieved messages. It stands for "memory on the device, answers from the cloud".
+- **mem0 2025 on phi** (`mem0_2025_local`): mem0's 2025 algorithm with its own prompts, run on
+  phi. Phi extracts facts from every message and chooses add, update, delete or no change.
+- **mem0 cloud** (`mem0_cloud`): mem0's hosted service, which does all memory work on mem0's own
+  cloud models. Every message is sent to mem0. Phi still writes the answer.
+
 ## Setup (Windows ARM64)
 
 Needs native ARM64 Python 3.12, the MSVC ARM64 build tools, the Windows SDK and Foundry Local.
