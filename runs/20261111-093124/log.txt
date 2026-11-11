@@ -1,0 +1,84 @@
+09:31:24 on_ac_power=False
+09:31:26 mem0_cloud: session 1 ready (0s idle work so far)
+09:31:27 mem0_cloud: session 2 ready (0s idle work so far)
+09:31:30 mem0_cloud: session 3 ready (0s idle work so far)
+09:31:31 mem0_cloud: session 4 ready (0s idle work so far)
+09:31:32 mem0_cloud: session 5 ready (0s idle work so far)
+09:31:33 mem0_cloud: session 6 ready (0s idle work so far)
+09:31:35 mem0_cloud: session 7 ready (0s idle work so far)
+09:31:36 mem0_cloud: session 8 ready (0s idle work so far)
+09:31:38 mem0_cloud: session 9 ready (0s idle work so far)
+09:31:39 mem0_cloud: session 10 ready (0s idle work so far)
+09:31:40 mem0_cloud: session 11 ready (0s idle work so far)
+09:31:41 mem0_cloud: session 12 ready (0s idle work so far)
+09:31:45 mem0_cloud: session 13 ready (0s idle work so far)
+09:31:47 mem0_cloud: session 14 ready (0s idle work so far)
+09:31:48 mem0_cloud: session 15 ready (0s idle work so far)
+09:31:50 mem0_cloud: session 16 ready (0s idle work so far)
+09:31:52 mem0_cloud: session 17 ready (0s idle work so far)
+09:31:53 mem0_cloud: session 18 ready (0s idle work so far)
+09:31:53 mem0_cloud: session 19 ready (0s idle work so far)
+09:31:55 mem0_cloud: session 20 ready (0s idle work so far)
+09:31:56 mem0_cloud: session 21 ready (0s idle work so far)
+09:31:58 mem0_cloud: session 22 ready (0s idle work so far)
+09:31:59 mem0_cloud: session 23 ready (0s idle work so far)
+09:32:00 mem0_cloud: session 24 ready (0s idle work so far)
+09:32:01 mem0_cloud: session 25 ready (0s idle work so far)
+09:32:03 mem0_cloud: session 26 ready (0s idle work so far)
+09:32:03 mem0_cloud: session 27 ready (0s idle work so far)
+09:47:23 mem0_cloud: q1/56 score=0.6666666666666666 recall=1.0 ttft=3.0 reply='March 1, 2025' err=None
+09:47:30 mem0_cloud: q2/56 score=0.6666666666666666 recall=1.0 ttft=2.4 reply='April 7, 2025, at 12:00 PM' err=None
+09:47:37 mem0_cloud: q3/56 score=0.0 recall=1.0 ttft=2.4 reply='Oak Lane Vets' err=None
+09:47:44 mem0_cloud: q4/56 score=0.3333333333333333 recall=1.0 ttft=2.4 reply='March 24, 2025' err=None
+09:47:50 mem0_cloud: q5/56 score=0.0 recall=1.0 ttft=2.4 reply='Not mentioned' err=None
+09:47:55 mem0_cloud: q6/56 score=1.0 recall=1.0 ttft=2.4 reply='Elmwood School' err=None
+09:48:04 mem0_cloud: q7/56 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='March 17, 2025 at 7:00 PM' err=None
+09:48:11 mem0_cloud: q8/56 score=1.0 recall=1.0 ttft=2.5 reply='Harbor Accounting' err=None
+09:48:18 mem0_cloud: q9/56 score=0.3333333333333333 recall=1.0 ttft=2.4 reply='March 23, 2025' err=None
+09:48:26 mem0_cloud: q10/56 score=0.4444444444444444 recall=1.0 ttft=2.5 reply='April 7, 2025, at 12:00 PM' err=None
+09:48:32 mem0_cloud: q11/56 score=1.0 recall=1.0 ttft=2.4 reply='Oak Lane Vets' err=None
+09:48:39 mem0_cloud: q12/56 score=1.0 recall=1.0 ttft=2.4 reply='March 23, 2025' err=None
+09:48:47 mem0_cloud: q13/56 score=0.7499999999999999 recall=1.0 ttft=2.4 reply='March 29, 2025, at 16:45' err=None
+09:48:54 mem0_cloud: q14/56 score=0.3636363636363636 recall=1.0 ttft=2.5 reply='Northside Physio, rescheduled to March 29, 2025 at' err=None
+09:49:01 mem0_cloud: q15/56 score=1.0 recall=None ttft=2.4 reply='Not mentioned' err=None
+09:49:07 mem0_cloud: q16/56 score=1.0 recall=None ttft=2.3 reply='Not mentioned' err=None
+09:49:14 mem0_cloud: q17/56 score=1.0 recall=1.0 ttft=2.3 reply='$19' err=None
+09:49:21 mem0_cloud: q18/56 score=1.0 recall=1.0 ttft=2.3 reply='CaseCo' err=None
+09:49:29 mem0_cloud: q19/56 score=0.33333333333333337 recall=1.0 ttft=2.4 reply='Delivered on March 12, 2025' err=None
+09:49:35 mem0_cloud: q20/56 score=1.0 recall=1.0 ttft=2.5 reply='$44' err=None
+09:49:41 mem0_cloud: q21/56 score=1.0 recall=1.0 ttft=2.3 reply='KitchenHub' err=None
+09:49:49 mem0_cloud: q22/56 score=0.2222222222222222 recall=1.0 ttft=2.4 reply='Delivered on March 17, 2025 at 8:00 PM' err=None
+09:49:56 mem0_cloud: q23/56 score=1.0 recall=1.0 ttft=2.5 reply='$75' err=None
+09:50:02 mem0_cloud: q24/56 score=1.0 recall=1.0 ttft=2.3 reply='KitchenHub' err=None
+09:50:08 mem0_cloud: q25/56 score=0.0 recall=1.0 ttft=2.3 reply='Delivered on March 17, 2025' err=None
+09:50:15 mem0_cloud: q26/56 score=1.0 recall=1.0 ttft=2.5 reply='$27' err=None
+09:50:20 mem0_cloud: q27/56 score=1.0 recall=1.0 ttft=2.3 reply='FitNest' err=None
+09:50:27 mem0_cloud: q28/56 score=0.2222222222222222 recall=1.0 ttft=2.5 reply='Shipped and expected to arrive on March 12, 2025' err=None
+09:50:34 mem0_cloud: q29/56 score=1.0 recall=1.0 ttft=2.4 reply='$89' err=None
+09:50:41 mem0_cloud: q30/56 score=1.0 recall=1.0 ttft=2.5 reply='StrideShop' err=None
+09:50:49 mem0_cloud: q31/56 score=0.33333333333333337 recall=1.0 ttft=2.5 reply='Refunded on March 16, 2025' err=None
+09:50:56 mem0_cloud: q32/56 score=1.0 recall=None ttft=2.5 reply='Not mentioned' err=None
+09:51:03 mem0_cloud: q33/56 score=1.0 recall=None ttft=2.5 reply='Not mentioned' err=None
+09:51:11 mem0_cloud: q34/56 score=0.5 recall=1.0 ttft=2.3 reply='$13 per month' err=None
+09:51:18 mem0_cloud: q35/56 score=0.5 recall=1.0 ttft=2.5 reply='$10 per month' err=None
+09:51:24 mem0_cloud: q36/56 score=1.0 recall=1.0 ttft=2.2 reply='60 Lake View' err=None
+09:51:30 mem0_cloud: q37/56 score=0.0 recall=1.0 ttft=2.2 reply='Latex' err=None
+09:51:37 mem0_cloud: q38/56 score=1.0 recall=1.0 ttft=2.0 reply='60 Lake View' err=None
+09:51:43 mem0_cloud: q39/56 score=1.0 recall=1.0 ttft=2.1 reply='Latex' err=None
+09:51:50 mem0_cloud: q40/56 score=0.0 recall=1.0 ttft=2.2 reply='5 Orchard Close' err=None
+09:51:57 mem0_cloud: q41/56 score=1.0 recall=1.0 ttft=2.2 reply='Shellfish' err=None
+09:52:04 mem0_cloud: q42/56 score=0.0 recall=None ttft=2.4 reply='60 Lake View' err=None
+09:52:10 mem0_cloud: q43/56 score=0.0 recall=1.0 ttft=2.5 reply='Not mentioned' err=None
+09:52:22 mem0_cloud: q44/56 score=0.0 recall=1.0 ttft=5.8 reply='Not mentioned' err=None
+09:52:28 mem0_cloud: q45/56 score=0.0 recall=1.0 ttft=2.5 reply='Casa Roja' err=None
+09:52:35 mem0_cloud: q46/56 score=1.0 recall=1.0 ttft=2.5 reply='March 30, 2025' err=None
+09:52:42 mem0_cloud: q47/56 score=1.0 recall=1.0 ttft=2.5 reply='8 April 2025' err=None
+09:52:50 mem0_cloud: q48/56 score=1.0 recall=1.0 ttft=2.5 reply='March 31, 2025' err=None
+09:52:56 mem0_cloud: q49/56 score=1.0 recall=1.0 ttft=2.4 reply='$114' err=None
+09:53:01 mem0_cloud: q50/56 score=1.0 recall=1.0 ttft=2.3 reply='$21' err=None
+09:53:08 mem0_cloud: q51/56 score=1.0 recall=1.0 ttft=2.5 reply='$123' err=None
+09:53:14 mem0_cloud: q52/56 score=1.0 recall=1.0 ttft=2.0 reply='05160 550299' err=None
+09:53:21 mem0_cloud: q53/56 score=0.0 recall=1.0 ttft=2.2 reply='60 Lake View' err=None
+09:53:27 mem0_cloud: q54/56 score=0.0 recall=1.0 ttft=2.1 reply='05160 550299' err=None
+09:53:34 mem0_cloud: q55/56 score=0.0 recall=1.0 ttft=2.2 reply='60 Lake View' err=None
+09:53:41 mem0_cloud: q56/56 score=0.6666666666666666 recall=1.0 ttft=2.5 reply='Vegan diet' err=None
