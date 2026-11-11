@@ -144,6 +144,24 @@ def test_unsupported_dates_are_removed_from_facts():
     assert remove_unsupported_dates("Ana flew on 3 June 2023.", "I flew on 13 June")[1] == 1
 
 
+def test_date_rule_reads_numeric_and_short_dates():
+    # Each of these was wrongly removed before: the source wrote the date as numbers or a short month.
+    kept = [
+        ("Grace has a boiler inspection on 25 May 2025 at 09:30.", "25/5/2025 09:30: boiler inspection @ Warmline Services"),
+        ("Dara asked to pick up Leo on 21 April 2025.", "could you grab leo from scouts on 21/4/2025"),
+        ("The rain jacket arrives on 26 March 2025.", "Good news, rain jacket ships today and arrives Mar 26."),
+        ("Grace has a tax meeting on 10 April 2025.", "10 Apr 4:45 pm: tax meeting @ Harbor Accounting"),
+        ("The vet visit is on 15 April 2025.", "vet visit, Tue 15 Apr 9:30 am, Oak Lane Vets"),
+        ("Dinner is on September 2, 2025.", "dinner on 2 Sept"),
+    ]
+    for fact, source in kept:
+        assert remove_unsupported_dates(fact, source) == (fact, 0), source
+    # Invented dates are still removed, whatever form the source uses.
+    assert remove_unsupported_dates("Grace's inspection is on 26 May 2025.", "25/5/2025 09:30: inspection")[1] == 1
+    assert remove_unsupported_dates("It arrives on 4 October 2025.", "arrives 10/4/2025")[1] == 1  # day first: 10 April
+    assert remove_unsupported_dates("It arrives on 16 March 2025.", "arrives Mar 26")[1] == 1
+
+
 def test_rewrite_prompt_has_resolved_date_and_not_message_date():
     llm = FakeLLM({"yesterday": "Ana went to Rome on 7 May 2023 and again on 2 January 2022."})
     system = DecoupledMemory(llm, fake_embed)

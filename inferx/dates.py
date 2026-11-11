@@ -73,13 +73,45 @@ def annotate(text: str, when: date | None) -> str:
     return RELATIVE.sub(lambda match: f"{match[0]} ({_resolve(match, when)})", text)
 
 
+MONTHS = {name: number for number, name in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+_MONTH_WORD = r"(?P<{}>jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?"
+_ORDINAL = r"(?:st|nd|rd|th)?"
+SOURCE_DATE = re.compile(
+    r"\b(?P<d1>\d{1,2})" + _ORDINAL + r"(?:\s+of)?\s+" + _MONTH_WORD.format("m1") + r"\b"
+    r"|\b" + _MONTH_WORD.format("m2") + r"\s+(?P<d2>\d{1,2})" + _ORDINAL + r"\b"
+    r"|\b(?P<d3>\d{1,2})/(?P<m3>\d{1,2})(?:/\d{2,4})?\b",  # numeric dates are day first, as in the data
+    re.I,
+)
+
+
+def stated_days(text: str) -> set[tuple[int, int]]:
+    """Every (day, month) a text states, in any common form: '21 April', 'Apr 21st', '21/4/2025'."""
+    days = set()
+    for match in SOURCE_DATE.finditer(text):
+        if match["d3"]:
+            day, month = int(match["d3"]), int(match["m3"])
+        else:
+            day = int(match["d1"] or match["d2"])
+            month = MONTHS[(match["m1"] or match["m2"]).lower()[:3]]
+        if 1 <= day <= 31 and 1 <= month <= 12:
+            days.add((day, month))
+    return days
+
+
 def remove_unsupported_dates(fact: str, source: str) -> tuple[str, int]:
-    """Drop full dates from a fact unless the (annotated) source states them."""
-    lowered = source.lower()
+    """Drop full dates from a fact unless the (annotated) source states the same day and month.
+
+    The source may write the date in any common form ('25/5/2025', 'May 25', '25 May'), so dates are
+    compared as (day, month), not as text. Only real month names are checked; anything else is kept.
+    """
+    stated = stated_days(source)
 
     def supported(match: re.Match) -> bool:
-        day, month = match["day"] or match["day2"], (match["month"] or match["month2"]).lower()
-        return bool(re.search(rf"\b{day} {month}\b|\b{month} {day}(?:st|nd|rd|th)?\b", lowered))
+        month = (match["month"] or match["month2"]).lower()[:3]
+        if month not in MONTHS:
+            return True
+        return (int(match["day"] or match["day2"]), MONTHS[month]) in stated
 
     pattern = re.compile(_LEAD_IN + FULL_DATE.pattern)
     removed = 0
