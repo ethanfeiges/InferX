@@ -1,0 +1,196 @@
+16:52:32 on_ac_power=True
+16:52:32 trained_plus: session 1 ready (0s idle work so far)
+16:52:35 trained_plus: session 2 ready (3s idle work so far)
+16:52:36 trained_plus: session 3 ready (3s idle work so far)
+16:52:36 trained_plus: session 4 ready (3s idle work so far)
+16:52:36 trained_plus: session 5 ready (3s idle work so far)
+16:52:36 trained_plus: session 6 ready (3s idle work so far)
+16:52:38 trained_plus: session 7 ready (5s idle work so far)
+16:52:40 trained_plus: session 8 ready (7s idle work so far)
+16:52:40 trained_plus: session 9 ready (7s idle work so far)
+16:52:42 trained_plus: session 10 ready (9s idle work so far)
+16:52:44 trained_plus: session 11 ready (11s idle work so far)
+16:52:44 trained_plus: session 12 ready (11s idle work so far)
+16:52:45 trained_plus: session 13 ready (12s idle work so far)
+16:52:50 trained_plus: session 14 ready (16s idle work so far)
+16:52:51 trained_plus: session 15 ready (18s idle work so far)
+16:52:51 trained_plus: session 16 ready (18s idle work so far)
+16:52:53 trained_plus: session 17 ready (20s idle work so far)
+16:52:53 trained_plus: session 18 ready (20s idle work so far)
+16:52:55 trained_plus: session 19 ready (21s idle work so far)
+16:52:56 trained_plus: session 20 ready (22s idle work so far)
+16:53:00 trained_plus: session 21 ready (27s idle work so far)
+16:53:02 trained_plus: session 22 ready (28s idle work so far)
+16:53:02 trained_plus: session 23 ready (28s idle work so far)
+16:53:02 trained_plus: session 24 ready (28s idle work so far)
+16:53:02 trained_plus: session 25 ready (28s idle work so far)
+16:53:03 trained_plus: session 26 ready (29s idle work so far)
+16:53:07 trained_plus: session 27 ready (32s idle work so far)
+16:53:09 trained_plus: session 28 ready (34s idle work so far)
+16:53:12 trained_plus: session 29 ready (37s idle work so far)
+16:53:12 trained_plus: session 30 ready (37s idle work so far)
+16:53:12 trained_plus: session 31 ready (37s idle work so far)
+16:53:12 trained_plus: session 32 ready (37s idle work so far)
+16:53:13 trained_plus: session 33 ready (39s idle work so far)
+16:53:14 trained_plus: session 34 ready (40s idle work so far)
+16:53:14 trained_plus: session 35 ready (40s idle work so far)
+16:53:16 trained_plus: session 36 ready (41s idle work so far)
+16:53:16 trained_plus: session 37 ready (41s idle work so far)
+16:53:19 trained_plus: session 38 ready (44s idle work so far)
+16:53:23 trained_plus: session 39 ready (48s idle work so far)
+16:53:25 trained_plus: session 40 ready (50s idle work so far)
+16:53:25 trained_plus: session 41 ready (50s idle work so far)
+16:53:25 trained_plus: session 42 ready (50s idle work so far)
+16:53:25 trained_plus: session 43 ready (50s idle work so far)
+16:53:27 trained_plus: session 44 ready (51s idle work so far)
+16:53:28 trained_plus: session 45 ready (52s idle work so far)
+16:53:29 trained_plus: session 46 ready (54s idle work so far)
+16:53:33 trained_plus: session 47 ready (58s idle work so far)
+16:53:33 trained_plus: session 48 ready (58s idle work so far)
+16:53:36 trained_plus: session 49 ready (61s idle work so far)
+16:53:36 trained_plus: session 50 ready (61s idle work so far)
+16:53:36 trained_plus: session 51 ready (61s idle work so far)
+16:53:38 trained_plus: session 52 ready (62s idle work so far)
+16:53:39 trained_plus: session 53 ready (63s idle work so far)
+16:53:42 trained_plus: session 54 ready (66s idle work so far)
+16:53:45 trained_plus: session 55 ready (69s idle work so far)
+16:53:49 trained_plus: session 56 ready (73s idle work so far)
+16:53:53 trained_plus: session 57 ready (77s idle work so far)
+16:53:53 trained_plus: session 58 ready (77s idle work so far)
+16:53:53 trained_plus: session 59 ready (77s idle work so far)
+16:53:54 trained_plus: session 60 ready (78s idle work so far)
+16:53:58 trained_plus: session 61 ready (81s idle work so far)
+16:53:59 trained_plus: session 62 ready (83s idle work so far)
+16:53:59 trained_plus: session 63 ready (83s idle work so far)
+16:53:59 trained_plus: session 64 ready (83s idle work so far)
+16:54:01 trained_plus: session 65 ready (84s idle work so far)
+16:54:05 trained_plus: session 66 ready (88s idle work so far)
+16:54:09 trained_plus: session 67 ready (92s idle work so far)
+16:54:14 trained_plus: session 68 ready (97s idle work so far)
+16:54:18 trained_plus: session 69 ready (101s idle work so far)
+16:54:23 trained_plus: session 70 ready (106s idle work so far)
+16:54:28 trained_plus: session 71 ready (111s idle work so far)
+16:54:29 trained_plus: session 72 ready (112s idle work so far)
+16:54:29 trained_plus: session 73 ready (112s idle work so far)
+16:54:29 trained_plus: session 74 ready (112s idle work so far)
+16:54:32 trained_plus: session 75 ready (115s idle work so far)
+16:54:34 trained_plus: session 76 ready (117s idle work so far)
+16:54:36 trained_plus: session 77 ready (118s idle work so far)
+16:54:36 trained_plus: session 78 ready (118s idle work so far)
+16:54:37 trained_plus: session 79 ready (119s idle work so far)
+16:54:43 trained_plus: session 80 ready (126s idle work so far)
+16:54:47 trained_plus: session 81 ready (130s idle work so far)
+16:54:50 trained_plus: session 82 ready (132s idle work so far)
+16:54:55 trained_plus: session 83 ready (137s idle work so far)
+16:55:00 trained_plus: session 84 ready (142s idle work so far)
+16:55:04 trained_plus: session 85 ready (146s idle work so far)
+16:55:19 trained_plus: session 86 ready (161s idle work so far)
+16:55:22 trained_plus: session 87 ready (163s idle work so far)
+16:55:22 trained_plus: session 88 ready (163s idle work so far)
+16:55:24 trained_plus: session 89 ready (166s idle work so far)
+16:55:26 trained_plus: session 90 ready (168s idle work so far)
+16:55:26 trained_plus: session 91 ready (168s idle work so far)
+16:55:26 trained_plus: session 92 ready (168s idle work so far)
+16:55:26 trained_plus: session 93 ready (168s idle work so far)
+16:55:28 trained_plus: session 94 ready (170s idle work so far)
+16:55:28 trained_plus: session 95 ready (170s idle work so far)
+16:55:28 trained_plus: session 96 ready (170s idle work so far)
+16:55:28 trained_plus: session 97 ready (170s idle work so far)
+16:55:28 trained_plus: session 98 ready (170s idle work so far)
+16:55:29 trained_plus: session 99 ready (171s idle work so far)
+16:55:30 trained_plus: session 100 ready (172s idle work so far)
+16:55:31 trained_plus: session 101 ready (172s idle work so far)
+16:55:31 trained_plus: session 102 ready (172s idle work so far)
+16:55:31 trained_plus: session 103 ready (172s idle work so far)
+16:55:31 trained_plus: session 104 ready (172s idle work so far)
+16:55:31 trained_plus: session 105 ready (172s idle work so far)
+16:55:33 trained_plus: session 106 ready (174s idle work so far)
+16:55:33 trained_plus: session 107 ready (174s idle work so far)
+16:55:34 trained_plus: session 108 ready (175s idle work so far)
+16:55:34 trained_plus: session 109 ready (175s idle work so far)
+16:55:34 trained_plus: session 110 ready (175s idle work so far)
+16:55:34 trained_plus: session 111 ready (175s idle work so far)
+16:55:35 trained_plus: session 112 ready (175s idle work so far)
+16:55:43 trained_plus: q1/83 score=0.5 recall=1.0 ttft=2.6 reply='June 5 at 11:00 am' err=None
+16:55:50 trained_plus: q2/83 score=1.0 recall=1.0 ttft=2.9 reply='Harbor Accounting' err=None
+16:55:58 trained_plus: q3/83 score=1.0 recall=1.0 ttft=3.0 reply='12 June 2025' err=None
+16:56:06 trained_plus: q4/83 score=0.4444444444444444 recall=1.0 ttft=2.8 reply='June 12, 2025, at 4:45 pm' err=None
+16:56:14 trained_plus: q5/83 score=0.4 recall=1.0 ttft=2.9 reply='Northside Physio, 14 June 2025 at 8:15 am' err=None
+16:56:22 trained_plus: q6/83 score=1.0 recall=1.0 ttft=2.9 reply='22 March 2025' err=None
+16:56:30 trained_plus: q7/83 score=0.4444444444444444 recall=1.0 ttft=2.8 reply='Sunday, 23 March at 4:45 pm' err=None
+16:56:40 trained_plus: q8/83 score=0.3636363636363636 recall=0.0 ttft=2.7 reply='Warmline Services, Sunday, 23 March 2025 at 4:45 p' err=None
+16:56:47 trained_plus: q9/83 score=0.7499999999999999 recall=1.0 ttft=2.8 reply='June 16, 2025, at noon' err=None
+16:56:56 trained_plus: q10/83 score=1.0 recall=1.0 ttft=2.7 reply='Oak Lane Vets' err=None
+16:57:04 trained_plus: q11/83 score=0.28571428571428575 recall=1.0 ttft=2.9 reply='Wed 30 Apr 2025' err=None
+16:57:14 trained_plus: q12/83 score=0.25 recall=1.0 ttft=2.9 reply='Wed 30 Apr at 8:15am' err=None
+16:59:10 trained_plus: q13/83 score=0.5 recall=0.0 ttft=11.7 reply='Bright Smile Dental on Wed 30 Apr at 8:15am' err=None
+16:59:45 trained_plus: q14/83 score=0.5714285714285715 recall=1.0 ttft=12.4 reply='27 May at 7pm' err=None
+17:00:16 trained_plus: q15/83 score=0.4 recall=1.0 ttft=10.7 reply='Elmwood School on Tuesday, 27 May, at 7pm' err=None
+17:00:43 trained_plus: q16/83 score=0.0 recall=None ttft=13.3 reply='June 16, 2025, at 12:45 pm' err=None
+17:00:50 trained_plus: q17/83 score=1.0 recall=None ttft=3.0 reply='Not mentioned' err=None
+17:00:58 trained_plus: q18/83 score=1.0 recall=1.0 ttft=2.7 reply='$118' err=None
+17:01:06 trained_plus: q19/83 score=1.0 recall=1.0 ttft=2.8 reply='TrailGear' err=None
+17:01:14 trained_plus: q20/83 score=0.0 recall=1.0 ttft=2.9 reply='Shipped and expected to arrive on 15 March 2025' err=None
+17:01:22 trained_plus: q21/83 score=1.0 recall=1.0 ttft=2.9 reply='$75' err=None
+17:01:29 trained_plus: q22/83 score=1.0 recall=1.0 ttft=2.9 reply='KitchenHub' err=None
+17:01:38 trained_plus: q23/83 score=0.0 recall=1.0 ttft=2.8 reply='Shipped and expected to arrive on 7 May 2025' err=None
+17:01:45 trained_plus: q24/83 score=1.0 recall=1.0 ttft=2.9 reply='$44' err=None
+17:01:52 trained_plus: q25/83 score=1.0 recall=1.0 ttft=2.9 reply='KitchenHub' err=None
+17:01:59 trained_plus: q26/83 score=0.16666666666666669 recall=1.0 ttft=2.7 reply='Shipped on 16 March 2025, arriving on Thursday, 20' err=None
+17:02:06 trained_plus: q27/83 score=0.0 recall=1.0 ttft=2.8 reply='Not mentioned' err=None
+17:02:14 trained_plus: q28/83 score=1.0 recall=1.0 ttft=2.9 reply='CaseCo' err=None
+17:02:22 trained_plus: q29/83 score=0.0 recall=1.0 ttft=2.9 reply='Out for delivery, expected by Thursday, 8 May 2025' err=None
+17:02:30 trained_plus: q30/83 score=1.0 recall=1.0 ttft=2.8 reply='$34' err=None
+17:02:37 trained_plus: q31/83 score=1.0 recall=1.0 ttft=2.9 reply='HomeBox' err=None
+17:02:45 trained_plus: q32/83 score=0.0 recall=1.0 ttft=3.0 reply='Expected delivery on May 18, 2025' err=None
+17:02:52 trained_plus: q33/83 score=1.0 recall=1.0 ttft=3.0 reply='$89' err=None
+17:02:59 trained_plus: q34/83 score=1.0 recall=1.0 ttft=2.9 reply='StrideShop' err=None
+17:03:07 trained_plus: q35/83 score=0.0 recall=1.0 ttft=2.9 reply='Expected arrival date of Wednesday, 7 May 2025' err=None
+17:03:14 trained_plus: q36/83 score=1.0 recall=None ttft=2.9 reply='Not mentioned' err=None
+17:03:21 trained_plus: q37/83 score=1.0 recall=None ttft=3.0 reply='Not mentioned' err=None
+17:03:43 trained_plus: q38/83 score=0.0 recall=1.0 ttft=3.6 reply='$14 monthly' err=None
+17:03:49 trained_plus: q39/83 score=1.0 recall=1.0 ttft=2.8 reply='$13' err=None
+17:03:56 trained_plus: q40/83 score=0.6666666666666666 recall=1.0 ttft=3.0 reply='$14 monthly' err=None
+17:04:05 trained_plus: q41/83 score=0.5 recall=1.0 ttft=2.9 reply='$8 per month' err=None
+17:04:12 trained_plus: q42/83 score=1.0 recall=1.0 ttft=2.9 reply='5 Orchard Close' err=None
+17:04:19 trained_plus: q43/83 score=0.6666666666666666 recall=1.0 ttft=2.9 reply='Cats and shellfish' err=None
+17:04:28 trained_plus: q44/83 score=1.0 recall=1.0 ttft=2.7 reply='5 Orchard Close' err=None
+17:04:34 trained_plus: q45/83 score=0.6666666666666666 recall=1.0 ttft=2.7 reply='Latex sensitivity' err=None
+17:04:41 trained_plus: q46/83 score=1.0 recall=1.0 ttft=3.0 reply='9 Mill Lane' err=None
+17:04:47 trained_plus: q47/83 score=1.0 recall=1.0 ttft=2.7 reply='shellfish' err=None
+17:04:55 trained_plus: q48/83 score=1.0 recall=1.0 ttft=2.9 reply='9 Mill Lane' err=None
+17:05:03 trained_plus: q49/83 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='Peanuts and cats' err=None
+17:05:10 trained_plus: q50/83 score=0.0 recall=1.0 ttft=2.8 reply='9 Mill Lane' err=None
+17:05:17 trained_plus: q51/83 score=0.0 recall=1.0 ttft=2.9 reply='Shellfish' err=None
+17:05:35 trained_plus: q52/83 score=1.0 recall=None ttft=2.9 reply='Not mentioned' err=None
+17:05:45 trained_plus: q53/83 score=1.0 recall=1.0 ttft=3.3 reply='The Green Table' err=None
+17:05:54 trained_plus: q54/83 score=1.0 recall=1.0 ttft=2.9 reply='17 May 2025' err=None
+17:06:01 trained_plus: q55/83 score=0.5714285714285715 recall=1.0 ttft=3.0 reply='Casa Roja on 17 May' err=None
+17:06:11 trained_plus: q56/83 score=1.0 recall=0.0 ttft=2.8 reply='17 May 2025' err=None
+17:06:18 trained_plus: q57/83 score=0.0 recall=1.0 ttft=3.0 reply='Old Mill on 7 June' err=None
+17:06:26 trained_plus: q58/83 score=1.0 recall=1.0 ttft=3.0 reply='7 June 2025' err=None
+17:06:35 trained_plus: q59/83 score=0.6666666666666666 recall=1.0 ttft=2.7 reply='Green Table on 25/3/2025' err=None
+17:06:42 trained_plus: q60/83 score=0.0 recall=0.0 ttft=3.1 reply='25/3/2025' err=None
+17:06:48 trained_plus: q61/83 score=0.5714285714285715 recall=1.0 ttft=2.6 reply='Sun 22 Jun 2025' err=None
+17:06:55 trained_plus: q62/83 score=1.0 recall=1.0 ttft=2.7 reply='28 April 2025' err=None
+17:07:02 trained_plus: q63/83 score=1.0 recall=1.0 ttft=2.5 reply='8 June 2025' err=None
+17:07:07 trained_plus: q64/83 score=1.0 recall=1.0 ttft=2.3 reply='11 April 2025' err=None
+17:07:18 trained_plus: q65/83 score=1.0 recall=1.0 ttft=2.7 reply='23 May 2025' err=None
+17:07:49 trained_plus: q66/83 score=1.0 recall=1.0 ttft=12.1 reply='25 June 2025' err=None
+17:08:15 trained_plus: q67/83 score=1.0 recall=1.0 ttft=11.4 reply='$175' err=None
+17:08:21 trained_plus: q68/83 score=1.0 recall=1.0 ttft=2.6 reply='$53' err=None
+17:08:27 trained_plus: q69/83 score=1.0 recall=1.0 ttft=2.6 reply='$132' err=None
+17:08:33 trained_plus: q70/83 score=1.0 recall=1.0 ttft=2.6 reply='$156' err=None
+17:08:39 trained_plus: q71/83 score=1.0 recall=1.0 ttft=2.5 reply='$41' err=None
+17:08:47 trained_plus: q72/83 score=1.0 recall=1.0 ttft=2.8 reply='$178' err=None
+17:08:55 trained_plus: q73/83 score=1.0 recall=1.0 ttft=2.6 reply='01219 273218' err=None
+17:09:02 trained_plus: q74/83 score=1.0 recall=1.0 ttft=2.9 reply='Civic Bank' err=None
+17:09:09 trained_plus: q75/83 score=1.0 recall=1.0 ttft=2.8 reply='08065 829225' err=None
+17:09:16 trained_plus: q76/83 score=0.6666666666666666 recall=1.0 ttft=2.8 reply='Dune Foods as a pilot' err=None
+17:09:24 trained_plus: q77/83 score=1.0 recall=1.0 ttft=2.6 reply='03994 193976' err=None
+17:09:30 trained_plus: q78/83 score=0.0 recall=1.0 ttft=2.6 reply='9 Mill Lane' err=None
+17:09:38 trained_plus: q79/83 score=1.0 recall=1.0 ttft=2.6 reply='05739 482641' err=None
+17:09:45 trained_plus: q80/83 score=0.6666666666666666 recall=0.0 ttft=2.8 reply='Apex Freight as a paramedic' err=None
+17:09:53 trained_plus: q81/83 score=1.0 recall=1.0 ttft=3.0 reply='06209 725095' err=None
+17:09:59 trained_plus: q82/83 score=1.0 recall=1.0 ttft=2.7 reply='Riverside Hospital' err=None
+17:10:07 trained_plus: q83/83 score=1.0 recall=1.0 ttft=2.7 reply='Vegan' err=None

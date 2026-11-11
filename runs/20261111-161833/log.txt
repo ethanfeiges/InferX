@@ -1,0 +1,81 @@
+16:18:33 on_ac_power=True
+16:18:42 trained_plus: session 1 ready (9s idle work so far)
+16:18:49 trained_plus: session 2 ready (16s idle work so far)
+16:18:54 trained_plus: session 3 ready (21s idle work so far)
+16:19:02 trained_plus: session 4 ready (29s idle work so far)
+16:19:09 trained_plus: session 5 ready (36s idle work so far)
+16:19:16 trained_plus: session 6 ready (43s idle work so far)
+16:19:17 trained_plus: session 7 ready (44s idle work so far)
+16:19:25 trained_plus: session 8 ready (52s idle work so far)
+16:19:29 trained_plus: session 9 ready (56s idle work so far)
+16:19:33 trained_plus: session 10 ready (59s idle work so far)
+16:19:36 trained_plus: session 11 ready (63s idle work so far)
+16:19:42 trained_plus: session 12 ready (69s idle work so far)
+16:19:47 trained_plus: session 13 ready (73s idle work so far)
+16:19:54 trained_plus: session 14 ready (81s idle work so far)
+16:19:56 trained_plus: session 15 ready (82s idle work so far)
+16:19:56 trained_plus: session 16 ready (82s idle work so far)
+16:19:58 trained_plus: session 17 ready (84s idle work so far)
+16:19:58 trained_plus: session 18 ready (84s idle work so far)
+16:20:01 trained_plus: session 19 ready (87s idle work so far)
+16:20:01 trained_plus: session 20 ready (87s idle work so far)
+16:20:05 trained_plus: session 21 ready (91s idle work so far)
+16:20:05 trained_plus: session 22 ready (91s idle work so far)
+16:20:09 trained_plus: session 23 ready (95s idle work so far)
+16:20:10 trained_plus: session 24 ready (96s idle work so far)
+16:20:10 trained_plus: session 25 ready (96s idle work so far)
+16:20:11 trained_plus: session 26 ready (97s idle work so far)
+16:20:11 trained_plus: session 27 ready (97s idle work so far)
+16:20:20 trained_plus: q1/53 score=0.5714285714285715 recall=1.0 ttft=2.8 reply='Sunday, 30 March 2025' err=None
+16:20:28 trained_plus: q2/53 score=0.4444444444444444 recall=1.0 ttft=2.4 reply='Sunday, 30 March at 9:30 am' err=None
+16:20:35 trained_plus: q3/53 score=0.5454545454545454 recall=0.0 ttft=2.2 reply='Oak Lane Vets, 30 March 2025, 9:30 am' err=None
+16:20:41 trained_plus: q4/53 score=0.7499999999999999 recall=1.0 ttft=2.1 reply='09:30 on 29 March 2025' err=None
+16:20:48 trained_plus: q5/53 score=0.5 recall=1.0 ttft=2.2 reply='Elmwood School on 29 March 2025' err=None
+16:20:55 trained_plus: q6/53 score=0.0 recall=1.0 ttft=2.2 reply='Not mentioned' err=None
+16:21:02 trained_plus: q7/53 score=0.4444444444444444 recall=1.0 ttft=2.1 reply='5 April 2023, at 9:30 am' err=None
+16:21:10 trained_plus: q8/53 score=0.5 recall=1.0 ttft=2.4 reply='Bright Smile Dental, 5 April 2023, at 9:30 am' err=None
+16:21:19 trained_plus: q9/53 score=0.3333333333333333 recall=1.0 ttft=2.8 reply='3 April 2025' err=None
+16:21:27 trained_plus: q10/53 score=0.5 recall=1.0 ttft=2.4 reply='3 April at 4:45 pm' err=None
+16:21:34 trained_plus: q11/53 score=0.4 recall=0.0 ttft=2.4 reply='Studio Nine on 3 April at 4:45 pm' err=None
+16:21:41 trained_plus: q12/53 score=1.0 recall=None ttft=2.3 reply='Not mentioned' err=None
+16:21:47 trained_plus: q13/53 score=1.0 recall=None ttft=2.2 reply='Not mentioned' err=None
+16:21:54 trained_plus: q14/53 score=1.0 recall=1.0 ttft=2.6 reply='$118' err=None
+16:22:00 trained_plus: q15/53 score=1.0 recall=1.0 ttft=2.4 reply='TrailGear' err=None
+16:22:08 trained_plus: q16/53 score=0.0 recall=1.0 ttft=2.7 reply='Expected delivery on March 18, 2025' err=None
+16:22:14 trained_plus: q17/53 score=1.0 recall=1.0 ttft=2.6 reply='$34' err=None
+16:22:21 trained_plus: q18/53 score=0.0 recall=1.0 ttft=2.3 reply='BrightEnergy' err=None
+16:22:29 trained_plus: q19/53 score=0.0 recall=1.0 ttft=2.2 reply='Expected to arrive on Wednesday, March 12, 2025' err=None
+16:22:36 trained_plus: q20/53 score=1.0 recall=1.0 ttft=2.6 reply='$27' err=None
+16:22:44 trained_plus: q21/53 score=1.0 recall=1.0 ttft=2.4 reply='FitNest' err=None
+16:22:53 trained_plus: q22/53 score=0.16666666666666669 recall=1.0 ttft=2.4 reply='Shipped on 11 March 2025, arrival expected on 12 M' err=None
+16:23:00 trained_plus: q23/53 score=1.0 recall=1.0 ttft=2.6 reply='$89' err=None
+16:23:06 trained_plus: q24/53 score=1.0 recall=1.0 ttft=2.6 reply='StrideShop' err=None
+16:23:12 trained_plus: q25/53 score=0.0 recall=1.0 ttft=2.4 reply='Delivered on 11 March 2025' err=None
+16:23:18 trained_plus: q26/53 score=1.0 recall=1.0 ttft=2.4 reply='$58' err=None
+16:23:23 trained_plus: q27/53 score=1.0 recall=1.0 ttft=2.2 reply='TrailGear' err=None
+16:23:29 trained_plus: q28/53 score=0.0 recall=1.0 ttft=2.4 reply='Expected delivery on March 18, 2025' err=None
+16:23:36 trained_plus: q29/53 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+16:23:42 trained_plus: q30/53 score=1.0 recall=None ttft=2.6 reply='Not mentioned' err=None
+16:23:48 trained_plus: q31/53 score=0.0 recall=1.0 ttft=2.4 reply='$11 per month' err=None
+16:23:55 trained_plus: q32/53 score=0.0 recall=1.0 ttft=2.6 reply='$5 per month' err=None
+16:24:02 trained_plus: q33/53 score=1.0 recall=1.0 ttft=2.6 reply='9 Mill Lane' err=None
+16:24:08 trained_plus: q34/53 score=1.0 recall=1.0 ttft=2.1 reply='shellfish' err=None
+16:24:14 trained_plus: q35/53 score=0.0 recall=1.0 ttft=2.4 reply='Not mentioned' err=None
+16:24:21 trained_plus: q36/53 score=0.0 recall=1.0 ttft=2.8 reply='shellfish' err=None
+16:24:29 trained_plus: q37/53 score=1.0 recall=1.0 ttft=2.6 reply='78 Station Road' err=None
+16:24:37 trained_plus: q38/53 score=1.0 recall=1.0 ttft=2.7 reply='Latex' err=None
+16:24:43 trained_plus: q39/53 score=0.0 recall=None ttft=2.6 reply='78 Station Road' err=None
+16:24:49 trained_plus: q40/53 score=0.0 recall=1.0 ttft=2.6 reply='Cafe Mira on 15 March 2025' err=None
+16:24:54 trained_plus: q41/53 score=1.0 recall=1.0 ttft=2.1 reply='15 March 2025' err=None
+16:25:02 trained_plus: q42/53 score=0.5714285714285715 recall=1.0 ttft=2.4 reply='Casa Roja on 2 April' err=None
+16:25:09 trained_plus: q43/53 score=1.0 recall=0.0 ttft=2.4 reply='2 April 2025' err=None
+16:25:14 trained_plus: q44/53 score=1.0 recall=1.0 ttft=2.1 reply='March 30, 2025' err=None
+16:25:20 trained_plus: q45/53 score=0.8571428571428571 recall=1.0 ttft=2.1 reply='Wednesday, 19 March, 2025' err=None
+16:25:26 trained_plus: q46/53 score=1.0 recall=1.0 ttft=2.6 reply='$110' err=None
+16:25:33 trained_plus: q47/53 score=1.0 recall=1.0 ttft=2.4 reply='$131' err=None
+16:25:39 trained_plus: q48/53 score=1.0 recall=1.0 ttft=2.6 reply='$33' err=None
+16:25:46 trained_plus: q49/53 score=1.0 recall=1.0 ttft=2.6 reply='04285 289166' err=None
+16:25:53 trained_plus: q50/53 score=1.0 recall=1.0 ttft=2.2 reply='Riverside Hospital' err=None
+16:26:01 trained_plus: q51/53 score=0.0 recall=1.0 ttft=2.6 reply='045 57 49 51 49' err=None
+16:26:07 trained_plus: q52/53 score=1.0 recall=1.0 ttft=2.7 reply='Civic Bank' err=None
+16:26:13 trained_plus: q53/53 score=1.0 recall=1.0 ttft=2.6 reply='vegetarian' err=None

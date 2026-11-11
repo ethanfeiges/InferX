@@ -1,0 +1,66 @@
+{
+  "trained_plus": {
+    "system": "trained_plus",
+    "questions_planned": 56,
+    "questions_answered": 56,
+    "errors": 0,
+    "score": 0.738,
+    "score_excluding_adversarial": 0.712,
+    "evidence_recall": 0.843,
+    "not_mentioned_rate": 0.089,
+    "by_category": {
+      "2": {
+        "n": 13,
+        "score": 0.67,
+        "evidence_recall": 0.846
+      },
+      "4": {
+        "n": 38,
+        "score": 0.726,
+        "evidence_recall": 0.842
+      },
+      "5": {
+        "n": 5,
+        "score": 1.0,
+        "evidence_recall": null
+      }
+    },
+    "ttft_s_median": 2.72,
+    "total_s_mean": 3.052,
+    "retrieval_ms_mean": 16.5,
+    "prompt_tokens_mean": 1255.679,
+    "cloud_calls": 11,
+    "cloud_bytes": 35188,
+    "memory_cloud_requests": 0,
+    "memory_cloud_bytes": 0,
+    "ingest_s": 1.8,
+    "idle_s": 104.6,
+    "idle": {
+      "processed": 59.0,
+      "add": 59.0,
+      "update": 19.0,
+      "none": 0.0,
+      "rejected": 0.0,
+      "core": 7.0,
+      "llm_calls": 61.0,
+      "errors": 0.0,
+      "llm_s": 103.1,
+      "dates_removed": 0.0,
+      "secrets_dropped": 11.0,
+      "secrets_by_rule": 0.0,
+      "asked_replaces": 2.0,
+      "llm_said_replaces": 1.0,
+      "unsure_store": 1.0,
+      "unsure_store_kept": 1.0
+    },
+    "store": {
+      "recall": 108,
+      "facts_active": 40,
+      "facts_superseded": 19,
+      "core": 7,
+      "queued": 0,
+      "outdated": 19
+    },
+    "llm_calls_total": 173
+  }
+}

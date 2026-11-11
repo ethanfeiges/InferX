@@ -127,7 +127,24 @@ Three additions, in the `trained_plus` system (`--plus-options` switches each of
 - The secret rules were written while looking at misses in these sets, so their score is optimistic.
 - A harder "different names block the update" rule was dropped: it also blocked real changes, such as a
   new employer (recall 0.86 → 0.76).
-- The phi numbers are a ceiling: phi must also leave the 15 correct cases alone. Runs with phi are queued.
+- The phi numbers are a ceiling: phi must also leave the 15 correct cases alone.
+
+**With phi (validation, all three additions on):**
+
+| | Long users (248 questions) | Short users (268 questions) |
+|---|---|---|
+| Correct: trained → trained_plus | 79.4% → **82.7%** | 84.3% → 84.3% |
+| Difference (95% interval) | +3.2 (−0.4 to +6.9) | 0.0 (−2.6 to +2.6) |
+| Stable facts correct | 86.2% → 89.7% | 90.5% → 92.1% |
+| Old value given (changed details) | 4 → 7 (of 83) | 1 → 4 (of 72) |
+| Updates sent to phi / phi said "replace" | 26 / 7 | 20 / 9 |
+
+- trained_plus is ahead on all three long users (+1.1, +3.7, +4.8), but the interval still touches zero.
+- The gain comes from fewer wrong replacements: evidence recall rises from 0.867 to 0.931, because facts
+  that were wrongly overwritten now stay.
+- The cost: phi says "replace" to only about a third of the unsure updates, so a few real changes are
+  missed and the old value comes back. phi is too cautious here; a better prompt or a lower band is the next fix.
+- The secret rules caught nothing extra in these runs: the trained head already dropped every secret (205 and 52).
 
 ### Fact quality
 
@@ -176,7 +193,7 @@ The check catches only 20 of 51 wrong answers. Nothing checks the cloud's reply.
 | Controller on the NPU | Built, checked; used in the final run |
 | Long-history comparison | Done |
 | mem0 on phi, mem0 cloud | Done |
-| `trained_plus` (generalization additions) | Built; validation runs in progress |
+| `trained_plus` (generalization additions) | Built and validated: +3.2 on long users, level on short users |
 | Letta, and a real cloud LLM for the cloud rule | Need a cloud LLM key (`INFERX_CLOUD_API_KEY`) |
 | Messages written by someone else | Needed |
 | Final comparison with packet capture (`scripts/run_final.sh`) | Written, not run |
