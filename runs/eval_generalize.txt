@@ -1,0 +1,20 @@
+Secret rules on their own (without the trained head)
+  val                  caught 52 of 52, false alarms 0 of 536
+  val_long             caught 205 of 205, false alarms 0 of 1447
+  handwritten_check    caught 5 of 5, false alarms 0 of 45
+  handwritten_check2   caught 2 of 2, false alarms 0 of 38
+  LoCoMo chat          false alarms 0 of 5882
+Owner guard (real updates found by the trained controller)
+  without  val                  precision 0.964 recall 0.931 (found 81, wrong 3, missed 6)
+  without  val_long             precision 0.879 recall 0.860 (found 80, wrong 11, missed 13)
+  without  handwritten_check    precision 0.900 recall 0.900 (found 9, wrong 1, missed 1)
+  without  handwritten_check2   precision 1.000 recall 0.571 (found 4, wrong 0, missed 3)
+  with     val                  precision 0.964 recall 0.931 (found 81, wrong 3, missed 6)
+  with     val_long             precision 0.920 recall 0.871 (found 81, wrong 7, missed 12)
+  with     handwritten_check    precision 0.900 recall 0.900 (found 9, wrong 1, missed 1)
+  with     handwritten_check2   precision 1.000 recall 0.571 (found 4, wrong 0, missed 3)
+Unsure updates (score within 0.2 of 0.7, or named things differ)
+  val                  phi asked 21 times; those cases hold 4 of the 9 update errors
+  val_long             phi asked 25 times; those cases hold 10 of the 19 update errors
+  handwritten_check    phi asked 4 times; those cases hold 1 of the 2 update errors
+  handwritten_check2   phi asked 3 times; those cases hold 0 of the 2 update errors

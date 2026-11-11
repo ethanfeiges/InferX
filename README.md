@@ -48,6 +48,7 @@ All use the same LLM, answer prompt and cloud rule. Only memory differs.
 | System | Memory | Who decides what's saved |
 |---|---|---|
 | **Trained** (proposed) | Facts + raw messages, outdated versions hidden | Small trained controller + rules |
+| **Trained plus** | Same as trained | Trained + secret format rules, owner guard, phi decides unsure updates |
 | **Rules** | Facts + raw messages | Keyword rules and similarity thresholds |
 | **Plain retrieval** | Every raw message, nothing replaced | Nobody (everything is kept) |
 | **Full context** | No store: only the latest ~3,000 tokens of messages | Nobody |
@@ -108,6 +109,23 @@ These favour trained: its fixes were designed by reading errors on these same us
 mem0's 2026 version can't run on phi at all: its prompt is too long (~9,500 tokens).
 **mem0 cloud also kept 19 of 22 one-time codes** sent to it; trained kept none.
 mem0 cloud covers users 0 and 1 so far; users 2 to 4 are running.
+
+### Making the controller generalize (no-LLM checks)
+
+Three additions, in the `trained_plus` system (`--plus-options` switches each off for ablations).
+`scripts/eval_generalize.py` measures them on labelled data without phi
+([output](runs/eval_generalize.txt)):
+
+| Addition | What it does | Effect on validation labels |
+|---|---|---|
+| Secret format rules (`inferx/sensitive.py`) | Drops card numbers (Luhn), IBANs (mod 97), passwords, PINs, one-time codes, SSNs, NI numbers, API keys | All 264 secrets caught, 0 false alarms in 2,066 messages and 5,882 LoCoMo messages |
+| Owner guard | A first-person message ("my new cell") can't replace someone else's fact | Long users: wrong replacements 11 → 7, no real update lost |
+| phi decides unsure updates | Update scores within 0.2 of the threshold, or updates between two differently named things, go to phi at idle time | Long users: 25 questions to phi, covering 10 of the 19 update errors |
+
+- The secret rules were written while looking at misses in these sets, so their score is optimistic.
+- A harder "different names block the update" rule was dropped: it also blocked real changes, such as a
+  new employer (recall 0.86 → 0.76).
+- The phi numbers are a ceiling: phi must also leave the 15 correct cases alone. Runs with phi are queued.
 
 ### Fact quality
 

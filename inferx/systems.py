@@ -13,8 +13,9 @@ from .controller import Decision, Thresholds, core_facts, decide, may_replace, v
 from .dates import annotate, parse_date, remove_unsupported_dates
 from .interface import Answer, MemorySystem, Message
 from .llm import LLMError, LocalLLM
-from .memory_classifier import Item, MemoryClassifier
+from .memory_classifier import Item, MemoryClassifier, different_item, different_owner
 from .scheduler import Scheduler
+from .sensitive import secret_kind
 from .store import Hit, MemoryStore
 
 REWRITE_SYSTEM = (
@@ -56,6 +57,17 @@ JUDGE_SYSTEM = (
     "Compare the new fact with the stored fact. Reply with one word. "
     "IGNORE if they say the same thing, UPDATE if the new fact replaces the stored fact, "
     "ADD if both should be kept."
+)
+# Only asked when the controller is unsure whether a new message replaces a stored one.
+REPLACES_SYSTEM = (
+    "Does the new message change or cancel what the earlier message said, so that the earlier message is "
+    "no longer true? Two different things of the same type (two flights, two subscriptions) do not "
+    "cancel each other. Reply with one word: YES or NO.\n"
+    "Examples:\n"
+    "Earlier: Sam: I teach at Elm School.\nNew: Sam: Started a new job at Northwind Labs!\nYES\n"
+    "Earlier: Sam's calendar: Dentist on 4 May at 10:00.\nNew: Sam's calendar: Dentist moved to 9 May.\nYES\n"
+    "Earlier: Sam's orders: StreamBox is $9 a month.\nNew: Sam's orders: Welcome to GymPlus, $30 a month.\nNO\n"
+    "Earlier: Sam's calendar: Flight BA117 to Oslo, 3 July.\nNew: Sam's calendar: Flight KL902 to Riga, 8 July.\nNO"
 )
 ENTITY = re.compile(r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*|\d{1,2} [A-Z][a-z]+ \d{4}|\d{4})\b")
 STOP = {
@@ -298,21 +310,55 @@ class TrainedMemory(DecoupledMemory):
     name = "trained"
 
     def __init__(self, llm: LocalLLM, embed: Callable[[str], np.ndarray], classifier: MemoryClassifier,
-                 budget: Budget = Budget(), k: int = 15, scheduler: Scheduler | None = None):
+                 budget: Budget = Budget(), k: int = 15, scheduler: Scheduler | None = None, *,
+                 secret_rules: bool = False, owner_guard: bool = False, ask_when_unsure: bool = False,
+                 replace_band: float = 0.2, store_band: float = 0.1):
+        """The keyword options are off by default, so earlier runs stay reproducible.
+
+        secret_rules: also drop messages whose format marks them as secret (inferx.sensitive).
+        owner_guard: a first-person message can't replace a fact someone else stated.
+        ask_when_unsure: phi decides at idle time when an update score is within replace_band of the
+            threshold, or when the controller would replace a memory that names something different.
+            Messages scored within store_band below the store threshold are queued too, and are kept only
+            if phi writes a fact for them.
+        """
         super().__init__(llm, embed, budget, k=k, scheduler=scheduler)
         self.classifier = classifier
+        if owner_guard and different_owner not in classifier.guards:
+            classifier.guards = classifier.guards + (different_owner,)
+        self.secret_rules, self.ask_when_unsure = secret_rules, ask_when_unsure
+        self.replace_band, self.store_band = replace_band, store_band
         self.active: list[Item] = []
         self.pending: dict = {}
-        self.dropped = 0
+        self.asks: dict[str, str] = {}  # new message id -> stored message phi is asked about
+        self.unsure_store: set[str] = set()
+        self.dropped = self.dropped_by_rule = 0
 
     def ingest(self, message: Message) -> None:
-        decision, vector = self.classifier.decide(message.speaker, message.text, self.active)
-        if decision.sensitive:
+        if self.ask_when_unsure:
+            threshold = max(self.classifier.store_threshold - self.store_band, 0.0)
+            decision, vector = self.classifier.decide(message.speaker, message.text, self.active, store_threshold=threshold)
+        else:
+            decision, vector = self.classifier.decide(message.speaker, message.text, self.active)
+        if decision.sensitive or (self.secret_rules and secret_kind(message.text)):
             self.dropped += 1  # a secret is never saved, not even as a raw message
+            self.dropped_by_rule += not decision.sensitive
             return
         rowid = self.store.add_message(message, self.embed(message.rendered))
         if not decision.store:
             return
+        unsure_store = (self.ask_when_unsure and decision.store_score is not None
+                        and decision.store_score < self.classifier.store_threshold)
+        if unsure_store:
+            self.unsure_store.add(message.id)
+            decision = replace(decision, replaces=None)  # an unsure message never replaces anything
+        elif self.ask_when_unsure and decision.candidate:
+            near = abs(decision.replace_score - self.classifier.replace_threshold) < self.replace_band
+            old = next((item for item in self.active if item.id == decision.candidate), None)
+            conflict = bool(decision.replaces and old and different_item(message.speaker, message.text, old))
+            if near or conflict:
+                self.asks[message.id] = decision.candidate
+                decision = replace(decision, replaces=None)  # decided at idle time instead
         if decision.replaces:
             self.store.mark_outdated(decision.replaces, message.id)
             self.active = [item for item in self.active if item.id != decision.replaces]
@@ -320,12 +366,37 @@ class TrainedMemory(DecoupledMemory):
         self.pending[message.id] = decision
         self.store.enqueue(rowid)
 
+    def _llm_says_replaces(self, old_id: str, message: Message, stats: dict) -> bool:
+        old = self.store.message(old_id)
+        if old is None:
+            return False
+        prompt = f"Earlier: {old.speaker}: {old.text}\nNew: {message.speaker}: {message.text}\nAnswer:"
+        try:
+            reply = self.llm.complete(REPLACES_SYSTEM, prompt, max_tokens=8)
+        except LLMError:
+            stats["errors"] += 1
+            return False  # keep both: the raw messages stay searchable
+        stats["llm_calls"] += 1
+        stats["llm_s"] += reply.total_s
+        words = reply.text.strip().upper().split()
+        return bool(words) and words[0].strip(".,!:") == "YES"
+
     def _process_queue(self) -> dict:
         stats = {"processed": 0, "add": 0, "update": 0, "none": 0, "rejected": 0, "core": 0, "llm_calls": 0, "errors": 0,
-                 "llm_s": 0.0, "dates_removed": 0, "secrets_dropped": self.dropped}
-        self.dropped = 0
+                 "llm_s": 0.0, "dates_removed": 0, "secrets_dropped": self.dropped, "secrets_by_rule": self.dropped_by_rule,
+                 "asked_replaces": 0, "llm_said_replaces": 0, "unsure_store": 0, "unsure_store_kept": 0}
+        self.dropped = self.dropped_by_rule = 0
         for queue_rowid, message in self.store.queued():
             decision = self.pending[message.id]
+            candidate = self.asks.pop(message.id, None)
+            if candidate and any(item.id == candidate for item in self.active):
+                stats["asked_replaces"] += 1
+                if self._llm_says_replaces(candidate, message, stats):
+                    stats["llm_said_replaces"] += 1
+                    self.store.mark_outdated(candidate, message.id)
+                    self.active = [item for item in self.active if item.id != candidate]
+                    decision = self.pending[message.id] = replace(decision, replaces=candidate)
+            unsure = message.id in self.unsure_store
             text = annotate(message.text, parse_date(message.date))
             system, prompt = REWRITE_SYSTEM, f"{message.speaker}: {text}"
             old = self.store.message(decision.replaces) if decision.replaces else None
@@ -352,6 +423,14 @@ class TrainedMemory(DecoupledMemory):
                 new_rowid = self.store.add_fact(fact, message.id, message.date, self.embed(fact))
             else:
                 stats["rejected"] += 1
+            if unsure:
+                # The controller wasn't sure this was worth keeping, so it stays only if phi found a fact in it.
+                self.unsure_store.discard(message.id)
+                stats["unsure_store"] += 1
+                if not new_rowid:
+                    self.active = [item for item in self.active if item.id != message.id]
+                    continue
+                stats["unsure_store_kept"] += 1
             if decision.kind == "core":
                 self.store.set_core(message.id, fact if new_rowid else f"{message.speaker}: {message.text}", message.id)
                 stats["core"] += 1
@@ -391,3 +470,18 @@ class TrainedMemory(DecoupledMemory):
                 if hit.source in outdated:
                     add(hit, True)
         return ordered
+
+
+class TrainedPlus(TrainedMemory):
+    """The trained controller with the additions meant to generalize beyond the training data:
+    secret format rules, the owner guard, and phi deciding the cases the controller is unsure about."""
+
+    name = "trained_plus"
+    OPTIONS = ("secret_rules", "owner_guard", "ask_when_unsure")
+
+    def __init__(self, llm: LocalLLM, embed: Callable[[str], np.ndarray], classifier: MemoryClassifier,
+                 budget: Budget = Budget(), options: tuple[str, ...] = OPTIONS, **kwargs):
+        unknown = set(options) - set(self.OPTIONS)
+        if unknown:
+            raise ValueError(f"unknown trained_plus options: {sorted(unknown)}")
+        super().__init__(llm, embed, classifier, budget, **{option: True for option in options}, **kwargs)

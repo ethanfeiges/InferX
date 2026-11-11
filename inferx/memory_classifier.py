@@ -24,6 +24,37 @@ WORD = re.compile(r"[a-z0-9$']+")
 THIRD_PARTY = re.compile(r"\bmy (sister|brother|mum|mom|dad|mother|father|friend|boss|partner|wife|husband|son|daughter|"
                          r"cousin|aunt|uncle|neighbou?r|colleague|parents|grandma|grandad|flatmate|roommate)\b", re.I)
 STOP = {"the", "a", "an", "is", "at", "on", "to", "for", "of", "in", "and", "your", "my", "i", "it", "now", "s"}
+# A first-person message is about its sender, so it can't change another person's fact.
+FIRST_PERSON = re.compile(r"\b(i|i'm|i've|i'll|me|my|mine)\b", re.I)
+# Names inside a sentence (a sentence's first word is capitalized anyway), and codes such as LH514.
+NAME = re.compile(r"(?<![.!?:]\s)(?<!^)\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*|\b[A-Z]{1,3}\d{2,5}\b")
+NOT_NAMES = {"I", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Monday", "Tuesday", "Wednesday", "Thursday",
+             "Friday", "Saturday", "Sunday", "January", "February", "March", "April", "May", "June", "July", "August",
+             "September", "October", "November", "December", "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep",
+             "Sept", "Oct", "Nov", "Dec"}
+
+
+def names(text: str, speakers: tuple[str, ...] = ()) -> set[str]:
+    """Proper names and codes in a message, leaving out dates and the people in the conversation."""
+    skip = {word for speaker in speakers for word in re.findall(r"[A-Z][a-z]+", speaker)}
+    found = set()
+    for match in NAME.findall(text.strip()):
+        words = [word for word in match.split() if word not in NOT_NAMES and word not in skip]
+        if words:
+            found.add(" ".join(words).lower())
+    return found
+
+
+def different_owner(new_speaker: str, new_text: str, old: "Item") -> bool:
+    """True when a first-person message would replace a fact someone else stated."""
+    return new_speaker != old.speaker and bool(FIRST_PERSON.search(new_text))
+
+
+def different_item(new_speaker: str, new_text: str, old: "Item") -> bool:
+    """True when both messages name something specific and they share no name, such as two different flights."""
+    speakers = (new_speaker, old.speaker)
+    new, stored = names(new_text, speakers), names(old.text, speakers)
+    return bool(new and stored and not new & stored)
 
 
 class LinearHead:
@@ -111,6 +142,10 @@ class Decision:
     kind: str | None
     sensitive: bool
     replaces: str | None
+    # How sure the heads were, for handing unsure decisions to the main LLM.
+    store_score: float | None = None
+    candidate: str | None = None  # the best replacement target, even below the threshold
+    replace_score: float | None = None
 
 
 class MemoryClassifier:
@@ -118,10 +153,12 @@ class MemoryClassifier:
 
     def __init__(self, embed: Callable[[str], np.ndarray], store: LinearHead, kind: LinearHead, sensitive: LinearHead,
                  replaces: LinearHead, replace_threshold: float = 0.5, candidates: int = 5,
-                 store_threshold: float = 0.5, sensitive_threshold: float = 0.5):
+                 store_threshold: float = 0.5, sensitive_threshold: float = 0.5, guards: tuple = ()):
         self.embed, self.store, self.kind, self.sensitive = embed, store, kind, sensitive
         self.replaces, self.replace_threshold, self.candidates = replaces, replace_threshold, candidates
         self.store_threshold, self.sensitive_threshold = store_threshold, sensitive_threshold
+        # Optional rules that rule out a replacement target, such as different_owner. Off by default.
+        self.guards = tuple(guards)
 
     @staticmethod
     def _yes(head, vector: np.ndarray) -> float:
@@ -131,23 +168,29 @@ class MemoryClassifier:
         scored = sorted(active, key=lambda item: -float(vector @ item.vector))
         return scored[: self.candidates]
 
-    def decide(self, speaker: str, text: str, active: list[Item]) -> tuple[Decision, np.ndarray]:
+    def decide(self, speaker: str, text: str, active: list[Item],
+               store_threshold: float | None = None) -> tuple[Decision, np.ndarray]:
+        """store_threshold overrides the tuned one, so a caller can also keep messages it is unsure about."""
         vector = self.embed(render(speaker, text))
         sensitive = self._yes(self.sensitive, vector) >= self.sensitive_threshold
-        if sensitive or self._yes(self.store, vector) < self.store_threshold:
-            return Decision(False, None, sensitive, None), vector
+        store_score = self._yes(self.store, vector)
+        if sensitive or store_score < (self.store_threshold if store_threshold is None else store_threshold):
+            return Decision(False, None, sensitive, None, store_score), vector
         kind = self.kind.predict(vector)[0]
-        best, best_score = None, self.replace_threshold
         # An event stays true once it has happened, and a fact can only replace a fact of its own kind.
         replaceable = [] if kind == "event" else [item for item in active if item.kind == kind]
         if THIRD_PARTY.search(text):
             replaceable = [item for item in replaceable if THIRD_PARTY.search(item.text)]
+        replaceable = [item for item in replaceable if not any(guard(speaker, text, item) for guard in self.guards)]
+        candidate, candidate_score = None, -1.0
         for item in self.nearest(vector, replaceable):
             features = pair_features(vector, item.vector, text, item.text, speaker, item.speaker)
             score = self._yes(self.replaces, features)
-            if score >= best_score:
-                best, best_score = item.id, score
-        return Decision(True, kind, False, best), vector
+            if score >= candidate_score:  # ties go to the later candidate, as before
+                candidate, candidate_score = item.id, score
+        best = candidate if candidate_score >= self.replace_threshold else None
+        return Decision(True, kind, False, best, store_score, candidate,
+                        candidate_score if candidate else None), vector
 
     def save(self, path: str | Path) -> None:
         np.savez(path, replace_threshold=self.replace_threshold, candidates=self.candidates,

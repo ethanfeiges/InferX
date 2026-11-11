@@ -29,7 +29,9 @@ from inferx.llm import LocalLLM  # noqa: E402
 from inferx.locomo import evidence_recall, load, score, sessions  # noqa: E402
 from inferx.memory_classifier import MemoryClassifier  # noqa: E402
 from inferx.cloud import CloudClient, CloudPolicy, user_env  # noqa: E402
-from inferx.systems import DecoupledMemory, FullContext, LocalMemory, PlainRetrieval, TrainedMemory  # noqa: E402
+from inferx.systems import (  # noqa: E402
+    DecoupledMemory, FullContext, LocalMemory, PlainRetrieval, TrainedMemory, TrainedPlus,
+)
 
 DEFAULT_MODEL = "qwen2.5-1.5b-instruct-qnn-npu:3"
 MAX_CONSECUTIVE_ERRORS = 3
@@ -181,6 +183,8 @@ def main():
                              "The cloud key is read from INFERX_CLOUD_API_KEY, mem0's from MEM0_API_KEY")
     parser.add_argument("--npu-controller", action="store_true",
                         help="run the trained controller (MiniLM and its decision heads) on the NPU")
+    parser.add_argument("--plus-options", default=",".join(TrainedPlus.OPTIONS),
+                        help="which additions trained_plus uses, for ablations: " + ", ".join(TrainedPlus.OPTIONS))
     args = parser.parse_args()
 
     run_dir = ROOT / "runs" / time.strftime("%Y%m%d-%H%M%S")
@@ -223,6 +227,9 @@ def main():
         "mem0_cloud": lambda llm, embed, budget: __import__("inferx.mem0_port", fromlist=["Mem0Cloud"]).Mem0Cloud(
             llm, embed, budget, allow_remote=args.allow_remote, run_id=f"inferx-{run_dir.name}-{args.conversation}"),
         "trained": lambda llm, embed, budget: TrainedMemory(llm, embed, load_controller(args.npu_controller, embed), budget),
+        "trained_plus": lambda llm, embed, budget: TrainedPlus(
+            llm, embed, load_controller(args.npu_controller, embed), budget,
+            options=tuple(option for option in args.plus_options.split(",") if option)),
     }
     def cloud_client():
         return CloudClient(args.cloud_url, args.cloud_model, user_env("INFERX_CLOUD_API_KEY"),

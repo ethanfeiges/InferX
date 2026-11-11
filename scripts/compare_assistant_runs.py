@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 
 from inferx.assistant_score import correct, out_of_date  # noqa: E402
 
-SYSTEMS = ["plain_retrieval", "full_context", "local_memory", "mem0_2025_local", "mem0_cloud", "decoupled", "trained"]
+SYSTEMS = ["plain_retrieval", "full_context", "local_memory", "mem0_2025_local", "mem0_cloud", "decoupled", "trained", "trained_plus"]
 
 
 def interval(differences):
