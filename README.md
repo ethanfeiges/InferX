@@ -2,7 +2,7 @@
 
 A personal assistant that remembers a phone's calendar, messages and purchases, running fully on a
 Snapdragon X Elite laptop. **A small trained controller decides what goes into memory; the main LLM
-(phi-3.5-mini) only writes facts and answers questions.** A Galaxy S25 build comes later.
+(phi-3.5-mini) only writes facts and answers questions.** The same setup also runs on a Galaxy S25.
 
 Speed and energy are not goals of the thesis.
 
