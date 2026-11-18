@@ -197,7 +197,7 @@ The check catches only 20 of 51 wrong answers. Nothing checks the cloud's reply.
 | Letta, and a real cloud LLM for the cloud rule | Need a cloud LLM key (`INFERX_CLOUD_API_KEY`) |
 | Messages written by someone else | Needed |
 | Final comparison with packet capture (`scripts/run_final.sh`) | Written, not run |
-| Galaxy S25 | Not started |
+| Galaxy S25 | phi-3.5-mini runs on the NPU (QAIRT 2.32, Genie); controller and bridge next |
 
 ## Setup (Windows ARM64)
 
