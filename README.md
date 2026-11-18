@@ -185,6 +185,20 @@ The check catches only 20 of 51 wrong answers. Nothing checks the cloud's reply.
 - **The controller misses some updates** (4 of 7 on hand-written check messages).
 - **Simulated data:** test messages written by someone else are still needed.
 
+### On the Galaxy S25
+
+phi-3.5-mini and the trained controller (MiniLM and its 4 heads) both run on the phone's NPU
+(Snapdragon 8 Elite, QAIRT 2.52), driven from the laptop over USB (`inferx/galaxy.py`, `--galaxy`).
+phi is Qualcomm's w4a16 build for the 8 Elite, a different compressed copy of the same model than
+Foundry's laptop build. Setup: `scripts/build_galaxy_models.py`.
+
+- **Controller:** the phone makes the same decision as the laptop's NPU on **all 2,240 messages** of the
+  8 validation users (store, kind, secret, replace), with store scores within 0.002
+  ([`scripts/galaxy_check.py`](scripts/galaxy_check.py), [output](runs/galaxy_check.txt)).
+- **End to end, short user 0:** the phone scores **46 of 55 (83.6%)**, the same as the laptop, with the same
+  memory work (58 facts written, 18 updates, 16 secrets dropped) and no old values. Answers differ on 8
+  questions, 4 each way, from phi's different build. The phone's phi asked the cloud for help more often (16 against 7).
+
 ## Status
 
 | Part | Status |
@@ -197,7 +211,7 @@ The check catches only 20 of 51 wrong answers. Nothing checks the cloud's reply.
 | Letta, and a real cloud LLM for the cloud rule | Need a cloud LLM key (`INFERX_CLOUD_API_KEY`) |
 | Messages written by someone else | Needed |
 | Final comparison with packet capture (`scripts/run_final.sh`) | Written, not run |
-| Galaxy S25 | phi-3.5-mini runs on the NPU (QAIRT 2.32, Genie); controller and bridge next |
+| Galaxy S25 | phi-3.5 and the controller run on the phone's NPU; decisions match the laptop on all 2,240 validation messages |
 
 ## Setup (Windows ARM64)
 

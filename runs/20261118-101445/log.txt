@@ -1,0 +1,82 @@
+10:14:45 on_ac_power=False
+10:14:59 trained: session 1 ready (3s idle work so far)
+10:15:03 trained: session 2 ready (7s idle work so far)
+10:15:12 trained: session 3 ready (15s idle work so far)
+10:15:43 trained: session 4 ready (41s idle work so far)
+10:16:03 trained: session 5 ready (57s idle work so far)
+10:16:03 trained: session 6 ready (57s idle work so far)
+10:16:12 trained: session 7 ready (64s idle work so far)
+10:16:12 trained: session 8 ready (64s idle work so far)
+10:16:18 trained: session 9 ready (68s idle work so far)
+10:16:26 trained: session 10 ready (75s idle work so far)
+10:16:44 trained: session 11 ready (89s idle work so far)
+10:17:07 trained: session 12 ready (109s idle work so far)
+10:17:32 trained: session 13 ready (128s idle work so far)
+10:17:47 trained: session 14 ready (140s idle work so far)
+10:17:51 trained: session 15 ready (144s idle work so far)
+10:18:02 trained: session 16 ready (153s idle work so far)
+10:18:19 trained: session 17 ready (167s idle work so far)
+10:18:37 trained: session 18 ready (181s idle work so far)
+10:18:37 trained: session 19 ready (181s idle work so far)
+10:18:45 trained: session 20 ready (187s idle work so far)
+10:19:08 trained: session 21 ready (206s idle work so far)
+10:19:12 trained: session 22 ready (209s idle work so far)
+10:19:13 trained: session 23 ready (209s idle work so far)
+10:19:13 trained: session 24 ready (209s idle work so far)
+10:19:13 trained: session 25 ready (209s idle work so far)
+10:19:16 trained: session 26 ready (212s idle work so far)
+10:19:28 trained: q1/55 score=0.0 recall=1.0 ttft=4.1 reply='3/4/2025 at 11:00 am' err=None
+10:19:40 trained: q2/55 score=0.4444444444444445 recall=1.0 ttft=4.8 reply='Riverside Dermatology on 3/4/2025 at 11:00 am' err=None
+10:19:53 trained: q3/55 score=0.18181818181818182 recall=1.0 ttft=4.5 reply='April 2, 2025 at noon at Warmline Services' err=None
+10:20:04 trained: q4/55 score=0.4 recall=1.0 ttft=4.0 reply='April 2 at noon at Warmline Services' err=None
+10:20:15 trained: q5/55 score=0.4444444444444445 recall=0.0 ttft=4.0 reply='Warmline Services on April 2 at noon' err=None
+10:20:28 trained: q6/55 score=0.4 recall=1.0 ttft=4.7 reply='Saturday, 12 April 2025, at 9:30 am' err=None
+10:20:40 trained: q7/55 score=0.6 recall=1.0 ttft=4.3 reply='Saturday, 12 April 2025, at 9:30 am' err=None
+10:20:52 trained: q8/55 score=0.33333333333333337 recall=0.0 ttft=4.9 reply='Studio Nine on Saturday, 12 April 2025, at 9:30 am' err=None
+10:21:05 trained: q9/55 score=0.4444444444444444 recall=1.0 ttft=4.4 reply='29 March 2025 at 2:15 pm' err=None
+10:21:17 trained: q10/55 score=0.6666666666666666 recall=1.0 ttft=4.5 reply='29 March 2025 at 2:15 pm' err=None
+10:21:29 trained: q11/55 score=0.3636363636363636 recall=0.0 ttft=4.8 reply='Northside Physio on 29 March 2025 at 2:15 pm' err=None
+10:21:41 trained: q12/55 score=0.5 recall=1.0 ttft=4.4 reply='Thursday, 27 March, at noon.' err=None
+10:21:54 trained: q13/55 score=0.5 recall=1.0 ttft=4.6 reply='Bright Smile Dental on Thursday, 27 March, at noon' err=None
+10:22:06 trained: q14/55 score=1.0 recall=None ttft=4.1 reply='Not mentioned in the memories provided.' err=None
+10:22:15 trained: q15/55 score=1.0 recall=None ttft=3.6 reply='Not mentioned' err=None
+10:22:25 trained: q16/55 score=1.0 recall=1.0 ttft=3.6 reply='$34' err=None
+10:22:37 trained: q17/55 score=1.0 recall=1.0 ttft=3.6 reply='HomeBox' err=None
+10:22:48 trained: q18/55 score=0.0 recall=1.0 ttft=4.7 reply='Arrived, with a scheduled delivery on Thursday, 20' err=None
+10:22:56 trained: q19/55 score=1.0 recall=1.0 ttft=3.6 reply='$27' err=None
+10:23:08 trained: q20/55 score=1.0 recall=1.0 ttft=3.7 reply='FitNest' err=None
+10:23:21 trained: q21/55 score=0.2222222222222222 recall=1.0 ttft=4.8 reply='Shipped and scheduled to arrive on 18 March 2025.' err=None
+10:23:32 trained: q22/55 score=1.0 recall=1.0 ttft=3.6 reply='$75' err=None
+10:23:41 trained: q23/55 score=1.0 recall=1.0 ttft=3.7 reply='KitchenHub' err=None
+10:23:52 trained: q24/55 score=0.6666666666666666 recall=1.0 ttft=3.6 reply='Refund processed' err=None
+10:24:02 trained: q25/55 score=1.0 recall=1.0 ttft=3.7 reply='$58' err=None
+10:24:12 trained: q26/55 score=1.0 recall=1.0 ttft=3.7 reply='TrailGear' err=None
+10:24:26 trained: q27/55 score=0.0 recall=1.0 ttft=5.8 reply='Out of date, as per the memories, the backpack was' err=None
+10:24:34 trained: q28/55 score=1.0 recall=1.0 ttft=3.5 reply='$44' err=None
+10:24:43 trained: q29/55 score=1.0 recall=1.0 ttft=3.7 reply='KitchenHub' err=None
+10:24:53 trained: q30/55 score=0.4 recall=1.0 ttft=4.0 reply='Returned with a refund processed.' err=None
+10:25:02 trained: q31/55 score=1.0 recall=None ttft=3.5 reply='Not mentioned' err=None
+10:25:11 trained: q32/55 score=1.0 recall=None ttft=3.5 reply='Not mentioned' err=None
+10:25:19 trained: q33/55 score=0.5 recall=1.0 ttft=3.6 reply='$9 per month' err=None
+10:25:32 trained: q34/55 score=0.0 recall=1.0 ttft=3.8 reply='$9 per month' err=None
+10:25:42 trained: q35/55 score=1.0 recall=1.0 ttft=3.7 reply='14 Birch Road' err=None
+10:25:54 trained: q36/55 score=1.0 recall=1.0 ttft=3.5 reply='Cats' err=None
+10:26:06 trained: q37/55 score=1.0 recall=1.0 ttft=3.9 reply='14 Birch Road' err=None
+10:26:17 trained: q38/55 score=1.0 recall=1.0 ttft=3.8 reply='Shellfish' err=None
+10:26:29 trained: q39/55 score=1.0 recall=1.0 ttft=3.7 reply='5 Orchard Close' err=None
+10:26:41 trained: q40/55 score=1.0 recall=1.0 ttft=3.7 reply='Peanuts' err=None
+10:26:53 trained: q41/55 score=1.0 recall=None ttft=3.8 reply='Not mentioned' err=None
+10:27:06 trained: q42/55 score=1.0 recall=1.0 ttft=4.1 reply='Cafe Mira' err=None
+10:27:19 trained: q43/55 score=0.6666666666666666 recall=1.0 ttft=4.6 reply='24 March, 2025' err=None
+10:27:31 trained: q44/55 score=1.0 recall=1.0 ttft=4.1 reply='Blue Door' err=None
+10:27:44 trained: q45/55 score=0.6666666666666666 recall=0.0 ttft=4.5 reply='9 March 2025' err=None
+10:27:56 trained: q46/55 score=1.0 recall=1.0 ttft=4.6 reply='3 April 2025' err=None
+10:28:08 trained: q47/55 score=0.0 recall=1.0 ttft=4.4 reply='1/4/2025' err=None
+10:28:19 trained: q48/55 score=0.4 recall=1.0 ttft=4.4 reply='$51 deduction from the account' err=None
+10:28:32 trained: q49/55 score=1.0 recall=1.0 ttft=3.9 reply='$97' err=None
+10:28:45 trained: q50/55 score=1.0 recall=1.0 ttft=4.2 reply='$101' err=None
+10:28:56 trained: q51/55 score=1.0 recall=1.0 ttft=4.8 reply='03951 404918' err=None
+10:29:08 trained: q52/55 score=1.0 recall=1.0 ttft=3.9 reply='Apex Freight' err=None
+10:29:19 trained: q53/55 score=1.0 recall=1.0 ttft=4.5 reply='04795 606567' err=None
+10:29:33 trained: q54/55 score=0.0 recall=0.0 ttft=4.4 reply='Apex Freight as a paramedic' err=None
+10:29:42 trained: q55/55 score=0.5 recall=1.0 ttft=4.3 reply='Ravi is vegetarian.' err=None
