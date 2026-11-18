@@ -146,12 +146,16 @@ def summarize(results, timings, idle, system, planned):
     }
 
 
-def load_controller(on_npu: bool, embed):
-    """The trained controller, on the CPU or with MiniLM and its decision heads on the NPU.
+def load_controller(on_npu: bool, embed, galaxy: bool = False):
+    """The trained controller on the CPU, with MiniLM and its decision heads on the laptop's NPU, or on the
+    Galaxy phone's NPU.
 
     Retrieval embeddings stay on the shared CPU embedder either way, so only memory decisions move.
     """
     heads = ROOT / "models/assistant_classifier/heads.npz"
+    if galaxy:
+        from inferx.galaxy import load_phone_controller
+        return load_phone_controller(heads, ROOT / "models/minilm_fp32/tokenizer.json")
     if not on_npu:
         return MemoryClassifier.load(heads, embed)
     from inferx.npu_classifier import NpuEmbedder, move_to_npu
@@ -161,7 +165,7 @@ def load_controller(on_npu: bool, embed):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", required=True)
+    parser.add_argument("--url", help="the local LLM server; not needed with --galaxy")
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--tokenizer", default=str(
         Path.home() / ".foundry/cache/models/Microsoft/qwen2.5-1.5b-instruct-qnn-npu-3/v3/tokenizer.json"))
@@ -185,7 +189,12 @@ def main():
                         help="run the trained controller (MiniLM and its decision heads) on the NPU")
     parser.add_argument("--plus-options", default=",".join(TrainedPlus.OPTIONS),
                         help="which additions trained_plus uses, for ablations: " + ", ".join(TrainedPlus.OPTIONS))
+    parser.add_argument("--galaxy", action="store_true",
+                        help="run phi-3.5 and the trained controller on the Galaxy phone's NPU over adb "
+                             "(see inferx/galaxy.py); --tokenizer must be phi-3.5's")
     args = parser.parse_args()
+    if not args.url and not args.galaxy:
+        parser.error("--url is required unless --galaxy is given")
 
     run_dir = ROOT / "runs" / time.strftime("%Y%m%d-%H%M%S")
     run_dir.mkdir(parents=True)
@@ -226,9 +235,9 @@ def main():
             llm, embed, budget),
         "mem0_cloud": lambda llm, embed, budget: __import__("inferx.mem0_port", fromlist=["Mem0Cloud"]).Mem0Cloud(
             llm, embed, budget, allow_remote=args.allow_remote, run_id=f"inferx-{run_dir.name}-{args.conversation}"),
-        "trained": lambda llm, embed, budget: TrainedMemory(llm, embed, load_controller(args.npu_controller, embed), budget),
+        "trained": lambda llm, embed, budget: TrainedMemory(llm, embed, load_controller(args.npu_controller, embed, args.galaxy), budget),
         "trained_plus": lambda llm, embed, budget: TrainedPlus(
-            llm, embed, load_controller(args.npu_controller, embed), budget,
+            llm, embed, load_controller(args.npu_controller, embed, args.galaxy), budget,
             options=tuple(option for option in args.plus_options.split(",") if option)),
     }
     def cloud_client():
@@ -236,8 +245,14 @@ def main():
                            allow_remote=args.allow_remote)
 
     for name in args.systems.split(","):
-        llm = LocalLLM(args.url, args.model, args.tokenizer)
+        if args.galaxy:
+            from inferx.galaxy import PhoneLLM
+            llm = PhoneLLM(args.tokenizer)
+        else:
+            llm = LocalLLM(args.url, args.model, args.tokenizer)
         system = factories[name](llm, embed, budget)
+        if args.galaxy and hasattr(getattr(system, "classifier", None), "prefetch"):
+            system.classifier.prefetch([m for _, _, messages in data for m in messages])
         if name == "local_memory":
             system.cloud = CloudPolicy(cloud_client(), "always")
         elif args.cloud == "gate":
