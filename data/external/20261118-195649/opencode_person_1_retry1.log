@@ -1,0 +1,422 @@
+﻿[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m← [0mWrite person_1.json
+Wrote file successfully.
+[0m
+## Objective
+- Create test-data JSON files `person_1.json` … `person_5.json` in `C:\Users\Lab User\external_writer\20261118-195649\` following `brief.md`: five clearly distinct phone-stream personas, each with 80–120 time-ordered items grouped by day and 25–40 questions.
+
+## Important Details
+- Brief rules: `store` true only for memorable items; `kind` is `"state"`/`"event"` and must be `null` when `store` is false; `replaces` points to an earlier item id; `sensitive` true for passwords, PINs, OTPs, card/bank numbers, ID numbers, API keys.
+- Required content: changing details (some multiple times), indirect changes, secrets, plenty of noise, other people’s details kept separate from owner’s.
+- Folder: `C:\Users\Lab User\external_writer\20261118-195649`.
+- Personas used: P3 Desmond Petersen, 63, Cape Town plumbing-shop owner; P4 Beatriz, 19, São Paulo design student/barista; P5 Siobhán, 47, Galway midwife.
+- Personas planned earlier: P1 Hannah, 31, UK UX designer, Manchester; P2 Aarti Sharma, 44, Jaipur chemistry teacher.
+- ID schemes: `p001`–`p109` (person 3), `b001`–`b102` (person 4), `s001`–`s115` (person 5).
+- Validation pattern used: PowerShell `Get-Content -LiteralPath 'person_N.json' -Raw | ConvertFrom-Json`, then checks for item/question counts, unique IDs, evidence/replaces references, chronology, and `store`/`kind` consistency.
+- `person_5.json` is UTF-8; owner reads correctly as `Siobhán`.
+
+## Work State
+### Completed
+- Read `brief.md`.
+- Wrote and validated `person_3.json`: 109 items, 38 questions; no bad evidence/replaces, chronological order OK, unique IDs OK.
+- Wrote and validated `person_4.json`: 102 items, 36 questions; same validation checks passed.
+- Wrote and validated `person_5.json`: 115 items, 38 questions; `items=115 questions=38`, evidence/replaces/order checks passed.
+- Post-write fixes applied: person 3 card-PIN contradiction removed and Q17 evidence corrected; person 4 deadline item changed to stored state and lab time changed to Wednesday; person 5 three questions corrected from `current` to `history`.
+
+### Active
+- (none) — the person 5 request is complete.
+
+### Blocked
+- `person_1.json` and `person_2.json` were requested, but their turns ended during planning with no visible write call; their existence/content is unconfirmed.
+
+## Next Move
+1. Check whether `person_1.json` and `person_2.json` exist in the folder.
+2. If missing, write them using the planned Hannah and Aarti personas and validate with the same PowerShell checks; if present, run the same count/label/evidence validation.
+
+## Relevant Files
+- `C:\Users\Lab User\external_writer\20261118-195649\brief.md`: source specification for all five files.
+- `C:\Users\Lab User\external_writer\20261118-195649\person_3.json`: Desmond, 109 items / 38 questions, validated.
+- `C:\Users\Lab User\external_writer\20261118-195649\person_4.json`: Beatriz, 102 items / 36 questions, validated.
+- `C:\Users\Lab User\external_writer\20261118-195649\person_5.json`: Siobhán, 115 items / 38 questions, validated.
+- `C:\Users\Lab User\external_writer\20261118-195649\person_1.json`, `person_2.json`: expected but unconfirmed.
+Continue if you have next steps, or stop and ask for clarification if you are unsure how to proceed.
+[0m$ [0m$j = Get-Content -LiteralPath 'person_1.json' -Raw | ConvertFrom-Json
+$items = @($j.items); $qs = @($j.questions)
+"owner=$($j.owner) items=$($items.Count) questions=$($qs.Count)"
+$ids = @($items | ForEach-Object { $_.id })
+"unique_ids=$((@($ids | Sort-Object -Unique)).Count)"
+$dupe = $ids | Group-Object | Where-Object { $_.Count -gt 1 }
+if ($dupe) { "DUPLICATE IDS: $($dupe.Name -join ',')" } else { "no_duplicate_ids=True" }
+$idSet = @{}; $items | ForEach-Object { $idSet[$_.id] = $_ }
+$badRep = @(); $items | ForEach-Object { if ($_.replaces -ne $null) { $r = $_.replaces; if (-not $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet[$r].day -ge $_.day -and $idSet[$r].time -ge $_.time) { } } }
+if ($badRep.Count) { "BAD_REPLACES: $($badRep -join ', ')" } else { "all_replaces_exist=True" }
+$badEv = @()
+foreach ($q in $qs) { foreach ($e in @($q.evidence)) { if (-not $idSet.ContainsKey($e)) { $badEv += "$($q.question)->$e" } } }
+if ($badEv.Count) { "BAD_EVIDENCE: $($badEv -join '; ')" } else { "all_evidence_exist=True" }
+$order = $true
+for ($i = 1; $i -lt $items.Count; $i++) { $a=$items[$i-1]; $b=$items[$i]; if (($b.day -lt $a.day) -or (($b.day -eq $a.day) -and ($b.time -lt $a.time))) { $order=$false; "OUT_OF_ORDER at $($b.id): $($a.day) $($a.time) -> $($b.day) $($b.time)" } }
+"chronological=$order"
+"stored=$((@($items | Where-Object {$_.store})).Count) noise=$((@($items | Where-Object {-not $_.store})).Count) sensitive=$((@($items | Where-Object {$_.sensitive})).Count)"
+$badKind = @(); $items | ForEach-Object { if ($_.store) { if ($_.kind -ne 'state' -and $_.kind -ne 'event') { $badKind += $_.id } } else { if ($_.kind -ne $null) { $badKind += $_.id } } }
+if ($badKind.Count) { "BAD_KIND: $($badKind -join ',')" } else { "store_kind_consistent=True" }
+$types = $qs | Group-Object type | ForEach-Object { "$($_.Name)=$($_.Count)" }
+"types: $($types -join ', ')"
+owner=Hannah items=112 questions=39
+unique_ids=112
+no_duplicate_ids=True
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:9 char:153
++ ... $idSet.ContainsKey($r)) { $badRep += "$($_.id)->$r" }; elseif ($idSet ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+all_replaces_exist=True
+all_evidence_exist=True
+chronological=True
+stored=91 noise=21 sensitive=7
+store_kind_consistent=True
+types: current=11, history=21, stable=4, unanswerable=3
+[0m
+[0m← [0mEdit person_1.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_1.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_1.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_1.json
+@@ -135,9 +135,9 @@
+ {"question": "When was the Lisbon flight originally booked for?", "answer": "20 October at 07:15.", "evidence": ["h021"], "stale_answer": null, "type": "history"},
+ {"question": "When was the return flight from Lisbon?", "answer": "24 October at 19:40.", "evidence": ["h021", "h099"], "stale_answer": null, "type": "history"},
+ {"question": "Where was Dad's birthday lunch actually held?", "answer": "At Mum and Dad's house.", "evidence": ["h052", "h067"], "stale_answer": "The Crown.", "type": "history"},
+ {"question": "Who came to stay on 16 October?", "answer": "Ellie came on her own; Tom did not come.", "evidence": ["h072", "h091"], "stale_answer": "Ellie and Tom were both expected.", "type": "history"},
+-{"question": "When is Hannah's mum's birthday?", "answer": "22 November.", "evidence": ["h068", "h102", "h110"], "stale_answer": "2 November.", "type": "stable"},
++{"question": "When is Hannah's mum's birthday?", "answer": "22 November.", "evidence": ["h068", "h102", "h110"], "stale_answer": null, "type": "stable"},
+ {"question": "When was the car serviced, and what did it cost?", "answer": "13 October; it cost £285.", "evidence": ["h063", "h088", "h089"], "stale_answer": "6 October.", "type": "history"},
+ {"question": "When does Hannah's BT broadband contract end?", "answer": "12 November 2026.", "evidence": ["h065"], "stale_answer": null, "type": "history"},
+ {"question": "How much is the council tax at the new flat?", "answer": "£142 a month from November.", "evidence": ["h104"], "stale_answer": null, "type": "current"},
+ {"question": "When was the last book club meeting?", "answer": "29 October at 19:30.", "evidence": ["h079", "h101"], "stale_answer": null, "type": "history"},
+System.Management.Automation.RemoteException
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_1.json' -Raw | ConvertFrom-Json
+$items = @($j.items); $qs = @($j.questions)
+"owner=$($j.owner) items=$($items.Count) questions=$($qs.Count)"
+$ids = @($items | ForEach-Object { $_.id })
+"unique_ids=$((@($ids | Sort-Object -Unique)).Count)"
+$idSet = @{}; $idx = @{}; for ($i=0; $i -lt $items.Count; $i++) { $idSet[$items[$i].id] = $items[$i]; $idx[$items[$i].id] = $i }
+$badRep = @(); $nonEarlier = @()
+foreach ($it in $items) { if ($null -ne $it.replaces) { if (-not $idSet.ContainsKey($it.replaces)) { $badRep += "$($it.id)->$($it.replaces)" } elseif ($idx[$it.replaces] -ge $idx[$it.id]) { $nonEarlier += "$($it.id)->$($it.replaces)" } } }
+if ($badRep.Count) { "MISSING_REPLACES: $($badRep -join ', ')" } else { "all_replaces_exist=True" }
+if ($nonEarlier.Count) { "NOT_EARLIER: $($nonEarlier -join ', ')" } else { "all_replaces_earlier=True" }
+$badEv = @(); foreach ($q in $qs) { foreach ($e in @($q.evidence)) { if (-not $idSet.ContainsKey($e)) { $badEv += "$($q.question)->$e" } } }
+if ($badEv.Count) { "BAD_EVIDENCE: $($badEv -join '; ')" } else { "all_evidence_exist=True" }
+$order = $true; for ($i = 1; $i -lt $items.Count; $i++) { $a=$items[$i-1]; $b=$items[$i]; if (($b.day -lt $a.day) -or (($b.day -eq $a.day) -and ($b.time -lt $a.time))) { $order=$false; "OUT_OF_ORDER $($b.id)" } }
+"chronological=$order"
+"stored=$((@($items | Where-Object {$_.store})).Count) noise=$((@($items | Where-Object {-not $_.store})).Count) sensitive=$((@($items | Where-Object {$_.sensitive})).Count)"
+$badKind = @(); $items | ForEach-Object { if ($_.store) { if ($_.kind -ne 'state' -and $_.kind -ne 'event') { $badKind += $_.id } } else { if ($null -ne $_.kind) { $badKind += $_.id } } }
+if ($badKind.Count) { "BAD_KIND: $($badKind -join ',')" } else { "store_kind_consistent=True" }
+$badStale = @(); $items | ForEach-Object { }
+foreach ($q in $qs) { if ($null -ne $q.stale_answer -and @($q.evidence).Count -eq 0) { $badStale += $q.question } }
+if ($badStale.Count) { "STALE_WITHOUT_EVIDENCE: $($badStale -join '; ')" } else { "stale_answers_have_evidence=True" }
+$types = $qs | Group-Object type | ForEach-Object { "$($_.Name)=$($_.Count)" }
+"types: $($types -join ', ')"
+owner=Hannah items=112 questions=39
+unique_ids=112
+all_replaces_exist=True
+all_replaces_earlier=True
+all_evidence_exist=True
+chronological=True
+stored=91 noise=21 sensitive=7
+store_kind_consistent=True
+stale_answers_have_evidence=True
+types: current=11, history=21, stable=4, unanswerable=3
+[0m
+[0m$ [0mGet-Content -LiteralPath 'brief.md' -Raw
+# Brief for the external writer (draft: edit freely)
+System.Management.Automation.RemoteException
+You are writing test data for a personal assistant that runs on a phone. The assistant reads what
+lands on the phone (calendar entries, messages, emails, order and delivery updates, notes, bank and app
+notifications) and later answers questions about the owner's life. We want to see whether it keeps up
+when details change.
+System.Management.Automation.RemoteException
+## What to write
+System.Management.Automation.RemoteException
+Write 5 people. For each person, write their phone's stream over about 2 to 4 months: 80 to 120 items,
+in time order, grouped into days.
+System.Management.Automation.RemoteException
+- Make each person different: age, job, country, family, how they write.
+- Mix the sources. Write each item the way that source would, including short, messy or informal texts.
+- Over the period, many details should change: plans rescheduled or cancelled, a new address, phone number,
+  job, doctor, flight, delivery date, price, password, and so on. Some details change more than once.
+  Some changes should be stated indirectly, in a way a person would understand but a keyword search might miss.
+- Some items should contain a secret: a password, PIN, one-time code, card or bank number, ID number,
+  or API key.
+- Include plenty of items that are not worth remembering.
+- Other people appear too. Their details should not be confused with the owner's.
+System.Management.Automation.RemoteException
+## Labels for each item
+System.Management.Automation.RemoteException
+- `store`: true if a good assistant should remember this item, false if not.
+- `kind`: "state" if it says what is currently true and could change later (an appointment time, an address);
+  "event" if it says something happened (a purchase, a finished trip). null if `store` is false.
+- `replaces`: the `id` of the earlier item this one makes out of date, or null.
+- `sensitive`: true if the item contains a secret as listed above.
+System.Management.Automation.RemoteException
+## Questions for each person
+System.Management.Automation.RemoteException
+Write 25 to 40 questions someone might later ask the assistant, with the correct answer as of the end of the
+period and the `id`s of the items that support it. For a question about a detail that changed, also give the
+old answer in `stale_answer`. Include a few questions about earlier versions ("What was the dentist appointment
+first set for?") and a few that cannot be answered from the items (answer: "not mentioned").
+System.Management.Automation.RemoteException
+## Output
+System.Management.Automation.RemoteException
+One JSON file per person, named person_1.json to person_5.json:
+System.Management.Automation.RemoteException
+```json
+{
+  "owner": "<first name>",
+  "items": [
+    {"id": "<unique>", "day": "<YYYY-MM-DD>", "time": "<HH:MM>", "source": "<calendar | message | email | order | note | bank | app>",
+     "speaker": "<who or what it comes from>", "text": "<the item>",
+     "store": true, "kind": "state", "replaces": null, "sensitive": false}
+  ],
+  "questions": [
+    {"question": "...", "answer": "...", "evidence": ["<id>"], "stale_answer": null, "type": "<current | history | stable | unanswerable>"}
+  ]
+}
+```
+System.Management.Automation.RemoteException
+Write everything yourself. Do not use or look for any existing files or datasets.
+[0m
+[0m← [0mEdit person_1.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_1.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_1.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_1.json
+@@ -1,9 +1,9 @@
+ {
+   "owner": "Hannah",
+   "items": [
+     {"id": "h001", "day": "2026-09-02", "time": "08:12", "source": "app", "speaker": "CycleSync", "text": "Morning Hannah — tomorrow's 7am spin with Marco is cancelled, studio floor being sanded. We've moved you to Friday 6:30am instead.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+-    {"id": "h002", "day": "2026-09-02", "time": "09:05", "source": "calendar", "speaker": "Hannah", "text": "Northwind kickoff — Tue 8 Sep, 10:00–11:00, Zoom.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "h002", "day": "2026-09-02", "time": "09:05", "source": "calendar", "speaker": "Hannah", "text": "Northwind kickoff — freelance UX project, Tue 8 Sep, 10:00–11:00, Zoom.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+     {"id": "h003", "day": "2026-09-02", "time": "12:47", "source": "message", "speaker": "Dan", "text": "Deposit went through in the end — bank flagged the £300 to Loaf but I approved it. We're skint till payday though 😅", "store": true, "kind": "event", "replaces": null, "sensitive": false},
+     {"id": "h004", "day": "2026-09-02", "time": "18:21", "source": "email", "speaker": "Loaf", "text": "Order LOAF-4471 confirmed — Lennox 3-seater in oat, £1,890. £300 deposit received. Estimated delivery 28 October; balance due on delivery.", "store": true, "kind": "event", "replaces": null, "sensitive": false},
+     {"id": "h005", "day": "2026-09-03", "time": "07:02", "source": "message", "speaker": "Ellie", "text": "Still ok to crash tomorrow? Your favourite sister is bringing the air mattress and the world's worst hangover xx", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+     {"id": "h006", "day": "2026-09-03", "time": "09:31", "source": "email", "speaker": "Northwind", "text": "Small change — kickoff is now Wednesday 9 September, 11:00. Same Zoom. Sorry for the shuffle.", "store": true, "kind": "state", "replaces": "h002", "sensitive": false},
+System.Management.Automation.RemoteException
+[0m
+[0m← [0mEdit person_1.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_1.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_1.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_1.json
+@@ -130,9 +130,9 @@
+ {"question": "When was the dentist appointment after it was first rescheduled?", "answer": "24 September at 14:00.", "evidence": ["h031"], "stale_answer": null, "type": "history"},
+ {"question": "When did Hannah finally see Dr Patel?", "answer": "5 November at 09:15.", "evidence": ["h058", "h106"], "stale_answer": "24 September at 14:00.", "type": "history"},
+ {"question": "When was the sofa originally expected?", "answer": "28 October.", "evidence": ["h004"], "stale_answer": null, "type": "history"},
+ {"question": "When was the sofa delivered?", "answer": "5 November, in the morning.", "evidence": ["h105", "h107"], "stale_answer": "It had been scheduled for 4 November.", "type": "history"},
+-{"question": "When did Hannah fly to Lisbon?", "answer": "19 October, departing 18:40.", "evidence": ["h075", "h094"], "stale_answer": "20 October at 07:15.", "type": "history"},
++{"question": "When did Hannah fly to Lisbon?", "answer": "19 October, departing 18:40.", "evidence": ["h075", "h094"], "stale_answer": "20 October at 18:40.", "type": "history"},
+ {"question": "When was the Lisbon flight originally booked for?", "answer": "20 October at 07:15.", "evidence": ["h021"], "stale_answer": null, "type": "history"},
+ {"question": "When was the return flight from Lisbon?", "answer": "24 October at 19:40.", "evidence": ["h021", "h099"], "stale_answer": null, "type": "history"},
+ {"question": "Where was Dad's birthday lunch actually held?", "answer": "At Mum and Dad's house.", "evidence": ["h052", "h067"], "stale_answer": "The Crown.", "type": "history"},
+ {"question": "Who came to stay on 16 October?", "answer": "Ellie came on her own; Tom did not come.", "evidence": ["h072", "h091"], "stale_answer": "Ellie and Tom were both expected.", "type": "history"},
+System.Management.Automation.RemoteException
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_1.json' -Raw | ConvertFrom-Json
+$items = @($j.items); $qs = @($j.questions)
+$ids = @($items | ForEach-Object { $_.id })
+$idSet = @{}; $idx = @{}; for ($i=0; $i -lt $items.Count; $i++) { $idSet[$items[$i].id] = $items[$i]; $idx[$items[$i].id] = $i }
+$badRep = @(); $nonEarlier = @()
+foreach ($it in $items) { if ($null -ne $it.replaces) { if (-not $idSet.ContainsKey($it.replaces)) { $badRep += "$($it.id)->$($it.replaces)" } elseif ($idx[$it.replaces] -ge $idx[$it.id]) { $nonEarlier += "$($it.id)->$($it.replaces)" } } }
+$badEv = @(); foreach ($q in $qs) { foreach ($e in @($q.evidence)) { if (-not $idSet.ContainsKey($e)) { $badEv += "$($q.question)->$e" } } }
+$order = $true; for ($i = 1; $i -lt $items.Count; $i++) { $a=$items[$i-1]; $b=$items[$i]; if (($b.day -lt $a.day) -or (($b.day -eq $a.day) -and ($b.time -lt $a.time))) { $order=$false } }
+$badKind = @(); $items | ForEach-Object { if ($_.store) { if ($_.kind -ne 'state' -and $_.kind -ne 'event') { $badKind += $_.id } } else { if ($null -ne $_.kind) { $badKind += $_.id } } }
+"owner=$($j.owner) items=$($items.Count) questions=$($qs.Count) unique_ids=$((@($ids | Sort-Object -Unique)).Count)"
+"replaces_ok=$([bool]($badRep.Count -eq 0 -and $nonEarlier.Count -eq 0)) evidence_ok=$([bool]($badEv.Count -eq 0)) chronological=$order store_kind_ok=$([bool]($badKind.Count -eq 0))"
+"stored=$((@($items | Where-Object {$_.store})).Count) noise=$((@($items | Where-Object {-not $_.store})).Count) sensitive=$((@($items | Where-Object {$_.sensitive})).Count)"
+$badRep; $nonEarlier; $badEv; $badKind
+owner=Hannah items=112 questions=39 unique_ids=112
+replaces_ok=True evidence_ok=True chronological=True store_kind_ok=True
+stored=91 noise=21 sensitive=7
+[0m
+Wrote `person_1.json` with 112 items and 39 questions for Hannah, a UK freelance UX designer. Validated JSON, unique IDs, chronology, replacement links, evidence IDs, and label consistency.

@@ -1,0 +1,60 @@
+﻿[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m← [0mWrite person_3.json
+Wrote file successfully.
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_3.json' -Raw | ConvertFrom-Json; "items=$($j.items.Count) questions=$($j.questions.Count) owner=$($j.owner)"; $ids = $j.items.id; "unique_ids=$(($ids | Sort-Object -Unique).Count)"; $bad = $j.questions.evidence | Where-Object { $_ -and ($ids -notcontains $_) }; "bad_evidence=$($bad -join ',')"
+items=109 questions=38 owner=Desmond
+unique_ids=109
+bad_evidence=
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_3.json' -Raw | ConvertFrom-Json; $ids = @($j.items.id); $badRep = $j.items | Where-Object { $_.replaces -and ($ids -notcontains $_.replaces) } | ForEach-Object { $_.id }; "bad_replaces=$($badRep -join ',')"; $prev=''; $orderOk=$true; foreach($i in $j.items){ $dt="$($i.day) $($i.time)"; if($prev -and $dt -lt $prev){ $orderOk=$false; "OUT_OF_ORDER $($i.id) $dt after $prev" }; $prev=$dt }; "order_ok=$orderOk"; "false_items=$(($j.items | Where-Object {-not $_.store}).Count)"; "sensitive=$(($j.items | Where-Object {$_.sensitive}).Count)"; "kinds=" + (($j.items | Group-Object kind | ForEach-Object { "$($_.Name)=$($_.Count)" }) -join ' ')
+bad_replaces=
+order_ok=True
+false_items=38
+sensitive=5
+kinds==38 state=51 event=20
+[0m
+[0m← [0mEdit person_3.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_3.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_3.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_3.json
+@@ -100,9 +100,9 @@
+ {"id": "p097", "day": "2026-11-02", "time": "08:40", "source": "message", "speaker": "Shop assistant", "text": "New shop is lekker. Customers can't find us though.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+ {"id": "p098", "day": "2026-11-03", "time": "11:30", "source": "email", "speaker": "Accountant Riaan", "text": "VAT return due 25 November. Amount R18,420.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "p099", "day": "2026-11-04", "time": "09:15", "source": "message", "speaker": "Yolanda", "text": "Your suit for Chantelle's thing is at the dry cleaners.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+ {"id": "p100", "day": "2026-11-05", "time": "10:20", "source": "email", "speaker": "Discovery Health", "text": "New medical aid card delivered to 18 Sunningdale Road.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+-{"id": "p101", "day": "2026-11-09", "time": "08:50", "source": "message", "speaker": "FNB Business", "text": "Your business card PIN was changed. If this wasn't you, call us.", "store": false, "kind": null, "replaces": null, "sensitive": false},
++{"id": "p101", "day": "2026-11-09", "time": "08:50", "source": "message", "speaker": "FNB Business", "text": "Card ending 7742: fuel purchase at Engen, R920.00.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+ {"id": "p102", "day": "2026-11-09", "time": "17:25", "source": "email", "speaker": "Cape Plumbing Wholesalers", "text": "Copper pipe prices up another 5% from 1 December.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "p103", "day": "2026-11-10", "time": "10:15", "source": "message", "speaker": "Yolanda", "text": "My birthday is Thursday, Des. Don't say I didn't remind you.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "p104", "day": "2026-11-10", "time": "13:50", "source": "app", "speaker": "DStv", "text": "Your payment failed. Please update your card details.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+ {"id": "p105", "day": "2026-11-11", "time": "19:40", "source": "note", "speaker": "Desmond", "text": "Yolanda's birthday 12 Nov — book Ons Huisie for 7pm.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+System.Management.Automation.RemoteException
+[0m
+[0m← [0mEdit person_3.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_3.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_3.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_3.json
+@@ -127,9 +127,9 @@
+ {"question": "When should Desmond repeat his blood tests?", "answer": "In three months, around January 2027.", "evidence": ["p075"], "stale_answer": null, "type": "current"},
+ {"question": "When did Desmond fly to Johannesburg?", "answer": "23 October, departing 07:45.", "evidence": ["p068", "p086"], "stale_answer": "22 October at 18:15.", "type": "history"},
+ {"question": "When was the Johannesburg flight originally booked for?", "answer": "23 October at 06:30.", "evidence": ["p043"], "stale_answer": null, "type": "history"},
+ {"question": "When was the return flight from Johannesburg?", "answer": "25 October at 18:45.", "evidence": ["p043", "p089"], "stale_answer": null, "type": "history"},
+-{"question": "Why did Desmond go to Johannesburg?", "answer": "For his grandson Liam's birthday party.", "evidence": ["p022", "p088"], "stale_answer": null, "type": "stable"},
++{"question": "Why did Desmond go to Johannesburg?", "answer": "For his grandson Liam's birthday party.", "evidence": ["p007", "p022", "p088"], "stale_answer": null, "type": "stable"},
+ {"question": "When was Liam's party first planned?", "answer": "24 October at 14:00.", "evidence": ["p007"], "stale_answer": null, "type": "history"},
+ {"question": "When was Liam's party actually held?", "answer": "25 October at 14:00.", "evidence": ["p022", "p088"], "stale_answer": "24 October at 14:00.", "type": "history"},
+ {"question": "How much did the new shop shelving cost?", "answer": "R42,600 including delivery.", "evidence": ["p009", "p011"], "stale_answer": null, "type": "stable"},
+ {"question": "When was the shelving delivered?", "answer": "2 October.", "evidence": ["p052", "p060", "p061"], "stale_answer": "1 October.", "type": "history"},
+System.Management.Automation.RemoteException
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_3.json' -Raw | ConvertFrom-Json; "items=$($j.items.Count) questions=$($j.questions.Count)"; $ids=@($j.items.id); $bad=@($j.questions.evidence | Where-Object { $_ -and ($ids -notcontains $_) }); "bad_evidence=$($bad -join ',')"; $prev=''; $ok=$true; foreach($i in $j.items){$dt="$($i.day) $($i.time)"; if($prev -and $dt -lt $prev){$ok=$false}; $prev=$dt}; "order_ok=$ok"
+items=109 questions=38
+bad_evidence=
+order_ok=True
+[0m
+Wrote `person_3.json` with 109 items and 38 questions. Validated JSON, ID uniqueness, evidence links, replacements, and chronological order.

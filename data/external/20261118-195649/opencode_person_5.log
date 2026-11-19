@@ -1,0 +1,78 @@
+﻿[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m← [0mWrite person_5.json
+Wrote file successfully.
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_5.json' -Raw | ConvertFrom-Json; "items=$($j.items.Count) questions=$($j.questions.Count) owner=$($j.owner)"; $ids=@($j.items.id); "unique_ids=$(($ids|Sort-Object -Unique).Count)"; "bad_evidence=$((@($j.questions.evidence|Where-Object{$_ -and ($ids -notcontains $_)})-join ','))"; "bad_replaces=$((@($j.items|Where-Object{$_.replaces -and ($ids -notcontains $_.replaces)}|ForEach-Object{$_.id})-join ','))"; $badKind=@($j.items|Where-Object{($_.store -and -not $_.kind)-or((-not $_.store)-and $_.kind)}|ForEach-Object{$_.id}); "bad_kind=$($badKind -join ',')"; $prev=''; $ok=$true; foreach($i in $j.items){$dt="$($i.day) $($i.time)"; if($prev -and $dt -lt $prev){$ok=$false;"OUT $($i.id) $dt after $prev"}; $prev=$dt}; "order_ok=$ok"; "false=$(($j.items|Where-Object{-not $_.store}).Count) sensitive=$(($j.items|Where-Object{$_.sensitive}).Count)"
+items=115 questions=38 owner=SiobhA�n
+unique_ids=115
+bad_evidence=
+bad_replaces=
+bad_kind=
+order_ok=True
+false=46 sensitive=4
+[0m
+[0m← [0mEdit person_5.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_5.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_5.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_5.json
+@@ -132,9 +132,9 @@
+ {"question": "When was the mammogram first booked for?", "answer": "18 September at 11:00.", "evidence": ["s037"], "stale_answer": null, "type": "history"},
+ {"question": "When did the mammogram actually take place?", "answer": "25 September at 14:30.", "evidence": ["s039", "s053"], "stale_answer": "18 September at 11:00.", "type": "history"},
+ {"question": "What was the mammogram result?", "answer": "It was clear, with routine recall in two years.", "evidence": ["s102"], "stale_answer": null, "type": "current"},
+ {"question": "When was the dentist appointment originally?", "answer": "6 October at 09:30.", "evidence": ["s008"], "stale_answer": null, "type": "history"},
+-{"question": "When is the dentist appointment now?", "answer": "20 October at 15:00.", "evidence": ["s046"], "stale_answer": "6 October at 09:30.", "type": "current"},
++{"question": "When was the rescheduled dentist appointment?", "answer": "20 October at 15:00.", "evidence": ["s046"], "stale_answer": "6 October at 09:30.", "type": "history"},
+ {"question": "When did Siobhán fly to Spain?", "answer": "23 October, departing 19:40.", "evidence": ["s064", "s091"], "stale_answer": "24 October at 07:10.", "type": "history"},
+ {"question": "When was the return flight from Spain?", "answer": "31 October at 18:20.", "evidence": ["s076", "s099"], "stale_answer": "31 October at 21:30.", "type": "history"},
+ {"question": "How much did the hotel in Nerja cost?", "answer": "€728 for 23–31 October.", "evidence": ["s079"], "stale_answer": null, "type": "stable"},
+ {"question": "When was the new washing machine delivered?", "answer": "20 October.", "evidence": ["s073", "s087", "s088"], "stale_answer": "12 October.", "type": "history"},
+System.Management.Automation.RemoteException
+[0m
+[0m← [0mEdit person_5.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_5.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_5.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_5.json
+@@ -141,9 +141,9 @@
+ {"question": "When was the washing machine originally due?", "answer": "12 October.", "evidence": ["s033"], "stale_answer": null, "type": "history"},
+ {"question": "When was Cian's football final first scheduled?", "answer": "11 October.", "evidence": ["s012"], "stale_answer": null, "type": "history"},
+ {"question": "When was Cian's football final actually played?", "answer": "24 October at 15:00.", "evidence": ["s048", "s074", "s092"], "stale_answer": "11 October.", "type": "history"},
+ {"question": "When was Niamh's Irish dancing exam first planned?", "answer": "1 November.", "evidence": ["s009"], "stale_answer": null, "type": "history"},
+-{"question": "When is Niamh's Irish dancing exam?", "answer": "8 November at 10:00.", "evidence": ["s069", "s104", "s107"], "stale_answer": "1 November.", "type": "history"},
++{"question": "When was Niamh's Irish dancing exam?", "answer": "8 November at 10:00.", "evidence": ["s069", "s104", "s107"], "stale_answer": "1 November.", "type": "history"},
+ {"question": "How much deposit did St Brendan's ask for?", "answer": "€1,500.", "evidence": ["s045"], "stale_answer": null, "type": "stable"},
+ {"question": "What is Aoife's address in Cork?", "answer": "12 Victoria Cross Road, Cork T12 Y6W8.", "evidence": ["s005", "s043"], "stale_answer": null, "type": "stable"},
+ {"question": "What is the health insurance premium now?", "answer": "€1,980 from 1 November.", "evidence": ["s014"], "stale_answer": "€1,850.", "type": "current"},
+ {"question": "How much is the gym membership now?", "answer": "€49 a month from November.", "evidence": ["s071"], "stale_answer": null, "type": "current"},
+System.Management.Automation.RemoteException
+[0m
+[0m← [0mEdit person_5.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_5.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_5.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_5.json
+@@ -150,9 +150,9 @@
+ {"question": "How much is Netflix now?", "answer": "€19.99 a month.", "evidence": ["s006"], "stale_answer": "€17.99.", "type": "current"},
+ {"question": "When was the car serviced, and what did it cost?", "answer": "10 September; it cost €285.", "evidence": ["s020", "s022", "s023"], "stale_answer": null, "type": "history"},
+ {"question": "What is Siobhán's monthly salary?", "answer": "€3,240.", "evidence": ["s058"], "stale_answer": null, "type": "stable"},
+ {"question": "When does Siobhán's passport expire?", "answer": "12 January 2027.", "evidence": ["s078", "s113"], "stale_answer": null, "type": "stable"},
+-{"question": "When is the CNS interview?", "answer": "12 November at 11:00, HR room 2.", "evidence": ["s108", "s111"], "stale_answer": null, "type": "current"},
++{"question": "When was the CNS interview?", "answer": "12 November at 11:00, HR room 2.", "evidence": ["s108", "s111"], "stale_answer": null, "type": "history"},
+ {"question": "What is Declan's mobile number?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
+ {"question": "What is Siobhán's date of birth?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
+ {"question": "What is the hotel booking reference?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
+ {"question": "What is the phone extension for Ward 3?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"}
+System.Management.Automation.RemoteException
+[0m
+[0m→ [0mRead person_5.json[90m [limit=3][0m
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_5.json' -Raw -Encoding UTF8 | ConvertFrom-Json; "items=$($j.items.Count) questions=$($j.questions.Count)"; $ids=@($j.items.id); "bad_evidence=$((@($j.questions.evidence|Where-Object{$_ -and ($ids -notcontains $_)})-join ','))"; "bad_replaces=$((@($j.items|Where-Object{$_.replaces -and ($ids -notcontains $_.replaces)}|ForEach-Object{$_.id})-join ','))"; $prev=''; $ok=$true; foreach($i in $j.items){$dt="$($i.day) $($i.time)"; if($prev -and $dt -lt $prev){$ok=$false}; $prev=$dt}; "order_ok=$ok"
+items=115 questions=38
+bad_evidence=
+bad_replaces=
+order_ok=True
+[0m
+Wrote `person_5.json` with 115 items and 38 questions. Validated JSON, unique IDs, replacements, evidence links, labels, and chronological order.

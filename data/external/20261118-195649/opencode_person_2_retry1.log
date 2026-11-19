@@ -1,0 +1,101 @@
+﻿[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m← [0mWrite person_2.json
+Wrote file successfully.
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_2.json' -Raw | ConvertFrom-Json
+$items = @($j.items); $qs = @($j.questions)
+$ids = @($items | ForEach-Object { $_.id })
+$idSet = @{}; $idx = @{}; for ($i=0; $i -lt $items.Count; $i++) { $idSet[$items[$i].id] = $items[$i]; $idx[$items[$i].id] = $i }
+$badRep = @(); $nonEarlier = @()
+foreach ($it in $items) { if ($null -ne $it.replaces) { if (-not $idSet.ContainsKey($it.replaces)) { $badRep += "$($it.id)->$($it.replaces)" } elseif ($idx[$it.replaces] -ge $idx[$it.id]) { $nonEarlier += "$($it.id)->$($it.replaces)" } } }
+$badEv = @(); foreach ($q in $qs) { foreach ($e in @($q.evidence)) { if (-not $idSet.ContainsKey($e)) { $badEv += "$($q.question)->$e" } } }
+$order = $true; for ($i = 1; $i -lt $items.Count; $i++) { $a=$items[$i-1]; $b=$items[$i]; if (($b.day -lt $a.day) -or (($b.day -eq $a.day) -and ($b.time -lt $a.time))) { $order=$false; "OUT_OF_ORDER $($b.id): $($a.day) $($a.time) -> $($b.day) $($b.time)" } }
+$badKind = @(); $items | ForEach-Object { if ($_.store) { if ($_.kind -ne 'state' -and $_.kind -ne 'event') { $badKind += $_.id } } else { if ($null -ne $_.kind) { $badKind += $_.id } } }
+"owner=$($j.owner) items=$($items.Count) questions=$($qs.Count) unique_ids=$((@($ids | Sort-Object -Unique)).Count)"
+"all_replaces_exist=$([bool]($badRep.Count -eq 0)) all_replaces_earlier=$([bool]($nonEarlier.Count -eq 0)) all_evidence_exist=$([bool]($badEv.Count -eq 0)) chronological=$order store_kind_consistent=$([bool]($badKind.Count -eq 0))"
+"stored=$((@($items | Where-Object {$_.store})).Count) noise=$((@($items | Where-Object {-not $_.store})).Count) sensitive=$((@($items | Where-Object {$_.sensitive})).Count)"
+if ($badRep.Count) { "MISSING_REPLACES: $($badRep -join ', ')" }
+if ($nonEarlier.Count) { "NOT_EARLIER: $($nonEarlier -join ', ')" }
+if ($badEv.Count) { "BAD_EVIDENCE: $($badEv -join '; ')" }
+if ($badKind.Count) { "BAD_KIND: $($badKind -join ',')" }
+$types = $qs | Group-Object type | ForEach-Object { "$($_.Name)=$($_.Count)" }
+"types: $($types -join ', ')"
+owner=Aarti items=120 questions=38 unique_ids=120
+all_replaces_exist=True all_replaces_earlier=True all_evidence_exist=True chronological=True store_kind_consistent=True
+stored=94 noise=26 sensitive=4
+types: current=8, history=21, stable=6, unanswerable=3
+[0m
+[0m← [0mEdit person_2.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_2.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_2.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_2.json
+@@ -7,9 +7,9 @@
+ {"id": "a004", "day": "2026-09-01", "time": "12:25", "source": "email", "speaker": "School ERP", "text": "Your term login is ready. Username aarti.sharma; temporary password ChemLab#2026. Change it after first login.", "store": true, "kind": "state", "replaces": null, "sensitive": true},
+ {"id": "a005", "day": "2026-09-01", "time": "19:30", "source": "bank", "speaker": "HDFC Bank", "text": "UPI payment to BigBasket — ₹2,340.00.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+ {"id": "a006", "day": "2026-09-02", "time": "07:10", "source": "message", "speaker": "Vandana", "text": "Aarti, 12-B practical tomorrow at 10:00 in Lab 2. I've kept the burettes out. Bring the phenolphthalein.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "a007", "day": "2026-09-02", "time": "13:40", "source": "order", "speaker": "Amazon", "text": "Your order of laboratory glassware has shipped and will arrive Thursday.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+-{"id": "a008", "day": "2026-09-02", "time": "18:15", "source": "message", "speaker": "Mum", "text": "Bhaiya's wedding is fixed for 5 December in Udaipur. Start looking at trains now, rooms will vanish.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++{"id": "a008", "day": "2026-09-02", "time": "18:15", "source": "message", "speaker": "Mum", "text": "Cousin Bhaiya's wedding is fixed for 5 December in Udaipur. Start looking at trains now, rooms will vanish.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "a009", "day": "2026-09-03", "time": "09:00", "source": "calendar", "speaker": "Aarti", "text": "Staff meeting — 3:30pm, staff room.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "a010", "day": "2026-09-03", "time": "20:10", "source": "message", "speaker": "Rakesh", "text": "I'll take Kabir to football on Saturday so you can do the PTM without rushing.", "store": false, "kind": null, "replaces": null, "sensitive": false},
+ {"id": "a011", "day": "2026-09-04", "time": "08:05", "source": "email", "speaker": "Sunrise Public School", "text": "Class 12-B chemistry practical moved to Thursday 10 September, 11:30. Same syllabus.", "store": true, "kind": "state", "replaces": "a006", "sensitive": false},
+ {"id": "a012", "day": "2026-09-04", "time": "09:30", "source": "message", "speaker": "Dr Bansal Clinic", "text": "Your appointment with Dr Bansal is Monday 7 September at 5:00pm. Please come 10 minutes early.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+System.Management.Automation.RemoteException
+[0m
+[0m← [0mEdit person_2.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_2.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_2.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_2.json
+@@ -137,9 +137,9 @@
+ {"question": "When did the kitchen work actually start?", "answer": "17 October.", "evidence": ["a086", "a092"], "stale_answer": "14 October.", "type": "history"},
+ {"question": "When was the kitchen work first supposed to start?", "answer": "5 October.", "evidence": ["a035"], "stale_answer": null, "type": "history"},
+ {"question": "How much does the tiffin service cost now?", "answer": "₹5,200 a month from November.", "evidence": ["a108"], "stale_answer": "₹4,500 a month.", "type": "current"},
+ {"question": "What time is yoga class now, and what does it cost?", "answer": "6:30am, ₹2,000 a month.", "evidence": ["a111", "a113"], "stale_answer": "6:00am, ₹1,800 a month.", "type": "current"},
+-{"question": "When is Aarti's next appointment with Dr Bansal?", "answer": "5 November at 5:00pm.", "evidence": ["a087", "a116"], "stale_answer": "1 October at 5:30pm.", "type": "history"},
++{"question": "When was Aarti's appointment with Dr Bansal in November?", "answer": "5 November at 5:00pm.", "evidence": ["a087", "a116"], "stale_answer": "1 October at 5:30pm.", "type": "history"},
+ {"question": "When was the first dermatologist appointment set for?", "answer": "7 September at 5:00pm.", "evidence": ["a012"], "stale_answer": null, "type": "history"},
+ {"question": "When is the Diwali pooja?", "answer": "8 November at 7:00pm, at Aarti's house.", "evidence": ["a029", "a105", "a117"], "stale_answer": null, "type": "stable"},
+ {"question": "When did Rakesh's mother arrive, and how long is she staying?", "answer": "She arrived on 4 November at 06:30 and is staying until 20 November.", "evidence": ["a037", "a073", "a110", "a115"], "stale_answer": null, "type": "history"},
+ {"question": "When did Nisha visit?", "answer": "12 October, arriving at 09:10.", "evidence": ["a083"], "stale_answer": "She was expected at 07:40.", "type": "history"},
+System.Management.Automation.RemoteException
+[0m
+[0m← [0mEdit person_2.json
+Index: C:\Users\Lab User\external_writer\20261118-195649\person_2.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-195649\person_2.json
++++ C:\Users\Lab User\external_writer\20261118-195649\person_2.json
+@@ -159,7 +159,7 @@
+     {"question": "What was Aarti's old mobile number?", "answer": "98290 11234.", "evidence": ["a016"], "stale_answer": null, "type": "history"},
+     {"question": "What is Rakesh's mother's name?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
+     {"question": "Which school does Meera attend?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
+     {"question": "What is Aarti's monthly salary?", "answer": "₹68,000.", "evidence": ["a057", "a100"], "stale_answer": null, "type": "current"},
+-    {"question": "Who is Aarti's husband?", "answer": "Rakesh.", "evidence": ["a002", "a037"], "stale_answer": null, "type": "stable"}
++    {"question": "What is the name of Aarti's son?", "answer": "Kabir.", "evidence": ["a026", "a032"], "stale_answer": null, "type": "stable"}
+   ]
+ }
+System.Management.Automation.RemoteException
+[0m
+[0m$ [0m$j = Get-Content -LiteralPath 'person_2.json' -Raw | ConvertFrom-Json
+$items = @($j.items); $qs = @($j.questions)
+$ids = @($items | ForEach-Object { $_.id })
+$idSet = @{}; $idx = @{}; for ($i=0; $i -lt $items.Count; $i++) { $idSet[$items[$i].id] = $items[$i]; $idx[$items[$i].id] = $i }
+$badRep = @(); $nonEarlier = @()
+foreach ($it in $items) { if ($null -ne $it.replaces) { if (-not $idSet.ContainsKey($it.replaces)) { $badRep += "$($it.id)->$($it.replaces)" } elseif ($idx[$it.replaces] -ge $idx[$it.id]) { $nonEarlier += "$($it.id)->$($it.replaces)" } } }
+$badEv = @(); foreach ($q in $qs) { foreach ($e in @($q.evidence)) { if (-not $idSet.ContainsKey($e)) { $badEv += "$($q.question)->$e" } } }
+$order = $true; for ($i = 1; $i -lt $items.Count; $i++) { $a=$items[$i-1]; $b=$items[$i]; if (($b.day -lt $a.day) -or (($b.day -eq $a.day) -and ($b.time -lt $a.time))) { $order=$false } }
+$badKind = @(); $items | ForEach-Object { if ($_.store) { if ($_.kind -ne 'state' -and $_.kind -ne 'event') { $badKind += $_.id } } else { if ($null -ne $_.kind) { $badKind += $_.id } } }
+"owner=$($j.owner) items=$($items.Count) questions=$($qs.Count) unique_ids=$((@($ids | Sort-Object -Unique)).Count)"
+"all_replaces_exist=$([bool]($badRep.Count -eq 0)) all_replaces_earlier=$([bool]($nonEarlier.Count -eq 0)) all_evidence_exist=$([bool]($badEv.Count -eq 0)) chronological=$order store_kind_consistent=$([bool]($badKind.Count -eq 0))"
+"stored=$((@($items | Where-Object {$_.store})).Count) noise=$((@($items | Where-Object {-not $_.store})).Count) sensitive=$((@($items | Where-Object {$_.sensitive})).Count)"
+$types = $qs | Group-Object type | ForEach-Object { "$($_.Name)=$($_.Count)" }
+"types: $($types -join ', ')"
+owner=Aarti items=120 questions=38 unique_ids=120
+all_replaces_exist=True all_replaces_earlier=True all_evidence_exist=True chronological=True store_kind_consistent=True
+stored=94 noise=26 sensitive=4
+types: current=8, history=21, stable=6, unanswerable=3
+[0m
+Wrote `person_2.json` with 120 items and 38 questions for Aarti, a Jaipur chemistry teacher. Validated JSON, unique IDs, chronology, replacement links, evidence IDs, and label consistency.
