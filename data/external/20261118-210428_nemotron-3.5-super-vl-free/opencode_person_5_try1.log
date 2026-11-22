@@ -1,0 +1,21 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m← [0mWrite person_5.json
+Wrote file successfully.
+[0m
+[0m$ [0m$d = Get-Content person_5.json -Raw | ConvertFrom-Json; Write-Output ("items: " + $d.items.Count); Write-Output ("questions: " + $d.questions.Count); Write-Output "OK"
+items: 100
+questions: 27
+OK
+[0m
+person_5.json is written and valid (100 items, 27 questions).
+
+- **Owner**: Kwame, 28, software developer in Nairobi, Kenya — distinct from all previous people and the excluded list (different age, job, country, family, writing style).
+- **100 items** over ~3 months (Jan 15 – Apr 6, 2026), time-ordered, mixed sources (calendar, message, email, order, note, bank).
+- **Changing details**: address (Westlands → Kileleshwa), rent (KSh 48000 → KSh 52000), role/salary (Developer KSh 120000 → Senior Developer KSh 150000), bank card + PIN (1124→7782→4419), WiFi password (3x), dentist (Dr. Ochieng → Dr. Njeri), standup time (9:00 → 9:30), delivery dates — some indirect ("promotion chat next month," "Dr. Ochieng retired").
+- **Secrets**: WiFi passwords, bank app PIN, M-Pesa PIN, bank card PINs, OTP codes, fraud alerts (marked `sensitive: true`).
+- Plenty of forgettable items (`store: false`); sister kept separate from owner.
+- **27 questions** (within 25–40) with answers, evidence ids, `stale_answer` for changed details, history questions, and unanswerable ones.
+
+All five person files (person_1.json through person_5.json) are complete. None committed.

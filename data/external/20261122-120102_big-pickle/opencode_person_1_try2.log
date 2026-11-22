@@ -1,0 +1,33 @@
+﻿[0m
+> build ┬╖ big-pickle
+[0m
+[0mΓåÉ [0mWrite person_1.json
+Wrote file successfully.
+[0m
+[0m$ [0m$p = "C:\Users\Lab User\external_writer\20261122-120102_big-pickle\person_1.json"; $j = Get-Content -LiteralPath $p -Raw | ConvertFrom-Json; "items=$($j.items.Count) questions=$($j.questions.Count)"; $prev=""; foreach($i in $j.items){ $k="$($i.day)$($i.time)"; if($k -lt $prev){"OUT_OF_ORDER $($i.id) $k after $prev"}; $prev=$k }; $ids=@($j.items.id); if(($ids | Select-Object -Unique).Count -ne $ids.Count){"DUPLICATE IDs"}; foreach($i in $j.items){ if($i.replaces -and ($ids -notcontains $i.replaces)){"BAD replaces $($i.id) -> $($i.replaces)"} }; foreach($q in $j.questions){ foreach($e in $q.evidence){ if($ids -notcontains $e){"BAD evidence $($q.question) -> $e"} } }
+items=110 questions=37
+OUT_OF_ORDER p1_126 2026-05-0316:00 after 2026-05-0410:00
+[0m
+[0mΓåÉ [0mEdit person_1.json
+Index: C:\Users\Lab User\external_writer\20261122-120102_big-pickle\person_1.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261122-120102_big-pickle\person_1.json
++++ C:\Users\Lab User\external_writer\20261122-120102_big-pickle\person_1.json
+@@ -90,10 +90,10 @@
+ {"id": "p1_096", "day": "2026-04-28", "time": "11:00", "source": "message", "speaker": "Kip", "text": "wrap party 8 May moved to 15 May", "store": true, "kind": "state", "replaces": "p1_085", "sensitive": false},
+ {"id": "p1_097", "day": "2026-04-29", "time": "08:45", "source": "email", "speaker": "Kenya Airways", "text": "KQ414 12 May cancelled. Rebooked KQ418 13 May 09:05.", "store": true, "kind": "state", "replaces": "p1_080", "sensitive": false},
+ {"id": "p1_099", "day": "2026-04-30", "time": "18:00", "source": "note", "speaker": "Amara", "text": "flag: card 4410 is closed, don't use it", "store": true, "kind": "state", "replaces": null, "sensitive": true},
+ {"id": "p1_100", "day": "2026-05-01", "time": "10:00", "source": "email", "speaker": "Lavington Agencies", "text": "Service charge KES 3,200 per month from May.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+-{"id": "p1_102", "day": "2026-05-04", "time": "10:00", "source": "email", "speaker": "Baraka Films", "text": "Shoot extended to 30 May, 1 extra week at same rate.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "p1_126", "day": "2026-05-03", "time": "16:00", "source": "message", "speaker": "Kofi", "text": "your old 0712 number is dead? I kept dialing it", "store": false, "kind": null, "replaces": null, "sensitive": false},
++{"id": "p1_102", "day": "2026-05-04", "time": "10:00", "source": "email", "speaker": "Baraka Films", "text": "Shoot extended to 30 May, 1 extra week at same rate.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+ {"id": "p1_103", "day": "2026-05-05", "time": "11:00", "source": "message", "speaker": "Kip", "text": "pickup for 13 May: driver Joseph, 05:30 not 06:00", "store": true, "kind": "state", "replaces": "p1_081", "sensitive": false},
+ {"id": "p1_104", "day": "2026-05-06", "time": "09:00", "source": "order", "speaker": "Jumbo", "text": "Suitcase KES 8,900 eta 9 May.", "store": true, "kind": "event", "replaces": null, "sensitive": false},
+ {"id": "p1_105", "day": "2026-05-06", "time": "15:00", "source": "message", "speaker": "Sam", "text": "suitcase delayed to 11 May", "store": true, "kind": "state", "replaces": "p1_104", "sensitive": false},
+ {"id": "p1_107", "day": "2026-05-07", "time": "13:00", "source": "message", "speaker": "Amara", "text": "to Kofi: dentist done, filling on left, Dr Mwangi good", "store": true, "kind": "event", "replaces": null, "sensitive": false},
+System.Management.Automation.RemoteException
+[0m
+[0m$ [0m$p = "C:\Users\Lab User\external_writer\20261122-120102_big-pickle\person_1.json"; $j = Get-Content -LiteralPath $p -Raw | ConvertFrom-Json; $prev=""; $bad=0; foreach($i in $j.items){ $k="$($i.day)$($i.time)"; if($k -lt $prev){"OUT_OF_ORDER $($i.id)"; $bad++}; $prev=$k }; "items=$($j.items.Count) questions=$($j.questions.Count) order_errors=$bad"
+items=110 questions=37 order_errors=0
+[0m
+Created `person_1.json` with Amara, a location sound recordist in Nairobi, Kenya: 110 time-ordered items and 37 questions, validated as JSON with unique IDs and no ordering errors.

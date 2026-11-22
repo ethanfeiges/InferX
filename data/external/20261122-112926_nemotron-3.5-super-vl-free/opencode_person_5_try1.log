@@ -1,0 +1,14 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m← [0mWrite person_5.json
+Wrote file successfully.
+[0m
+[0m$ [0mpython -c "import json; d=json.load(open('person_5.json')); print('items:', len(d['items'])); print('questions:', len(d['questions'])); print('valid JSON')"
+items: 128
+questions: 28
+valid JSON
+[0m
+All five files are complete and valid JSON. `person_5.json` has 128 items and 28 questions.
+
+Carlos, a bus driver in Madrid, Spain — distinct from all previous owners and the excluded list. Changes include: route/shift (14 early → 27 late → 33 night), address (→ Calle Manuela Malasaña 14, 3B), phone (600 11 22 33 → 612 34 56 78), debit card (ending 3341 → 7782 with PIN), portal/Wi-Fi passwords, app PIN, abono price (520→550 EUR), license expiry, delivery dates. Secrets included (passwords, PINs, card numbers); filler items present; other people (Lucía, Javier, Dr. García) appear without confusion. Questions cover current/history/stable/unanswerable with stale answers where details changed.

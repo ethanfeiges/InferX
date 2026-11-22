@@ -1,0 +1,14 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m← [0mWrite person_3.json
+Wrote file successfully.
+[0m
+[0m$ [0mpython -c "import json; d=json.load(open('person_3.json')); print('items:', len(d['items'])); print('questions:', len(d['questions'])); print('valid JSON')"
+items: 116
+questions: 27
+valid JSON
+[0m
+Created `person_3.json` with 116 items and 27 questions (valid JSON).
+
+Owner: Sarah, a veterinary nurse in Melbourne, Australia — distinct from Elena (Berlin librarian), Marco (Milan chef), and all excluded people. Changes include: job location (Paws & Claws → South Yarra Animal Hospital), shift hours (8:00-16:00 → early 7:00-15:00), address (→ 44 The Esplanade, St Kilda), phone (0400 111 222 → 0412 345 678), debit card (ending 5512 → 9931 with PIN), Wi-Fi/staff portal passwords, delivery dates, and Milo's check-up. Secrets included (passwords, PIN, card number). Filler items present; other people (Jess, Tom, Dr. Lee) appear without confusion. Questions span current/history/stable/unanswerable with stale answers where details changed.

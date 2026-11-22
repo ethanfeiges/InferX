@@ -1,0 +1,14 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m← [0mWrite person_4.json
+Wrote file successfully.
+[0m
+[0m$ [0mpython -c "import json; d=json.load(open('person_4.json')); print('items:', len(d['items'])); print('questions:', len(d['questions'])); print('valid JSON')"
+items: 120
+questions: 25
+valid JSON
+[0m
+Created `person_4.json` with 120 items and 25 questions (valid JSON).
+
+Owner: Raj, a night-shift security guard in Singapore — clearly different from Elena (Berlin librarian), Marco (Milan chef), Sarah (Melbourne vet nurse), and all excluded people. Changes include: job site (TechHub Gate A → Jurong Innovation Hub Block B → TechHub Block C), shift hours (22:00-06:00 → 23:00-07:00 → back), address (→ 20 Tampines Street 11 #12-05), phone number, debit card (ending 1124 → 3390 with PIN), server room access code (8472 → 9103), Wi-Fi password, DBS app PIN, delivery dates, OTP. Secrets included (passwords, PINs, card numbers, access code, OTP). Filler items present; other people (Priya, Arjun, Mei) appear without confusion. Questions span current/history/stable/unanswerable with stale answers where details changed.

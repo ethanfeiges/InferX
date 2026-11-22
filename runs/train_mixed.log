@@ -1,0 +1,124 @@
+outside pool: 14 training people, 4 validation people, from 9 batches
+outside rows x1: secrets kept 4, store+update F1 1.010, thresholds (0.5, 0.5, 0.7) (90s)
+outside rows x2: secrets kept 4, store+update F1 1.026, thresholds (0.5, 0.4, 0.5) (170s)
+outside rows x3: secrets kept 4, store+update F1 1.044, thresholds (0.5, 0.3, 0.5) (267s)
+chosen: outside rows x3, thresholds (sensitive, store, replace) (0.5, 0.3, 0.5)
+{
+ "outside_repeat": 3,
+ "tuning_secrets_kept": 4,
+ "tuning_f1_sum": 1.044,
+ "thresholds": {
+  "sensitive": 0.5,
+  "store": 0.3,
+  "replace": 0.5
+ },
+ "batches": {
+  "20261118-210428_nemotron-3.5-super-vl-free": [
+   "person_1.json",
+   "person_2.json",
+   "person_3.json",
+   "person_4.json",
+   "person_5.json"
+  ],
+  "20261122-113914_big-pickle": [
+   "person_1.json"
+  ],
+  "20261122-113914_hy4-flash-free": [
+   "person_1.json"
+  ],
+  "20261122-113914_mimo-v2.6-flash-free": [
+   "person_1.json"
+  ],
+  "20261122-120102_big-pickle": [
+   "person_1.json",
+   "person_2.json",
+   "person_3.json",
+   "person_4.json"
+  ],
+  "20261122-120102_hy4-flash-free": [
+   "person_1.json",
+   "person_2.json",
+   "person_3.json",
+   "person_4.json"
+  ],
+  "20261122-120102_mimo-v2.6-flash-free": [
+   "person_1.json",
+   "person_2.json"
+  ]
+ },
+ "excluded": {
+  "20261122-112926_nemotron-3.5-super-vl-free": "repeats the same shift entry many times and labels each copy as an update (28-80 per person)"
+ },
+ "training_people": {
+  "simulator": 40,
+  "outside": 14
+ },
+ "outside_val": {
+  "store": {
+   "precision": 0.72,
+   "recall": 0.704,
+   "f1": 0.712,
+   "n": 230
+  },
+  "update": {
+   "precision": 0.343,
+   "recall": 0.27,
+   "f1": 0.302,
+   "n": 89
+  },
+  "kind_accuracy": 0.796,
+  "sensitive_kept": "6 of 57",
+  "false_sensitive": 25
+ },
+ "simulator_val": {
+  "store": {
+   "precision": 0.949,
+   "recall": 0.983,
+   "f1": 0.966,
+   "n": 287
+  },
+  "update": {
+   "precision": 0.762,
+   "recall": 0.736,
+   "f1": 0.749,
+   "n": 87
+  },
+  "kind_accuracy": 0.986,
+  "sensitive_kept": "0 of 52",
+  "false_sensitive": 0
+ },
+ "simulator_val_long": {
+  "store": {
+   "precision": 0.926,
+   "recall": 0.983,
+   "f1": 0.953,
+   "n": 291
+  },
+  "update": {
+   "precision": 0.71,
+   "recall": 0.71,
+   "f1": 0.71,
+   "n": 93
+  },
+  "kind_accuracy": 0.979,
+  "sensitive_kept": "0 of 205",
+  "false_sensitive": 2
+ },
+ "handwritten_check": {
+  "store": {
+   "precision": 0.917,
+   "recall": 0.733,
+   "f1": 0.815,
+   "n": 30
+  },
+  "update": {
+   "precision": 1.0,
+   "recall": 0.4,
+   "f1": 0.571,
+   "n": 10
+  },
+  "kind_accuracy": 0.864,
+  "sensitive_kept": "0 of 5",
+  "false_sensitive": 0
+ }
+}

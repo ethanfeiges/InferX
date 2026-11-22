@@ -1,0 +1,31 @@
+﻿[0m
+> build ┬╖ mimo-v2.6-flash-free
+[0m
+[0mΓåÉ [0mWrite person_1.json
+Wrote file successfully.
+[0m
+[0m$ [0m$j = Get-Content -Raw person_1.json | ConvertFrom-Json; "items: $($j.items.Count)"; "questions: $($j.questions.Count)"; "store_true: $(($j.items | Where-Object store).Count)"; "sensitive: $(($j.items | Where-Object sensitive).Count)"; $ids = $j.items.id; $dup = $ids | Group-Object | Where-Object Count -gt 1; if ($dup) { "DUP IDS: $($dup.Name)" } else { "no dup ids" }; $bad = $j.items | Where-Object { $_.store -eq $false -and ($_.kind -ne $null -or $_.replaces -ne $null) }; if ($bad) { "BAD kind/replaces on store=false: $($bad.id)" } else { "store=false labels ok" }; $bad2 = $j.items | Where-Object { $_.store -eq $true -and $_.kind -notin @('state','event') }; if ($bad2) { "BAD kind: $($bad2.id)" } else { "store=true kinds ok" }; $bad3 = $j.items | Where-Object { $_.replaces -and $ids -notcontains $_.replaces }; if ($bad3) { "BAD replaces: $($bad3.id)" } else { "replaces ok" }; $bad4 = $j.questions | Where-Object { ($_.evidence | Where-Object { $ids -notcontains $_ }).Count -gt 0 }; if ($bad4) { "BAD evidence in: $($bad4.question)" } else { "evidence ok" }; $bad5 = $j.questions | Where-Object { $_.type -notin @('current','history','stable','unanswerable') }; if ($bad5) { "BAD type" } else { "types ok" }; $days = $j.items.day | Sort-Object -Unique; "days: $($days.Count), first $($days[0]), last $($days[-1])"; "questions by type:"; $j.questions | Group-Object type | ForEach-Object { "  $($_.Name): $($_.Count)" }; "stale answers: $(($j.questions | Where-Object stale_answer).Count)"
+items: 109
+questions: 38
+store_true: 62
+sensitive: 8
+no dup ids
+store=false labels ok
+store=true kinds ok
+replaces ok
+evidence ok
+types ok
+days: 58, first 2026-08-03, last 2026-10-26
+questions by type:
+  current: 21
+  history: 8
+  stable: 5
+  unanswerable: 4
+stale answers: 16
+[0m
+[0m$ [0m$j = Get-Content -Raw person_1.json | ConvertFrom-Json; $prev=$null; $bad=@(); foreach($it in $j.items){ $k="$($it.day) $($it.time)"; if($prev -and [string]::CompareOrdinal($k,$prev) -lt 0){ $bad += $it.id }; $prev=$k }; if($bad){ "OUT OF ORDER: $($bad -join ',')" } else { "time order ok" }
+time order ok
+[0m
+Written to `person_1.json`: Marek, 47, warehouse supervisor in Gda┼äsk (laid off, new job, move to Sopot, phone/number change, Oslo trip, GP/dentist/cardiologist changes).
+
+Validated: 109 items over 58 days (2026-08-03 ΓåÆ 2026-10-26), time-ordered, 62 store=true, 8 sensitive, all `replaces`/`evidence` ids resolve, labels conform to the schema, plus 38 questions (21 current, 8 history, 5 stable, 4 unanswerable, 16 with stale answers).

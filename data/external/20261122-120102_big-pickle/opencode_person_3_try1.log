@@ -1,0 +1,10 @@
+﻿[0m
+> build ┬╖ big-pickle
+[0m
+[0mΓåÉ [0mWrite person_3.json
+Wrote file successfully.
+[0m
+[0m$ [0m$p = "C:\Users\Lab User\external_writer\20261122-120102_big-pickle\person_3.json"; $j = Get-Content -LiteralPath $p -Raw | ConvertFrom-Json; "items=$($j.items.Count) questions=$($j.questions.Count)"; $prev=""; foreach($i in $j.items){ $k="$($i.day)$($i.time)"; if($k -lt $prev){"OUT_OF_ORDER $($i.id) $k after $prev"}; $prev=$k }; $ids=@($j.items.id); if(($ids | Select-Object -Unique).Count -ne $ids.Count){"DUPLICATE IDs"}; foreach($i in $j.items){ if($i.replaces -and ($ids -notcontains $i.replaces)){"BAD replaces $($i.id) -> $($i.replaces)"} }; foreach($q in $j.questions){ foreach($e in $q.evidence){ if($ids -notcontains $e){"BAD evidence $($q.question) -> $e"} } }
+items=119 questions=37
+[0m
+Created `person_3.json` with Hana, a rice farmer in Niigata, Japan: 119 time-ordered items and 37 questions, validated as JSON with unique IDs, correct ordering, and valid references.

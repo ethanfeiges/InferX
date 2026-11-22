@@ -1,0 +1,11 @@
+﻿[0m
+> build · longcat-2.5-free
+[0m
+[0m→ [0mRead brief.md
+[0m
+[0m$ [0mGet-ChildItem -LiteralPath "C:\Users\Lab User\external_writer\20261118-211506_longcat-2.5-free" -Force | Select-Object Name, Length
+Name                       Length
+----                       ------
+brief.md                     2863
+opencode_person_1_try1.log      0
+[0m

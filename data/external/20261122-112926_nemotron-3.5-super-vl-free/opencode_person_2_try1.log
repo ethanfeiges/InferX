@@ -1,0 +1,14 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m← [0mWrite person_2.json
+Wrote file successfully.
+[0m
+[0m$ [0mpython -c "import json; d=json.load(open('person_2.json')); print('items:', len(d['items'])); print('questions:', len(d['questions'])); print('valid JSON')"
+items: 110
+questions: 28
+valid JSON
+[0m
+Created `person_2.json` with 110 items and 28 questions (valid JSON).
+
+Owner: Marco, a chef in Milan — clearly different from Elena (librarian, Berlin) and all excluded people. Changes include: job (sous-chef Trattoria dal Nonno → capo cuoco Osteria della Scala), address (→ Via Montenapoleone 8), phone (+39 333 111 2233 → +39 345 678 9012), dentist (Dr. Rossi → Dr. Bianchi), debit card (ending 7721 → 4490 with PIN), Wi-Fi/staff portal/alarm passwords, delivery dates, prices. Secrets included (IBAN, PINs, card numbers, passwords). Filler items included; other people (Luca, Giulia) appear without confusion. Questions span current/history/stable/unanswerable with stale answers where details changed.

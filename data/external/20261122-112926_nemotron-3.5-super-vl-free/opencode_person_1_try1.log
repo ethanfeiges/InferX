@@ -1,0 +1,28 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m→ [0mRead brief.md
+[0m
+[0m← [0mWrite person_1.json
+Wrote file successfully.
+[0m
+[0m$ [0mpython3 -c "import json; d=json.load(open('person_1.json')); print('items:', len(d['items'])); print('questions:', len(d['questions'])); print('valid JSON')"
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[0m
+[0m$ [0mnode -e "const d=JSON.parse(require('fs').readFileSync('person_1.json','utf8')); console.log('items:', d.items.length); console.log('questions:', d.questions.length); console.log('valid JSON')"
+node : The term 'node' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ node -e "const d=JSON.parse(require('fs').readFileSync('person_1.json ...
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (node:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+[0m
+[0m$ [0mpython -c "import json; d=json.load(open('person_1.json')); print('items:', len(d['items'])); print('questions:', len(d['questions'])); print('valid JSON')"
+items: 102
+questions: 30
+valid JSON
+[0m
+Created `person_1.json` with 102 items and 30 questions (valid JSON).
+
+Owner: Elena, a librarian in Berlin — distinct from all five excluded people. Details change over the period (branch transfer Mitte→Kreuzberg→Mitte, move Ackerstraße→Knaackstraße, Tom's phone numbers, dentist rebooking, Lisbon flight, card replacement ending 4429→8813, Wi-Fi/staff portal passwords, app PIN). Secrets included (passwords, PIN, card numbers), indirect changes present, filler items included, and other people (Tom, Mia, Clara, Dr Schulz) appear without confusion. Questions cover current, history, stable, and unanswerable types with stale answers where details changed.

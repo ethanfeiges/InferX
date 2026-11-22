@@ -1,0 +1,21 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m← [0mWrite person_3.json
+Wrote file successfully.
+[0m
+[0m$ [0m$d = Get-Content person_3.json -Raw | ConvertFrom-Json; Write-Output ("items: " + $d.items.Count); Write-Output ("questions: " + $d.questions.Count); Write-Output "OK"
+items: 100
+questions: 27
+OK
+[0m
+person_3.json is written and valid (100 items, 27 questions).
+
+- **Owner**: Jin, 19, university student in Seoul, South Korea — distinct from Marcus (photographer, Vancouver), Dorothy (retired bookkeeper, Perth), and all five excluded people.
+- **100 items** over ~7 weeks (Mar 1 – Apr 18, 2026), time-ordered, mixed sources (calendar, message, email, order, note, bank).
+- **Changing details**: phone number (lost SIM → new 010-9876-5432), address (dorm room 302 → share house Hongdae unit 4B), job (barista → library assistant), class schedule (Mon/Wed/Fri 9am → Tue/Thu 11am), WiFi password (twice), bank card + PIN (3341→7792→4419), fraud blocks — some indirect ("we're cutting shifts," "lost phone today").
+- **Secrets**: student ID, WiFi passwords, bank card PINs, OTP codes, library card PIN (marked `sensitive: true`).
+- Plenty of forgettable items (`store: false`); other people kept separate from the owner.
+- **27 questions** (within 25–40) with answers, evidence ids, `stale_answer` for changed details, history questions, and unanswerable ones.
+
+JSON validated via `ConvertFrom-Json`. Not committed.

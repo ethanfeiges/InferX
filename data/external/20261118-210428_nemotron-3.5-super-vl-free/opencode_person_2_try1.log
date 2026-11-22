@@ -1,0 +1,46 @@
+﻿[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[0m← [0mWrite person_2.json
+Wrote file successfully.
+[0m
+[0m$ [0m$d = Get-Content person_2.json -Raw | ConvertFrom-Json; Write-Output ("items: " + $d.items.Count); Write-Output ("questions: " + $d.questions.Count); Write-Output "OK"
+items: 95
+questions: 23
+OK
+[0m
+JSON valid (95 items) but I have 23 questions — the brief requires 25–40. Let me add 3 more.
+[0m← [0mEdit person_2.json
+Index: C:\Users\Lab User\external_writer\20261118-210428_nemotron-3.5-super-vl-free\person_2.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261118-210428_nemotron-3.5-super-vl-free\person_2.json
++++ C:\Users\Lab User\external_writer\20261118-210428_nemotron-3.5-super-vl-free\person_2.json
+@@ -119,7 +119,10 @@
+     {"question": "Does Dorothy own a car?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
+     {"question": "When is Dorothy's next bank card arriving?", "answer": "not mentioned (already activated)", "evidence": ["i32"], "stale_answer": null, "type": "unanswerable"},
+     {"question": "What did Dorothy spend at Coles on Feb 1?", "answer": "$4.80", "evidence": ["i3"], "stale_answer": null, "type": "stable"},
+     {"question": "How many items did Dorothy order from Booktopia?", "answer": "2 (a mystery novel and a biography)", "evidence": ["i15", "i70"], "stale_answer": null, "type": "stable"},
+-    {"question": "What is the date of Dorothy's video call with Emily?", "answer": "Sun Apr 12, 4pm", "evidence": ["i84", "i88"], "stale_answer": null, "type": "current"}
++    {"question": "What is the date of Dorothy's video call with Emily?", "answer": "Sun Apr 12, 4pm", "evidence": ["i84", "i88"], "stale_answer": null, "type": "current"},
++    {"question": "When was Marmalade's last vet visit?", "answer": "Wed Mar 11, 4pm, Joondalup Vet Clinic", "evidence": ["i56", "i58"], "stale_answer": null, "type": "history"},
++    {"question": "How much did Dorothy spend at Joondalup Vet Clinic?", "answer": "$68.00", "evidence": ["i59"], "stale_answer": null, "type": "stable"},
++    {"question": "What day of the week is book club held now?", "answer": "Wednesday", "evidence": ["i49", "i50", "i93"], "stale_answer": "Thursday", "type": "current"}
+   ]
+ }
+System.Management.Automation.RemoteException
+[0m
+[0m$ [0m$d = Get-Content person_2.json -Raw | ConvertFrom-Json; Write-Output ("items: " + $d.items.Count); Write-Output ("questions: " + $d.questions.Count); Write-Output "OK"
+items: 95
+questions: 26
+OK
+[0m
+person_2.json is written and valid (95 items, 26 questions).
+
+- **Owner**: Dorothy, 68, retired bookkeeper in Perth, Western Australia — clearly different from Marcus and all five excluded people (age, job, country, family, writing style).
+- **95 items** over ~2.5 months (Feb 1 – Apr 18), time-ordered, mixed sources (calendar, message, email, order, note, bank, app).
+- **Changing details**: GP (Dr. Chen → Dr. Patel → Dr. Ahmed), WiFi password, bank card + PIN, delivery dates, Emily's visit date (changed multiple times), book club day/time, medication price — some stated indirectly ("Dr. Chen is retiring," "Dr. Patel has relocated").
+- **Secrets**: WiFi password, bank PIN, Tax File Number, fraud alert, OTP code (marked `sensitive: true`).
+- Plenty of forgettable items (`store: false`); other people kept distinct from the owner.
+- **26 questions** (within 25–40) with answers, evidence ids, `stale_answer` for changed details, history questions, and unanswerable ones.
+
+JSON validated via `ConvertFrom-Json`. I have not committed anything.

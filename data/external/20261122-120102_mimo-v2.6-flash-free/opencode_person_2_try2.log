@@ -1,0 +1,134 @@
+﻿[0m
+> build ┬╖ mimo-v2.6-flash-free
+[0m
+[0mΓåÉ [0mWrite person_2.json
+Wrote file successfully.
+[0m
+[0mΓåÉ [0mEdit person_2.json
+Index: C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json
++++ C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json
+@@ -69,8 +69,52 @@
+     {"id": "p2_066", "day": "2026-04-14", "time": "08:00", "source": "note", "speaker": "Grace's notes", "text": "Brian Otieno starts Monday 27 April, KSh 900/day, morning shift.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+     {"id": "p2_067", "day": "2026-04-15", "time": "10:00", "source": "message", "speaker": "Kamau Supplies", "text": "Good news: flour drops to KSh 172/bale from 1 May (currently 175).", "store": true, "kind": "state", "replaces": "p2_014", "sensitive": false},
+     {"id": "p2_068", "day": "2026-04-15", "time": "13:15", "source": "order", "speaker": "Shoe Gallery", "text": "Order NK-130: shoes for Faith, KSh 3,200, pickup Thursday.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+     {"id": "p2_069", "day": "2026-04-16", "time": "11:30", "source": "message", "speaker": "Auma (niece)", "text": "Wedding moved again - now Saturday 6 June. Please keep the outfit flexible.", "store": true, "kind": "state", "replaces": "p2_052", "sensitive": false},
+-    {"id": "p2_070", "day": "2026-04-16", "time": "14:00", "source": "bank", "speaker": "KCB SMS", "text": "KSh 3,200.00 to SHOE GALLERY, card ending 4409.", "store": true, "kind": "event", "replaces": "p2_068", "sensitive": true}
++    {"id": "p2_070", "day": "2026-04-16", "time": "14:00", "source": "bank", "speaker": "KCB SMS", "text": "KSh 3,200.00 to SHOE GALLERY, card ending 4409.", "store": true, "kind": "event", "replaces": "p2_068", "sensitive": true},
++    {"id": "p2_071", "day": "2026-04-20", "time": "07:30", "source": "message", "speaker": "Kevin (son)", "text": "Mum I started at Naivasha today! Accommodation KSh 3,500/month", "store": true, "kind": "event", "replaces": "p2_055", "sensitive": false},
++    {"id": "p2_072", "day": "2026-04-20", "time": "10:45", "source": "note", "speaker": "Grace's notes", "text": "Instagram business account: reset link requested, change password today", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_073", "day": "2026-04-20", "time": "16:00", "source": "app", "speaker": "Safaricom", "text": "Data bundle expired. Buy another to stay online.", "store": false, "kind": null, "replaces": null, "sensitive": false},
++    {"id": "p2_074", "day": "2026-04-21", "time": "09:20", "source": "email", "speaker": "Instagram", "text": "Temporary password for gracebakes_nairobi: IgTemp#4481. Sign in and change it.", "store": true, "kind": "state", "replaces": "p2_072", "sensitive": true},
++    {"id": "p2_075", "day": "2026-04-22", "time": "08:05", "source": "note", "speaker": "Grace's notes", "text": "Instagram password changed to BunsAndBuns26", "store": true, "kind": "state", "replaces": "p2_074", "sensitive": true},
++    {"id": "p2_076", "day": "2026-04-22", "time": "12:30", "source": "order", "speaker": "Tyre World", "text": "Order JA-810: two van tyres, KSh 28,000, fitted Thursday.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_077", "day": "2026-04-23", "time": "10:10", "source": "app", "speaker": "M-Pesa", "text": "KSh 28,000 paid to TYRE WORLD, ref 554120", "store": true, "kind": "event", "replaces": "p2_076", "sensitive": false},
++    {"id": "p2_078", "day": "2026-04-24", "time": "09:00", "source": "message", "speaker": "You (broadcast to customers)", "text": "New bakery WhatsApp line from today: +254 711 408 226. Old +254 733 915 044 stops 30 April.", "store": true, "kind": "state", "replaces": "p2_046", "sensitive": false},
++    {"id": "p2_079", "day": "2026-04-24", "time": "13:45", "source": "bank", "speaker": "KCB SMS", "text": "KSh 65,000.00 from SERENA HOTELS LTD - April supply invoice. Balance KSh 468,900.20.", "store": true, "kind": "event", "replaces": null, "sensitive": false},
++    {"id": "p2_080", "day": "2026-04-27", "time": "08:00", "source": "message", "speaker": "Brian (assistant)", "text": "Hi Grace, on my way, traffic at Ngong", "store": false, "kind": null, "replaces": null, "sensitive": false},
++    {"id": "p2_081", "day": "2026-04-27", "time": "12:00", "source": "app", "speaker": "Wordle", "text": "Your streak is 42", "store": false, "kind": null, "replaces": null, "sensitive": false},
++    {"id": "p2_082", "day": "2026-04-27", "time": "14:30", "source": "order", "speaker": "Kamau Supplies", "text": "Order FL-991: 15 bales flour + sugar, delivery Mon 4 May.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_083", "day": "2026-04-28", "time": "10:00", "source": "bank", "speaker": "KCB SMS", "text": "Card ending 4409 blocked after unusual attempts. Replacement ready Thu 7 May at Westlands branch.", "store": true, "kind": "state", "replaces": "p2_002", "sensitive": true},
++    {"id": "p2_084", "day": "2026-04-30", "time": "08:15", "source": "message", "speaker": "You (to customers group)", "text": "Old bakery line is off today. WhatsApp only on 0711 408 226 going forward.", "store": true, "kind": "event", "replaces": "p2_078", "sensitive": false},
++    {"id": "p2_085", "day": "2026-04-30", "time": "12:00", "source": "bank", "speaker": "KCB SMS", "text": "New card ending 7712 collected at Westlands branch.", "store": true, "kind": "state", "replaces": "p2_083", "sensitive": true},
++    {"id": "p2_086", "day": "2026-05-01", "time": "10:00", "source": "order", "speaker": "Kamau Supplies", "text": "FL-991 delivered, signed by Brian.", "store": true, "kind": "event", "replaces": "p2_082", "sensitive": false},
++    {"id": "p2_087", "day": "2026-05-01", "time": "14:20", "source": "note", "speaker": "Grace's notes", "text": "New rent KSh 28,000 starts today. Paid Mr. Mwangi by transfer.", "store": true, "kind": "event", "replaces": "p2_050", "sensitive": false},
++    {"id": "p2_088", "day": "2026-05-01", "time": "19:00", "source": "message", "speaker": "Auma (niece)", "text": "Outfit fitting now Sunday 10 May 11am", "store": true, "kind": "state", "replaces": "p2_042", "sensitive": false},
++    {"id": "p2_089", "day": "2026-05-04", "time": "07:45", "source": "note", "speaker": "Grace's notes", "text": "Jikoni tech fitted the thermostat, decks even now.", "store": true, "kind": "event", "replaces": "p2_053", "sensitive": false},
++    {"id": "p2_090", "day": "2026-05-04", "time": "11:30", "source": "message", "speaker": "Mr. Odhiambo (Serena Hotels)", "text": "Also from June we move deliveries to 6:00am sharp.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_091", "day": "2026-05-05", "time": "09:00", "source": "email", "speaker": "Jambojet", "text": "Schedule change: your 12 June flight now departs 11:05 (was 08:20).", "store": true, "kind": "state", "replaces": "p2_061", "sensitive": false},
++    {"id": "p2_092", "day": "2026-05-06", "time": "10:30", "source": "message", "speaker": "You (sent to Jambojet)", "text": "Please move us to the 11 June 08:20 departure instead.", "store": false, "kind": null, "replaces": null, "sensitive": false},
++    {"id": "p2_093", "day": "2026-05-06", "time": "15:00", "source": "app", "speaker": "M-Pesa", "text": "KSh 10,000 received from CHAMA - MAY", "store": false, "kind": null, "replaces": null, "sensitive": false},
++    {"id": "p2_094", "day": "2026-05-08", "time": "09:15", "source": "email", "speaker": "Jambojet", "text": "Change confirmed: 11 Jun 08:20 out, 16 Jun 18:40 return, ref now JJ9930. Fare difference KSh 2,300 charged to card ending 7712.", "store": true, "kind": "state", "replaces": "p2_091", "sensitive": true},
++    {"id": "p2_095", "day": "2026-05-10", "time": "11:00", "source": "note", "speaker": "Grace's notes", "text": "Fitting done: dress fits, pickup Saturday 30 May, balance KSh 2,000.", "store": true, "kind": "state", "replaces": "p2_088", "sensitive": false},
++    {"id": "p2_096", "day": "2026-05-11", "time": "10:00", "source": "bank", "speaker": "KCB SMS", "text": "KSh 4,500.00 to ST. TERESA GIRLS SCH - leavers photo, card ending 7712.", "store": true, "kind": "event", "replaces": "p2_009", "sensitive": true},
++    {"id": "p2_097", "day": "2026-05-11", "time": "15:30", "source": "message", "speaker": "You (sent to Kamau Supplies)", "text": "Deliver 20 bales Wednesday instead of Monday, we are behind", "store": false, "kind": null, "replaces": null, "sensitive": false},
++    {"id": "p2_098", "day": "2026-05-12", "time": "09:00", "source": "email", "speaker": "Moi University Bursary Office", "text": "KSh 48,000 bursary disbursed to account ending 3390.", "store": true, "kind": "event", "replaces": "p2_058", "sensitive": true},
++    {"id": "p2_099", "day": "2026-05-13", "time": "10:00", "source": "bank", "speaker": "KCB SMS", "text": "KSh 12,000.00 to KPLC - April electricity, card ending 7712.", "store": true, "kind": "event", "replaces": null, "sensitive": true},
++    {"id": "p2_100", "day": "2026-05-15", "time": "10:45", "source": "bank", "speaker": "KCB SMS", "text": "KSh 3,440.00 to KAMAU SUPPLIES - 20 bales at 172.", "store": true, "kind": "event", "replaces": null, "sensitive": false},
++    {"id": "p2_101", "day": "2026-05-15", "time": "16:00", "source": "message", "speaker": "Faith (daughter)", "text": "Mum the school trip to Mombasa is in July, KSh 6,500", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_102", "day": "2026-05-18", "time": "09:30", "source": "message", "speaker": "Mr. Mwangi (landlord)", "text": "Inspector comes Thursday for the fire extinguishers, keep the front clear.", "store": false, "kind": null, "replaces": null, "sensitive": false},
++    {"id": "p2_103", "day": "2026-05-19", "time": "11:00", "source": "message", "speaker": "Purity (assistant)", "text": "Grace, I'm back in Nairobi. Is my last pay ready?", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_104", "day": "2026-05-21", "time": "10:00", "source": "app", "speaker": "M-Pesa", "text": "KSh 4,000 paid to PURITY K. - full and final", "store": true, "kind": "event", "replaces": "p2_103", "sensitive": false},
++    {"id": "p2_105", "day": "2026-05-25", "time": "09:00", "source": "calendar", "speaker": "Grace's calendar", "text": "Auma's wedding - Sat 6 June, Nyama House Gardens, 13:00", "store": true, "kind": "state", "replaces": "p2_069", "sensitive": false},
++    {"id": "p2_106", "day": "2026-05-25", "time": "14:30", "source": "bank", "speaker": "KCB SMS", "text": "KSh 9,000.00 to AUMA O. - wedding gift, card ending 7712.", "store": true, "kind": "event", "replaces": null, "sensitive": true},
++    {"id": "p2_107", "day": "2026-05-26", "time": "10:15", "source": "message", "speaker": "Mr. Odhiambo (Serena Hotels)", "text": "Low season again: from 1 June we need only 40 loaves/day.", "store": true, "kind": "state", "replaces": "p2_059", "sensitive": false},
++    {"id": "p2_108", "day": "2026-05-28", "time": "11:45", "source": "message", "speaker": "Kevin (son)", "text": "Mum I finish attachment 29 May, home Friday 5 June for Auma's wedding", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_109", "day": "2026-05-28", "time": "16:00", "source": "bank", "speaker": "KCB SMS", "text": "KSh 65,000.00 from SERENA HOTELS LTD - May invoice.", "store": true, "kind": "event", "replaces": null, "sensitive": false},
++    {"id": "p2_110", "day": "2026-05-29", "time": "14:00", "source": "note", "speaker": "Grace's notes", "text": "Shop price list: loaf KSh 70 from Monday (was KSh 65). Serena contract stays 65.", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_111", "day": "2026-05-30", "time": "11:30", "source": "order", "speaker": "Tailor (Wanjiru)", "text": "Dress collected from tailor, paid balance KSh 2,000.", "store": true, "kind": "event", "replaces": "p2_095", "sensitive": false},
++    {"id": "p2_112", "day": "2026-05-30", "time": "18:00", "source": "message", "speaker": "Nyambura (friend)", "text": "Happy birthday Grace! 56 looks good on you", "store": true, "kind": "state", "replaces": null, "sensitive": false},
++    {"id": "p2_113", "day": "2026-05-31", "time": "09:00", "source": "app", "speaker": "M-Pesa", "text": "KSh 2,000 from KEVIN KIBET - Happy birthday mum!", "store": true, "kind": "event", "replaces": null, "sensitive": false},
++    {"id": "p2_114", "day": "2026-05-31", "time": "16:00", "source": "app", "speaker": "Weather Nairobi", "text": "Sunny, high 26C, light showers possible in the evening", "store": false, "kind": null, "replaces": null, "sensitive": false}
+   ],
+   "questions": []
+ }
+System.Management.Automation.RemoteException
+[0m
+[0mΓåÉ [0mEdit person_2.json
+Index: C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json
+===================================================================
+--- C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json
++++ C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json
+@@ -115,6 +115,41 @@
+     {"id": "p2_112", "day": "2026-05-30", "time": "18:00", "source": "message", "speaker": "Nyambura (friend)", "text": "Happy birthday Grace! 56 looks good on you", "store": true, "kind": "state", "replaces": null, "sensitive": false},
+     {"id": "p2_113", "day": "2026-05-31", "time": "09:00", "source": "app", "speaker": "M-Pesa", "text": "KSh 2,000 from KEVIN KIBET - Happy birthday mum!", "store": true, "kind": "event", "replaces": null, "sensitive": false},
+     {"id": "p2_114", "day": "2026-05-31", "time": "16:00", "source": "app", "speaker": "Weather Nairobi", "text": "Sunny, high 26C, light showers possible in the evening", "store": false, "kind": null, "replaces": null, "sensitive": false}
+   ],
+-  "questions": []
++  "questions": [
++    {"question": "How much rent does Grace pay for the shop now?", "answer": "KSh 28,000 per month from 1 May 2026, on a 12-month agreement", "evidence": ["p2_050", "p2_087"], "stale_answer": "KSh 32,000 per month", "type": "current"},
++    {"question": "What rent did the landlord first demand for May?", "answer": "KSh 32,000 per month, up from KSh 25,000", "evidence": ["p2_017"], "stale_answer": null, "type": "history"},
++    {"question": "How much does wheat flour cost now?", "answer": "KSh 172 per 50kg bale from 1 May 2026", "evidence": ["p2_067", "p2_100"], "stale_answer": "KSh 175 per bale", "type": "current"},
++    {"question": "What was flour quoted at when the period began?", "answer": "KSh 165 per 50kg bale", "evidence": ["p2_003"], "stale_answer": null, "type": "history"},
++    {"question": "When is Auma's wedding now?", "answer": "Saturday 6 June 2026 at 13:00, Nyama House Gardens", "evidence": ["p2_105", "p2_069"], "stale_answer": "Saturday 16 May 2026, Nyama House Gardens", "type": "current"},
++    {"question": "When was Auma's wedding first announced for?", "answer": "Saturday 25 April 2026 at 1pm, Nyama House Gardens", "evidence": ["p2_036"], "stale_answer": null, "type": "history"},
++    {"question": "When is Grace's next review with Dr. Otieno?", "answer": "August 2026 (no exact date given)", "evidence": ["p2_064"], "stale_answer": "13 April 2026 at 09:30", "type": "current"},
++    {"question": "What was Grace's appointment with Dr. Otieno first booked for?", "answer": "Wednesday 25 March 2026 at 10:30", "evidence": ["p2_015"], "stale_answer": null, "type": "history"},
++    {"question": "Where are Dr. Otieno's rooms?", "answer": "Ngong Road Plaza, 3rd floor, Room 4, from 31 March 2026", "evidence": ["p2_047", "p2_063"], "stale_answer": "Kenyatta Hospital rooms", "type": "current"},
++    {"question": "How many loaves does Serena Hotels take now?", "answer": "40 per day from 1 June 2026", "evidence": ["p2_107"], "stale_answer": "60 per day from 1 May 2026", "type": "current"},
++    {"question": "What was the original Serena Hotels contract?", "answer": "100 loaves per day at KSh 65 each, from 1 April 2026", "evidence": ["p2_011", "p2_012"], "stale_answer": null, "type": "history"},
++    {"question": "Did the university bursary arrive, and how much was it?", "answer": "Yes - KSh 48,000 was disbursed on 12 May 2026 to the account ending 3390", "evidence": ["p2_098"], "stale_answer": "scheduled for 28 April 2026", "type": "current"},
++    {"question": "When was the university bursary first scheduled for?", "answer": "Wednesday 28 April 2026", "evidence": ["p2_029"], "stale_answer": null, "type": "history"},
++    {"question": "When is the Mombasa flight now?", "answer": "Outbound 11 June 2026 08:20, return 16 June 2026 18:40, ref JJ9930", "evidence": ["p2_094", "p2_091"], "stale_answer": "12 June 2026 08:20 out, ref JJ5567", "type": "current"},
++    {"question": "What was the original Mombasa flight booking?", "answer": "12 June 08:20 out, 16 June 18:40 return, ref JJ5567, KSh 24,800", "evidence": ["p2_061"], "stale_answer": null, "type": "history"},
++    {"question": "When were Faith's term 2 fees due in the end?", "answer": "Paid on 2 April 2026 after the due date moved to Friday 3 April", "evidence": ["p2_051", "p2_030"], "stale_answer": "due Friday 20 March 2026", "type": "current"},
++    {"question": "When were the school fees first due?", "answer": "Friday 20 March 2026", "evidence": ["p2_010"], "stale_answer": null, "type": "history"},
++    {"question": "Who works at the bakery now?", "answer": "Brian Otieno, started 27 April 2026 on KSh 900/day mornings", "evidence": ["p2_066"], "stale_answer": "Purity on KSh 800/day", "type": "current"},
++    {"question": "When did Purity start and on what pay?", "answer": "Monday 9 March 2026, KSh 800/day, morning shift 6-2", "evidence": ["p2_007"], "stale_answer": null, "type": "history"},
++    {"question": "What is the bakery's WhatsApp number now?", "answer": "+254 711 408 226", "evidence": ["p2_078", "p2_084"], "stale_answer": "+254 733 915 044", "type": "current"},
++    {"question": "What is the shop Wi-Fi password?", "answer": "breadandbutter (network GraceBakes2026)", "evidence": ["p2_006"], "stale_answer": null, "type": "stable"},
++    {"question": "What is Grace's Instagram password?", "answer": "BunsAndBuns26", "evidence": ["p2_075"], "stale_answer": "IgTemp#4481", "type": "current"},
++    {"question": "Which bank card does Grace use now?", "answer": "Card ending 7712, collected 30 April 2026", "evidence": ["p2_085"], "stale_answer": "card ending 4409", "type": "current"},
++    {"question": "Why was the old card stopped?", "answer": "It was blocked on 28 April 2026 after unusual attempts", "evidence": ["p2_083"], "stale_answer": null, "type": "history"},
++    {"question": "How old is Grace turning on 30 May 2026?", "answer": "56", "evidence": ["p2_112"], "stale_answer": null, "type": "stable"},
++    {"question": "When does Kevin come home?", "answer": "Friday 5 June 2026, for Auma's wedding", "evidence": ["p2_108"], "stale_answer": null, "type": "current"},
++    {"question": "How much does a loaf cost in the shop now?", "answer": "KSh 70 from Monday 1 June 2026", "evidence": ["p2_110"], "stale_answer": "KSh 65", "type": "current"},
++    {"question": "What is Grace's National ID number?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
++    {"question": "Where does Grace live?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
++    {"question": "What is the registration number of Grace's van?", "answer": "not mentioned", "evidence": [], "stale_answer": null, "type": "unanswerable"},
++    {"question": "What school does Faith attend?", "answer": "St. Teresa Girls' School", "evidence": ["p2_010", "p2_030"], "stale_answer": null, "type": "stable"},
++    {"question": "How much was the oven and when did it arrive?", "answer": "KSh 185,000, delivered to the shop on 1 April 2026", "evidence": ["p2_020", "p2_049", "p2_022"], "stale_answer": "estimated delivery 27 March 2026", "type": "current"},
++    {"question": "Who is Grace's contact at Serena Hotels?", "answer": "Mr. Odhiambo", "evidence": ["p2_059", "p2_090", "p2_107"], "stale_answer": null, "type": "stable"},
++    {"question": "Did Grace collect her wedding outfit dress?", "answer": "Yes - collected from the tailor on 30 May 2026, balance KSh 2,000 paid", "evidence": ["p2_111", "p2_095"], "stale_answer": null, "type": "current"}
++  ]
+ }
+System.Management.Automation.RemoteException
+[0m
+[0m$ [0m$d = Get-Content -Raw -LiteralPath "C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json" | ConvertFrom-Json; "owner=$($d.owner) items=$($d.items.Count) questions=$($d.questions.Count)"; $ids = $d.items.id; $dup = $ids | Group-Object | Where-Object Count -gt 1; if ($dup) { "DUPES: $($dup.Name -join ',')" } else { "no dup ids" }; $bad = $d.items | Where-Object { $_.store -eq $false -and $_.kind -ne $null }; if ($bad) { "BAD kind: $($bad.id -join ',')" } else { "kind rules ok" }; $badR = $d.items | Where-Object { $_.replaces -and ($ids -notcontains $_.replaces) }; if ($badR) { "BAD replaces: $($badR.id -join ',')" } else { "replaces ok" }; $badQ = $d.questions | Where-Object { $_.evidence | Where-Object { $ids -notcontains $_ } }; if ($badQ) { "BAD evidence: $($badQ.question -join ' | ')" } else { "evidence ok" }; $prev=''; $ok=$true; foreach ($i in $d.items) { $k="$($i.day) $($i.time)"; if ($prev -and [string]::CompareOrdinal($k,$prev) -lt 0) { "OUT OF ORDER: $k after $prev"; $ok=$false }; $prev=$k }; if ($ok){'order ok'}; $types = $d.questions.type | Select-Object -Unique; "types: $($types -join ', ')"; $stale = ($d.questions | Where-Object stale_answer).Count; "with stale: $stale"; $days=($d.items.day|Select-Object -Unique).Count; "days=$days first=$($d.items[0].day) last=$($d.items[-1].day)"; $t=Get-Content -Raw -LiteralPath "C:\Users\Lab User\external_writer\20261122-120102_mimo-v2.6-flash-free\person_2.json"; @('Manchester','Jaipur','Cape Town','Sao Paulo','Galway','Gdansk','Poland','Brazil','Ireland','South Africa','freelance UX','chemist','midwife','signaller','plumbing','Jordan','Amman','Leila','pharmacist') | ForEach-Object { if ($t -match $_) { "FOUND: $_" } }; "scan done"
+owner=Grace items=114 questions=34
+no dup ids
+kind rules ok
+replaces ok
+evidence ok
+order ok
+types: current, history, stable, unanswerable
+with stale: 15
+days=61 first=2026-03-02 last=2026-05-31
+scan done
+[0m
+Done. `person_2.json` written in full ΓÇö 114 items (2026-03-02 to 2026-05-31) plus 34 questions.
+
+- Owner: **Grace**, 56, bakery owner in **Nairobi, Kenya** (widowed, kids Kevin/Faith ΓÇö no overlap with Leila or the excluded people/countries)
+- Change threads: rent renegotiated twice, flour price ├ù3, wedding date ├ù3, flight rebooked ├ù2, delivery dates, assistant quit/replaced, phone line, card blocked/reissued, passwords, clinic moved/rescheduled, bursary delayed twice
+- 15 sensitive items (OTP, PIN-less secrets: card digits, Wi-Fi/Instagram passwords, bursary account); 19 store=false noise items; all `replaces` chains, evidence ids, ordering, and enum values validated as correct JSON

@@ -7,7 +7,7 @@ tuned on them: this runs once, with the trained controller and rules as they are
 One policy difference from the writer's labels: InferX never stores secrets, so items the writer marked
 sensitive count as "do not store" and "replaces nothing" when scoring. The count of such items is printed.
 
-Usage: python scripts/eval_external.py data/external/<run> [--no-llm-free-checks]
+Usage: python scripts/eval_external.py data/external/<run> [--heads <heads.npz>] [--out eval.json]
 """
 import argparse
 import json
@@ -39,6 +39,9 @@ def rows(person: dict) -> tuple[list[dict], int]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("run", type=Path)
+    parser.add_argument("--heads", type=Path, default=ROOT / "models/assistant_classifier/heads.npz",
+                        help="the controller to score; models/assistant_classifier_mixed/heads.npz for the retrained one")
+    parser.add_argument("--out", default="eval.json", help="file name for the report, inside the run folder")
     args = parser.parse_args()
     people = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(args.run.glob("person_*.json"))}
     embedder, cache = Embedder(ROOT / "models/minilm"), {}
@@ -48,8 +51,8 @@ def main() -> None:
             cache[text] = embedder(text)
         return cache[text]
 
-    classifier = MemoryClassifier.load(ROOT / "models/assistant_classifier/heads.npz", embed)
-    report = {"run": str(args.run), "people": {}}
+    classifier = MemoryClassifier.load(args.heads, embed)
+    report = {"run": str(args.run), "heads": str(args.heads), "people": {}}
     totals = {"plain": Counter(), "owner_guard": Counter()}
     secret_rows = []
     for name, person in people.items():
@@ -73,8 +76,8 @@ def main() -> None:
                               "false_alarms": f"{len(alarms)} of {len(secret_rows) - len(secrets)}",
                               "false_alarm_texts": [r["text"] for r in alarms]}
     print(json.dumps({k: report[k] for k in ("trained", "secret_rules")}, indent=1, ensure_ascii=False))
-    (args.run / "eval.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
-    print("saved", args.run / "eval.json")
+    (args.run / args.out).write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
+    print("saved", args.run / args.out)
 
 
 if __name__ == "__main__":
