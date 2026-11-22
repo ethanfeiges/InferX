@@ -146,6 +146,58 @@ Three additions, in the `trained_plus` system (`--plus-options` switches each of
   missed and the old value comes back. phi is too cautious here; a better prompt or a lower band is the next fix.
 - The secret rules caught nothing extra in these runs: the trained head already dropped every secret (205 and 52).
 
+### Messages written by other models (no-LLM checks)
+
+Everything above uses this repo's own simulator. To test text it didn't write, free models in
+[opencode](https://opencode.ai) wrote labelled timelines from [a short brief](data/external/brief.md),
+in an empty folder that held only the brief, so they never saw this repo
+([script](scripts/external_writer.ps1)). Each person has about 110 messages over weeks, with labels for
+store, kind, update and secret.
+
+- **Held-out test:** 5 people written by DeepSeek V4.1 Flash ([data](data/external/20261118-195649)).
+  Scored once per controller, and nothing was tuned on it.
+- **Training:** 14 people from 4 other writers (Nemotron 3.5 Super, Big Pickle, HY4 Flash and
+  MiMo 2.6 Flash). 4 more people, one per writer, were used only to pick settings.
+  One Nemotron batch was dropped before training, because it marked dozens of identical repeats as updates.
+- **Controllers:**
+  - The original controller.
+  - A retrained one, trained on the simulator plus the outside people
+    ([script](scripts/train_mixed_classifier.py)).
+  - A hybrid: the original controller with only the retrained secret head swapped in
+    ([script](scripts/build_hybrid_classifier.py)).
+  - The retrained one lost a lot on the simulator people (update F1 0.95 → 0.75), so the hybrid went to the test.
+
+| DeepSeek test (5 people, 75 updates, 25 secrets) | Original | Hybrid |
+|---|---|---|
+| Store F1 | 0.80 | 0.80 |
+| Update F1 | 0.25 | 0.25 |
+| Secrets stored (rules and controller both missed) | 7 of 25 | **6 of 25** |
+| Secret rules alone | 10 of 25 caught, 0 false alarms | same |
+| Messages wrongly flagged as secret by the controller | 13 | 16 |
+
+| Validation (picks settings, not a test) | Original | Retrained | Hybrid |
+|---|---|---|---|
+| Outside people: update F1 | 0.27 | 0.30 | 0.25 |
+| Outside people: secrets stored after rules | 15 of 36 | 4 of 36 | 8 of 36 |
+| Simulator people: update F1 | 0.95 | 0.75 | 0.95 |
+| Handwritten check: update F1 | 0.90 | 0.57 | 0.90 |
+
+- **Updates don't carry over to outside text.** Update F1 falls from about 0.9 on the simulator to 0.25,
+  and training on outside text didn't raise it. On validation, the writers seem to disagree on what counts
+  as an update, and the small heads on MiniLM can't fit all of them. This is the controller's biggest open gap.
+- **Secrets improved on validation, much less on the test.** Leaks on validation fell from 15 to 8, but
+  on the test only from 7 to 6, so most of the gain didn't carry over to a new writer.
+- **The secret rules miss formats they were meant to cover.** Of the 15 secrets they missed on the test,
+  most are worded differently from the simulator's: "One-time code 906442 for your business payment",
+  "password changed to Copper-Fern-917", a passport number, Aadhaar and CPF numbers, and Portuguese
+  ("Senha temporária", "Código … para aprovar o PIX"). They weren't fixed from these misses, because that
+  would tune the rules on the test. A fix needs new rules written from other text, followed by a fresh test.
+- Two test labels look wrong to me (a106 ← a072, s048 ← s012), but they were left as the writer gave them.
+- Outputs: [original](data/external/20261118-195649/eval.json),
+  [hybrid](data/external/20261118-195649/eval_hybrid.json),
+  [validation](models/assistant_classifier_hybrid/metrics.json).
+  The systems with phi still use the original controller.
+
 ### Fact quality
 
 ![Fact audit](docs/figures/fact_audit.png)
@@ -183,7 +235,8 @@ The check catches only 20 of 51 wrong answers. Nothing checks the cloud's reply.
   the training data and would probably be saved.
 - **History questions** are weaker (5 of 9 vs 7 of 9), because outdated versions are hidden.
 - **The controller misses some updates** (4 of 7 on hand-written check messages).
-- **Simulated data:** test messages written by someone else are still needed.
+- **Text written by other models:** on 5 people written by DeepSeek, update F1 is 0.25 (about 0.9 on
+  the simulator), and 6 of 25 secrets are stored. See "Messages written by other models".
 
 ### On the Galaxy S25
 

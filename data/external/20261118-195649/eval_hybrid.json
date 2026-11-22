@@ -1,0 +1,4911 @@
+{
+ "run": "data\\external\\20261118-195649",
+ "heads": "models\\assistant_classifier_hybrid\\heads.npz",
+ "people": {
+  "person_1": {
+   "owner": "Hannah",
+   "items": 112,
+   "secrets_set_to_not_stored": 5,
+   "plain": {
+    "store": {
+     "precision": 0.824,
+     "recall": 0.872,
+     "f1": 0.847,
+     "n": 86
+    },
+    "update": {
+     "precision": 0.25,
+     "recall": 0.238,
+     "f1": 0.244,
+     "n": 21
+    },
+    "kind_accuracy": 0.733,
+    "sensitive_kept": "2 of 7",
+    "false_sensitive": 4,
+    "errors": [
+     {
+      "id": "h003",
+      "text": "Deposit went through in the end — bank flagged the £300 to Loaf but I approved it. We're skint till payday though 😅",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h006",
+      "text": "Small change — kickoff is now Wednesday 9 September, 11:00. Same Zoom. Sorry for the shuffle.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h002",
+      "got_replaces": null
+     },
+     {
+      "id": "h007",
+      "text": "Vodafone — £28.00 paid from current account.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h009",
+      "text": "Your new mobile number 07700 900788 goes live on 22 September. Your old number 07700 900412 keeps working until then.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h013",
+      "text": "Nailed the hangover cure: two espressos and a sausage roll. See you at 7ish x",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h017",
+      "text": "Card ending 8842: Tesco £43.18.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h019",
+      "text": "Hi is this the number for Dave the plumber? Need a leak looked at urgently",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h023",
+      "text": "You spent £9.40 at Rudy's Pizza. Your eating-out budget is 80% used.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h024",
+      "text": "Northwind kickoff — 11:00–12:00, Zoom. Phase 2 due 16 Oct.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h002"
+     },
+     {
+      "id": "h025",
+      "text": "Great kickoff. Deck attached. Next check-in 23 Sep, 10:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h006"
+     },
+     {
+      "id": "h026",
+      "text": "Your order of running shoes has shipped — arriving Thu 10 Sep.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h030",
+      "text": "Direct debit — £76.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h031",
+      "text": "Hi Hannah, we need to move your 15th. Dr Patel is off. Could you do Thu 24 Sep, 14:00 instead?",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h008",
+      "got_replaces": null
+     },
+     {
+      "id": "h032",
+      "text": "Passport 533401987 expires 14 Feb 2027 — renew before Lisbon? Probably fine.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h034",
+      "text": "Your parcel was delivered to a neighbour at 12:47. Photo attached.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h035",
+      "text": "Dan says 8 but his brother's bringing the two kids. Make it 10 for Saturday?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "h014",
+      "got_replaces": null
+     },
+     {
+      "id": "h036",
+      "text": "Your flight MAN–LIS on 20 Oct now departs 07:05 (was 07:15). Same terminal.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h021",
+      "got_replaces": null
+     },
+     {
+      "id": "h037",
+      "text": "Physio — knee, 16:15 today, Chorlton Health, with Ravi.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h022"
+     },
+     {
+      "id": "h039",
+      "text": "Invoice NW-2087 (£2,400) approved. Payment within 14 days.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h041",
+      "text": "Rent for the new flat is £1,100/month from 1 October (currently £950). Standing order details attached.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h012"
+     },
+     {
+      "id": "h043",
+      "text": "We've moved the next check-in to Friday 25 Sep, 10:00. Agenda: phase 2.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h025",
+      "got_replaces": null
+     },
+     {
+      "id": "h046",
+      "text": "Bad news — landlord's in Portugal until the 8th, so we can't do the 3rd. Saturday 10 October instead. Keys Friday 9th after 4.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h012",
+      "got_replaces": null
+     },
+     {
+      "id": "h047",
+      "text": "Extra week of packing then. I'm calling it a win. We'll need a new sofa date too.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h049",
+      "text": "Book club Thursday? Mine, 7:30. I'll bring the wine.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h050",
+      "text": "Book club — Thu 24 Sep, 19:30, Amelia's flat. The Book of Form and Emptiness.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h049"
+     },
+     {
+      "id": "h051",
+      "text": "Delivery update: your Lennox is now expected 4 November (was 28 October). Courier capacity. We'll confirm a window nearer the time.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h004",
+      "got_replaces": null
+     },
+     {
+      "id": "h052",
+      "text": "Thanks for the card. Don't worry about the Crown — your mum's doing sandwiches at home instead. 12:30 still.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "h044",
+      "got_replaces": null
+     },
+     {
+      "id": "h054",
+      "text": "Your repeat prescription for naproxen is ready at Didsbury Pharmacy. Collect within 7 days.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h056",
+      "text": "Number transfer complete. 07700 900788 is now your main number; the old one is off.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "h009",
+      "got_replaces": null
+     },
+     {
+      "id": "h057",
+      "text": "Your parcel is at the locker. Collection code 4821.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h058",
+      "text": "Morning Hannah — Dr Patel is off sick today, so we have to cancel your 14:00. Next available is Thu 5 Nov, 09:15.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h031",
+      "got_replaces": "h008"
+     },
+     {
+      "id": "h059",
+      "text": "Book club — Amelia's flat, 19:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h050"
+     },
+     {
+      "id": "h060",
+      "text": "Northwind check-in — 10:00, Zoom.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h024"
+     },
+     {
+      "id": "h062",
+      "text": "Dan's birthday dinner — Bundobust, 19:30, 10 people.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h035",
+      "got_replaces": "h014"
+     },
+     {
+      "id": "h063",
+      "text": "We need to move your service from Tue 6 Oct to Tue 13 Oct. Same 08:30. Sorry.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h033",
+      "got_replaces": null
+     },
+     {
+      "id": "h064",
+      "text": "Van's confirmed for Saturday 10th, 8am. I'll get the keys Friday.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h055"
+     },
+     {
+      "id": "h065",
+      "text": "Your broadband contract ends 12 November. Renew now at £32/month for 24 months, or roll onto £39.50/month.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h068",
+      "text": "Thanks for coming, lovely day. Don't forget your mum's birthday is 22 November, not the 2nd.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h070",
+      "text": "Signed tenancy attached for 8 Chorlton Green, Manchester M21 9HS. Move-in 10 October, keys from 4pm Friday 9th. Rent £1,100 pcm. Previous address: 14 Beech Road, Didsbury M20 3QT.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h046",
+      "got_replaces": "h041"
+     },
+     {
+      "id": "h072",
+      "text": "Tom can't come after all — work thing. Just me on the 16th, 18:12. Don't make a fuss.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h040",
+      "got_replaces": null
+     },
+     {
+      "id": "h073",
+      "text": "Phase 2 deadline moved from 16 Oct to 23 Oct. Same scope.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h024",
+      "got_replaces": "h043"
+     },
+     {
+      "id": "h074",
+      "text": "Your order has been delivered.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h076",
+      "text": "Van guy wants £120 cash on the day. I'll get it out.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h078",
+      "text": "Your replacement card ending 3317 has been dispatched. Activate it when it arrives.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h079",
+      "text": "Book club moved to the 29th, same time. I'm away next week.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h059"
+     },
+     {
+      "id": "h082",
+      "text": "Your sofa delivery is booked for 4 November, 07:00–10:00. Please clear access.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h051",
+      "got_replaces": null
+     },
+     {
+      "id": "h085",
+      "text": "Keys in hand! Place smells of paint. Takeaway on the floor tonight?",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h047"
+     },
+     {
+      "id": "h091",
+      "text": "Just pulling in — see you in ten. I've got the present and far too much wine.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h095",
+      "text": "Landed. Taxi driver took the scenic route. Hotel is tiny but the bed's huge.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h097",
+      "text": "Ceremony at 4, then dinner in the courtyard. Don't be late, the bride is already panicking.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h099",
+      "text": "Return flight LIS–MAN, 19:40, PNR 7QK2LM.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h094"
+     },
+     {
+      "id": "h101",
+      "text": "Book club — Amelia's flat, 19:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h079"
+     },
+     {
+      "id": "h106",
+      "text": "Dentist — Dr Patel, 09:15, Didsbury Dental.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h058"
+     },
+     {
+      "id": "h107",
+      "text": "Sofa's here. One leg is missing but they're sending it. It's actually comfy.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h105"
+     },
+     {
+      "id": "h111",
+      "text": "GP new patient check — Dr Okafor, Chorlton Family Practice, 09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h100"
+     }
+    ]
+   },
+   "owner_guard": {
+    "store": {
+     "precision": 0.824,
+     "recall": 0.872,
+     "f1": 0.847,
+     "n": 86
+    },
+    "update": {
+     "precision": 0.25,
+     "recall": 0.238,
+     "f1": 0.244,
+     "n": 21
+    },
+    "kind_accuracy": 0.733,
+    "sensitive_kept": "2 of 7",
+    "false_sensitive": 4,
+    "errors": [
+     {
+      "id": "h003",
+      "text": "Deposit went through in the end — bank flagged the £300 to Loaf but I approved it. We're skint till payday though 😅",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h006",
+      "text": "Small change — kickoff is now Wednesday 9 September, 11:00. Same Zoom. Sorry for the shuffle.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h002",
+      "got_replaces": null
+     },
+     {
+      "id": "h007",
+      "text": "Vodafone — £28.00 paid from current account.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h009",
+      "text": "Your new mobile number 07700 900788 goes live on 22 September. Your old number 07700 900412 keeps working until then.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h013",
+      "text": "Nailed the hangover cure: two espressos and a sausage roll. See you at 7ish x",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h017",
+      "text": "Card ending 8842: Tesco £43.18.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h019",
+      "text": "Hi is this the number for Dave the plumber? Need a leak looked at urgently",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h023",
+      "text": "You spent £9.40 at Rudy's Pizza. Your eating-out budget is 80% used.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h024",
+      "text": "Northwind kickoff — 11:00–12:00, Zoom. Phase 2 due 16 Oct.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h002"
+     },
+     {
+      "id": "h025",
+      "text": "Great kickoff. Deck attached. Next check-in 23 Sep, 10:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h006"
+     },
+     {
+      "id": "h026",
+      "text": "Your order of running shoes has shipped — arriving Thu 10 Sep.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h030",
+      "text": "Direct debit — £76.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h031",
+      "text": "Hi Hannah, we need to move your 15th. Dr Patel is off. Could you do Thu 24 Sep, 14:00 instead?",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h008",
+      "got_replaces": null
+     },
+     {
+      "id": "h032",
+      "text": "Passport 533401987 expires 14 Feb 2027 — renew before Lisbon? Probably fine.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h034",
+      "text": "Your parcel was delivered to a neighbour at 12:47. Photo attached.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h035",
+      "text": "Dan says 8 but his brother's bringing the two kids. Make it 10 for Saturday?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "h014",
+      "got_replaces": null
+     },
+     {
+      "id": "h036",
+      "text": "Your flight MAN–LIS on 20 Oct now departs 07:05 (was 07:15). Same terminal.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h021",
+      "got_replaces": null
+     },
+     {
+      "id": "h037",
+      "text": "Physio — knee, 16:15 today, Chorlton Health, with Ravi.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h022"
+     },
+     {
+      "id": "h039",
+      "text": "Invoice NW-2087 (£2,400) approved. Payment within 14 days.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h041",
+      "text": "Rent for the new flat is £1,100/month from 1 October (currently £950). Standing order details attached.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h012"
+     },
+     {
+      "id": "h043",
+      "text": "We've moved the next check-in to Friday 25 Sep, 10:00. Agenda: phase 2.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h025",
+      "got_replaces": null
+     },
+     {
+      "id": "h046",
+      "text": "Bad news — landlord's in Portugal until the 8th, so we can't do the 3rd. Saturday 10 October instead. Keys Friday 9th after 4.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h012",
+      "got_replaces": null
+     },
+     {
+      "id": "h047",
+      "text": "Extra week of packing then. I'm calling it a win. We'll need a new sofa date too.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h049",
+      "text": "Book club Thursday? Mine, 7:30. I'll bring the wine.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h050",
+      "text": "Book club — Thu 24 Sep, 19:30, Amelia's flat. The Book of Form and Emptiness.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h049"
+     },
+     {
+      "id": "h051",
+      "text": "Delivery update: your Lennox is now expected 4 November (was 28 October). Courier capacity. We'll confirm a window nearer the time.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h004",
+      "got_replaces": null
+     },
+     {
+      "id": "h052",
+      "text": "Thanks for the card. Don't worry about the Crown — your mum's doing sandwiches at home instead. 12:30 still.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "h044",
+      "got_replaces": null
+     },
+     {
+      "id": "h054",
+      "text": "Your repeat prescription for naproxen is ready at Didsbury Pharmacy. Collect within 7 days.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h056",
+      "text": "Number transfer complete. 07700 900788 is now your main number; the old one is off.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "h009",
+      "got_replaces": null
+     },
+     {
+      "id": "h057",
+      "text": "Your parcel is at the locker. Collection code 4821.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h058",
+      "text": "Morning Hannah — Dr Patel is off sick today, so we have to cancel your 14:00. Next available is Thu 5 Nov, 09:15.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h031",
+      "got_replaces": "h008"
+     },
+     {
+      "id": "h059",
+      "text": "Book club — Amelia's flat, 19:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h050"
+     },
+     {
+      "id": "h060",
+      "text": "Northwind check-in — 10:00, Zoom.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h024"
+     },
+     {
+      "id": "h062",
+      "text": "Dan's birthday dinner — Bundobust, 19:30, 10 people.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h035",
+      "got_replaces": "h014"
+     },
+     {
+      "id": "h063",
+      "text": "We need to move your service from Tue 6 Oct to Tue 13 Oct. Same 08:30. Sorry.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h033",
+      "got_replaces": null
+     },
+     {
+      "id": "h064",
+      "text": "Van's confirmed for Saturday 10th, 8am. I'll get the keys Friday.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h055"
+     },
+     {
+      "id": "h065",
+      "text": "Your broadband contract ends 12 November. Renew now at £32/month for 24 months, or roll onto £39.50/month.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h068",
+      "text": "Thanks for coming, lovely day. Don't forget your mum's birthday is 22 November, not the 2nd.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h070",
+      "text": "Signed tenancy attached for 8 Chorlton Green, Manchester M21 9HS. Move-in 10 October, keys from 4pm Friday 9th. Rent £1,100 pcm. Previous address: 14 Beech Road, Didsbury M20 3QT.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h046",
+      "got_replaces": "h041"
+     },
+     {
+      "id": "h072",
+      "text": "Tom can't come after all — work thing. Just me on the 16th, 18:12. Don't make a fuss.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h040",
+      "got_replaces": null
+     },
+     {
+      "id": "h073",
+      "text": "Phase 2 deadline moved from 16 Oct to 23 Oct. Same scope.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h024",
+      "got_replaces": "h043"
+     },
+     {
+      "id": "h074",
+      "text": "Your order has been delivered.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h076",
+      "text": "Van guy wants £120 cash on the day. I'll get it out.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h078",
+      "text": "Your replacement card ending 3317 has been dispatched. Activate it when it arrives.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h082",
+      "text": "Your sofa delivery is booked for 4 November, 07:00–10:00. Please clear access.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "h051",
+      "got_replaces": null
+     },
+     {
+      "id": "h085",
+      "text": "Keys in hand! Place smells of paint. Takeaway on the floor tonight?",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h047"
+     },
+     {
+      "id": "h086",
+      "text": "Moving day — van at 8am, 8 Chorlton Green.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h059"
+     },
+     {
+      "id": "h091",
+      "text": "Just pulling in — see you in ten. I've got the present and far too much wine.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h095",
+      "text": "Landed. Taxi driver took the scenic route. Hotel is tiny but the bed's huge.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h097",
+      "text": "Ceremony at 4, then dinner in the courtyard. Don't be late, the bride is already panicking.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "h099",
+      "text": "Return flight LIS–MAN, 19:40, PNR 7QK2LM.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h094"
+     },
+     {
+      "id": "h101",
+      "text": "Book club — Amelia's flat, 19:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h079"
+     },
+     {
+      "id": "h106",
+      "text": "Dentist — Dr Patel, 09:15, Didsbury Dental.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h058"
+     },
+     {
+      "id": "h107",
+      "text": "Sofa's here. One leg is missing but they're sending it. It's actually comfy.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h105"
+     },
+     {
+      "id": "h111",
+      "text": "GP new patient check — Dr Okafor, Chorlton Family Practice, 09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "h100"
+     }
+    ]
+   }
+  },
+  "person_2": {
+   "owner": "Aarti",
+   "items": 120,
+   "secrets_set_to_not_stored": 4,
+   "plain": {
+    "store": {
+     "precision": 0.814,
+     "recall": 0.922,
+     "f1": 0.865,
+     "n": 90
+    },
+    "update": {
+     "precision": 0.344,
+     "recall": 0.524,
+     "f1": 0.415,
+     "n": 21
+    },
+    "kind_accuracy": 0.711,
+    "sensitive_kept": "0 of 4",
+    "false_sensitive": 6,
+    "errors": [
+     {
+      "id": "a005",
+      "text": "UPI payment to BigBasket — ₹2,340.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a007",
+      "text": "Your order of laboratory glassware has shipped and will arrive Thursday.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a010",
+      "text": "I'll take Kabir to football on Saturday so you can do the PTM without rushing.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a011",
+      "text": "Class 12-B chemistry practical moved to Thursday 10 September, 11:30. Same syllabus.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a006",
+      "got_replaces": "a003"
+     },
+     {
+      "id": "a014",
+      "text": "Parent-teacher meeting — 10:00am, Meera's school.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a009"
+     },
+     {
+      "id": "a018",
+      "text": "LPG cylinder refill — ₹903.00 paid.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a020",
+      "text": "Aarti ji, please send the Class 12 practical marks to the office by the 20th. The board wants them early this year.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a015"
+     },
+     {
+      "id": "a022",
+      "text": "Office dinner on Friday, I'll be late. Don't wait up.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a028",
+      "text": "Practical done finally! One boy spilled acid on the bench, but no drama. I've locked the cupboard.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a030",
+      "text": "Your chimney is out for delivery. The delivery person will call before arriving.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a031",
+      "text": "Your replacement debit card ending 8841 has been dispatched. Activate it when it arrives.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a032",
+      "text": "Mummy, football match on Sunday the 20th at 8am. You're coming, right? I'm playing striker.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a033",
+      "text": "Half-yearly exams begin 21 September. Invigilation roster attached; you are in the main hall on the first day.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a025"
+     },
+     {
+      "id": "a038",
+      "text": "Class 11 exam timetable attached. Please print and put it on the notice board.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a033"
+     },
+     {
+      "id": "a040",
+      "text": "Electricity bill — ₹1,240.00 paid by UPI.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a041",
+      "text": "Your glassware order is delayed by two days because of heavy rain in the sorting hub.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a007"
+     },
+     {
+      "id": "a044",
+      "text": "Bought Diwali sweets from Laxmi. The kaju katli is already half gone, sorry.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a048",
+      "text": "First exam went okay. I wrote the whole organic section without panicking, mostly.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a049",
+      "text": "Porting request confirmed. Your new number 94140 55667 activates on 1 October; keep the old SIM in the phone until then.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a016"
+     },
+     {
+      "id": "a050",
+      "text": "Carpenter wants ₹10,000 advance before he starts. Should I give him?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a051",
+      "text": "Follow-up with Dr Bansal on 1 October at 5:30pm. Please bring your old prescription.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a019"
+     },
+     {
+      "id": "a055",
+      "text": "Lab stock list is on your desk. We're short of conical flasks again.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a058",
+      "text": "LPG is ₹945 now. Everything is going up except my salary.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a059",
+      "text": "Madam, material is delayed. Kitchen work will now start on 12 October, not the 5th.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a035",
+      "got_replaces": null
+     },
+     {
+      "id": "a060",
+      "text": "Board practical examination window for Class 12 is 10–12 November. Detailed slot will follow.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a038"
+     },
+     {
+      "id": "a062",
+      "text": "Number transfer complete. 94140 55667 is now your main number; the old SIM is inactive.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a016",
+      "got_replaces": "a049"
+     },
+     {
+      "id": "a064",
+      "text": "Dr Bansal follow-up — 5:30pm.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a023"
+     },
+     {
+      "id": "a066",
+      "text": "Paid the board form fee, ₹1,850. Got the receipt. Now I just need your signature.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a067",
+      "text": "One more change, madam. The plywood is coming from Ajmer, so I'll start on 14 October now.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a059",
+      "got_replaces": null
+     },
+     {
+      "id": "a068",
+      "text": "Amazon — ₹1,890.00 paid.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a071",
+      "text": "Your delivery slot is confirmed for tomorrow, 7–9am.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a074",
+      "text": "The board's external examiner will come for the 12-B practical. Please keep the lab ready and the records updated.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a020"
+     },
+     {
+      "id": "a075",
+      "text": "Recommended for you: 10-minute chemistry demonstrations for large classes.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a079",
+      "text": "Kabir's Class 11 fee of ₹28,000 has been paid. Receipt sent to your email.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a080",
+      "text": "Carpenter confirmed 14 October. I've given him the advance. Don't let him ask for more.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a081",
+      "text": "Your chimney delivery has been delayed to 17 October. Sorry for the wait.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a078",
+      "got_replaces": "a030"
+     },
+     {
+      "id": "a086",
+      "text": "Madam, plywood delivery is late again. I'll start on 17 October, Saturday. Sorry.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a067",
+      "got_replaces": null
+     },
+     {
+      "id": "a087",
+      "text": "Your next appointment is 5 November at 5:00pm. Dr Bansal wants to review the cream.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a051"
+     },
+     {
+      "id": "a088",
+      "text": "Reminder: Diwali break is 6–10 November. School reopens 11 November.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a053"
+     },
+     {
+      "id": "a089",
+      "text": "Your chimney has been dispatched. It should reach you on the 17th.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a081"
+     },
+     {
+      "id": "a092",
+      "text": "I've started today. Will finish in five days. Please keep the kitchen empty till then.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "a086",
+      "got_replaces": null
+     },
+     {
+      "id": "a093",
+      "text": "Your chimney has been delivered. Installation can be booked in the app.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a089"
+     },
+     {
+      "id": "a094",
+      "text": "Shopping done, thank God. Your blouse fitting is on 14 November at 4pm. Don't disappear to school.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a084"
+     },
+     {
+      "id": "a099",
+      "text": "Your order from Spice Court is on the way.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a101",
+      "text": "Madam, washing machine will come tomorrow 10–1, not today. Vehicle broke down.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a097",
+      "got_replaces": null
+     },
+     {
+      "id": "a103",
+      "text": "Flight Jaipur–Pune, IndiGo, 6:55pm, PNR QX7P2M.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a085"
+     },
+     {
+      "id": "a104",
+      "text": "Landed safely. Hotel is near the station, basic but clean. Nisha says hello.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a106",
+      "text": "Return flight changed: Pune–Jaipur now 25 October at 21:00, not 26 October. PNR QX7P2M.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a072",
+      "got_replaces": "a103"
+     },
+     {
+      "id": "a107",
+      "text": "Return flight Pune–Jaipur, 9:00pm.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a106"
+     },
+     {
+      "id": "a108",
+      "text": "From November tiffin is ₹5,200, didi. Gas and vegetables have become very expensive.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a095",
+      "got_replaces": null
+     },
+     {
+      "id": "a109",
+      "text": "Practical instructions: 11 November, 2:00pm, Lab 3. External examiner will check records and viva. Bring the stock register.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a096"
+     },
+     {
+      "id": "a115",
+      "text": "Maa's train is here. She's brought two suitcases of sweets and one of gossip.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a110"
+     },
+     {
+      "id": "a116",
+      "text": "Dr Bansal — 5:00pm, skin review.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a064"
+     },
+     {
+      "id": "a118",
+      "text": "12-B board practical — Lab 3, 2:00pm, external examiner.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a074"
+     }
+    ]
+   },
+   "owner_guard": {
+    "store": {
+     "precision": 0.814,
+     "recall": 0.922,
+     "f1": 0.865,
+     "n": 90
+    },
+    "update": {
+     "precision": 0.344,
+     "recall": 0.524,
+     "f1": 0.415,
+     "n": 21
+    },
+    "kind_accuracy": 0.711,
+    "sensitive_kept": "0 of 4",
+    "false_sensitive": 6,
+    "errors": [
+     {
+      "id": "a005",
+      "text": "UPI payment to BigBasket — ₹2,340.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a007",
+      "text": "Your order of laboratory glassware has shipped and will arrive Thursday.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a010",
+      "text": "I'll take Kabir to football on Saturday so you can do the PTM without rushing.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a011",
+      "text": "Class 12-B chemistry practical moved to Thursday 10 September, 11:30. Same syllabus.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a006",
+      "got_replaces": "a003"
+     },
+     {
+      "id": "a014",
+      "text": "Parent-teacher meeting — 10:00am, Meera's school.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a009"
+     },
+     {
+      "id": "a018",
+      "text": "LPG cylinder refill — ₹903.00 paid.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a020",
+      "text": "Aarti ji, please send the Class 12 practical marks to the office by the 20th. The board wants them early this year.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a015"
+     },
+     {
+      "id": "a022",
+      "text": "Office dinner on Friday, I'll be late. Don't wait up.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a028",
+      "text": "Practical done finally! One boy spilled acid on the bench, but no drama. I've locked the cupboard.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a030",
+      "text": "Your chimney is out for delivery. The delivery person will call before arriving.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a031",
+      "text": "Your replacement debit card ending 8841 has been dispatched. Activate it when it arrives.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a032",
+      "text": "Mummy, football match on Sunday the 20th at 8am. You're coming, right? I'm playing striker.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a033",
+      "text": "Half-yearly exams begin 21 September. Invigilation roster attached; you are in the main hall on the first day.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a025"
+     },
+     {
+      "id": "a038",
+      "text": "Class 11 exam timetable attached. Please print and put it on the notice board.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a033"
+     },
+     {
+      "id": "a040",
+      "text": "Electricity bill — ₹1,240.00 paid by UPI.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a041",
+      "text": "Your glassware order is delayed by two days because of heavy rain in the sorting hub.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a007"
+     },
+     {
+      "id": "a044",
+      "text": "Bought Diwali sweets from Laxmi. The kaju katli is already half gone, sorry.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a048",
+      "text": "First exam went okay. I wrote the whole organic section without panicking, mostly.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a049",
+      "text": "Porting request confirmed. Your new number 94140 55667 activates on 1 October; keep the old SIM in the phone until then.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a016"
+     },
+     {
+      "id": "a050",
+      "text": "Carpenter wants ₹10,000 advance before he starts. Should I give him?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a051",
+      "text": "Follow-up with Dr Bansal on 1 October at 5:30pm. Please bring your old prescription.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a019"
+     },
+     {
+      "id": "a055",
+      "text": "Lab stock list is on your desk. We're short of conical flasks again.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a058",
+      "text": "LPG is ₹945 now. Everything is going up except my salary.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a059",
+      "text": "Madam, material is delayed. Kitchen work will now start on 12 October, not the 5th.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a035",
+      "got_replaces": null
+     },
+     {
+      "id": "a060",
+      "text": "Board practical examination window for Class 12 is 10–12 November. Detailed slot will follow.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a038"
+     },
+     {
+      "id": "a062",
+      "text": "Number transfer complete. 94140 55667 is now your main number; the old SIM is inactive.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a016",
+      "got_replaces": "a049"
+     },
+     {
+      "id": "a064",
+      "text": "Dr Bansal follow-up — 5:30pm.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a023"
+     },
+     {
+      "id": "a066",
+      "text": "Paid the board form fee, ₹1,850. Got the receipt. Now I just need your signature.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a067",
+      "text": "One more change, madam. The plywood is coming from Ajmer, so I'll start on 14 October now.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a059",
+      "got_replaces": null
+     },
+     {
+      "id": "a068",
+      "text": "Amazon — ₹1,890.00 paid.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a071",
+      "text": "Your delivery slot is confirmed for tomorrow, 7–9am.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a074",
+      "text": "The board's external examiner will come for the 12-B practical. Please keep the lab ready and the records updated.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a020"
+     },
+     {
+      "id": "a075",
+      "text": "Recommended for you: 10-minute chemistry demonstrations for large classes.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a079",
+      "text": "Kabir's Class 11 fee of ₹28,000 has been paid. Receipt sent to your email.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a080",
+      "text": "Carpenter confirmed 14 October. I've given him the advance. Don't let him ask for more.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a081",
+      "text": "Your chimney delivery has been delayed to 17 October. Sorry for the wait.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a078",
+      "got_replaces": "a030"
+     },
+     {
+      "id": "a086",
+      "text": "Madam, plywood delivery is late again. I'll start on 17 October, Saturday. Sorry.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a067",
+      "got_replaces": null
+     },
+     {
+      "id": "a087",
+      "text": "Your next appointment is 5 November at 5:00pm. Dr Bansal wants to review the cream.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a051"
+     },
+     {
+      "id": "a088",
+      "text": "Reminder: Diwali break is 6–10 November. School reopens 11 November.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a053"
+     },
+     {
+      "id": "a089",
+      "text": "Your chimney has been dispatched. It should reach you on the 17th.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a081"
+     },
+     {
+      "id": "a092",
+      "text": "I've started today. Will finish in five days. Please keep the kitchen empty till then.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "a086",
+      "got_replaces": null
+     },
+     {
+      "id": "a093",
+      "text": "Your chimney has been delivered. Installation can be booked in the app.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a089"
+     },
+     {
+      "id": "a094",
+      "text": "Shopping done, thank God. Your blouse fitting is on 14 November at 4pm. Don't disappear to school.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a084"
+     },
+     {
+      "id": "a099",
+      "text": "Your order from Spice Court is on the way.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a101",
+      "text": "Madam, washing machine will come tomorrow 10–1, not today. Vehicle broke down.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a097",
+      "got_replaces": null
+     },
+     {
+      "id": "a103",
+      "text": "Flight Jaipur–Pune, IndiGo, 6:55pm, PNR QX7P2M.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a085"
+     },
+     {
+      "id": "a104",
+      "text": "Landed safely. Hotel is near the station, basic but clean. Nisha says hello.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "a106",
+      "text": "Return flight changed: Pune–Jaipur now 25 October at 21:00, not 26 October. PNR QX7P2M.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a072",
+      "got_replaces": "a103"
+     },
+     {
+      "id": "a107",
+      "text": "Return flight Pune–Jaipur, 9:00pm.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a106"
+     },
+     {
+      "id": "a108",
+      "text": "From November tiffin is ₹5,200, didi. Gas and vegetables have become very expensive.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "a095",
+      "got_replaces": null
+     },
+     {
+      "id": "a109",
+      "text": "Practical instructions: 11 November, 2:00pm, Lab 3. External examiner will check records and viva. Bring the stock register.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a096"
+     },
+     {
+      "id": "a115",
+      "text": "Maa's train is here. She's brought two suitcases of sweets and one of gossip.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a110"
+     },
+     {
+      "id": "a116",
+      "text": "Dr Bansal — 5:00pm, skin review.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a064"
+     },
+     {
+      "id": "a118",
+      "text": "12-B board practical — Lab 3, 2:00pm, external examiner.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "a074"
+     }
+    ]
+   }
+  },
+  "person_3": {
+   "owner": "Desmond",
+   "items": 109,
+   "secrets_set_to_not_stored": 4,
+   "plain": {
+    "store": {
+     "precision": 0.681,
+     "recall": 0.925,
+     "f1": 0.785,
+     "n": 67
+    },
+    "update": {
+     "precision": 0.125,
+     "recall": 0.333,
+     "f1": 0.182,
+     "n": 12
+    },
+    "kind_accuracy": 0.71,
+    "sensitive_kept": "0 of 5",
+    "false_sensitive": 3,
+    "errors": [
+     {
+      "id": "p001",
+      "text": "Don't forget the milk, Des. And Liam's on FaceTime at 6.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p007",
+      "text": "Dad, Liam's party is 24 Oct at 2. Your grandson is turning 8 — you're coming, right?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p008",
+      "text": "Your order has shipped.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p010",
+      "text": "Load-shedding Stage 2 tonight, 18:00–20:30.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p012",
+      "text": "Hi Des, can we move your 14th to 28 Sep at 11:30? Doctor is at a conference.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p006",
+      "got_replaces": null
+     },
+     {
+      "id": "p014",
+      "text": "Ryan says Liam wants a cricket set for his birthday.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p017",
+      "text": "Dad, Liam's school concert is 16 Sep at 6. He wants you there.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p005"
+     },
+     {
+      "id": "p019",
+      "text": "Your parcel was delivered to reception.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p008"
+     },
+     {
+      "id": "p022",
+      "text": "Liam's party moved to 25 Oct, 2pm. Same place.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p007",
+      "got_replaces": null
+     },
+     {
+      "id": "p023",
+      "text": "Shelving delivery delayed to 29 September. Apologies.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p011",
+      "got_replaces": null
+     },
+     {
+      "id": "p024",
+      "text": "Des, the fridge is making that noise again. Must we just get the new one?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p014"
+     },
+     {
+      "id": "p025",
+      "text": "Your electricity bill is R3,240, due 25 Sep.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p026",
+      "text": "Concert tickets at the door, 5:30. Don't be late, Dad.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p017"
+     },
+     {
+      "id": "p029",
+      "text": "Lunch was nice. Chantelle says thanks for the money.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p030",
+      "text": "Dr Naidoo is in theatre that week. Your appointment is moved to 12 Oct at 09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p012",
+      "got_replaces": null
+     },
+     {
+      "id": "p033",
+      "text": "New number? You still on the old one?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p041",
+      "text": "Shelving delivery confirmed 1 October, 07:00–09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p031"
+     },
+     {
+      "id": "p042",
+      "text": "Booked your flight? Liam keeps asking.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p046",
+      "text": "Reminder: 12 Oct at 09:00. Fasting for bloods.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p047",
+      "text": "Schedule change: CPT–JNB now departs 18:15 on 22 October (was 23 Oct 06:30). Landing 20:10.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p043",
+      "got_replaces": null
+     },
+     {
+      "id": "p048",
+      "text": "Wait, you're coming Thursday evening now? Liam will be thrilled.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p022"
+     },
+     {
+      "id": "p049",
+      "text": "Reminder: Unit 7 keys available 29 October. Unit 4 must be empty by 31 October.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p034"
+     },
+     {
+      "id": "p051",
+      "text": "Liam's party is 25 Oct now? I'm confused. Ryan told me 24.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p052",
+      "text": "Shelving delivery now 2 October, 07:00–09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p031",
+      "got_replaces": "p041"
+     },
+     {
+      "id": "p053",
+      "text": "Party is definitely 25 Oct, 2pm. Sorry for the confusion.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p022",
+      "got_replaces": "p051"
+     },
+     {
+      "id": "p054",
+      "text": "Your fridge delivery is scheduled for 17 October, 09:00–13:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p028"
+     },
+     {
+      "id": "p055",
+      "text": "Confirmed for 12 Oct, 09:00. Bring your medication list.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p030"
+     },
+     {
+      "id": "p061",
+      "text": "Shelving delivered. Installation team tomorrow at 08:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p052"
+     },
+     {
+      "id": "p062",
+      "text": "New shelves look good. Now the shop move.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p063",
+      "text": "Shelving installation — shop, 08:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p009"
+     },
+     {
+      "id": "p064",
+      "text": "Dad, Liam's cricket set — he's obsessed. Thank you.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p026"
+     },
+     {
+      "id": "p065",
+      "text": "Hirsch's rang — they can't do Saturday, it's Monday now. Same time.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p054",
+      "got_replaces": null
+     },
+     {
+      "id": "p066",
+      "text": "Debit order — shop rent R18,500.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p067",
+      "text": "Dr Naidoo is next Monday, don't forget.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p069",
+      "text": "So you land Friday morning? I'll take leave.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p070",
+      "text": "Des, the card machine is down. Cash only.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p072",
+      "text": "Club champs Saturday 17th, 7:30. Bring your A game.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p075",
+      "text": "Dr Naidoo: change simvastatin to rosuvastatin 10mg. Bloods again in 3 months.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p076",
+      "text": "Fridge delivery confirmed 19 October, 10:00–14:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p054"
+     },
+     {
+      "id": "p077",
+      "text": "Liam's party is 25 Oct, 2pm. Don't double-book golf.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p053"
+     },
+     {
+      "id": "p080",
+      "text": "Fridge tomorrow. Clear the kitchen.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p024"
+     },
+     {
+      "id": "p081",
+      "text": "Fridge delivered. Old one taken away.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p076"
+     },
+     {
+      "id": "p082",
+      "text": "Des, the new fridge is too big. It sticks out.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p080"
+     },
+     {
+      "id": "p085",
+      "text": "See you tomorrow at 9:15. I'll wait at arrivals.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p048"
+     },
+     {
+      "id": "p087",
+      "text": "Party tomorrow. Liam's bouncing off the walls already.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p077"
+     },
+     {
+      "id": "p088",
+      "text": "Liam's birthday party — 14:00, Ryan's place.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p087"
+     },
+     {
+      "id": "p089",
+      "text": "Return flight JNB–CPT, 18:45, PNR K4P9RD.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p086"
+     },
+     {
+      "id": "p091",
+      "text": "Shop move 31 Oct. Pack Wednesday, van 7am Saturday.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p073"
+     },
+     {
+      "id": "p092",
+      "text": "Keys collected. Unit 7 is yours.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p093",
+      "text": "Shop move — van 07:00, Unit 7, Paarden Eiland Industrial Park.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p091"
+     },
+     {
+      "id": "p094",
+      "text": "How's the new shop? Send a photo.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p062"
+     },
+     {
+      "id": "p097",
+      "text": "New shop is lekker. Customers can't find us though.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p098",
+      "text": "VAT return due 25 November. Amount R18,420.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p099",
+      "text": "Your suit for Chantelle's thing is at the dry cleaners.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p029"
+     },
+     {
+      "id": "p100",
+      "text": "New medical aid card delivered to 18 Sunningdale Road.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p101",
+      "text": "Card ending 7742: fuel purchase at Engen, R920.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p016"
+     },
+     {
+      "id": "p103",
+      "text": "My birthday is Thursday, Des. Don't say I didn't remind you.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p106",
+      "text": "Yolanda's birthday dinner — Ons Huisie, 19:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p105"
+     },
+     {
+      "id": "p108",
+      "text": "Thanks for the dinner, Dad. Mum was happy.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p064"
+     }
+    ]
+   },
+   "owner_guard": {
+    "store": {
+     "precision": 0.681,
+     "recall": 0.925,
+     "f1": 0.785,
+     "n": 67
+    },
+    "update": {
+     "precision": 0.125,
+     "recall": 0.333,
+     "f1": 0.182,
+     "n": 12
+    },
+    "kind_accuracy": 0.71,
+    "sensitive_kept": "0 of 5",
+    "false_sensitive": 3,
+    "errors": [
+     {
+      "id": "p001",
+      "text": "Don't forget the milk, Des. And Liam's on FaceTime at 6.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p007",
+      "text": "Dad, Liam's party is 24 Oct at 2. Your grandson is turning 8 — you're coming, right?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p008",
+      "text": "Your order has shipped.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p010",
+      "text": "Load-shedding Stage 2 tonight, 18:00–20:30.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p012",
+      "text": "Hi Des, can we move your 14th to 28 Sep at 11:30? Doctor is at a conference.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p006",
+      "got_replaces": null
+     },
+     {
+      "id": "p014",
+      "text": "Ryan says Liam wants a cricket set for his birthday.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p017",
+      "text": "Dad, Liam's school concert is 16 Sep at 6. He wants you there.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p005"
+     },
+     {
+      "id": "p019",
+      "text": "Your parcel was delivered to reception.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p008"
+     },
+     {
+      "id": "p022",
+      "text": "Liam's party moved to 25 Oct, 2pm. Same place.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p007",
+      "got_replaces": null
+     },
+     {
+      "id": "p023",
+      "text": "Shelving delivery delayed to 29 September. Apologies.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p011",
+      "got_replaces": null
+     },
+     {
+      "id": "p024",
+      "text": "Des, the fridge is making that noise again. Must we just get the new one?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p014"
+     },
+     {
+      "id": "p025",
+      "text": "Your electricity bill is R3,240, due 25 Sep.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p026",
+      "text": "Concert tickets at the door, 5:30. Don't be late, Dad.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p017"
+     },
+     {
+      "id": "p029",
+      "text": "Lunch was nice. Chantelle says thanks for the money.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p030",
+      "text": "Dr Naidoo is in theatre that week. Your appointment is moved to 12 Oct at 09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p012",
+      "got_replaces": null
+     },
+     {
+      "id": "p033",
+      "text": "New number? You still on the old one?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p041",
+      "text": "Shelving delivery confirmed 1 October, 07:00–09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p031"
+     },
+     {
+      "id": "p042",
+      "text": "Booked your flight? Liam keeps asking.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p046",
+      "text": "Reminder: 12 Oct at 09:00. Fasting for bloods.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p047",
+      "text": "Schedule change: CPT–JNB now departs 18:15 on 22 October (was 23 Oct 06:30). Landing 20:10.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p043",
+      "got_replaces": null
+     },
+     {
+      "id": "p048",
+      "text": "Wait, you're coming Thursday evening now? Liam will be thrilled.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p022"
+     },
+     {
+      "id": "p049",
+      "text": "Reminder: Unit 7 keys available 29 October. Unit 4 must be empty by 31 October.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p034"
+     },
+     {
+      "id": "p051",
+      "text": "Liam's party is 25 Oct now? I'm confused. Ryan told me 24.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p052",
+      "text": "Shelving delivery now 2 October, 07:00–09:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p031",
+      "got_replaces": "p041"
+     },
+     {
+      "id": "p053",
+      "text": "Party is definitely 25 Oct, 2pm. Sorry for the confusion.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p022",
+      "got_replaces": "p051"
+     },
+     {
+      "id": "p054",
+      "text": "Your fridge delivery is scheduled for 17 October, 09:00–13:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p028"
+     },
+     {
+      "id": "p055",
+      "text": "Confirmed for 12 Oct, 09:00. Bring your medication list.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p030"
+     },
+     {
+      "id": "p061",
+      "text": "Shelving delivered. Installation team tomorrow at 08:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p052"
+     },
+     {
+      "id": "p062",
+      "text": "New shelves look good. Now the shop move.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p063",
+      "text": "Shelving installation — shop, 08:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p009"
+     },
+     {
+      "id": "p064",
+      "text": "Dad, Liam's cricket set — he's obsessed. Thank you.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p026"
+     },
+     {
+      "id": "p065",
+      "text": "Hirsch's rang — they can't do Saturday, it's Monday now. Same time.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "p054",
+      "got_replaces": null
+     },
+     {
+      "id": "p066",
+      "text": "Debit order — shop rent R18,500.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p067",
+      "text": "Dr Naidoo is next Monday, don't forget.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p069",
+      "text": "So you land Friday morning? I'll take leave.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p070",
+      "text": "Des, the card machine is down. Cash only.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p072",
+      "text": "Club champs Saturday 17th, 7:30. Bring your A game.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p075",
+      "text": "Dr Naidoo: change simvastatin to rosuvastatin 10mg. Bloods again in 3 months.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p076",
+      "text": "Fridge delivery confirmed 19 October, 10:00–14:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p054"
+     },
+     {
+      "id": "p077",
+      "text": "Liam's party is 25 Oct, 2pm. Don't double-book golf.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p053"
+     },
+     {
+      "id": "p080",
+      "text": "Fridge tomorrow. Clear the kitchen.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p024"
+     },
+     {
+      "id": "p081",
+      "text": "Fridge delivered. Old one taken away.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p076"
+     },
+     {
+      "id": "p082",
+      "text": "Des, the new fridge is too big. It sticks out.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p080"
+     },
+     {
+      "id": "p085",
+      "text": "See you tomorrow at 9:15. I'll wait at arrivals.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p048"
+     },
+     {
+      "id": "p087",
+      "text": "Party tomorrow. Liam's bouncing off the walls already.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p077"
+     },
+     {
+      "id": "p088",
+      "text": "Liam's birthday party — 14:00, Ryan's place.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p087"
+     },
+     {
+      "id": "p089",
+      "text": "Return flight JNB–CPT, 18:45, PNR K4P9RD.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p086"
+     },
+     {
+      "id": "p091",
+      "text": "Shop move 31 Oct. Pack Wednesday, van 7am Saturday.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p073"
+     },
+     {
+      "id": "p092",
+      "text": "Keys collected. Unit 7 is yours.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p093",
+      "text": "Shop move — van 07:00, Unit 7, Paarden Eiland Industrial Park.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p091"
+     },
+     {
+      "id": "p094",
+      "text": "How's the new shop? Send a photo.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p062"
+     },
+     {
+      "id": "p097",
+      "text": "New shop is lekker. Customers can't find us though.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p098",
+      "text": "VAT return due 25 November. Amount R18,420.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p099",
+      "text": "Your suit for Chantelle's thing is at the dry cleaners.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p029"
+     },
+     {
+      "id": "p100",
+      "text": "New medical aid card delivered to 18 Sunningdale Road.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p101",
+      "text": "Card ending 7742: fuel purchase at Engen, R920.00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p016"
+     },
+     {
+      "id": "p103",
+      "text": "My birthday is Thursday, Des. Don't say I didn't remind you.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "p106",
+      "text": "Yolanda's birthday dinner — Ons Huisie, 19:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p105"
+     },
+     {
+      "id": "p108",
+      "text": "Thanks for the dinner, Dad. Mum was happy.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "p064"
+     }
+    ]
+   }
+  },
+  "person_4": {
+   "owner": "Beatriz",
+   "items": 102,
+   "secrets_set_to_not_stored": 4,
+   "plain": {
+    "store": {
+     "precision": 0.716,
+     "recall": 0.757,
+     "f1": 0.736,
+     "n": 70
+    },
+    "update": {
+     "precision": 0.049,
+     "recall": 0.182,
+     "f1": 0.077,
+     "n": 11
+    },
+    "kind_accuracy": 0.509,
+    "sensitive_kept": "3 of 5",
+    "false_sensitive": 2,
+    "errors": [
+     {
+      "id": "b001",
+      "text": "bom dia amor, te busco na facul hj?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b004",
+      "text": "Bia, meu aniversário é 31/10, você vem né? Já quero você aqui.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b007",
+      "text": "Entrega do trabalho de tipografia adiada de 5/10 para 12/10.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b002"
+     },
+     {
+      "id": "b008",
+      "text": "Bia, a vó quer que você passe na farmácia, remédio da pressão.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b005"
+     },
+     {
+      "id": "b009",
+      "text": "vamos no cinema sábado? eu pago.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b012",
+      "text": "Filha, saiu o contrato do apê da Rua Girassol 220, Vila Madalena, São Paulo 05433-000. Mudança dia 10/10. Vamos sair da Rua Harmonia 45, 05435-000.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b008"
+     },
+     {
+      "id": "b013",
+      "text": "CPF 123.456.789-00 confirmado para a bolsa. Documentos até 30/9.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b007"
+     },
+     {
+      "id": "b015",
+      "text": "Preço student sobe para R$12,90 em outubro (era R$11,90).",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b016",
+      "text": "PIX recebido de Pedro: R$50,00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b017",
+      "text": "Boa notícia: seu notebook chega antes, dia 19/9 (era 25/9).",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b003",
+      "got_replaces": null
+     },
+     {
+      "id": "b018",
+      "text": "A vó passou mal, levei no pronto-socorro. Tô aqui com ela.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b012"
+     },
+     {
+      "id": "b019",
+      "text": "Vó tá bem, foi só pressão baixa. Volta hoje.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b020",
+      "text": "Bolsa parcial aprovada. Entregar documentos até 30/9.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b014"
+     },
+     {
+      "id": "b021",
+      "text": "Pagamento de R$39,90 aprovado.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b026",
+      "text": "Novo prazo do trabalho de tipografia: 19/10.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "b007",
+      "got_replaces": "b013"
+     },
+     {
+      "id": "b029",
+      "text": "Prova de história da arte dia 1/10, sala 8.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b030",
+      "text": "A mudança mudou pro dia 24/10. O caminhão só tinha vaga nesse dia.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b012",
+      "got_replaces": null
+     },
+     {
+      "id": "b031",
+      "text": "Seu notebook saiu para entrega. Chega amanhã, 19/9.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b017",
+      "got_replaces": null
+     },
+     {
+      "id": "b036",
+      "text": "Portabilidade concluída. 11 98888-7766 está ativo.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b028",
+      "got_replaces": null
+     },
+     {
+      "id": "b037",
+      "text": "Senha do portal do aluno resetada. Senha temporária: Bia2026*arte.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b026"
+     },
+     {
+      "id": "b038",
+      "text": "A doutora falou que a vó tem que voltar dia 5/10.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b042",
+      "text": "O show mudou pro dia 1/11, ainda dá tempo.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b033",
+      "got_replaces": null
+     },
+     {
+      "id": "b043",
+      "text": "A mudança agora é domingo 25/10, não sábado 24. Última vez, prometo.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "b030",
+      "got_replaces": null
+     },
+     {
+      "id": "b044",
+      "text": "Documentos da bolsa aprovados. Matrícula ok.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b037"
+     },
+     {
+      "id": "b045",
+      "text": "Remédio da vó (losartana) pronto para retirada.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b018"
+     },
+     {
+      "id": "b046",
+      "text": "Entrega final do trabalho de tipografia em 19/10, sem prorrogação.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b044"
+     },
+     {
+      "id": "b047",
+      "text": "Prova de história da arte — 8h, sala 8.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b049",
+      "text": "Sua fatura vence dia 10.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b043"
+     },
+     {
+      "id": "b050",
+      "text": "Bia, escolhe seu quarto no apê novo. O menor ou o da janela?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b048"
+     },
+     {
+      "id": "b052",
+      "text": "Bia, o café vai fechar dia 12/10 pra reforma. Folga remunerada.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b045"
+     },
+     {
+      "id": "b053",
+      "text": "Bia, passa aqui pra tomar café, minha filha.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b054",
+      "text": "Sua passagem SP–Curitiba mudou: saída 29/10 21:20, chegada 22:40.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "b034",
+      "got_replaces": null
+     },
+     {
+      "id": "b056",
+      "text": "amor, domingo 8/11 é meu aniversário, mas o jantar é nesse dia, ok?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b057",
+      "text": "Depois da reforma seu turno vira 14h-20h.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b052"
+     },
+     {
+      "id": "b058",
+      "text": "Bia, o show foi confirmado 1/11 às 21h. Vou comprar os ingressos.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b059",
+      "text": "Bia, a imobiliária quer o comprovante de renda. Você tem?",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b050"
+     },
+     {
+      "id": "b061",
+      "text": "Sua matrícula foi renovada para 2027.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b046"
+     },
+     {
+      "id": "b062",
+      "text": "Café fechado dia 12, reforma até 25. Folga remunerada.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b057"
+     },
+     {
+      "id": "b064",
+      "text": "Bia, o Wi-Fi do apê novo é BiaCasa2026#.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b059"
+     },
+     {
+      "id": "b066",
+      "text": "Bia, o ingresso do show tá no meu nome. Leva documento.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b033"
+     },
+     {
+      "id": "b067",
+      "text": "Voo de volta 2/11 agora 18:40 (era 20:00).",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b054",
+      "got_replaces": null
+     },
+     {
+      "id": "b068",
+      "text": "Lembrete: trabalho de tipografia hoje até 23h59.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b061"
+     },
+     {
+      "id": "b071",
+      "text": "Dra. Freitas: continuar ácido à noite, protetor solar de manhã. Retorno em 3 meses.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b072",
+      "text": "A vó tá ansiosa com a mudança. Vem almoçar domingo.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b064"
+     },
+     {
+      "id": "b074",
+      "text": "O café reabre segunda 26/10. Turno novo 14h-20h.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b024"
+     },
+     {
+      "id": "b075",
+      "text": "Bia, tô indo dormir no apê novo com a vó. Amanhã cedo a mudança.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b072"
+     },
+     {
+      "id": "b076",
+      "text": "Sua fatura do cartão vence amanhã.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b049"
+     },
+     {
+      "id": "b078",
+      "text": "Chegamos. Tua caixa de livros tá na sala.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b075"
+     },
+     {
+      "id": "b079",
+      "text": "Aula de laboratório de imagem digital: quarta 19h, lab 2.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b068"
+     },
+     {
+      "id": "b080",
+      "text": "amor, te busco pra ajudar a montar a estante?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b065"
+     },
+     {
+      "id": "b083",
+      "text": "Bom dia! Te busco no aeroporto às 22:40. Leva casaco.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b066"
+     },
+     {
+      "id": "b084",
+      "text": "Parabéns pra Luiza! Liga pra ela.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b078"
+     },
+     {
+      "id": "b087",
+      "text": "Voo Curitiba–SP, 18:40, PNR B7C2MX.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b082"
+     },
+     {
+      "id": "b089",
+      "text": "Bia, a vó quer que você leve o remédio dela semana que vem.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b084"
+     },
+     {
+      "id": "b090",
+      "text": "Notas do semestre disponíveis no portal.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b020"
+     },
+     {
+      "id": "b091",
+      "text": "amor, domingo é o jantar do meu aniversário, não esquece.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b080"
+     },
+     {
+      "id": "b092",
+      "text": "Bia, leva a vó no médico dia 12? Eu trabalho.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b089"
+     },
+     {
+      "id": "b093",
+      "text": "Jantar de aniversário do Pedro — Madá, 20h.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b096",
+      "text": "Bia, a vó tem consulta dia 12 às 9h. Não esquece.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b092"
+     },
+     {
+      "id": "b097",
+      "text": "Consulta da vó — 9h, Clínica Vila Madalena.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b096"
+     },
+     {
+      "id": "b098",
+      "text": "Vó: próxima consulta em fevereiro.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b060"
+     },
+     {
+      "id": "b099",
+      "text": "Bia, você deixou seu casaco aqui.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b083"
+     },
+     {
+      "id": "b100",
+      "text": "Aniversário da mãe: 12/12. Começar a pensar no presente.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b101",
+      "text": "Bia, almoço domingo aqui em casa, 12h.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b102",
+      "text": "Prova final de teoria do design em 30/11, sala 3.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b090"
+     }
+    ]
+   },
+   "owner_guard": {
+    "store": {
+     "precision": 0.716,
+     "recall": 0.757,
+     "f1": 0.736,
+     "n": 70
+    },
+    "update": {
+     "precision": 0.049,
+     "recall": 0.182,
+     "f1": 0.077,
+     "n": 11
+    },
+    "kind_accuracy": 0.509,
+    "sensitive_kept": "3 of 5",
+    "false_sensitive": 2,
+    "errors": [
+     {
+      "id": "b001",
+      "text": "bom dia amor, te busco na facul hj?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b004",
+      "text": "Bia, meu aniversário é 31/10, você vem né? Já quero você aqui.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b007",
+      "text": "Entrega do trabalho de tipografia adiada de 5/10 para 12/10.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b002"
+     },
+     {
+      "id": "b008",
+      "text": "Bia, a vó quer que você passe na farmácia, remédio da pressão.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b005"
+     },
+     {
+      "id": "b009",
+      "text": "vamos no cinema sábado? eu pago.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b012",
+      "text": "Filha, saiu o contrato do apê da Rua Girassol 220, Vila Madalena, São Paulo 05433-000. Mudança dia 10/10. Vamos sair da Rua Harmonia 45, 05435-000.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b008"
+     },
+     {
+      "id": "b013",
+      "text": "CPF 123.456.789-00 confirmado para a bolsa. Documentos até 30/9.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b007"
+     },
+     {
+      "id": "b015",
+      "text": "Preço student sobe para R$12,90 em outubro (era R$11,90).",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b016",
+      "text": "PIX recebido de Pedro: R$50,00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b017",
+      "text": "Boa notícia: seu notebook chega antes, dia 19/9 (era 25/9).",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b003",
+      "got_replaces": null
+     },
+     {
+      "id": "b018",
+      "text": "A vó passou mal, levei no pronto-socorro. Tô aqui com ela.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b012"
+     },
+     {
+      "id": "b019",
+      "text": "Vó tá bem, foi só pressão baixa. Volta hoje.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b020",
+      "text": "Bolsa parcial aprovada. Entregar documentos até 30/9.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b014"
+     },
+     {
+      "id": "b021",
+      "text": "Pagamento de R$39,90 aprovado.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b026",
+      "text": "Novo prazo do trabalho de tipografia: 19/10.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "b007",
+      "got_replaces": "b013"
+     },
+     {
+      "id": "b029",
+      "text": "Prova de história da arte dia 1/10, sala 8.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b030",
+      "text": "A mudança mudou pro dia 24/10. O caminhão só tinha vaga nesse dia.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b012",
+      "got_replaces": null
+     },
+     {
+      "id": "b031",
+      "text": "Seu notebook saiu para entrega. Chega amanhã, 19/9.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b017",
+      "got_replaces": null
+     },
+     {
+      "id": "b036",
+      "text": "Portabilidade concluída. 11 98888-7766 está ativo.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b028",
+      "got_replaces": null
+     },
+     {
+      "id": "b037",
+      "text": "Senha do portal do aluno resetada. Senha temporária: Bia2026*arte.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b026"
+     },
+     {
+      "id": "b038",
+      "text": "A doutora falou que a vó tem que voltar dia 5/10.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b042",
+      "text": "O show mudou pro dia 1/11, ainda dá tempo.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b033",
+      "got_replaces": null
+     },
+     {
+      "id": "b043",
+      "text": "A mudança agora é domingo 25/10, não sábado 24. Última vez, prometo.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "b030",
+      "got_replaces": null
+     },
+     {
+      "id": "b044",
+      "text": "Documentos da bolsa aprovados. Matrícula ok.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b037"
+     },
+     {
+      "id": "b045",
+      "text": "Remédio da vó (losartana) pronto para retirada.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b018"
+     },
+     {
+      "id": "b046",
+      "text": "Entrega final do trabalho de tipografia em 19/10, sem prorrogação.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b044"
+     },
+     {
+      "id": "b047",
+      "text": "Prova de história da arte — 8h, sala 8.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b049",
+      "text": "Sua fatura vence dia 10.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b043"
+     },
+     {
+      "id": "b050",
+      "text": "Bia, escolhe seu quarto no apê novo. O menor ou o da janela?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b048"
+     },
+     {
+      "id": "b052",
+      "text": "Bia, o café vai fechar dia 12/10 pra reforma. Folga remunerada.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b045"
+     },
+     {
+      "id": "b053",
+      "text": "Bia, passa aqui pra tomar café, minha filha.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b054",
+      "text": "Sua passagem SP–Curitiba mudou: saída 29/10 21:20, chegada 22:40.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "b034",
+      "got_replaces": null
+     },
+     {
+      "id": "b056",
+      "text": "amor, domingo 8/11 é meu aniversário, mas o jantar é nesse dia, ok?",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b057",
+      "text": "Depois da reforma seu turno vira 14h-20h.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b052"
+     },
+     {
+      "id": "b058",
+      "text": "Bia, o show foi confirmado 1/11 às 21h. Vou comprar os ingressos.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b059",
+      "text": "Bia, a imobiliária quer o comprovante de renda. Você tem?",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b050"
+     },
+     {
+      "id": "b061",
+      "text": "Sua matrícula foi renovada para 2027.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b046"
+     },
+     {
+      "id": "b062",
+      "text": "Café fechado dia 12, reforma até 25. Folga remunerada.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b057"
+     },
+     {
+      "id": "b064",
+      "text": "Bia, o Wi-Fi do apê novo é BiaCasa2026#.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b059"
+     },
+     {
+      "id": "b066",
+      "text": "Bia, o ingresso do show tá no meu nome. Leva documento.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b033"
+     },
+     {
+      "id": "b067",
+      "text": "Voo de volta 2/11 agora 18:40 (era 20:00).",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "b054",
+      "got_replaces": null
+     },
+     {
+      "id": "b068",
+      "text": "Lembrete: trabalho de tipografia hoje até 23h59.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b061"
+     },
+     {
+      "id": "b071",
+      "text": "Dra. Freitas: continuar ácido à noite, protetor solar de manhã. Retorno em 3 meses.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b072",
+      "text": "A vó tá ansiosa com a mudança. Vem almoçar domingo.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b064"
+     },
+     {
+      "id": "b074",
+      "text": "O café reabre segunda 26/10. Turno novo 14h-20h.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b024"
+     },
+     {
+      "id": "b075",
+      "text": "Bia, tô indo dormir no apê novo com a vó. Amanhã cedo a mudança.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b072"
+     },
+     {
+      "id": "b076",
+      "text": "Sua fatura do cartão vence amanhã.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b049"
+     },
+     {
+      "id": "b078",
+      "text": "Chegamos. Tua caixa de livros tá na sala.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b075"
+     },
+     {
+      "id": "b079",
+      "text": "Aula de laboratório de imagem digital: quarta 19h, lab 2.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b068"
+     },
+     {
+      "id": "b080",
+      "text": "amor, te busco pra ajudar a montar a estante?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b065"
+     },
+     {
+      "id": "b083",
+      "text": "Bom dia! Te busco no aeroporto às 22:40. Leva casaco.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b066"
+     },
+     {
+      "id": "b084",
+      "text": "Parabéns pra Luiza! Liga pra ela.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b078"
+     },
+     {
+      "id": "b087",
+      "text": "Voo Curitiba–SP, 18:40, PNR B7C2MX.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b082"
+     },
+     {
+      "id": "b089",
+      "text": "Bia, a vó quer que você leve o remédio dela semana que vem.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b084"
+     },
+     {
+      "id": "b090",
+      "text": "Notas do semestre disponíveis no portal.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b020"
+     },
+     {
+      "id": "b091",
+      "text": "amor, domingo é o jantar do meu aniversário, não esquece.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b080"
+     },
+     {
+      "id": "b092",
+      "text": "Bia, leva a vó no médico dia 12? Eu trabalho.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b089"
+     },
+     {
+      "id": "b093",
+      "text": "Jantar de aniversário do Pedro — Madá, 20h.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b096",
+      "text": "Bia, a vó tem consulta dia 12 às 9h. Não esquece.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b092"
+     },
+     {
+      "id": "b097",
+      "text": "Consulta da vó — 9h, Clínica Vila Madalena.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b096"
+     },
+     {
+      "id": "b098",
+      "text": "Vó: próxima consulta em fevereiro.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b060"
+     },
+     {
+      "id": "b099",
+      "text": "Bia, você deixou seu casaco aqui.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b083"
+     },
+     {
+      "id": "b100",
+      "text": "Aniversário da mãe: 12/12. Começar a pensar no presente.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b101",
+      "text": "Bia, almoço domingo aqui em casa, 12h.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "b102",
+      "text": "Prova final de teoria do design em 30/11, sala 3.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "b090"
+     }
+    ]
+   }
+  },
+  "person_5": {
+   "owner": "Siobhán",
+   "items": 115,
+   "secrets_set_to_not_stored": 3,
+   "plain": {
+    "store": {
+     "precision": 0.632,
+     "recall": 0.909,
+     "f1": 0.745,
+     "n": 66
+    },
+    "update": {
+     "precision": 0.216,
+     "recall": 0.8,
+     "f1": 0.34,
+     "n": 10
+    },
+    "kind_accuracy": 0.75,
+    "sensitive_kept": "1 of 4",
+    "false_sensitive": 1,
+    "errors": [
+     {
+      "id": "s001",
+      "text": "I'll drop Niamh, you go straight to work?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s003",
+      "text": "Weather warning for Galway — heavy rain overnight.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s011",
+      "text": "Card ending 4412: Tesco €63.20.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s013",
+      "text": "Sea swim Sunday 9am? Bring the flask.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s018",
+      "text": "Siobhán, your nights switch to days from 5 Oct. Rota attached.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s019",
+      "text": "Mam, can I stay in Galway after training? I'll get the bus.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s005"
+     },
+     {
+      "id": "s022",
+      "text": "Car service — Galway Motors, 08:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s020"
+     },
+     {
+      "id": "s025",
+      "text": "Mam, I need the PPS number for the college grant.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s026",
+      "text": "Aoife's grant: my PPS is 1234567T. Send it to her.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s025"
+     },
+     {
+      "id": "s029",
+      "text": "Swim was freezing. Never again. Same time next week?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s030",
+      "text": "The nurse says I need a bit more help. Maybe we should look at St Brendan's.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s007"
+     },
+     {
+      "id": "s031",
+      "text": "Your electricity bill is €148.20, due 28 Sep.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s034",
+      "text": "St Brendan's has a room. I'll go on the 3rd of October.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s030"
+     },
+     {
+      "id": "s040",
+      "text": "I'll do the shop. You get an early night.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s041",
+      "text": "I'm happy about St Brendan's. It's time.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s034"
+     },
+     {
+      "id": "s042",
+      "text": "Delivery now 19 October (was 12 October).",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "s033",
+      "got_replaces": null
+     },
+     {
+      "id": "s044",
+      "text": "Your bill is ready.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s047",
+      "text": "Ward 3 floors are done early. You're back in Ward 3 from 2 November.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s032"
+     },
+     {
+      "id": "s048",
+      "text": "Cian's final is 24 Oct at 3, not 11 Oct. Big one.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "s012",
+      "got_replaces": null
+     },
+     {
+      "id": "s050",
+      "text": "Your phone bill is €55.30.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s051",
+      "text": "Siobhán, can you do an extra day 30 Sep? We're short.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s052",
+      "text": "The room is lovely. I can see the sea.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s041"
+     },
+     {
+      "id": "s054",
+      "text": "Mammogram done. Results in two weeks.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s053"
+     },
+     {
+      "id": "s060",
+      "text": "Training complete. Certificate attached.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s028"
+     },
+     {
+      "id": "s063",
+      "text": "I'm packing. It's strange leaving the house.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s052"
+     },
+     {
+      "id": "s067",
+      "text": "Paddy moving to St Brendan's Nursing Home, Clifden.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s057"
+     },
+     {
+      "id": "s068",
+      "text": "I'm in. Room 6. The food is decent.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s063"
+     },
+     {
+      "id": "s070",
+      "text": "New day shift starts today, 07:30–19:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s035"
+     },
+     {
+      "id": "s072",
+      "text": "Reminder: appointment 20 Oct at 15:00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s046"
+     },
+     {
+      "id": "s075",
+      "text": "Card ending 8842: Lidl €48.90.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s077",
+      "text": "Book club Thursday? We're doing the new Anne Enright.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s080",
+      "text": "I'll bring Paddy to the home for the day Sunday?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s069"
+     },
+     {
+      "id": "s082",
+      "text": "Ward 3 is ready. Back from 2 November.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s047"
+     },
+     {
+      "id": "s083",
+      "text": "Delivery confirmed 20 October.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s073"
+     },
+     {
+      "id": "s085",
+      "text": "The radio works. The nurse likes country music too.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s086",
+      "text": "Your electricity bill is €162.40.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s089",
+      "text": "Check-in open for 23 Oct at 19:40.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s091",
+      "text": "Flight Dublin–Málaga, 19:40, PNR E4T9RK.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s076"
+     },
+     {
+      "id": "s092",
+      "text": "We won the final! 2-0. Thanks for coming, Mam.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s093",
+      "text": "Nerja looks class. Send photos.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s095",
+      "text": "Mam, can you get me the black shoes for the exam?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s096",
+      "text": "Your room is ready. Breakfast until 10:30.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s079"
+     },
+     {
+      "id": "s097",
+      "text": "Buy duty free on the way back? Declan wants whiskey.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s098",
+      "text": "Heading back to Cork tomorrow. Thanks for the week.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s043"
+     },
+     {
+      "id": "s099",
+      "text": "Return flight Málaga–Dublin, 18:20, PNR E4T9RK.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s091"
+     },
+     {
+      "id": "s100",
+      "text": "Home safe. I'll collect you at Dublin?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s080"
+     },
+     {
+      "id": "s101",
+      "text": "Back in Ward 3 today. It looks huge after Ward 5.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s082"
+     },
+     {
+      "id": "s102",
+      "text": "Your mammogram was clear. Routine recall in two years.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s103",
+      "text": "The doctor says I'm settling well. No complaints.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s104",
+      "text": "Exam is Saturday 8 Nov at 10. Don't be late.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s106",
+      "text": "Your membership renews at €49 on 1 December.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s090"
+     },
+     {
+      "id": "s107",
+      "text": "Niamh's Irish dancing exam — 10:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s009"
+     },
+     {
+      "id": "s109",
+      "text": "Good luck tomorrow. You'll be brilliant.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s110",
+      "text": "Interview panel confirmed for 11:00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s108"
+     },
+     {
+      "id": "s113",
+      "text": "Passport expires 12 Jan 2027 — renew in December.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s078"
+     },
+     {
+      "id": "s114",
+      "text": "Mam, did you get the job? Ring me.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s084"
+     }
+    ]
+   },
+   "owner_guard": {
+    "store": {
+     "precision": 0.632,
+     "recall": 0.909,
+     "f1": 0.745,
+     "n": 66
+    },
+    "update": {
+     "precision": 0.222,
+     "recall": 0.8,
+     "f1": 0.348,
+     "n": 10
+    },
+    "kind_accuracy": 0.75,
+    "sensitive_kept": "1 of 4",
+    "false_sensitive": 1,
+    "errors": [
+     {
+      "id": "s001",
+      "text": "I'll drop Niamh, you go straight to work?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s003",
+      "text": "Weather warning for Galway — heavy rain overnight.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s011",
+      "text": "Card ending 4412: Tesco €63.20.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s013",
+      "text": "Sea swim Sunday 9am? Bring the flask.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s018",
+      "text": "Siobhán, your nights switch to days from 5 Oct. Rota attached.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s019",
+      "text": "Mam, can I stay in Galway after training? I'll get the bus.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s022",
+      "text": "Car service — Galway Motors, 08:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s020"
+     },
+     {
+      "id": "s025",
+      "text": "Mam, I need the PPS number for the college grant.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s026",
+      "text": "Aoife's grant: my PPS is 1234567T. Send it to her.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s029",
+      "text": "Swim was freezing. Never again. Same time next week?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s030",
+      "text": "The nurse says I need a bit more help. Maybe we should look at St Brendan's.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s007"
+     },
+     {
+      "id": "s031",
+      "text": "Your electricity bill is €148.20, due 28 Sep.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s034",
+      "text": "St Brendan's has a room. I'll go on the 3rd of October.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s030"
+     },
+     {
+      "id": "s040",
+      "text": "I'll do the shop. You get an early night.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s041",
+      "text": "I'm happy about St Brendan's. It's time.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s034"
+     },
+     {
+      "id": "s042",
+      "text": "Delivery now 19 October (was 12 October).",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": "s033",
+      "got_replaces": null
+     },
+     {
+      "id": "s043",
+      "text": "Cork is great. My address is 12 Victoria Cross Road, Cork T12 Y6W8.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s005"
+     },
+     {
+      "id": "s044",
+      "text": "Your bill is ready.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s047",
+      "text": "Ward 3 floors are done early. You're back in Ward 3 from 2 November.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s032"
+     },
+     {
+      "id": "s048",
+      "text": "Cian's final is 24 Oct at 3, not 11 Oct. Big one.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": "s012",
+      "got_replaces": null
+     },
+     {
+      "id": "s050",
+      "text": "Your phone bill is €55.30.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s051",
+      "text": "Siobhán, can you do an extra day 30 Sep? We're short.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s052",
+      "text": "The room is lovely. I can see the sea.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s041"
+     },
+     {
+      "id": "s054",
+      "text": "Mammogram done. Results in two weeks.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s053"
+     },
+     {
+      "id": "s060",
+      "text": "Training complete. Certificate attached.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s028"
+     },
+     {
+      "id": "s063",
+      "text": "I'm packing. It's strange leaving the house.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s052"
+     },
+     {
+      "id": "s067",
+      "text": "Paddy moving to St Brendan's Nursing Home, Clifden.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s057"
+     },
+     {
+      "id": "s068",
+      "text": "I'm in. Room 6. The food is decent.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s063"
+     },
+     {
+      "id": "s070",
+      "text": "New day shift starts today, 07:30–19:30.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s035"
+     },
+     {
+      "id": "s072",
+      "text": "Reminder: appointment 20 Oct at 15:00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s046"
+     },
+     {
+      "id": "s075",
+      "text": "Card ending 8842: Lidl €48.90.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s077",
+      "text": "Book club Thursday? We're doing the new Anne Enright.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s080",
+      "text": "I'll bring Paddy to the home for the day Sunday?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s069"
+     },
+     {
+      "id": "s082",
+      "text": "Ward 3 is ready. Back from 2 November.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s047"
+     },
+     {
+      "id": "s083",
+      "text": "Delivery confirmed 20 October.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s073"
+     },
+     {
+      "id": "s085",
+      "text": "The radio works. The nurse likes country music too.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s086",
+      "text": "Your electricity bill is €162.40.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s089",
+      "text": "Check-in open for 23 Oct at 19:40.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s091",
+      "text": "Flight Dublin–Málaga, 19:40, PNR E4T9RK.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s076"
+     },
+     {
+      "id": "s092",
+      "text": "We won the final! 2-0. Thanks for coming, Mam.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s093",
+      "text": "Nerja looks class. Send photos.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s095",
+      "text": "Mam, can you get me the black shoes for the exam?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s096",
+      "text": "Your room is ready. Breakfast until 10:30.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s079"
+     },
+     {
+      "id": "s097",
+      "text": "Buy duty free on the way back? Declan wants whiskey.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s098",
+      "text": "Heading back to Cork tomorrow. Thanks for the week.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s043"
+     },
+     {
+      "id": "s099",
+      "text": "Return flight Málaga–Dublin, 18:20, PNR E4T9RK.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s091"
+     },
+     {
+      "id": "s100",
+      "text": "Home safe. I'll collect you at Dublin?",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s080"
+     },
+     {
+      "id": "s101",
+      "text": "Back in Ward 3 today. It looks huge after Ward 5.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s082"
+     },
+     {
+      "id": "s102",
+      "text": "Your mammogram was clear. Routine recall in two years.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s103",
+      "text": "The doctor says I'm settling well. No complaints.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s104",
+      "text": "Exam is Saturday 8 Nov at 10. Don't be late.",
+      "wanted_store": true,
+      "got_store": false,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s106",
+      "text": "Your membership renews at €49 on 1 December.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s090"
+     },
+     {
+      "id": "s107",
+      "text": "Niamh's Irish dancing exam — 10:00.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s009"
+     },
+     {
+      "id": "s109",
+      "text": "Good luck tomorrow. You'll be brilliant.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": null
+     },
+     {
+      "id": "s110",
+      "text": "Interview panel confirmed for 11:00.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s108"
+     },
+     {
+      "id": "s113",
+      "text": "Passport expires 12 Jan 2027 — renew in December.",
+      "wanted_store": true,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s078"
+     },
+     {
+      "id": "s114",
+      "text": "Mam, did you get the job? Ring me.",
+      "wanted_store": false,
+      "got_store": true,
+      "wanted_replaces": null,
+      "got_replaces": "s084"
+     }
+    ]
+   }
+  }
+ },
+ "trained": {
+  "plain": {
+   "store": {
+    "precision": 0.735,
+    "recall": 0.879,
+    "f1": 0.8,
+    "n": 379
+   },
+   "update": {
+    "precision": 0.185,
+    "recall": 0.4,
+    "f1": 0.253,
+    "n": 75
+   },
+   "kind_accuracy": 0.691,
+   "sensitive_kept": "6 of 25",
+   "false_sensitive": 16
+  },
+  "owner_guard": {
+   "store": {
+    "precision": 0.735,
+    "recall": 0.879,
+    "f1": 0.8,
+    "n": 379
+   },
+   "update": {
+    "precision": 0.186,
+    "recall": 0.4,
+    "f1": 0.254,
+    "n": 75
+   },
+   "kind_accuracy": 0.691,
+   "sensitive_kept": "6 of 25",
+   "false_sensitive": 16
+  }
+ },
+ "secret_rules": {
+  "caught": "10 of 25",
+  "missed": [
+   "Passport 533401987 expires 14 Feb 2027 — renew before Lisbon? Probably fine.",
+   "Your parcel is at the locker. Collection code 4821.",
+   "Northwind portal password changed to Copper-Fern-917. Write it down somewhere safe.",
+   "Your term login is ready. Username aarti.sharma; temporary password ChemLab#2026. Change it after first login.",
+   "Meera's scholarship form: Aadhaar 4821 7734 9012, bank passbook 50100234567890. Photocopies in the blue file.",
+   "One-time code 906442 for your business payment. Expires in 10 minutes.",
+   "New shop lease needs my ID: 630214 5023 081.",
+   "CPF 123.456.789-00 confirmado para a bolsa. Documentos até 30/9.",
+   "Senha do portal do aluno resetada. Senha temporária: Bia2026*arte.",
+   "Código 518204 para aprovar o PIX. Expira em 10 minutos.",
+   "Bia, o Wi-Fi do apê novo é BiaCasa2026#.",
+   "Novo cartão final 8841: 5324 8891 0023 8841, validade 11/30, PIN 7392.",
+   "Aoife's grant: my PPS is 1234567T. Send it to her.",
+   "One-time code 704218 for online banking. Expires in 10 minutes.",
+   "Roster portal password reset to Galway#47. Use it for the December rota."
+  ],
+  "false_alarms": "0 of 533",
+  "false_alarm_texts": []
+ }
+}
