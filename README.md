@@ -167,13 +167,20 @@ store, kind, update and secret.
     ([script](scripts/build_hybrid_classifier.py)).
   - The retrained one lost a lot on the simulator people (update F1 0.95 → 0.75), so the hybrid went to the test.
 
-| DeepSeek test (5 people, 75 updates, 25 secrets) | Original | Hybrid |
-|---|---|---|
-| Store F1 | 0.80 | 0.80 |
-| Update F1 | 0.25 | 0.25 |
-| Secrets stored (rules and controller both missed) | 7 of 25 | **6 of 25** |
-| Secret rules alone | 10 of 25 caught, 0 false alarms | same |
-| Messages wrongly flagged as secret by the controller | 13 | 16 |
+| DeepSeek test (5 people, 75 updates, 25 secrets) | Original | Hybrid | Original, phone | Hybrid, phone |
+|---|---|---|---|---|
+| Store F1 | 0.80 | 0.80 | 0.80 | 0.80 |
+| Update F1 | 0.25 | 0.25 | 0.24 | 0.23 |
+| Secrets stored (rules and controller both missed) | 7 of 25 | **6 of 25** | 7 of 25 | **6 of 25** |
+| Secret rules alone | 10 of 25 caught, 0 false alarms | same | same | same |
+| Messages wrongly flagged as secret by the controller | 13 | 16 | 13 | 21 |
+
+The first two columns ran on the laptop's CPU. The phone columns ran MiniLM and the heads on the Galaxy's
+NPU (`--galaxy`). The small differences match the earlier CPU-vs-NPU finding, where running MiniLM on the NPU
+shifts a few close decisions. The phone matches the laptop's NPU exactly on validation, but this test wasn't
+run on the laptop's NPU, so that cause wasn't confirmed here
+([phone, original](data/external/20261118-195649/eval_galaxy.json),
+[phone, hybrid](data/external/20261118-195649/eval_galaxy_hybrid.json)).
 
 | Validation (picks settings, not a test) | Original | Retrained | Hybrid |
 |---|---|---|---|
@@ -250,7 +257,8 @@ Foundry's laptop build. Setup: `scripts/build_galaxy_models.py`.
   ([`scripts/galaxy_check.py`](scripts/galaxy_check.py), [output](runs/galaxy_check.txt)).
   The hybrid controller (the retrained secret head, see "Messages written by other models") also matches on all
   2,240 (`--controller assistant_classifier_hybrid`, [output](runs/galaxy_check_hybrid.txt)). These users' secrets
-  are the simulator's one-time codes, so this check doesn't cover the outside-written secrets the new head was for.
+  are the simulator's one-time codes. On the outside-written DeepSeek test, the phone also stores 6 of 25 secrets with
+  the hybrid (7 with the original), as on the laptop; see the test table above.
 - **End to end, short user 0:** the phone scores **46 of 55 (83.6%)**, the same as the laptop, with the same
   memory work (58 facts written, 18 updates, 16 secrets dropped) and no old values. Answers differ on 8
   questions, 4 each way, from phi's different build. The phone's phi asked the cloud for help more often (16 against 7).

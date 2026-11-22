@@ -1,0 +1,70 @@
+person_1 (Hannah): update {'precision': 0.238, 'recall': 0.238, 'f1': 0.238, 'n': 21}, store {'precision': 0.831, 'recall': 0.86, 'f1': 0.846, 'n': 86}, secrets kept 2 of 7
+person_2 (Aarti): update {'precision': 0.303, 'recall': 0.476, 'f1': 0.37, 'n': 21}, store {'precision': 0.814, 'recall': 0.922, 'f1': 0.865, 'n': 90}, secrets kept 0 of 4
+person_3 (Desmond): update {'precision': 0.038, 'recall': 0.083, 'f1': 0.053, 'n': 12}, store {'precision': 0.69, 'recall': 0.896, 'f1': 0.779, 'n': 67}, secrets kept 0 of 5
+person_4 (Beatriz): update {'precision': 0.051, 'recall': 0.182, 'f1': 0.08, 'n': 11}, store {'precision': 0.707, 'recall': 0.757, 'f1': 0.731, 'n': 70}, secrets kept 3 of 5
+person_5 (Siobhán): update {'precision': 0.235, 'recall': 0.8, 'f1': 0.364, 'n': 10}, store {'precision': 0.634, 'recall': 0.894, 'f1': 0.742, 'n': 66}, secrets kept 1 of 4
+{
+ "trained": {
+  "plain": {
+   "store": {
+    "precision": 0.738,
+    "recall": 0.868,
+    "f1": 0.798,
+    "n": 379
+   },
+   "update": {
+    "precision": 0.17,
+    "recall": 0.347,
+    "f1": 0.228,
+    "n": 75
+   },
+   "kind_accuracy": 0.687,
+   "sensitive_kept": "6 of 25",
+   "false_sensitive": 21
+  },
+  "owner_guard": {
+   "store": {
+    "precision": 0.738,
+    "recall": 0.868,
+    "f1": 0.798,
+    "n": 379
+   },
+   "update": {
+    "precision": 0.173,
+    "recall": 0.347,
+    "f1": 0.231,
+    "n": 75
+   },
+   "kind_accuracy": 0.687,
+   "sensitive_kept": "6 of 25",
+   "false_sensitive": 21
+  }
+ },
+ "secret_rules": {
+  "caught": "10 of 25",
+  "missed": [
+   "Passport 533401987 expires 14 Feb 2027 — renew before Lisbon? Probably fine.",
+   "Your parcel is at the locker. Collection code 4821.",
+   "Northwind portal password changed to Copper-Fern-917. Write it down somewhere safe.",
+   "Your term login is ready. Username aarti.sharma; temporary password ChemLab#2026. Change it after first login.",
+   "Meera's scholarship form: Aadhaar 4821 7734 9012, bank passbook 50100234567890. Photocopies in the blue file.",
+   "One-time code 906442 for your business payment. Expires in 10 minutes.",
+   "New shop lease needs my ID: 630214 5023 081.",
+   "CPF 123.456.789-00 confirmado para a bolsa. Documentos até 30/9.",
+   "Senha do portal do aluno resetada. Senha temporária: Bia2026*arte.",
+   "Código 518204 para aprovar o PIX. Expira em 10 minutos.",
+   "Bia, o Wi-Fi do apê novo é BiaCasa2026#.",
+   "Novo cartão final 8841: 5324 8891 0023 8841, validade 11/30, PIN 7392.",
+   "Aoife's grant: my PPS is 1234567T. Send it to her.",
+   "One-time code 704218 for online banking. Expires in 10 minutes.",
+   "Roster portal password reset to Galway#47. Use it for the December rota."
+  ],
+  "false_alarms": "0 of 533",
+  "false_alarm_texts": []
+ },
+ "secrets_stored_by_system": {
+  "plain": "6 of 25",
+  "owner_guard": "6 of 25"
+ }
+}
+saved data\external\20261118-195649\eval_galaxy_hybrid.json
