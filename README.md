@@ -248,6 +248,9 @@ Foundry's laptop build. Setup: `scripts/build_galaxy_models.py`.
 - **Controller:** the phone makes the same decision as the laptop's NPU on **all 2,240 messages** of the
   8 validation users (store, kind, secret, replace), with store scores within 0.002
   ([`scripts/galaxy_check.py`](scripts/galaxy_check.py), [output](runs/galaxy_check.txt)).
+  The hybrid controller (the retrained secret head, see "Messages written by other models") also matches on all
+  2,240 (`--controller assistant_classifier_hybrid`, [output](runs/galaxy_check_hybrid.txt)). These users' secrets
+  are the simulator's one-time codes, so this check doesn't cover the outside-written secrets the new head was for.
 - **End to end, short user 0:** the phone scores **46 of 55 (83.6%)**, the same as the laptop, with the same
   memory work (58 facts written, 18 updates, 16 secrets dropped) and no old values. Answers differ on 8
   questions, 4 each way, from phi's different build. The phone's phi asked the cloud for help more often (16 against 7).

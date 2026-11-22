@@ -7,7 +7,7 @@ each device against the labels with evaluate(), letting each follow its own deci
 
 Never reads the test split.
 
-Usage: python scripts/galaxy_check.py [--sets val,val_long] [--users 2]
+Usage: python scripts/galaxy_check.py [--sets val,val_long] [--users 2] [--controller assistant_classifier_hybrid]
 """
 import argparse
 import json
@@ -24,7 +24,6 @@ from inferx.locomo import sessions  # noqa: E402
 from inferx.memory_classifier import Item, MemoryClassifier, evaluate, summarize  # noqa: E402
 from inferx.npu_classifier import NpuEmbedder, move_to_npu  # noqa: E402
 
-HEADS = ROOT / "models/assistant_classifier/heads.npz"
 
 
 def timeline(sample: dict) -> list[dict]:
@@ -60,10 +59,13 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--sets", default="val,val_long")
     parser.add_argument("--users", type=int, default=2, help="users per set")
+    parser.add_argument("--controller", default="assistant_classifier", help="models/<name>; its heads must be on the phone")
     args = parser.parse_args()
-    laptop = move_to_npu(MemoryClassifier.load(HEADS, NpuEmbedder(ROOT / "models/minilm_fp32")),
-                         ROOT / "models/assistant_classifier/npu")
-    phone = load_phone_controller(HEADS, ROOT / "models/minilm_fp32/tokenizer.json")
+    heads = ROOT / f"models/{args.controller}/heads.npz"
+    prefix = "" if args.controller == "assistant_classifier" else args.controller.removeprefix("assistant_classifier_") + "_"
+    laptop = move_to_npu(MemoryClassifier.load(heads, NpuEmbedder(ROOT / "models/minilm_fp32")),
+                         ROOT / f"models/{args.controller}/npu")
+    phone = load_phone_controller(heads, ROOT / "models/minilm_fp32/tokenizer.json", prefix)
     report = {}
     for name in args.sets.split(","):
         samples = json.loads((ROOT / f"data/assistant/{name}.json").read_text(encoding="utf-8"))[: args.users]
@@ -88,7 +90,7 @@ def main() -> None:
     calls = {"embedder": phone.embed.phone_calls,
              **{n: getattr(phone, n).phone_calls for n in ("store", "kind", "sensitive", "replaces")}}
     report["phone_calls"] = calls
-    out = ROOT / "runs/galaxy_check.json"
+    out = ROOT / ("runs/galaxy_check.json" if not prefix else f"runs/galaxy_check_{prefix.rstrip('_')}.json")
     out.write_text(json.dumps(report, indent=1, default=float))
     print("phone calls:", calls, "\nsaved", out)
 

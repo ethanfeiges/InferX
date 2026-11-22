@@ -214,8 +214,11 @@ class PhoneHead:
         return [self.classes[i] for i in self.proba(x).argmax(1)]
 
 
-def load_phone_controller(heads_path: str | Path, tokenizer_path: str | Path):
-    """The trained controller with MiniLM and all 4 heads on the phone. Thresholds and rules are unchanged."""
+def load_phone_controller(heads_path: str | Path, tokenizer_path: str | Path, prefix: str = ""):
+    """The trained controller with MiniLM and all 4 heads on the phone. Thresholds and rules are unchanged.
+
+    prefix picks the heads' DLC files on the phone: "" for the original controller, "hybrid_" for
+    models/assistant_classifier_hybrid (see scripts/build_galaxy_models.py --controller). MiniLM is shared."""
     from inferx.memory_classifier import MemoryClassifier, pair_features, render
 
     class PhoneClassifier(MemoryClassifier):
@@ -243,5 +246,5 @@ def load_phone_controller(heads_path: str | Path, tokenizer_path: str | Path):
     classifier = PhoneClassifier.load(heads_path, PhoneEmbedder(tokenizer_path))
     for name in ("store", "kind", "sensitive", "replaces"):
         head = getattr(classifier, name)
-        setattr(classifier, name, PhoneHead(head.classes, name, data[f"{name}_weights"].shape[0]))
+        setattr(classifier, name, PhoneHead(head.classes, prefix + name, data[f"{name}_weights"].shape[0]))
     return classifier

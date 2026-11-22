@@ -1,0 +1,101 @@
+{
+ "val": {
+  "lockstep": {
+   "messages": 588,
+   "same": 588,
+   "store_differs": 0,
+   "kind_differs": 0,
+   "sensitive_differs": 0,
+   "replaces_differs": 0,
+   "max_store_score_gap": 0.0019530653953552246
+  },
+  "differences": [],
+  "laptop": {
+   "store": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "n": 287
+   },
+   "update": {
+    "precision": 0.964,
+    "recall": 0.931,
+    "f1": 0.947,
+    "n": 87
+   },
+   "kind_accuracy": 1.0,
+   "sensitive_kept": "0 of 52",
+   "false_sensitive": 0
+  },
+  "phone": {
+   "store": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "n": 287
+   },
+   "update": {
+    "precision": 0.964,
+    "recall": 0.931,
+    "f1": 0.947,
+    "n": 87
+   },
+   "kind_accuracy": 1.0,
+   "sensitive_kept": "0 of 52",
+   "false_sensitive": 0
+  }
+ },
+ "val_long": {
+  "lockstep": {
+   "messages": 1652,
+   "same": 1652,
+   "store_differs": 0,
+   "kind_differs": 0,
+   "sensitive_differs": 0,
+   "replaces_differs": 0,
+   "max_store_score_gap": 0.0014649033546447754
+  },
+  "differences": [],
+  "laptop": {
+   "store": {
+    "precision": 1.0,
+    "recall": 0.997,
+    "f1": 0.998,
+    "n": 291
+   },
+   "update": {
+    "precision": 0.891,
+    "recall": 0.882,
+    "f1": 0.886,
+    "n": 93
+   },
+   "kind_accuracy": 1.0,
+   "sensitive_kept": "0 of 205",
+   "false_sensitive": 1
+  },
+  "phone": {
+   "store": {
+    "precision": 1.0,
+    "recall": 0.997,
+    "f1": 0.998,
+    "n": 291
+   },
+   "update": {
+    "precision": 0.891,
+    "recall": 0.882,
+    "f1": 0.886,
+    "n": 93
+   },
+   "kind_accuracy": 1.0,
+   "sensitive_kept": "0 of 205",
+   "false_sensitive": 1
+  }
+ },
+ "phone_calls": {
+  "embedder": 24,
+  "store": 8,
+  "kind": 8,
+  "sensitive": 8,
+  "replaces": 970
+ }
+}

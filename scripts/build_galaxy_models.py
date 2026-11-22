@@ -110,11 +110,30 @@ def push() -> None:
             adb("push", str(path), f"{BUNDLE}/")
 
 
+def other_controller(name: str, no_push: bool) -> None:
+    from inferx.galaxy import PHONE, adb
+    from inferx.memory_classifier import MemoryClassifier
+    from inferx.npu_classifier import export_all
+    prefix = name.removeprefix("assistant_classifier_") + "_"
+    npu = ROOT / f"models/{name}/npu"
+    export_all(MemoryClassifier.load(ROOT / f"models/{name}/heads.npz", embed=None), npu)
+    for head in HEADS:
+        convert(npu / f"{head}.onnx", OUT / f"{prefix}{head}.dlc")
+        if not no_push:
+            adb("push", str(OUT / f"{prefix}{head}.dlc"), f"{PHONE}/controller/")
+    print("DLC files:", sorted(p.name for p in OUT.glob(f"{prefix}*.dlc")), "" if no_push else "(pushed)")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-push", action="store_true")
+    parser.add_argument("--controller", default="assistant_classifier",
+                        help="models/<name>/heads.npz; anything other than the original only rebuilds the heads")
     args = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
+    if args.controller != "assistant_classifier":
+        other_controller(args.controller, args.no_push)
+        return
     source = ROOT / "models/minilm_fp32/model_fixed.onnx"
     phone_onnx = OUT / "minilm_phone.onnx"
     phone_minilm(source, phone_onnx)

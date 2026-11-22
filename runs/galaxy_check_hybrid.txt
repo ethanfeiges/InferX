@@ -1,0 +1,217 @@
+Starting stage: Graph Preparation Initializing
+Completed stage: Graph Preparation Initializing (791 us)
+Starting stage: Graph Optimizations
+Completed stage: Graph Optimizations (434519 us)
+Starting stage: Post Graph Optimization
+Completed stage: Post Graph Optimization (10724 us)
+Starting stage: Graph Sequencing for Target
+Completed stage: Graph Sequencing for Target (56906 us)
+Starting stage: VTCM Allocation
+Completed stage: VTCM Allocation (23804 us)
+Starting stage: Parallelization Optimization
+Completed stage: Parallelization Optimization (6806 us)
+Starting stage: Finalizing Graph Sequence
+
+====== DDR bandwidth summary ======
+spill_bytes=0
+fill_bytes=0
+write_total_bytes=197632
+read_total_bytes=29960192
+
+Completed stage: Finalizing Graph Sequence (9770 us)
+Starting stage: Completion
+Completed stage: Completion (193 us)
+Starting stage: Graph Preparation Initializing
+Completed stage: Graph Preparation Initializing (294 us)
+Starting stage: Graph Optimizations
+Completed stage: Graph Optimizations (10962 us)
+Starting stage: Post Graph Optimization
+Completed stage: Post Graph Optimization (123 us)
+Starting stage: Graph Sequencing for Target
+Completed stage: Graph Sequencing for Target (420 us)
+Starting stage: VTCM Allocation
+Completed stage: VTCM Allocation (42 us)
+Starting stage: Parallelization Optimization
+Completed stage: Parallelization Optimization (26 us)
+Starting stage: Finalizing Graph Sequence
+
+====== DDR bandwidth summary ======
+spill_bytes=0
+fill_bytes=0
+write_total_bytes=2048
+read_total_bytes=28672
+
+Completed stage: Finalizing Graph Sequence (95 us)
+Starting stage: Completion
+Completed stage: Completion (9 us)
+Starting stage: Graph Preparation Initializing
+Completed stage: Graph Preparation Initializing (362 us)
+Starting stage: Graph Optimizations
+Completed stage: Graph Optimizations (7913 us)
+Starting stage: Post Graph Optimization
+Completed stage: Post Graph Optimization (78 us)
+Starting stage: Graph Sequencing for Target
+Completed stage: Graph Sequencing for Target (386 us)
+Starting stage: VTCM Allocation
+Completed stage: VTCM Allocation (44 us)
+Starting stage: Parallelization Optimization
+Completed stage: Parallelization Optimization (29 us)
+Starting stage: Finalizing Graph Sequence
+
+====== DDR bandwidth summary ======
+spill_bytes=0
+fill_bytes=0
+write_total_bytes=2048
+read_total_bytes=28672
+
+Completed stage: Finalizing Graph Sequence (75 us)
+Starting stage: Completion
+Completed stage: Completion (9 us)
+Starting stage: Graph Preparation Initializing
+Completed stage: Graph Preparation Initializing (338 us)
+Starting stage: Graph Optimizations
+Completed stage: Graph Optimizations (6966 us)
+Starting stage: Post Graph Optimization
+Completed stage: Post Graph Optimization (82 us)
+Starting stage: Graph Sequencing for Target
+Completed stage: Graph Sequencing for Target (388 us)
+Starting stage: VTCM Allocation
+Completed stage: VTCM Allocation (38 us)
+Starting stage: Parallelization Optimization
+Completed stage: Parallelization Optimization (32 us)
+Starting stage: Finalizing Graph Sequence
+
+====== DDR bandwidth summary ======
+spill_bytes=0
+fill_bytes=0
+write_total_bytes=2048
+read_total_bytes=28672
+
+Completed stage: Finalizing Graph Sequence (76 us)
+Starting stage: Completion
+Completed stage: Completion (8 us)
+Starting stage: Graph Preparation Initializing
+Completed stage: Graph Preparation Initializing (352 us)
+Starting stage: Graph Optimizations
+Completed stage: Graph Optimizations (7259 us)
+Starting stage: Post Graph Optimization
+Completed stage: Post Graph Optimization (100 us)
+Starting stage: Graph Sequencing for Target
+Completed stage: Graph Sequencing for Target (508 us)
+Starting stage: VTCM Allocation
+Completed stage: VTCM Allocation (77 us)
+Starting stage: Parallelization Optimization
+Completed stage: Parallelization Optimization (29 us)
+Starting stage: Finalizing Graph Sequence
+
+====== DDR bandwidth summary ======
+spill_bytes=0
+fill_bytes=0
+write_total_bytes=2048
+read_total_bytes=83968
+
+Completed stage: Finalizing Graph Sequence (101 us)
+Starting stage: Completion
+Completed stage: Completion (9 us)
+val user 0: 119 of 119 decisions the same (88s)
+val user 1: 119 of 119 decisions the same (88s)
+val user 2: 119 of 119 decisions the same (92s)
+val user 3: 117 of 117 decisions the same (85s)
+val user 4: 114 of 114 decisions the same (75s)
+{
+ "lockstep": {
+  "messages": 588,
+  "same": 588,
+  "store_differs": 0,
+  "kind_differs": 0,
+  "sensitive_differs": 0,
+  "replaces_differs": 0,
+  "max_store_score_gap": 0.0019530653953552246
+ },
+ "laptop": {
+  "store": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "n": 287
+  },
+  "update": {
+   "precision": 0.964,
+   "recall": 0.931,
+   "f1": 0.947,
+   "n": 87
+  },
+  "kind_accuracy": 1.0,
+  "sensitive_kept": "0 of 52",
+  "false_sensitive": 0
+ },
+ "phone": {
+  "store": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "n": 287
+  },
+  "update": {
+   "precision": 0.964,
+   "recall": 0.931,
+   "f1": 0.947,
+   "n": 87
+  },
+  "kind_accuracy": 1.0,
+  "sensitive_kept": "0 of 52",
+  "false_sensitive": 0
+ }
+}
+
+val_long user 0: 552 of 552 decisions the same (149s)
+val_long user 1: 551 of 551 decisions the same (145s)
+val_long user 2: 549 of 549 decisions the same (142s)
+{
+ "lockstep": {
+  "messages": 1652,
+  "same": 1652,
+  "store_differs": 0,
+  "kind_differs": 0,
+  "sensitive_differs": 0,
+  "replaces_differs": 0,
+  "max_store_score_gap": 0.0014649033546447754
+ },
+ "laptop": {
+  "store": {
+   "precision": 1.0,
+   "recall": 0.997,
+   "f1": 0.998,
+   "n": 291
+  },
+  "update": {
+   "precision": 0.891,
+   "recall": 0.882,
+   "f1": 0.886,
+   "n": 93
+  },
+  "kind_accuracy": 1.0,
+  "sensitive_kept": "0 of 205",
+  "false_sensitive": 1
+ },
+ "phone": {
+  "store": {
+   "precision": 1.0,
+   "recall": 0.997,
+   "f1": 0.998,
+   "n": 291
+  },
+  "update": {
+   "precision": 0.891,
+   "recall": 0.882,
+   "f1": 0.886,
+   "n": 93
+  },
+  "kind_accuracy": 1.0,
+  "sensitive_kept": "0 of 205",
+  "false_sensitive": 1
+ }
+}
+
+phone calls: {'embedder': 24, 'store': 8, 'kind': 8, 'sensitive': 8, 'replaces': 970} 
+saved C:\Users\Lab User\InferX\runs\galaxy_check_hybrid.json
