@@ -1,0 +1,26 @@
+secret threshold 0.5: secrets kept 8, store+update F1 1.011
+secret threshold 0.7: secrets kept 10, store+update F1 1.012
+secret threshold 0.9: secrets kept 14, store+update F1 1.011
+secret threshold 0.99: secrets kept 15, store+update F1 1.013
+secret threshold 0.999: secrets kept 18, store+update F1 1.006
+chosen secret threshold 0.5
+outside_val
+  original store F1 0.699  update F1 0.271  secrets kept 17 of 57    false secret alarms 22
+  mixed    store F1 0.712  update F1 0.302  secrets kept 6 of 57     false secret alarms 25
+  hybrid   store F1 0.709  update F1 0.253  secrets kept 10 of 57    false secret alarms 25
+outside_val_after_rules
+  original store F1 0.702  update F1 0.271  secrets kept 15 of 36    false secret alarms 22
+  mixed    store F1 0.715  update F1 0.304  secrets kept 4 of 36     false secret alarms 25
+  hybrid   store F1 0.712  update F1 0.253  secrets kept 8 of 36     false secret alarms 25
+simulator_val
+  original store F1 1.000  update F1 0.947  secrets kept 0 of 52     false secret alarms 0
+  mixed    store F1 0.966  update F1 0.749  secrets kept 0 of 52     false secret alarms 0
+  hybrid   store F1 1.000  update F1 0.947  secrets kept 0 of 52     false secret alarms 0
+simulator_val_long
+  original store F1 1.000  update F1 0.870  secrets kept 0 of 205    false secret alarms 0
+  mixed    store F1 0.953  update F1 0.710  secrets kept 0 of 205    false secret alarms 2
+  hybrid   store F1 0.997  update F1 0.870  secrets kept 0 of 205    false secret alarms 2
+handwritten_check
+  original store F1 0.923  update F1 0.900  secrets kept 0 of 5      false secret alarms 0
+  mixed    store F1 0.815  update F1 0.571  secrets kept 0 of 5      false secret alarms 0
+  hybrid   store F1 0.923  update F1 0.900  secrets kept 0 of 5      false secret alarms 0

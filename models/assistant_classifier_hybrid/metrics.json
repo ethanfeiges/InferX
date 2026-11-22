@@ -1,0 +1,276 @@
+{
+  "heads": {
+    "store": "original",
+    "kind": "original",
+    "replaces": "original",
+    "sensitive": "mixed"
+  },
+  "thresholds": {
+    "sensitive": 0.5,
+    "store": 0.2,
+    "replace": 0.7
+  },
+  "compared": {
+    "original": {
+      "outside_val": {
+        "store": {
+          "precision": 0.632,
+          "recall": 0.783,
+          "f1": 0.699,
+          "n": 230
+        },
+        "update": {
+          "precision": 0.273,
+          "recall": 0.27,
+          "f1": 0.271,
+          "n": 89
+        },
+        "kind_accuracy": 0.722,
+        "sensitive_kept": "17 of 57",
+        "false_sensitive": 22
+      },
+      "outside_val_after_rules": {
+        "store": {
+          "precision": 0.636,
+          "recall": 0.783,
+          "f1": 0.702,
+          "n": 230
+        },
+        "update": {
+          "precision": 0.273,
+          "recall": 0.27,
+          "f1": 0.271,
+          "n": 89
+        },
+        "kind_accuracy": 0.722,
+        "sensitive_kept": "15 of 36",
+        "false_sensitive": 22
+      },
+      "simulator_val": {
+        "store": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n": 287
+        },
+        "update": {
+          "precision": 0.964,
+          "recall": 0.931,
+          "f1": 0.947,
+          "n": 87
+        },
+        "kind_accuracy": 1.0,
+        "sensitive_kept": "0 of 52",
+        "false_sensitive": 0
+      },
+      "simulator_val_long": {
+        "store": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n": 291
+        },
+        "update": {
+          "precision": 0.879,
+          "recall": 0.86,
+          "f1": 0.87,
+          "n": 93
+        },
+        "kind_accuracy": 1.0,
+        "sensitive_kept": "0 of 205",
+        "false_sensitive": 0
+      },
+      "handwritten_check": {
+        "store": {
+          "precision": 0.857,
+          "recall": 1.0,
+          "f1": 0.923,
+          "n": 30
+        },
+        "update": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "n": 10
+        },
+        "kind_accuracy": 0.933,
+        "sensitive_kept": "0 of 5",
+        "false_sensitive": 0
+      }
+    },
+    "mixed": {
+      "outside_val": {
+        "store": {
+          "precision": 0.72,
+          "recall": 0.704,
+          "f1": 0.712,
+          "n": 230
+        },
+        "update": {
+          "precision": 0.343,
+          "recall": 0.27,
+          "f1": 0.302,
+          "n": 89
+        },
+        "kind_accuracy": 0.796,
+        "sensitive_kept": "6 of 57",
+        "false_sensitive": 25
+      },
+      "outside_val_after_rules": {
+        "store": {
+          "precision": 0.726,
+          "recall": 0.704,
+          "f1": 0.715,
+          "n": 230
+        },
+        "update": {
+          "precision": 0.348,
+          "recall": 0.27,
+          "f1": 0.304,
+          "n": 89
+        },
+        "kind_accuracy": 0.796,
+        "sensitive_kept": "4 of 36",
+        "false_sensitive": 25
+      },
+      "simulator_val": {
+        "store": {
+          "precision": 0.949,
+          "recall": 0.983,
+          "f1": 0.966,
+          "n": 287
+        },
+        "update": {
+          "precision": 0.762,
+          "recall": 0.736,
+          "f1": 0.749,
+          "n": 87
+        },
+        "kind_accuracy": 0.986,
+        "sensitive_kept": "0 of 52",
+        "false_sensitive": 0
+      },
+      "simulator_val_long": {
+        "store": {
+          "precision": 0.926,
+          "recall": 0.983,
+          "f1": 0.953,
+          "n": 291
+        },
+        "update": {
+          "precision": 0.71,
+          "recall": 0.71,
+          "f1": 0.71,
+          "n": 93
+        },
+        "kind_accuracy": 0.979,
+        "sensitive_kept": "0 of 205",
+        "false_sensitive": 2
+      },
+      "handwritten_check": {
+        "store": {
+          "precision": 0.917,
+          "recall": 0.733,
+          "f1": 0.815,
+          "n": 30
+        },
+        "update": {
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.571,
+          "n": 10
+        },
+        "kind_accuracy": 0.864,
+        "sensitive_kept": "0 of 5",
+        "false_sensitive": 0
+      }
+    },
+    "hybrid": {
+      "outside_val": {
+        "store": {
+          "precision": 0.651,
+          "recall": 0.778,
+          "f1": 0.709,
+          "n": 230
+        },
+        "update": {
+          "precision": 0.259,
+          "recall": 0.247,
+          "f1": 0.253,
+          "n": 89
+        },
+        "kind_accuracy": 0.704,
+        "sensitive_kept": "10 of 57",
+        "false_sensitive": 25
+      },
+      "outside_val_after_rules": {
+        "store": {
+          "precision": 0.656,
+          "recall": 0.778,
+          "f1": 0.712,
+          "n": 230
+        },
+        "update": {
+          "precision": 0.259,
+          "recall": 0.247,
+          "f1": 0.253,
+          "n": 89
+        },
+        "kind_accuracy": 0.704,
+        "sensitive_kept": "8 of 36",
+        "false_sensitive": 25
+      },
+      "simulator_val": {
+        "store": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n": 287
+        },
+        "update": {
+          "precision": 0.964,
+          "recall": 0.931,
+          "f1": 0.947,
+          "n": 87
+        },
+        "kind_accuracy": 1.0,
+        "sensitive_kept": "0 of 52",
+        "false_sensitive": 0
+      },
+      "simulator_val_long": {
+        "store": {
+          "precision": 1.0,
+          "recall": 0.993,
+          "f1": 0.997,
+          "n": 291
+        },
+        "update": {
+          "precision": 0.879,
+          "recall": 0.86,
+          "f1": 0.87,
+          "n": 93
+        },
+        "kind_accuracy": 1.0,
+        "sensitive_kept": "0 of 205",
+        "false_sensitive": 2
+      },
+      "handwritten_check": {
+        "store": {
+          "precision": 0.857,
+          "recall": 1.0,
+          "f1": 0.923,
+          "n": 30
+        },
+        "update": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "n": 10
+        },
+        "kind_accuracy": 0.933,
+        "sensitive_kept": "0 of 5",
+        "false_sensitive": 0
+      }
+    }
+  }
+}
