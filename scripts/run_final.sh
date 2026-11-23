@@ -12,6 +12,8 @@
 # http://127.0.0.1:8765/v1 as the cloud URL.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+exec > >(tee -a runs/final_run.log) 2>&1  # progress log, read while the run goes
+echo "FINAL_START $(date -Iseconds)"
 URL="${1:?give the Foundry Public API URL}"
 CLOUD="${2:-https://api.anthropic.com/v1}"
 CLOUD_MODEL="${3:-claude-sonnet-5-5}"
