@@ -23,8 +23,11 @@ if (-not $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administra
 }
 New-Item -ItemType Directory -Force $Out | Out-Null
 $etl = Join-Path $Out "capture.etl"
+# Windows PowerShell doesn't quote -ArgumentList items, so paths with spaces ("Lab User") need quotes added.
+$watchScript = Join-Path $PSScriptRoot "watch_connections.ps1"
+$watchOut = Join-Path (Resolve-Path $Out) "connections.csv"
 $watcher = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList @(
-    "-ExecutionPolicy", "Bypass", "-File", (Join-Path $PSScriptRoot "watch_connections.ps1"), "-Out", (Join-Path $Out "connections.csv"))
+    "-ExecutionPolicy", "Bypass", "-File", "`"$watchScript`"", "-Out", "`"$watchOut`"")
 pktmon filter remove | Out-Null
 pktmon start --capture --pkt-size 256 --file-name $etl | Out-Null
 "Capture started at $(Get-Date -Format o)" | Tee-Object -FilePath (Join-Path $Out "notes.txt")
