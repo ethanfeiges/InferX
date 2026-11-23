@@ -167,7 +167,7 @@ store, kind, update and secret.
     ([script](scripts/build_hybrid_classifier.py)).
   - The retrained one lost a lot on the simulator people (update F1 0.95 → 0.75), so the hybrid went to the test.
 
-| DeepSeek test (5 people, 75 updates, 25 secrets) | Original | Hybrid | Original, phone | Hybrid, phone |
+| DeepSeek test (5 people, 75 updates, 25 secrets) | Original, CPU | Hybrid, CPU | Original, NPU | Hybrid, NPU |
 |---|---|---|---|---|
 | Store F1 | 0.80 | 0.80 | 0.80 | 0.80 |
 | Update F1 | 0.25 | 0.25 | 0.24 | 0.23 |
@@ -175,11 +175,13 @@ store, kind, update and secret.
 | Secret rules alone | 10 of 25 caught, 0 false alarms | same | same | same |
 | Messages wrongly flagged as secret by the controller | 13 | 16 | 13 | 21 |
 
-The first two columns ran on the laptop's CPU. The phone columns ran MiniLM and the heads on the Galaxy's
-NPU (`--galaxy`). The small differences match the earlier CPU-vs-NPU finding, where running MiniLM on the NPU
-shifts a few close decisions. The phone matches the laptop's NPU exactly on validation, but this test wasn't
-run on the laptop's NPU, so that cause wasn't confirmed here
-([phone, original](data/external/20261118-195649/eval_galaxy.json),
+The CPU columns ran on the laptop's CPU. The NPU columns are the same on the laptop's NPU (`--npu`) and on the
+Galaxy's NPU (`--galaxy`): every number matches between the two. So the small CPU-vs-NPU differences come from
+running MiniLM on an NPU (it shifts a few close decisions, as found earlier), not from the phone. The final
+comparison uses the NPU, so the NPU columns are the ones that count there
+(outputs: [laptop NPU](data/external/20261118-195649/eval_npu.json),
+[laptop NPU, hybrid](data/external/20261118-195649/eval_npu_hybrid.json),
+[phone](data/external/20261118-195649/eval_galaxy.json),
 [phone, hybrid](data/external/20261118-195649/eval_galaxy_hybrid.json)).
 
 | Validation (picks settings, not a test) | Original | Retrained | Hybrid |

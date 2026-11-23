@@ -10,7 +10,9 @@ sensitive count as "do not store" and "replaces nothing" when scoring. The count
 With --galaxy the controller runs on the Galaxy phone's NPU (scripts/build_galaxy_models.py must have pushed
 its heads). The report also counts secrets the full system stores: the rules and the controller both miss them.
 
-Usage: python scripts/eval_external.py data/external/<run> [--heads <heads.npz>] [--out eval.json] [--galaxy]
+With --npu it runs on the laptop's NPU instead (MiniLM and the heads, as in galaxy_check.py's laptop side).
+
+Usage: python scripts/eval_external.py data/external/<run> [--heads <heads.npz>] [--out eval.json] [--galaxy | --npu]
 """
 import argparse
 import json
@@ -47,6 +49,7 @@ def main() -> None:
                         help="the controller to score; models/assistant_classifier_mixed/heads.npz for the retrained one")
     parser.add_argument("--out", default="eval.json", help="file name for the report, inside the run folder")
     parser.add_argument("--galaxy", action="store_true", help="run the controller on the phone's NPU")
+    parser.add_argument("--npu", action="store_true", help="run the controller on the laptop's NPU")
     args = parser.parse_args()
     people = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(args.run.glob("person_*.json"))}
     embedder, cache = Embedder(ROOT / "models/minilm"), {}
@@ -61,9 +64,14 @@ def main() -> None:
         controller = args.heads.parent.name
         prefix = "" if controller == "assistant_classifier" else controller.removeprefix("assistant_classifier_") + "_"
         classifier = load_phone_controller(args.heads, ROOT / "models/minilm_fp32/tokenizer.json", prefix)
+    elif args.npu:
+        from inferx.npu_classifier import NpuEmbedder, move_to_npu
+        classifier = move_to_npu(MemoryClassifier.load(args.heads, NpuEmbedder(ROOT / "models/minilm_fp32")),
+                                 args.heads.parent / "npu")
     else:
         classifier = MemoryClassifier.load(args.heads, embed)
-    report = {"run": str(args.run), "heads": str(args.heads), "device": "galaxy" if args.galaxy else "laptop cpu",
+    device = "galaxy" if args.galaxy else "laptop npu" if args.npu else "laptop cpu"
+    report = {"run": str(args.run), "heads": str(args.heads), "device": device,
               "people": {}}
     leaked = Counter()
     totals = {"plain": Counter(), "owner_guard": Counter()}
