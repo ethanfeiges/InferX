@@ -18,6 +18,9 @@ On 3 simulated users with 4 months of history each (validation data, not the fin
 - **Under half the cloud use:** 48 of 248 questions sent to the cloud, against 87.
 - **Secrets never saved:** all one-time codes were dropped. mem0's cloud service kept about 42 of 52.
 
+On messages written by other models, the controller does much worse: update F1 falls from about 0.9 to
+0.25, and 6 of 25 secrets get through (see "Messages written by other models").
+
 ## How it works
 
 1. **A message arrives** and MiniLM turns it into 384 numbers that capture its meaning.
@@ -175,11 +178,12 @@ store, kind, update and secret.
 | Secret rules alone | 10 of 25 caught, 0 false alarms | same | same | same |
 | Messages wrongly flagged as secret by the controller | 13 | 16 | 13 | 21 |
 
-The CPU columns ran on the laptop's CPU. The NPU columns are the same on the laptop's NPU (`--npu`) and on the
-Galaxy's NPU (`--galaxy`): every number matches between the two. So the small CPU-vs-NPU differences come from
-running MiniLM on an NPU (it shifts a few close decisions, as found earlier), not from the phone. The final
-comparison uses the NPU, so the NPU columns are the ones that count there
-(outputs: [laptop NPU](data/external/20261118-195649/eval_npu.json),
+The laptop's NPU (`--npu`) and the Galaxy's NPU (`--galaxy`) give identical numbers. The small gap to the
+CPU comes from running MiniLM on an NPU, which shifts a few close decisions. The final comparison runs on the
+NPU, so the NPU columns are the ones to quote
+(outputs: [CPU](data/external/20261118-195649/eval.json),
+[CPU, hybrid](data/external/20261118-195649/eval_hybrid.json),
+[laptop NPU](data/external/20261118-195649/eval_npu.json),
 [laptop NPU, hybrid](data/external/20261118-195649/eval_npu_hybrid.json),
 [phone](data/external/20261118-195649/eval_galaxy.json),
 [phone, hybrid](data/external/20261118-195649/eval_galaxy_hybrid.json)).
@@ -201,11 +205,9 @@ comparison uses the NPU, so the NPU columns are the ones that count there
   "password changed to Copper-Fern-917", a passport number, Aadhaar and CPF numbers, and Portuguese
   ("Senha temporária", "Código … para aprovar o PIX"). They weren't fixed from these misses, because that
   would tune the rules on the test. A fix needs new rules written from other text, followed by a fresh test.
-- Two test labels look wrong to me (a106 ← a072, s048 ← s012), but they were left as the writer gave them.
-- Outputs: [original](data/external/20261118-195649/eval.json),
-  [hybrid](data/external/20261118-195649/eval_hybrid.json),
-  [validation](models/assistant_classifier_hybrid/metrics.json).
-  The systems with phi still use the original controller.
+- Two test labels look wrong (a106 ← a072, s048 ← s012). They were kept as the writer gave them.
+- Validation numbers: [metrics.json](models/assistant_classifier_hybrid/metrics.json). The systems with phi
+  still use the original controller.
 
 ### Fact quality
 
@@ -238,15 +240,6 @@ The check catches only 20 of 51 wrong answers. Nothing checks the cloud's reply.
   admin needed).
 - **LoCoMo conversation 1** (early check): rules beat plain retrieval with phi (score 0.385 vs 0.354).
 
-## Limitations
-
-- **"Secret" means one-time codes only.** Passwords, card numbers or health details were never in
-  the training data and would probably be saved.
-- **History questions** are weaker (5 of 9 vs 7 of 9), because outdated versions are hidden.
-- **The controller misses some updates** (4 of 7 on hand-written check messages).
-- **Text written by other models:** on 5 people written by DeepSeek, update F1 is 0.25 (about 0.9 on
-  the simulator), and 6 of 25 secrets are stored. See "Messages written by other models".
-
 ### On the Galaxy S25
 
 phi-3.5-mini and the trained controller (MiniLM and its 4 heads) both run on the phone's NPU
@@ -257,13 +250,21 @@ Foundry's laptop build. Setup: `scripts/build_galaxy_models.py`.
 - **Controller:** the phone makes the same decision as the laptop's NPU on **all 2,240 messages** of the
   8 validation users (store, kind, secret, replace), with store scores within 0.002
   ([`scripts/galaxy_check.py`](scripts/galaxy_check.py), [output](runs/galaxy_check.txt)).
-  The hybrid controller (the retrained secret head, see "Messages written by other models") also matches on all
-  2,240 (`--controller assistant_classifier_hybrid`, [output](runs/galaxy_check_hybrid.txt)). These users' secrets
-  are the simulator's one-time codes. On the outside-written DeepSeek test, the phone also stores 6 of 25 secrets with
-  the hybrid (7 with the original), as on the laptop; see the test table above.
+  The hybrid controller matches on all 2,240 too ([output](runs/galaxy_check_hybrid.txt)), and on the
+  DeepSeek test the phone gives the same numbers as the laptop's NPU.
 - **End to end, short user 0:** the phone scores **46 of 55 (83.6%)**, the same as the laptop, with the same
   memory work (58 facts written, 18 updates, 16 secrets dropped) and no old values. Answers differ on 8
   questions, 4 each way, from phi's different build. The phone's phi asked the cloud for help more often (16 against 7).
+
+## Limitations
+
+- **Secrets:** the simulator's only secrets are one-time codes. Format rules (in `trained_plus`) add cards,
+  passwords, PINs and ID numbers, but on outside-written text they caught only 10 of 25. Health details are
+  kept on purpose.
+- **History questions** are weaker (5 of 9 vs 7 of 9), because outdated versions are hidden.
+- **Updates on text the simulator didn't write:** 9 of 10 found on the hand-written check, but update F1
+  is only 0.25 on 5 people written by DeepSeek (about 0.9 on the simulator). See "Messages written by
+  other models".
 
 ## Status
 
@@ -275,9 +276,10 @@ Foundry's laptop build. Setup: `scripts/build_galaxy_models.py`.
 | mem0 on phi, mem0 cloud | Done |
 | `trained_plus` (generalization additions) | Built and validated: +3.2 on long users, level on short users |
 | Letta, and a real cloud LLM for the cloud rule | Need a cloud LLM key (`INFERX_CLOUD_API_KEY`) |
-| Messages written by someone else | Needed |
+| Messages written by other models | Done: 5 test people (DeepSeek), 18 training/validation people |
+| Galaxy S25 | Built and checked: same controller decisions as the laptop |
 | Final comparison with packet capture (`scripts/run_final.sh`) | Written, not run |
-| Galaxy S25 | phi-3.5 and the controller run on the phone's NPU; decisions match the laptop on all 2,240 validation messages |
+| Final comparison on the Galaxy S25 | Not run |
 
 ## Setup (Windows ARM64)
 
@@ -326,7 +328,10 @@ Use its Public API URL as `<URL>`, and phi's `tokenizer.json` from
 .venv\Scripts\python scripts\make_figures.py
 ```
 
-- `--npu-controller` runs the controller on the NPU.
+- `--npu-controller` runs the controller on the NPU. `--galaxy` runs phi and the controller on the Galaxy
+  over USB (no `--url` needed).
+- Outside-written timelines: `scripts\external_writer.ps1` writes them, `scripts\eval_external.py` scores
+  them (`--npu`, `--galaxy`, `--heads`).
 - mem0: use `.venv-mem0\Scripts\python` with `--systems mem0_2025_local` or `mem0_cloud`.
 - **Nothing leaves the laptop without `--allow-remote`.** Keys come from environment variables the
   user saves, never from this repository: `MEM0_API_KEY` (mem0 cloud) and `INFERX_CLOUD_API_KEY`
@@ -341,6 +346,8 @@ Use its Public API URL as `<URL>`, and phi's `tokenizer.json` from
 - A reply counts as correct if it contains the answer in any format. Intervals are 95% bootstrap
   intervals over questions.
 - `data/assistant/handwritten*.json` were written by the developer, so they are not independent.
+- Outside-written data is in `data/external/<batch>/`, each with the brief, the writer's logs and
+  `writer.json`. `20261118-195649` is the held-out test.
 - Left out of comparisons: stopped or smoke-test runs `20261108-135534`, `135621`, `141228`,
   `221518`, `20261109-134852` (mem0 user ID sent in the wrong field); mem0 runs `20261108-185536`
   to `213205` (broken reply parser); mem0 cloud runs `20261109-150122`, `154716`,
