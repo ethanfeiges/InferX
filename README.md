@@ -279,7 +279,7 @@ Foundry's laptop build. Setup: `scripts/build_galaxy_models.py`.
 | Letta | Not added yet |
 | Messages written by other models | Done: 5 test people (DeepSeek), 18 training/validation people |
 | Galaxy S25 | Built and checked: same controller decisions as the laptop |
-| Final comparison with packet capture (`scripts/run_final.sh`) | Written, not run |
+| Final comparison with packet capture (`scripts/run_final.sh`) | Ready, not run: real cloud (Claude Sonnet 5.5, about $15-30); needs an administrator PowerShell for the capture |
 | Final comparison on the Galaxy S25 | Not run |
 
 ## Setup (Windows ARM64)
