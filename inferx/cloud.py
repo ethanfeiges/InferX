@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from urllib.parse import urlparse
@@ -30,6 +31,8 @@ class CloudReply:
     text: str
     bytes_sent: int
     bytes_received: int
+    input_tokens: int = 0   # as the provider reports them (0 from the local stand-in)
+    output_tokens: int = 0
 
 
 class CloudClient:
@@ -50,7 +53,8 @@ class CloudClient:
                 {"role": "system", "content": CLOUD_SYSTEM},
                 {"role": "user", "content": "Memories:\n" + "\n".join(memories) + f"\n\nQuestion: {question} Answer:"},
             ],
-            "temperature": 0,
+            # No temperature: current Claude models reject sampling settings with HTTP 400.
+            "max_tokens": 200,
         }).encode()
         headers = {"Content-Type": "application/json"}
         if self.api_key:
@@ -61,10 +65,16 @@ class CloudClient:
         try:
             with urllib.request.urlopen(request, timeout=self.timeout_s) as response:
                 raw = response.read()
+        except urllib.error.HTTPError as error:
+            # The provider's error message says what was wrong with the request; it never contains the key.
+            detail = error.read().decode(errors="replace")[:300]
+            raise LLMError(f"cloud call failed: HTTP {error.code}: {detail}") from error
         except Exception as error:
             raise LLMError(f"cloud call failed: {type(error).__name__}: {error}") from error
-        text = json.loads(raw)["choices"][0]["message"]["content"]
-        return CloudReply(text, len(body), len(raw))
+        data = json.loads(raw)
+        usage = data.get("usage") or {}
+        return CloudReply(data["choices"][0]["message"]["content"], len(body), len(raw),
+                          int(usage.get("prompt_tokens", 0)), int(usage.get("completion_tokens", 0)))
 
 
 class CloudPolicy:

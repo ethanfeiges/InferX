@@ -136,6 +136,9 @@ def summarize(results, timings, idle, system, planned):
         "prompt_tokens_mean": mean([r["prompt_tokens"] for r in answered]),
         "cloud_calls": sum(r["cloud_calls"] for r in results),
         "cloud_bytes": sum(r.get("cloud_bytes", 0) for r in results),
+        "cloud_errors": sum(bool(r.get("cloud_error")) for r in results),
+        "cloud_input_tokens": sum(r.get("cloud_input_tokens", 0) for r in results),
+        "cloud_output_tokens": sum(r.get("cloud_output_tokens", 0) for r in results),
         "memory_cloud_requests": sum(r.get("memory_cloud_requests", 0) for r in results) + int(idle.get("requests", 0)),
         "memory_cloud_bytes": sum(r.get("memory_cloud_bytes", 0) for r in results)
                               + int(idle.get("bytes_sent", 0) + idle.get("bytes_received", 0)),
@@ -265,6 +268,10 @@ def main():
             system.store.db.backup(saved)
         (run_dir / "summary.json").write_text(json.dumps(summaries, indent=2))
     print(json.dumps(summaries, indent=2))
+    for name, summary in summaries.items():
+        if summary.get("cloud_errors"):
+            print(f"WARNING {name}: {summary['cloud_errors']} of {summary['cloud_calls']} cloud calls failed; "
+                  f"see cloud_reply in {name}.jsonl")
     print("RUN_DIR", run_dir)
 
 

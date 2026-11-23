@@ -126,9 +126,11 @@ def _maybe_cloud(llm: LocalLLM, cloud, question: str, memories: list[str], promp
     except LLMError as error:
         answer.cloud_reply = f"error: {error}"
         answer.cloud_calls = 1
+        answer.cloud_error = True
         return
     answer.cloud_calls = 1
     answer.cloud_bytes = reply.bytes_sent
+    answer.cloud_input_tokens, answer.cloud_output_tokens = reply.input_tokens, reply.output_tokens
     answer.cloud_reply = reply.text
 
 

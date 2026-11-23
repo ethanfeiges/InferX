@@ -275,7 +275,8 @@ Foundry's laptop build. Setup: `scripts/build_galaxy_models.py`.
 | Long-history comparison | Done |
 | mem0 on phi, mem0 cloud | Done |
 | `trained_plus` (generalization additions) | Built and validated: +3.2 on long users, level on short users |
-| Letta, and a real cloud LLM for the cloud rule | Need a cloud LLM key (`INFERX_CLOUD_API_KEY`) |
+| Real cloud LLM for the cloud rule | Works: Claude Opus 5.5 through its OpenAI-style endpoint; checked on short user 0 (7 cloud calls, 0 errors, about 1,400 input tokens each) |
+| Letta | Not added yet |
 | Messages written by other models | Done: 5 test people (DeepSeek), 18 training/validation people |
 | Galaxy S25 | Built and checked: same controller decisions as the laptop |
 | Final comparison with packet capture (`scripts/run_final.sh`) | Written, not run |
@@ -337,6 +338,8 @@ Use its Public API URL as `<URL>`, and phi's `tokenizer.json` from
   user saves, never from this repository: `MEM0_API_KEY` (mem0 cloud) and `INFERX_CLOUD_API_KEY`
   (a real cloud LLM, with `--cloud-url` and `--cloud-model`).
 - The cloud stand-in (`scripts/cloud_stub.py`) answers on 127.0.0.1 and logs each call's size.
+- Real cloud: `--allow-remote --cloud-url https://api.anthropic.com/v1 --cloud-model claude-opus-5-5`. Run summaries count
+  `cloud_errors` and the provider's token counts, and a run whose cloud calls failed ends with a WARNING line.
 - Each run writes `runs/<timestamp>/` with its config, summary, every answer, and a log.
 
 ## Method notes
